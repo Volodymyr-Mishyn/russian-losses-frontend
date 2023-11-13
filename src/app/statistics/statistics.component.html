@@ -1,2 +1,9 @@
-<p>statistics works!</p>
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="true">
+    nav
+  </mat-drawer>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
