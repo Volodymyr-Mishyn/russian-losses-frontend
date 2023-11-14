@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { StatisticsComponent } from './statistics.component';
+import { AboutComponent } from './about/about.component';
 
 export const STATISTICS_ROUTES: Routes = [
   {
@@ -9,6 +10,7 @@ export const STATISTICS_ROUTES: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'home' },
       { path: 'home', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
       {
         path: 'ministry-of-defense',
         loadComponent: () =>
