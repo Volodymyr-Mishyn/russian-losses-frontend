@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
-import { NavigationElement } from '../../_models/navigation-element';
+import { NavigationElement } from '../../_models/navigation/navigation-element';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({

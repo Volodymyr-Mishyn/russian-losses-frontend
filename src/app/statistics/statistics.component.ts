@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { NavigationElement } from './_models/navigation-element';
+import { NavigationElement } from './_models/navigation/navigation-element';
 import { NavigationListComponent } from './components/navigation-list/navigation-list.component';
 
 const NAVIGATION: Array<NavigationElement> = [
