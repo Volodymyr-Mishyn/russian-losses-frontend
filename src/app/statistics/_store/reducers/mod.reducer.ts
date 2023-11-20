@@ -8,6 +8,10 @@ import {
   loadMoDDataActionFailure,
   loadMoDDataActionSuccess,
 } from '../actions/mod.actions';
+import {
+  calculateAverage,
+  calculateSummary,
+} from '../_helpers/mod-calculation.utils';
 
 export const modAdapter: EntityAdapter<MoDDayResultFlat> =
   createEntityAdapter<MoDDayResultFlat>({
@@ -17,6 +21,8 @@ export const modAdapter: EntityAdapter<MoDDayResultFlat> =
 export const initialStateMoD: MoDEntityState = modAdapter.getInitialState({
   loadingInProgress: false,
   dataLoaded: false,
+  averageData: null,
+  summaryData: null,
 });
 
 export const modReducer = createReducer(
@@ -30,15 +36,17 @@ export const modReducer = createReducer(
         loadingInProgress: true,
       })
   ),
-  on(
-    loadMoDDataActionSuccess,
-    (state, { data }): MoDEntityState =>
-      modAdapter.setAll(data, {
-        ...state,
-        dataLoaded: true,
-        loadingInProgress: false,
-      })
-  ),
+  on(loadMoDDataActionSuccess, (state, { data }): MoDEntityState => {
+    const averageData = calculateAverage(data);
+    const summaryData = calculateSummary(data);
+    return modAdapter.setAll(data, {
+      ...state,
+      dataLoaded: true,
+      loadingInProgress: false,
+      summaryData,
+      averageData,
+    });
+  }),
   on(
     loadMoDDataActionFailure,
     (state): MoDEntityState =>
