@@ -1,0 +1,33 @@
+<form
+  [formGroup]="rangeForm"
+  class="flex-row flex justify-start items-center gap-4"
+>
+  <mat-checkbox formControlName="fullRange" (change)="onCheckboxChange()"
+    >Full range</mat-checkbox
+  >
+  <mat-form-field>
+    <mat-label>Enter a date range</mat-label>
+    <mat-date-range-input
+      formGroupName="range"
+      [rangePicker]="picker"
+      [disabled]="rangeForm.controls.fullRange.value === true"
+      [min]="startDate"
+      [max]="endDate"
+    >
+      <input
+        matStartDate
+        formControlName="start"
+        placeholder="Start date"
+        (dateChange)="onDateRangeChange()"
+      />
+      <input
+        matEndDate
+        formControlName="end"
+        placeholder="End date"
+        (dateChange)="onDateRangeChange()"
+      />
+    </mat-date-range-input>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
+</form>

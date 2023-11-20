@@ -14,7 +14,16 @@ export const selectMoDDataLoaded = createSelector(
   (state) => state.dataLoaded
 );
 
-export const selectModDataInRange = (start: string, end: string) => {
+export const selectMoDSummary = createSelector(
+  selectMoDState,
+  (state) => state.summaryData
+);
+export const selectMoDAverage = createSelector(
+  selectMoDState,
+  (state) => state.averageData
+);
+
+export const selectMoDDataInRange = (start: string, end: string) => {
   const startDate = new Date(start);
   const endDate = new Date(end);
   return createSelector(selectAllMoDData, (modData) => {
