@@ -7,12 +7,13 @@ import {
   Output,
 } from '@angular/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { DATE_OF_INVASION_INSTANCE } from '../../../_constants/russian-invasion-date';
+import { DateRange } from '../../_models/range';
 
 @Component({
   selector: 'app-range-selection',
@@ -38,7 +39,7 @@ export class RangeSelectionComponent {
   public endDate: Date = new Date();
 
   @Output()
-  public rangeChanged = new EventEmitter<{ start: Date; end: Date } | null>();
+  public rangeChanged = new EventEmitter<DateRange | null>();
 
   public rangeForm = this._formBuilder.group({
     fullRange: [true],
