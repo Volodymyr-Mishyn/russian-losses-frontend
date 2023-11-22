@@ -16,6 +16,8 @@ import {
 export const modAdapter: EntityAdapter<MoDDayResultFlat> =
   createEntityAdapter<MoDDayResultFlat>({
     selectId: (modResult: MoDDayResultFlat) => modResult.date,
+    sortComparer: (first: MoDDayResultFlat, second: MoDDayResultFlat) =>
+      second.dayOfInvasion - first.dayOfInvasion,
   });
 
 export const initialStateMoD: MoDEntityState = modAdapter.getInitialState({

@@ -1,0 +1,34 @@
+@if (displayedColumns.length>0) {
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="dayOfInvasion">
+      <th mat-header-cell *matHeaderCellDef>Day of Invasion</th>
+      <td mat-cell *matCellDef="let element">{{ element.dayOfInvasion }}</td>
+    </ng-container>
+
+    @for (item of currentDisplayedEntities; track $index) {
+    <ng-container [matColumnDef]="item">
+      <th mat-header-cell *matHeaderCellDef>{{ item }}</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.data[item].increment }}
+      </td>
+    </ng-container>
+    }
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <mat-paginator
+    [pageSizeOptions]="[7, 10, 20, 30, 31, 100]"
+    [pageSize]="7"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements"
+  >
+  </mat-paginator>
+</div>
+}

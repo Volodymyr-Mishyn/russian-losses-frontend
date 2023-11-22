@@ -1,8 +1,5 @@
-import {
-  CalculatedData,
-  EntityNamesEnum,
-  MoDDataFlat,
-} from '../../_models/data/mod/mod-model';
+import { EntityNamesEnum } from '../../_models/data/mod/mod-entities';
+import { CalculatedData, MoDDataFlat } from '../../_models/data/mod/mod-model';
 
 export function calculateSummary(modData: MoDDataFlat): CalculatedData {
   const averageData: CalculatedData = {

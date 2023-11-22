@@ -1,19 +1,4 @@
-export enum EntityNamesEnum {
-  tank = 'tank',
-  armoredFightingVehicle = 'armored_fighting_vehicle',
-  artillerySystem = 'artillery_system',
-  MLRS = 'mlrs',
-  antiAircraft = 'anti_aircraft',
-  plane = 'plane',
-  helicopter = 'helicopter',
-  UAV = 'uav',
-  cruiseMissile = 'cruise_missile',
-  ship = 'ship',
-  submarine = 'submarine', //14.09.2023
-  carCistern = 'car_cistern',
-  specialEquipment = 'special_equipment',
-  personnel = 'personnel',
-}
+import { EntityNamesEnum } from './mod-entities';
 
 export type CalculatedData = {
   [key in EntityNamesEnum]: number;
@@ -22,13 +7,8 @@ export type CalculatedData = {
 export interface CalculatedIncrement {
   comparedToAverage: number;
   diffWithAverage: number;
-}
-
-export interface CalculatedIncrementPeriod extends CalculatedIncrement {
-  period: {
-    start: string;
-    end: string;
-  };
+  average: number;
+  summary: number;
 }
 
 export interface EntityLossFlat {
@@ -36,14 +16,21 @@ export interface EntityLossFlat {
   total: number;
   increment: number;
   calculatedIncrement?: CalculatedIncrement;
-  calculatedIncrementPeriod?: CalculatedIncrementPeriod;
 }
 
+export type MoDDayResultData = {
+  [key in EntityNamesEnum]: EntityLossFlat;
+};
 export interface MoDDayResultFlat {
   date: string;
-  data: {
-    [key in EntityNamesEnum]: EntityLossFlat;
-  };
+  dayOfInvasion: number;
+  data: MoDDayResultData;
 }
 
 export type MoDDataFlat = Array<MoDDayResultFlat>;
+
+export interface MoDDataSliceWithCalculated {
+  data: MoDDataFlat;
+  averageData: CalculatedData;
+  summaryData: CalculatedData;
+}
