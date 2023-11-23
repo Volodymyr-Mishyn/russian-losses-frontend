@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
   Component,
+  ContentChild,
+  ElementRef,
   Input,
   OnChanges,
   OnInit,
@@ -19,6 +21,9 @@ import {
   EntityNamesEnum,
 } from '../../../_models/data/mod/mod-entities';
 import { CasualtyCellComponent } from './casualty-cell/casualty-cell.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { TableDirective } from '../../../directives/table.directive';
 
 const BASE_HEADER_COLUMNS = ['date', 'dayOfInvasion'];
 const BASE_PAGE_SIZE = 7;
@@ -30,11 +35,14 @@ const BASE_PAGE_SIZE = 7;
     MatTableModule,
     MatPaginatorModule,
     CasualtyCellComponent,
+    MatButtonModule,
+    MatIconModule,
   ],
   templateUrl: './ministry-of-defense-days-table.component.html',
   styleUrl: './ministry-of-defense-days-table.component.scss',
 })
 export class MinistryOfDefenseDaysTableComponent
+  extends TableDirective
   implements OnInit, OnChanges, AfterViewInit
 {
   public pageSize = BASE_PAGE_SIZE;
