@@ -18,19 +18,26 @@ import {
   ALL_MOD_ENTITIES,
   EntityNamesEnum,
 } from '../../../_models/data/mod/mod-entities';
+import { CasualtyCellComponent } from './casualty-cell/casualty-cell.component';
 
 const BASE_HEADER_COLUMNS = ['date', 'dayOfInvasion'];
-
+const BASE_PAGE_SIZE = 7;
 @Component({
   selector: 'app-ministry-of-defense-days-table',
   standalone: true,
-  imports: [CommonModule, MatTableModule, MatPaginatorModule],
+  imports: [
+    CommonModule,
+    MatTableModule,
+    MatPaginatorModule,
+    CasualtyCellComponent,
+  ],
   templateUrl: './ministry-of-defense-days-table.component.html',
   styleUrl: './ministry-of-defense-days-table.component.scss',
 })
 export class MinistryOfDefenseDaysTableComponent
   implements OnInit, OnChanges, AfterViewInit
 {
+  public pageSize = BASE_PAGE_SIZE;
   public currentDisplayedEntities: Array<EntityNamesEnum> = [];
   public displayedColumns: Array<string> = [];
   @Input()
@@ -42,7 +49,6 @@ export class MinistryOfDefenseDaysTableComponent
 
   ngOnInit(): void {
     this.currentDisplayedEntities = ALL_MOD_ENTITIES;
-
     this.displayedColumns = [
       ...BASE_HEADER_COLUMNS,
       ...this.currentDisplayedEntities,
@@ -51,6 +57,7 @@ export class MinistryOfDefenseDaysTableComponent
 
   ngOnChanges(changes: SimpleChanges): void {
     this.dataSource = new MatTableDataSource<MoDDayResultFlat>(this.daysData);
+    this.dataSource.paginator = this.paginator;
   }
 
   ngAfterViewInit(): void {

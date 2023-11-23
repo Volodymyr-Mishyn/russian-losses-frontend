@@ -2,7 +2,6 @@
   class="mat-elevation-z2"
   (rangeChanged)="setRange($event)"
 ></app-range-selection>
-<!-- {{ data$ | async | json }} -->
 @if (data$|async; as data) {
 <app-ministry-of-defense-statistics-presenter
   [data]="data"
