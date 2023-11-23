@@ -24,6 +24,8 @@ import { CasualtyCellComponent } from './casualty-cell/casualty-cell.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { TableDirective } from '../../../directives/table.directive';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 const BASE_HEADER_COLUMNS = ['date', 'dayOfInvasion'];
 const BASE_PAGE_SIZE = 7;
@@ -32,11 +34,13 @@ const BASE_PAGE_SIZE = 7;
   standalone: true,
   imports: [
     CommonModule,
+    FormsModule,
     MatTableModule,
     MatPaginatorModule,
-    CasualtyCellComponent,
     MatButtonModule,
     MatIconModule,
+    MatCheckboxModule,
+    CasualtyCellComponent,
   ],
   templateUrl: './ministry-of-defense-days-table.component.html',
   styleUrl: './ministry-of-defense-days-table.component.scss',
@@ -46,6 +50,7 @@ export class MinistryOfDefenseDaysTableComponent
   implements OnInit, OnChanges, AfterViewInit
 {
   public pageSize = BASE_PAGE_SIZE;
+  public showIncrementComparisonToAverage = false;
   public currentDisplayedEntities: Array<EntityNamesEnum> = [];
   public displayedColumns: Array<string> = [];
   @Input()
