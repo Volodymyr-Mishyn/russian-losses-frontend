@@ -1,0 +1,40 @@
+<div class="flex flex-col gap-4 m-2">
+  <app-ministry-of-defense-days-table [daysData]="daysData">
+    <span class="mat-h2" ngProjectAs="table-title" #tableTitle
+      >Russian losses by date {{ datesRange.start | date : "dd.MM.YYYY" }} -
+      {{ datesRange.end | date : "dd.MM.YYYY" }} ({{
+        datesRange.days
+      }}
+      days)</span
+    >
+  </app-ministry-of-defense-days-table>
+
+  <div class="flex flex-row gap-4">
+    <app-ministry-of-defense-calculated-table
+      class="flex-1"
+      [calculatedData]="summaryData"
+    >
+      <span class="mat-h2" ngProjectAs="table-title" #tableTitle
+        >Summary russian losses in range
+        {{ datesRange.start | date : "dd.MM.YYYY" }} -
+        {{ datesRange.end | date : "dd.MM.YYYY" }} ({{
+          datesRange.days
+        }}
+        days)</span
+      >
+    </app-ministry-of-defense-calculated-table>
+    <app-ministry-of-defense-calculated-table
+      class="flex-1"
+      [calculatedData]="averageData"
+    >
+      <span class="mat-h2" ngProjectAs="table-title" #tableTitle
+        >Average russian losses in range
+        {{ datesRange.start | date : "dd.MM.YYYY" }} -
+        {{ datesRange.end | date : "dd.MM.YYYY" }} ({{
+          datesRange.days
+        }}
+        days)</span
+      ></app-ministry-of-defense-calculated-table
+    >
+  </div>
+</div>

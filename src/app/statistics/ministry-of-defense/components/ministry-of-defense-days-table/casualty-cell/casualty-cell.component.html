@@ -1,0 +1,11 @@
+<div
+  class="flex flex-col"
+  [matTooltip]="tooltip"
+  matTooltipClass="tooltip-multiline"
+>
+  <div>{{ "+" + entityLoss.increment }}</div>
+  @if (displayComparisonToAverage) {
+  <div class="w-16" appCasualtyComparison [entityLoss]="entityLoss"></div>
+  }
+  <div class="mat-caption">{{ entityLoss.total }}</div>
+</div>

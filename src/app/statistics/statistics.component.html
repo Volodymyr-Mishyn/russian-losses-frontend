@@ -1,2 +1,19 @@
-<p>statistics works!</p>
-<router-outlet></router-outlet>
+<mat-drawer-container class="h-screen w-screen" autosize>
+  <mat-drawer
+    #drawer
+    class="w-24 flex flex-col justify-start space-y-5 items-center"
+    mode="side"
+    [opened]="true"
+  >
+    <div class="logo justify-center flex p-1">
+      <img src="assets/img/trident-1.svg" width="50" />
+    </div>
+    <div>
+      <app-navigation-list [list]="navigationList"></app-navigation-list>
+    </div>
+  </mat-drawer>
+
+  <div class="content h-screen w-full">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
