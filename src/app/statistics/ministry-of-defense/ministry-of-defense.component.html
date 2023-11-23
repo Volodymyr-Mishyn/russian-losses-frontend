@@ -4,6 +4,7 @@
 ></app-range-selection>
 @if (data$|async; as data) {
 <app-ministry-of-defense-statistics-presenter
+  [datesRange]="localRange"
   [data]="data"
 ></app-ministry-of-defense-statistics-presenter>
 }

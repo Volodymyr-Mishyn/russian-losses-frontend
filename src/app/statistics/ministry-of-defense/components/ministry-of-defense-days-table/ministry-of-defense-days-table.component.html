@@ -1,5 +1,8 @@
 @if (displayedColumns.length>0) {
-<div class="mat-elevation-z2">
+<div class="mat-elevation-z2 p-1">
+  <div class="p-1">
+    <ng-content select="table-title"></ng-content>
+  </div>
   <table mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="date">
       <th mat-header-cell *matHeaderCellDef>Date</th>
