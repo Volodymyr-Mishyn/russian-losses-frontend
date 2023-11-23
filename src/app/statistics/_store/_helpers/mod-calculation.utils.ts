@@ -31,7 +31,9 @@ export function calculateAverage(modData: MoDDataFlat): CalculatedData {
   const calculatedSummary = calculateSummary(modData);
   return Object.keys(calculatedSummary).reduce((accumulated, type) => {
     const typeName = type as EntityNamesEnum;
-    accumulated[typeName] = calculatedSummary[typeName] / modData.length;
+    accumulated[typeName] = +(
+      calculatedSummary[typeName] / modData.length
+    ).toFixed(1);
     return accumulated;
   }, {} as CalculatedData);
 }

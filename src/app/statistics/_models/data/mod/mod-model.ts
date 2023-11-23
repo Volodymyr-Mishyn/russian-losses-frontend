@@ -1,8 +1,14 @@
-import { EntityNamesEnum } from './mod-entities';
+import { EntityCategories, EntityNamesEnum } from './mod-entities';
 
 export type CalculatedData = {
   [key in EntityNamesEnum]: number;
 };
+
+export interface CalculatedDataElement {
+  entityType: EntityNamesEnum;
+  entityCategory?: EntityCategories;
+  value: number;
+}
 
 export interface CalculatedIncrement {
   comparedToAverage: number;

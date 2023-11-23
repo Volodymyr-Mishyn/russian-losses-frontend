@@ -1,3 +1,16 @@
-<app-ministry-of-defense-days-table
-  [daysData]="daysData"
-></app-ministry-of-defense-days-table>
+<div class="flex flex-col gap-4 m-2">
+  <app-ministry-of-defense-days-table
+    [daysData]="daysData"
+  ></app-ministry-of-defense-days-table>
+
+  <div class="flex flex-row gap-4">
+    <app-ministry-of-defense-calculated-table
+      class="flex-1"
+      [calculatedData]="summaryData"
+    ></app-ministry-of-defense-calculated-table>
+    <app-ministry-of-defense-calculated-table
+      class="flex-1"
+      [calculatedData]="averageData"
+    ></app-ministry-of-defense-calculated-table>
+  </div>
+</div>

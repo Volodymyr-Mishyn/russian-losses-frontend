@@ -6,11 +6,16 @@ import {
   MoDDataSliceWithCalculated,
 } from '../../../_models/data/mod/mod-model';
 import { MinistryOfDefenseDaysTableComponent } from '../ministry-of-defense-days-table/ministry-of-defense-days-table.component';
+import { MinistryOfDefenseCalculatedTableComponent } from '../ministry-of-defense-calculated-table/ministry-of-defense-calculated-table.component';
 
 @Component({
   selector: 'app-ministry-of-defense-tables',
   standalone: true,
-  imports: [CommonModule, MinistryOfDefenseDaysTableComponent],
+  imports: [
+    CommonModule,
+    MinistryOfDefenseDaysTableComponent,
+    MinistryOfDefenseCalculatedTableComponent,
+  ],
   templateUrl: './ministry-of-defense-tables.component.html',
   styleUrl: './ministry-of-defense-tables.component.scss',
 })
