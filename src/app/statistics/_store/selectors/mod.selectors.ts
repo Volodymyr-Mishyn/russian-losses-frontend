@@ -60,11 +60,11 @@ export const selectMoDDataInRangeWithCalculation = (
         Object.entries(data).map(([key, entityLoss]) => {
           const keyName = key as EntityNamesEnum;
           const averageDataForEntity = averageData[keyName];
-          const summaryDataForEntity = averageData[keyName];
+          const summaryDataForEntity = summaryData[keyName];
           const calculatedIncrement: CalculatedIncrement = {
             comparedToAverage:
               averageDataForEntity !== 0
-                ? entityLoss.increment / averageDataForEntity
+                ? +(entityLoss.increment / averageDataForEntity).toFixed(1)
                 : 0,
             diffWithAverage: entityLoss.increment - averageDataForEntity,
             average: averageDataForEntity,

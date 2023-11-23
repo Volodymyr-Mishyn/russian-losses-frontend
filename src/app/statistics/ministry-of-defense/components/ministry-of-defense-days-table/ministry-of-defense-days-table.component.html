@@ -20,6 +20,7 @@
       </th>
       <td mat-cell *matCellDef="let element">
         <app-casualty-cell
+          [dateString]="element.date"
           [entityLoss]="element.data[item]"
         ></app-casualty-cell>
       </td>
