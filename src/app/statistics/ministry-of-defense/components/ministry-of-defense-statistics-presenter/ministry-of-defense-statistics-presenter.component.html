@@ -1,4 +1,9 @@
-<app-ministry-of-defense-tables
-  [data]="data"
-  [datesRange]="datesRange"
-></app-ministry-of-defense-tables>
+<mat-tab-group>
+  <mat-tab label="Tables">
+    <app-ministry-of-defense-tables
+      [data]="data"
+      [datesRange]="datesRange"
+    ></app-ministry-of-defense-tables>
+  </mat-tab>
+  <mat-tab label="Charts"> Content 2 </mat-tab>
+</mat-tab-group>

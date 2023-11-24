@@ -3,13 +3,13 @@ import { Component, Input } from '@angular/core';
 import {
   CalculatedData,
   CalculatedDataElement,
-} from '../../../_models/data/mod/mod-model';
+} from '../../../../_models/data/mod/mod-model';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { EntityNamesEnum } from '../../../_models/data/mod/mod-entities';
-import { getCategoryByEntityName } from '../../_helpers/mod-data-mapping';
+import { EntityNamesEnum } from '../../../../_models/data/mod/mod-entities';
+import { getCategoryByEntityName } from '../../../_helpers/mod-data-mapping';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { TableDirective } from '../../../directives/table.directive';
+import { TableDirective } from '../../../../directives/table.directive';
 const BASE_HEADER_COLUMNS = ['type', 'category', 'value'];
 
 @Component({

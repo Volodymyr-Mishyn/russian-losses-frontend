@@ -4,10 +4,10 @@ import {
   CalculatedData,
   MoDDataFlat,
   MoDDataSliceWithCalculated,
-} from '../../../_models/data/mod/mod-model';
+} from '../../../../_models/data/mod/mod-model';
 import { MinistryOfDefenseDaysTableComponent } from '../ministry-of-defense-days-table/ministry-of-defense-days-table.component';
 import { MinistryOfDefenseCalculatedTableComponent } from '../ministry-of-defense-calculated-table/ministry-of-defense-calculated-table.component';
-import { DateRangeWithCount } from '../../../_models/range';
+import { DateRangeWithCount } from '../../../../_models/range';
 
 @Component({
   selector: 'app-ministry-of-defense-tables',
