@@ -1,8 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, Input } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  Input,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { BaseChartDirective } from '../base-chart.directive';
 import { PlatformService } from '../../../../services/platform.service';
 import 'chartjs-adapter-date-fns';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { groupBy, mean } from 'lodash';
+import { Subject, takeUntil } from 'rxjs';
 
 export interface DateDataItem {
   date: string;
@@ -13,31 +24,114 @@ export interface DateDataItem {
 @Component({
   selector: 'app-date-data-chart',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatButtonToggleModule,
+  ],
   templateUrl: './date-data-chart.component.html',
   styleUrl: './date-data-chart.component.scss',
 })
 export class DateDataChartComponent
   extends BaseChartDirective
-  implements AfterViewInit
+  implements OnInit, AfterViewInit, OnDestroy
 {
+  private _destroy$ = new Subject();
+
+  public form: FormGroup;
+
   @Input()
   public title!: string;
 
   @Input()
+  public type!: string;
+
+  @Input()
   public data: Array<DateDataItem> = [];
 
-  constructor(platformService: PlatformService) {
+  constructor(platformService: PlatformService, private _fb: FormBuilder) {
     super(platformService);
+    this.form = this._fb.group({
+      displayMode: ['daily'],
+      showDeviateFromAverage: [false],
+    });
+  }
+
+  private _createMonthBaseDate(date: Date): Date {
+    const newDate = new Date(
+      date.getFullYear(),
+      date.getMonth(),
+      1,
+      0,
+      0,
+      0,
+      0
+    );
+    return newDate;
+  }
+
+  private _groupByMonth(data: Array<DateDataItem>): {
+    [key: string]: Array<DateDataItem>;
+  } {
+    return groupBy(data, (item) => {
+      const date = new Date(item.date);
+      const newDate = this._createMonthBaseDate(date);
+      return newDate.toISOString();
+    });
+  }
+
+  private _modifyChartColorsByData(data: Array<number>): void {
+    const showDeviateFromAverage = this.form.get(
+      'showDeviateFromAverage'
+    )?.value;
+    console.log(showDeviateFromAverage);
+    if (showDeviateFromAverage) {
+      const average = mean(data);
+      this.chart.data.datasets[0].backgroundColor = data.map((entry) =>
+        entry > average ? 'green' : 'red'
+      );
+    } else {
+      this.chart.data.datasets[0].backgroundColor = data.map(() => 'teal');
+    }
+  }
+
+  private _modifyChartForDaily(): void {
+    this.chart.data.labels = this.data.map((entry) => entry.date);
+    const data = this.data.map((entry) => entry.value);
+    this.chart.data.datasets[0].data = data;
+    this._modifyChartColorsByData(data);
+    this.chart.options.scales.x.time.unit = 'day';
+  }
+
+  private _modifyChartForMonthly(): void {
+    const monthlyData = this._groupByMonth(this.data);
+    this.chart.data.labels = Object.keys(monthlyData);
+    const data = Object.values(monthlyData).map((month) =>
+      month.reduce((sum, item) => sum + item.value, 0)
+    );
+    this.chart.data.datasets[0].data = data;
+    this._modifyChartColorsByData(data);
+    this.chart.options.scales.x.time.unit = 'month';
   }
 
   protected updateChart() {
-    this.chart.data.labels = this.data.map((entry) => entry.date);
-    this.chart.data.datasets[0].data = this.data.map((entry) => entry.value);
+    const displayMode = this.form.get('displayMode')?.value;
+    if (displayMode === 'daily') {
+      this._modifyChartForDaily();
+    } else {
+      this._modifyChartForMonthly();
+    }
     this.chart.update();
   }
 
-  async ngAfterViewInit(): Promise<void> {
+  public ngOnInit(): void {
+    this.form.valueChanges.pipe(takeUntil(this._destroy$)).subscribe(() => {
+      this.updateChart();
+    });
+  }
+
+  public async ngAfterViewInit(): Promise<void> {
     if (!this.platformService.isRunningOnBrowser()) {
       return;
     }
@@ -59,13 +153,13 @@ export class DateDataChartComponent
         this.chart = new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: this.data.map((entry) => entry.date),
+            labels: [],
             datasets: [
               {
-                label: `${this.title} Increment`,
-                data: this.data.map((entry) => entry.value),
+                label: `${this.title} ${this.type}`,
+                data: [],
                 borderColor: 'blue',
-                backgroundColor: 'red',
+                backgroundColor: 'teal',
               },
             ],
           },
@@ -108,9 +202,16 @@ export class DateDataChartComponent
             },
           },
         });
+        this.updateChart();
       }
     } catch (error) {
       console.error('Error loading Chart.js dependencies:', error);
     }
+  }
+
+  public override ngOnDestroy(): void {
+    this._destroy$.next(null);
+    this._destroy$.complete();
+    super.ngOnDestroy();
   }
 }
