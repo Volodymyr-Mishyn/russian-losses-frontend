@@ -1,0 +1,10 @@
+@for (entity of entitiesNames; track $index) { @defer (on viewport) {
+<div class="p-4 m-4 mat-elevation-z2 min-height-100">
+  <app-ministry-of-defense-data-plot-chart
+    [data]="daysData"
+    [typeOfLoss]="entity"
+  ></app-ministry-of-defense-data-plot-chart>
+</div>
+} @placeholder {
+<div>Chart placeholder</div>
+} }

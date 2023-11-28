@@ -85,7 +85,6 @@ export class DateDataChartComponent
     const showDeviateFromAverage = this.form.get(
       'showDeviateFromAverage'
     )?.value;
-    console.log(showDeviateFromAverage);
     if (showDeviateFromAverage) {
       const average = mean(data);
       this.chart.data.datasets[0].backgroundColor = data.map((entry) =>

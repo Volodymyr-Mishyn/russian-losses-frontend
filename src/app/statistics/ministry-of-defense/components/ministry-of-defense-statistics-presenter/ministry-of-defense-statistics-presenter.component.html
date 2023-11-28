@@ -1,3 +1,4 @@
+@if (platformService.isRunningOnBrowser()) {
 <mat-tab-group>
   <mat-tab label="Tables">
     <app-ministry-of-defense-tables
@@ -5,5 +6,16 @@
       [datesRange]="datesRange"
     ></app-ministry-of-defense-tables>
   </mat-tab>
-  <mat-tab label="Charts"> Content 2 </mat-tab>
+  <mat-tab label="Charts">
+    <app-ministry-of-defense-charts
+      [data]="data"
+      [datesRange]="datesRange"
+    ></app-ministry-of-defense-charts
+  ></mat-tab>
 </mat-tab-group>
+} @else {
+<app-ministry-of-defense-tables
+  [data]="data"
+  [datesRange]="datesRange"
+></app-ministry-of-defense-tables>
+}
