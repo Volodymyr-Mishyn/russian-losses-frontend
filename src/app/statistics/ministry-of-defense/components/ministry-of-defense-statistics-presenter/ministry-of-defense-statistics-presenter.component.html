@@ -7,11 +7,15 @@
     ></app-ministry-of-defense-tables>
   </mat-tab>
   <mat-tab label="Charts">
+    @defer (on viewport) {
     <app-ministry-of-defense-charts
       [data]="data"
       [datesRange]="datesRange"
-    ></app-ministry-of-defense-charts
-  ></mat-tab>
+    ></app-ministry-of-defense-charts>
+    }@placeholder {
+    <div>Charts placeholder</div>
+    }
+  </mat-tab>
 </mat-tab-group>
 } @else {
 <app-ministry-of-defense-tables

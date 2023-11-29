@@ -8,12 +8,12 @@ import {
 } from '@angular/core';
 import { BaseChartDirective } from '../base-chart.directive';
 import { PlatformService } from '../../../../services/platform.service';
-import 'chartjs-adapter-date-fns';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { groupBy, mean } from 'lodash';
 import { Subject, takeUntil } from 'rxjs';
+import 'chartjs-adapter-date-fns';
 
 export interface DateDataItem {
   date: string;
@@ -53,7 +53,7 @@ export class DateDataChartComponent
   constructor(platformService: PlatformService, private _fb: FormBuilder) {
     super(platformService);
     this.form = this._fb.group({
-      displayMode: ['daily'],
+      gradationMode: ['daily'],
       showDeviateFromAverage: [false],
     });
   }
@@ -114,13 +114,17 @@ export class DateDataChartComponent
     this.chart.options.scales.x.time.unit = 'month';
   }
 
-  protected updateChart() {
-    const displayMode = this.form.get('displayMode')?.value;
-    if (displayMode === 'daily') {
+  private _modifyGradationMode(): void {
+    const gradationMode = this.form.get('gradationMode')?.value;
+    if (gradationMode === 'daily') {
       this._modifyChartForDaily();
     } else {
       this._modifyChartForMonthly();
     }
+  }
+
+  protected updateChart(): void {
+    this._modifyGradationMode();
     this.chart.update();
   }
 
@@ -175,12 +179,19 @@ export class DateDataChartComponent
                   },
                 },
               },
+              y: {
+                ticks: {
+                  precision: 0,
+                },
+                type: 'linear',
+              },
             },
             plugins: {
               zoom: {
                 zoom: {
                   wheel: {
                     enabled: true,
+                    modifierKey: 'ctrl',
                   },
                   pinch: {
                     enabled: true,
