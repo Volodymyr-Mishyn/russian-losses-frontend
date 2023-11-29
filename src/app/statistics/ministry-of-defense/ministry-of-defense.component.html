@@ -1,10 +1,13 @@
-<app-range-selection
-  class="mat-elevation-z2"
-  (rangeChanged)="setRange($event)"
-></app-range-selection>
-@if (data$|async; as data) {
-<app-ministry-of-defense-statistics-presenter
-  [datesRange]="localRange"
-  [data]="data"
-></app-ministry-of-defense-statistics-presenter>
-}
+<div class="flex flex-col items-stretch justify-start h-full">
+  <app-range-selection
+    class="mat-elevation-z4 flex-none"
+    (rangeChanged)="setRange($event)"
+  ></app-range-selection>
+  @if (data$|async; as data) {
+  <app-ministry-of-defense-statistics-presenter
+    class="flex-1 overflow-y-scroll"
+    [datesRange]="localRange"
+    [data]="data"
+  ></app-ministry-of-defense-statistics-presenter>
+  }
+</div>

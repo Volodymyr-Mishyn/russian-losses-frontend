@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { EntityLossFlat } from '../../../../_models/data/mod/mod-model';
+import { EntityLossFlat } from '../../../../../_models/data/mod/mod-model';
 import { CasualtyComparisonDirective } from '../directives/casualty-comparison.directive';
 import { MatTooltipModule } from '@angular/material/tooltip';
 

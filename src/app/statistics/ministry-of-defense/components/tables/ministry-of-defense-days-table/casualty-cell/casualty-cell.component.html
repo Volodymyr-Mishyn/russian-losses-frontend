@@ -3,7 +3,13 @@
   [matTooltip]="tooltip"
   matTooltipClass="tooltip-multiline"
 >
-  <div>{{ "+" + entityLoss.increment }}</div>
+  <div
+    [ngClass]="{
+      'bold-text': entityLoss.calculatedIncrement?.diffWithAverage! >= 0
+    }"
+  >
+    {{ "+" + entityLoss.increment }}
+  </div>
   @if (displayComparisonToAverage) {
   <div class="w-16" appCasualtyComparison [entityLoss]="entityLoss"></div>
   }

@@ -13,17 +13,17 @@ import {
 import {
   MoDDataFlat,
   MoDDayResultFlat,
-} from '../../../_models/data/mod/mod-model';
+} from '../../../../_models/data/mod/mod-model';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import {
   ALL_MOD_ENTITIES,
   EntityNamesEnum,
-} from '../../../_models/data/mod/mod-entities';
+} from '../../../../_models/data/mod/mod-entities';
 import { CasualtyCellComponent } from './casualty-cell/casualty-cell.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { TableDirective } from '../../../directives/table.directive';
+import { TableDirective } from '../../../../directives/table.directive';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 

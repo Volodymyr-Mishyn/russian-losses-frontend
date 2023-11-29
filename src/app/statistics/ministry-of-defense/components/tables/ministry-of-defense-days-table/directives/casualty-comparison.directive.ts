@@ -1,5 +1,5 @@
 import { Directive, ElementRef, Input, Renderer2 } from '@angular/core';
-import { EntityLossFlat } from '../../../../_models/data/mod/mod-model';
+import { EntityLossFlat } from '../../../../../_models/data/mod/mod-model';
 
 @Directive({
   selector: '[appCasualtyComparison]',
