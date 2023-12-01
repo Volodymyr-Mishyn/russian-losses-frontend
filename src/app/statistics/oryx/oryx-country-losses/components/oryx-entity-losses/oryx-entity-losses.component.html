@@ -1,0 +1,9 @@
+@if (showHeader) {
+<div class="mat-subtitle-2">
+  {{ entityModel.name }} &nbsp;({{ entityModel.count }})
+</div>
+}
+<app-oryx-entity-losses-details
+  class="ml-6"
+  [entityModel]="entityModel"
+></app-oryx-entity-losses-details>

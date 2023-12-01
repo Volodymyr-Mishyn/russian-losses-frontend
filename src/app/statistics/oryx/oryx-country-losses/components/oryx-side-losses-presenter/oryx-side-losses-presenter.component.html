@@ -1,4 +1,4 @@
-<div class="m-2 p-2 mat-elevation-z2 flex flex-col justify-start items-stretch">
+<div class="m-2 p-2 flex flex-col justify-start items-stretch">
   <div class="mat-h1">{{ data.countryName }} losses</div>
   <div>
     <a [href]="metadata.url" target="_blank">Source link</a>
@@ -7,9 +7,12 @@
     <span>Last scrapped:&nbsp;</span
     >{{ data.updatedAt | date : "dd.MM.YYYY hh:mm:ss" }}
   </div>
-  <app-oryx-statistics [statistics]="data.statistics"></app-oryx-statistics>
+  <app-oryx-statistics
+    [statistics]="data.statistics"
+    class="m-2 p-2"
+  ></app-oryx-statistics>
 </div>
-<div class="m-2 p-2 mat-elevation-z1 flex flex-col justify-start items-stretch">
+<div class="m-2 p-2 flex flex-col justify-start items-stretch">
   @for (entityType of data.entityTypes; track $index) {
   <app-oryx-type-losses [entityType]="entityType"></app-oryx-type-losses>
   }

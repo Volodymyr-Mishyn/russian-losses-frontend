@@ -11,7 +11,7 @@ export interface EntityStatusInfo {
   list: Array<string>;
 }
 
-export interface EntityModel {
+export interface OryxEntityModel {
   //t-90
   name: string;
   code: string;
@@ -28,7 +28,7 @@ export interface EntityModel {
   damagedAndAbandoned: EntityStatusInfo;
 }
 
-export interface EntityType {
+export interface OryxEntityType {
   //tanks
   name: string;
   code: string;
@@ -36,7 +36,7 @@ export interface EntityType {
   description?: string;
   image?: string;
   statistics: OryxStatistics;
-  entities: Array<EntityModel>;
+  entities: Array<OryxEntityModel>;
 }
 
 export interface OryxSideLosses {
@@ -47,5 +47,5 @@ export interface OryxSideLosses {
   updatedAt?: string;
   image?: string;
   statistics: OryxStatistics;
-  entityTypes: Array<EntityType>;
+  entityTypes: Array<OryxEntityType>;
 }
