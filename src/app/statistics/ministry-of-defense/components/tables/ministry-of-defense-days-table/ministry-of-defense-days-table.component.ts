@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
-  ContentChild,
-  ElementRef,
   Input,
   OnChanges,
   OnInit,
@@ -44,6 +43,7 @@ const BASE_PAGE_SIZE = 7;
   ],
   templateUrl: './ministry-of-defense-days-table.component.html',
   styleUrl: './ministry-of-defense-days-table.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MinistryOfDefenseDaysTableComponent
   extends TableDirective
@@ -69,11 +69,13 @@ export class MinistryOfDefenseDaysTableComponent
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.dataSource = new MatTableDataSource<MoDDayResultFlat>(this.daysData);
-    this.dataSource.paginator = this.paginator;
+    if ('daysData' in changes && !changes['daysData'].firstChange) {
+      this.dataSource.data = this.daysData;
+    }
   }
 
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
+    this.dataSource.data = this.daysData;
   }
 }
