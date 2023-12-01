@@ -1,0 +1,10 @@
+@if(sideMetadata$|async; as metadata) {
+<ng-container>
+  @if (sideData$|async; as data) {
+  <app-oryx-side-losses-presenter
+    [data]="data"
+    [metadata]="metadata"
+  ></app-oryx-side-losses-presenter>
+  }
+</ng-container>
+}

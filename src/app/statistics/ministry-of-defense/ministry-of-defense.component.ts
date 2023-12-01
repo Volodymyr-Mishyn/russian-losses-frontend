@@ -8,14 +8,12 @@ import {
   Subject,
   switchMap,
   takeUntil,
-  tap,
 } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { selectMoDDataInRangeWithCalculation } from '../_store/selectors/mod.selectors';
 import { MinistryOfDefenseStatisticsPresenterComponent } from './components/ministry-of-defense-statistics-presenter/ministry-of-defense-statistics-presenter.component';
 import { MoDDataSliceWithCalculated } from '../_models/data/mod/mod-model';
 import { DATE_OF_INVASION_INSTANCE } from '../../_constants/russian-invasion-date';
-import { MS_TO_DAYS } from '../../_constants/ms-to-days';
 
 @Component({
   standalone: true,

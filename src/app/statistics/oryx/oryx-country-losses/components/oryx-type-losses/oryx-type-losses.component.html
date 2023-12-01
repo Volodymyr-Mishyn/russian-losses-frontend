@@ -1,0 +1,27 @@
+<div class="flex flex-col justify-start items-stretch">
+  <div class="mat-h2">{{ entityType.name }}</div>
+  <app-oryx-statistics
+    [statistics]="entityType.statistics"
+    class="m-2 p-2"
+  ></app-oryx-statistics>
+  <div class="ml-6 flex flex-row justify-stretch items-start">
+    <mat-accordion class="flex-1" multi>
+      @for (entityModel of entityType.entities; track $index) {
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> {{ entityModel.name }} </mat-panel-title>
+          <mat-panel-description>
+            ({{ entityModel.count }})
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <app-oryx-entity-losses
+            [entityModel]="entityModel"
+          ></app-oryx-entity-losses>
+        </ng-template>
+      </mat-expansion-panel>
+      }
+    </mat-accordion>
+    <div class="flex-none"></div>
+  </div>
+</div>

@@ -7,6 +7,9 @@ import { provideState } from '@ngrx/store';
 import { modStoreFeature } from './_store/features/mod.feature';
 import { provideEffects } from '@ngrx/effects';
 import { MoDEffects } from './_store/effects/mod.effects';
+import { oryxStoreFeature } from './_store/features/oryx.feature';
+import { OryxEffects } from './_store/effects/oryx.effects';
+import { oryxResolver } from './resolvers/oryx.resolver';
 
 export const STATISTICS_ROUTES: Routes = [
   {
@@ -29,8 +32,15 @@ export const STATISTICS_ROUTES: Routes = [
       },
       {
         path: 'oryx',
+        providers: [
+          provideState(oryxStoreFeature),
+          provideEffects(OryxEffects),
+        ],
         loadChildren: () =>
           import('./oryx/oryx.routes').then((m) => m.ORYX_ROUTES),
+        resolve: {
+          dataLoaded: oryxResolver,
+        },
       },
     ],
   },

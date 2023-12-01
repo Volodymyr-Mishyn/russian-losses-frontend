@@ -1,0 +1,31 @@
+<div class="flex flex-col justify-start items-stretch">
+  <div class="mat-h4">
+    Total: <span>{{ statistics.count }}</span>
+  </div>
+  <div class="flex flex-row content-stretch justify-start gap-4">
+    <div class="flex flex-col items-center">
+      <div>Destroyed</div>
+      <div>
+        {{ statistics.destroyed }}
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div>Damaged</div>
+      <div>
+        {{ statistics.damaged }}
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div>Abandoned</div>
+      <div>
+        {{ statistics.abandoned }}
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div>Captured</div>
+      <div>
+        {{ statistics.captured }}
+      </div>
+    </div>
+  </div>
+</div>

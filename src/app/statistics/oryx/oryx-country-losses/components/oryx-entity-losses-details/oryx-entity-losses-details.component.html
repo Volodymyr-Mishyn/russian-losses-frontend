@@ -1,0 +1,12 @@
+<div class="flex flex-row content-stretch justify-start gap-4">
+  @for (field of statistics; track $index) {
+  <div class="flex flex-col items-center">
+    <div class="mat-caption">
+      {{ field.name }}
+    </div>
+    <div class="mat-caption">
+      {{ field.count }}
+    </div>
+  </div>
+  }
+</div>
