@@ -1,4 +1,4 @@
-export interface Statistics {
+export interface OryxStatistics {
   count: number;
   destroyed: number;
   damaged: number;
@@ -35,7 +35,7 @@ export interface EntityType {
   countryName: string;
   description?: string;
   image?: string;
-  statistics: Statistics;
+  statistics: OryxStatistics;
   entities: Array<EntityModel>;
 }
 
@@ -43,8 +43,9 @@ export interface OryxSideLosses {
   //russia
   name: string;
   countryName: string;
-  date: Date;
+  date: string;
+  updatedAt?: string;
   image?: string;
-  statistics: Statistics;
+  statistics: OryxStatistics;
   entityTypes: Array<EntityType>;
 }
