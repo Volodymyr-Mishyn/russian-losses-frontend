@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>
+  {{ data.entityModel.name }} ({{ data.entityModel.countryName }})
+</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="flex flex-col items-start justify-start">
+    <div>Count: {{ data.entityModel.count }}</div>
+    <div>{{ data.detailKey }}: {{ detail.count }}</div>
+  </div>
+  <div class="p-4 m-2">
+    <ul>
+      @for (url of detail.list; track $index) {
+      <li>
+        <a [href]="url" target="_blank">{{ url }}</a>
+      </li>
+      }
+    </ul>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
