@@ -22,6 +22,11 @@
       </mat-expansion-panel>
       }
     </mat-accordion>
-    <div class="flex-1"></div>
+    <div class="flex-1 pl-8 pr-8">
+      <app-pie-chart
+        [data]="chartData"
+        [title]="entityType.name"
+      ></app-pie-chart>
+    </div>
   </div>
 </div>

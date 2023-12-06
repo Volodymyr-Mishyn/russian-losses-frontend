@@ -14,7 +14,9 @@ export interface PieChartData {
   name: string;
   value: number;
 }
+
 const DISTINGUISHABLE_COLORS = chroma.scale('Set3').colors(20);
+
 @Component({
   selector: 'app-pie-chart',
   standalone: true,
@@ -72,7 +74,7 @@ export class PieChartComponent
               },
               title: {
                 display: true,
-                text: 'Chart.js Pie Chart',
+                text: `${this.title}`,
               },
               colors: {
                 enabled: false,

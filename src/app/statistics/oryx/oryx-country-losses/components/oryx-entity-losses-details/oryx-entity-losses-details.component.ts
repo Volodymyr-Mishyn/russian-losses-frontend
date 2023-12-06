@@ -61,6 +61,10 @@ export class OryxEntityLossesDetailsComponent {
     }));
   }
 
+  public get entityModel(): OryxEntityModel {
+    return this._entityModel;
+  }
+
   constructor(private _dialog: MatDialog) {}
 
   public openInfo(statisticsFor: DetailedEntityStatistics): void {

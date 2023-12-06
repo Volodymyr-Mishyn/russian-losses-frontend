@@ -14,9 +14,12 @@
 </div>
 <div class="m-2 p-2 flex flex-col justify-start items-stretch">
   @for (entityType of data.entityTypes; track $index) {
-  <app-oryx-type-losses
-    [entityType]="entityType"
-    class="mb-10"
-  ></app-oryx-type-losses>
+  <div class="flex flex-col justify-start items-stretch mb-10">
+    <app-oryx-type-losses
+      [entityType]="entityType"
+      class="mb-4"
+    ></app-oryx-type-losses>
+    <mat-divider></mat-divider>
+  </div>
   }
 </div>
