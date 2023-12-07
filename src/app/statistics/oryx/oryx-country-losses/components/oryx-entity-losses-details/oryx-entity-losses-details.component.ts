@@ -6,10 +6,8 @@ import {
   OryxEntityModel,
 } from '../../../../_models/data/oryx/oryx-model';
 import { OryxEntityLossDetailDialogComponent } from './oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component';
-import {
-  PieChartComponent,
-  PieChartData,
-} from '../../../../components/charts/pie-chart/pie-chart.component';
+import { PieChartComponent } from '../../../../components/charts/pie-chart/pie-chart.component';
+import { ChartData } from '../../../../components/charts/_models/chart-data';
 
 const FIELDS_TO_DISPLAY = [
   'destroyed',
@@ -36,7 +34,7 @@ interface DetailedEntityStatistics {
 })
 export class OryxEntityLossesDetailsComponent {
   public statistics: Array<DetailedEntityStatistics> = [];
-  public chartData: Array<PieChartData> = [];
+  public chartData: Array<ChartData> = [];
   private _entityModel!: OryxEntityModel;
   @Input()
   public set entityModel(entityModel: OryxEntityModel) {

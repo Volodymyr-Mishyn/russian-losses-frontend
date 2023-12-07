@@ -9,11 +9,7 @@ import {
 import { BaseChartDirective } from '../base-chart.directive';
 import { PlatformService } from '../../../../services/platform.service';
 import chroma from 'chroma-js';
-
-export interface PieChartData {
-  name: string;
-  value: number;
-}
+import { ChartData } from '../_models/chart-data';
 
 const DISTINGUISHABLE_COLORS = chroma.scale('Set3').colors(20);
 
@@ -32,7 +28,7 @@ export class PieChartComponent
   public title!: string;
 
   @Input()
-  public data: Array<PieChartData> = [];
+  public data: Array<ChartData> = [];
 
   constructor(platformService: PlatformService) {
     super(platformService);

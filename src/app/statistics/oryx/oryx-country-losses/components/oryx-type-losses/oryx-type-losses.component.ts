@@ -7,10 +7,8 @@ import {
 import { OryxStatisticsComponent } from '../oryx-statistics/oryx-statistics.component';
 import { OryxEntityLossesComponent } from '../oryx-entity-losses/oryx-entity-losses.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import {
-  PieChartComponent,
-  PieChartData,
-} from '../../../../components/charts/pie-chart/pie-chart.component';
+import { PieChartComponent } from '../../../../components/charts/pie-chart/pie-chart.component';
+import { ChartData } from '../../../../components/charts/_models/chart-data';
 @Component({
   selector: 'app-oryx-type-losses',
   standalone: true,
@@ -26,7 +24,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OryxTypeLossesComponent {
-  public chartData: Array<PieChartData> = [];
+  public chartData: Array<ChartData> = [];
 
   @Input()
   private _entityType!: OryxEntityType;

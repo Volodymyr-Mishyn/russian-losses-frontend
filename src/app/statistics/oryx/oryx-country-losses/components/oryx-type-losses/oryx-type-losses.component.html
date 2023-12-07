@@ -23,10 +23,14 @@
       }
     </mat-accordion>
     <div class="flex-1 pl-8 pr-8">
+      @defer (on viewport) {
       <app-pie-chart
         [data]="chartData"
         [title]="entityType.name"
       ></app-pie-chart>
+      }@placeholder {
+      <div>{{ entityType.name }} pie-chart placeholder</div>
+      }
     </div>
   </div>
 </div>
