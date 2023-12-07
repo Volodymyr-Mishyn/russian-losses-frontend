@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+ul {
+  list-style-type: decimal;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

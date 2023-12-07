@@ -123,21 +123,7 @@ export class DateDataChartComponent
     }
   }
 
-  protected updateChart(): void {
-    this._modifyGradationMode();
-    this.chart.update();
-  }
-
-  public ngOnInit(): void {
-    this.form.valueChanges.pipe(takeUntil(this._destroy$)).subscribe(() => {
-      this.updateChart();
-    });
-  }
-
-  public async ngAfterViewInit(): Promise<void> {
-    if (!this.platformService.isRunningOnBrowser()) {
-      return;
-    }
+  private async _createChart(): Promise<void> {
     try {
       const [chartModule, zoomPlugin, localeModule] = await Promise.all([
         import('chart.js/auto'),
@@ -217,6 +203,24 @@ export class DateDataChartComponent
     } catch (error) {
       console.error('Error loading Chart.js dependencies:', error);
     }
+  }
+
+  protected updateChart(): void {
+    this._modifyGradationMode();
+    this.chart.update();
+  }
+
+  public ngOnInit(): void {
+    this.form.valueChanges.pipe(takeUntil(this._destroy$)).subscribe(() => {
+      this.updateChart();
+    });
+  }
+
+  public async ngAfterViewInit(): Promise<void> {
+    if (!this.platformService.isRunningOnBrowser()) {
+      return;
+    }
+    await this._createChart();
   }
 
   public override ngOnDestroy(): void {
