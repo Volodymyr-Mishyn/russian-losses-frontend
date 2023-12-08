@@ -22,14 +22,20 @@
       </mat-expansion-panel>
       }
     </mat-accordion>
-    <div class="flex-1 pl-8 pr-8">
+    <div
+      class="flex flex-1 flex-col justify-start items-stretch gap-6 pl-8 pr-8"
+    >
       @defer (on viewport) {
       <app-pie-chart
-        [data]="chartData"
+        [data]="statisticsChartData"
         [title]="entityType.name"
       ></app-pie-chart>
+      <app-number-data-chart
+        [data]="entitiesChartData"
+        [title]="entityType.name"
+      ></app-number-data-chart>
       }@placeholder {
-      <div>{{ entityType.name }} pie-chart placeholder</div>
+      <div>{{ entityType.name }} charts placeholder</div>
       }
     </div>
   </div>
