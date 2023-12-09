@@ -30,6 +30,8 @@ export class PieChartComponent
   @Input()
   public data: Array<ChartData> = [];
 
+  @Input() customColors: { [k: string]: string } | null = null;
+
   constructor(platformService: PlatformService) {
     super(platformService);
   }
@@ -38,6 +40,11 @@ export class PieChartComponent
     this.chart.data.labels = this.data.map((element) => element.name);
     const data = this.data.map((entry) => entry.value);
     this.chart.data.datasets[0].data = data;
+    if (this.customColors !== null) {
+      const customColors: { [k: string]: string } = this.customColors;
+      const colors = this.data.map((value) => customColors[value.name]);
+      this.chart.data.datasets[0].backgroundColor = colors;
+    }
     this.chart.update();
   }
 
