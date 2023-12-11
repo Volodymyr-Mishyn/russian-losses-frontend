@@ -3,6 +3,7 @@ import {
   OryxComparison,
   OryxEntitiesComparison,
   OryxSideEntitiesLosses,
+  OryxSideTypeLossesCountComparison,
 } from '../../_models/data/oryx/oryx-comparison';
 import { OryxSideNames } from '../../_models/data/oryx/oryx.types';
 
@@ -84,7 +85,7 @@ function fillEmptyEntities(
 
 function createTypesCountMap(
   sidesTypesInfo: Array<Array<OryxEntityType>>
-): Map<string, Array<{ name: OryxSideNames; value: number }>> {
+): Map<string, OryxSideTypeLossesCountComparison> {
   const entityTypes = sidesTypesInfo.flatMap((sideTypes) =>
     sideTypes.map((entityType) => ({
       name: entityType.name,
@@ -118,7 +119,7 @@ function createTypesCountMap(
 
 function combineOryxMaps(
   entitiesMap: Map<string, OryxEntitiesComparison>,
-  typesCountMap: Map<string, Array<{ name: OryxSideNames; value: number }>>
+  typesCountMap: Map<string, OryxSideTypeLossesCountComparison>
 ): OryxComparison {
   return [...entitiesMap.entries()].map(([typeName, entitiesInfo]) => {
     return {
@@ -140,5 +141,6 @@ export function createOryxComparison(
       entitiesComparison: fillEmptyEntities(singleType.entitiesComparison),
     })
   );
+  console.log(combined);
   return combined;
 }

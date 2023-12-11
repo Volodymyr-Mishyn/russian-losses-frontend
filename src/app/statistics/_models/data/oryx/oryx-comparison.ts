@@ -10,9 +10,16 @@ export interface OryxEntitiesComparison {
   countComparison: Array<OryxSideEntitiesLosses>;
 }
 
+export interface OryxSideTypeLossesCount {
+  name: OryxSideNames;
+  value: number;
+}
+
+export type OryxSideTypeLossesCountComparison = Array<OryxSideTypeLossesCount>;
+
 export interface OryxEntityTypeComparison {
   name: string;
-  countComparison: Array<{ name: OryxSideNames; value: number }>;
+  countComparison: OryxSideTypeLossesCountComparison;
   entitiesComparison: OryxEntitiesComparison;
 }
 

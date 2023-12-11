@@ -1,1 +1,6 @@
-<p>oryx-compare works!</p>
+@if(oryxTypesComparison$|async; as oryxTypesComparison) {
+<ng-container>
+  @for (type of oryxTypesComparison; track $index) {
+  <app-oryx-compare-type [entityTypeComparison]="type"></app-oryx-compare-type>
+  } </ng-container
+>}
