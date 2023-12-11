@@ -2,6 +2,7 @@ import { OryxEntityType } from '../../_models/data/oryx/oryx-model';
 import {
   OryxComparison,
   OryxEntitiesComparison,
+  OryxSideEntitiesLosses,
 } from '../../_models/data/oryx/oryx-comparison';
 import { OryxSideNames } from '../../_models/data/oryx/oryx.types';
 
@@ -59,6 +60,28 @@ function createEntitiesMap(
   return entityModelTypesComparisonMap;
 }
 
+function fillEmptyEntities(
+  entitiesComparison: OryxEntitiesComparison
+): OryxEntitiesComparison {
+  const filledCountComparison: Array<OryxSideEntitiesLosses> =
+    entitiesComparison.countComparison.map((countrySide) => {
+      const allNamesForCountryEntitiesSet = new Set(
+        countrySide.values.map((sideEntitiesLosses) => sideEntitiesLosses.name)
+      );
+      const notPresentEntities = entitiesComparison.names.filter(
+        (name) => !allNamesForCountryEntitiesSet.has(name)
+      );
+      return {
+        ...countrySide,
+        values: [
+          ...countrySide.values,
+          ...notPresentEntities.map((name) => ({ name, value: 0 })),
+        ],
+      };
+    });
+  return { ...entitiesComparison, countComparison: filledCountComparison };
+}
+
 function createTypesCountMap(
   sidesTypesInfo: Array<Array<OryxEntityType>>
 ): Map<string, Array<{ name: OryxSideNames; value: number }>> {
@@ -111,6 +134,11 @@ export function createOryxComparison(
 ): OryxComparison {
   const entitiesMap = createEntitiesMap(sidesTypesInfo);
   const typesCountMap = createTypesCountMap(sidesTypesInfo);
-  // console.log(combineOryxMaps(entitiesMap, typesCountMap));
-  return combineOryxMaps(entitiesMap, typesCountMap);
+  const combined = combineOryxMaps(entitiesMap, typesCountMap).map(
+    (singleType) => ({
+      ...singleType,
+      entitiesComparison: fillEmptyEntities(singleType.entitiesComparison),
+    })
+  );
+  return combined;
 }

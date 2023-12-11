@@ -1,11 +1,13 @@
 import { OryxSideNames } from './oryx.types';
 
+export interface OryxSideEntitiesLosses {
+  name: OryxSideNames;
+  values: Array<{ name: string; value: number }>;
+}
+
 export interface OryxEntitiesComparison {
   names: Array<string>;
-  countComparison: Array<{
-    name: OryxSideNames;
-    values: Array<{ name: string; value: number }>;
-  }>;
+  countComparison: Array<OryxSideEntitiesLosses>;
 }
 
 export interface OryxEntityTypeComparison {
