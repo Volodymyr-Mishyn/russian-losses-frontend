@@ -1,4 +1,4 @@
-<div class="max-w-full flex flex-col items-stretch justify-start p-2 m-2">
+<div class="max-w-full flex flex-col items-stretch justify-start p-2 m-2 gap-4">
   <div class="mat-elevation-z8 table-container">
     <table mat-table [dataSource]="tableData">
       <ng-container matColumnDef="name" sticky>
@@ -15,4 +15,10 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
   </div>
+  <app-multiple-datasets-data-chart
+    [title]="'Entities losses count comparison'"
+    [data]="chartData"
+    [labels]="chartLabels"
+    [customColors]="customColors"
+  ></app-multiple-datasets-data-chart>
 </div>
