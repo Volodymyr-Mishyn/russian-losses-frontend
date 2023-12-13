@@ -17,10 +17,33 @@ export function calculateMoDSliceData(
     averageData,
     summaryData
   );
+  const monthlyRanking: Array<MoDRankings> = getTopMoDForPeriods(
+    updatedMoDData,
+    3,
+    'months'
+  );
+
+  const weeklyRanking: Array<MoDRankings> = getTopMoDForPeriods(
+    updatedMoDData,
+    3,
+    'weeks'
+  );
+
+  const dailyRanking: Array<MoDRankings> = getTopMoDForPeriods(
+    updatedMoDData,
+    3,
+    'days'
+  );
+  console.log(weeklyRanking);
   const updatedDataWithCalculations: MoDDataSliceWithCalculated = {
     data: updatedMoDData,
     averageData,
     summaryData,
+    rankings: {
+      daily: dailyRanking,
+      weekly: weeklyRanking,
+      monthly: monthlyRanking,
+    },
   };
   return updatedDataWithCalculations;
 }

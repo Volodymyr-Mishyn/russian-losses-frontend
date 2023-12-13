@@ -8,13 +8,27 @@ type EntityIncrement = {
   dayOfInvasion: number;
 };
 
+function getWeekPeriod(dateString: string): string {
+  const date = new Date(dateString);
+  const dayOfWeek = date.getDay();
+  const startOfWeek = new Date(date);
+  startOfWeek.setDate(date.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1));
+  const endOfWeek = new Date(startOfWeek);
+  endOfWeek.setDate(startOfWeek.getDate() + 6);
+  return `${startOfWeek.getFullYear()}-${
+    startOfWeek.getMonth() + 1
+  }-${startOfWeek.getDate()}-${endOfWeek.getFullYear()}-${
+    endOfWeek.getMonth() + 1
+  }-${endOfWeek.getDate()}`;
+}
+
 function getDateForPeriod(
   dateString: string,
   periodType: 'days' | 'weeks' | 'months'
 ): string {
   const date = new Date(dateString);
   if (periodType === 'weeks') {
-    return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+    return getWeekPeriod(dateString);
   } else if (periodType === 'months') {
     return `${date.getFullYear()}-${date.getMonth() + 1}`;
   }
@@ -190,7 +204,7 @@ export function getTopMoDForPeriods1(
     const moDRankings: MoDRankings = {
       entityName: entityName as MoDEntityNamesEnum,
       places: topNPeriods.map((data, index) => ({
-        place: index,
+        place: index + 1,
         daysInPeriod: data.daysInPeriod,
         dates: data.dates,
         daysOfInvasion: data.daysOfInvasion,

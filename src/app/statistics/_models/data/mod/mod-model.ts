@@ -59,5 +59,9 @@ export interface MoDDataSliceWithCalculated {
   data: MoDDataFlat;
   averageData: CalculatedData;
   summaryData: CalculatedData;
-  rankings?: Array<MoDRankings>;
+  rankings?: {
+    daily: Array<MoDRankings>;
+    weekly: Array<MoDRankings>;
+    monthly: Array<MoDRankings>;
+  };
 }

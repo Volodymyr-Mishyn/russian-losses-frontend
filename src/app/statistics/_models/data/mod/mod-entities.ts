@@ -23,6 +23,7 @@ export enum MoDEntityCategories {
   aircraftVehicles = 'aircraftVehicles',
   waterVehicles = 'waterVehicles',
 }
+
 export type MoDEntitiesMap = {
   [k in MoDEntityCategories]: Array<MoDEntityNamesEnum>;
 };
