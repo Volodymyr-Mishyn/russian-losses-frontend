@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { MoDDataFlat } from '../../../../_models/data/mod/mod-model';
 import { DateRangeWithCount } from '../../../../_models/range';
-import { EntityNamesEnum } from '../../../../_models/data/mod/mod-entities';
+import { MoDEntityNamesEnum } from '../../../../_models/data/mod/mod-entities';
 import {
   DateDataChartComponent,
   DateDataItem,
@@ -30,7 +30,7 @@ export class MinistryOfDefenseDataPlotChartComponent implements OnChanges {
   private _mapData(): Array<DateDataItem> {
     return this.data.map((entry) => ({
       date: entry.date,
-      value: entry.data[this.typeOfLoss as EntityNamesEnum].increment,
+      value: entry.data[this.typeOfLoss as MoDEntityNamesEnum].increment,
     }));
   }
 

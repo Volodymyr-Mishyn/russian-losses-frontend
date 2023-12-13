@@ -1,4 +1,4 @@
-export enum EntityNamesEnum {
+export enum MoDEntityNamesEnum {
   tank = 'tank',
   armoredFightingVehicle = 'armored_fighting_vehicle',
   artillerySystem = 'artillery_system',
@@ -15,7 +15,7 @@ export enum EntityNamesEnum {
   personnel = 'personnel',
 }
 
-export enum EntityCategories {
+export enum MoDEntityCategories {
   personnel = 'personnel',
   groundVehicles = 'groundVehicles',
   artilleryVehicles = 'artilleryVehicles',
@@ -23,48 +23,49 @@ export enum EntityCategories {
   aircraftVehicles = 'aircraftVehicles',
   waterVehicles = 'waterVehicles',
 }
+
 export type MoDEntitiesMap = {
-  [k in EntityCategories]: Array<EntityNamesEnum>;
+  [k in MoDEntityCategories]: Array<MoDEntityNamesEnum>;
 };
 
-export const ALL_MOD_ENTITIES: Array<EntityNamesEnum> = [
-  EntityNamesEnum.personnel,
-  EntityNamesEnum.tank,
-  EntityNamesEnum.armoredFightingVehicle,
-  EntityNamesEnum.specialEquipment,
-  EntityNamesEnum.antiAircraft,
-  EntityNamesEnum.artillerySystem,
-  EntityNamesEnum.MLRS,
-  EntityNamesEnum.plane,
-  EntityNamesEnum.helicopter,
-  EntityNamesEnum.cruiseMissile,
-  EntityNamesEnum.UAV,
-  EntityNamesEnum.ship,
-  EntityNamesEnum.submarine,
-  EntityNamesEnum.carCistern,
+export const ALL_MOD_ENTITIES: Array<MoDEntityNamesEnum> = [
+  MoDEntityNamesEnum.personnel,
+  MoDEntityNamesEnum.tank,
+  MoDEntityNamesEnum.armoredFightingVehicle,
+  MoDEntityNamesEnum.specialEquipment,
+  MoDEntityNamesEnum.antiAircraft,
+  MoDEntityNamesEnum.artillerySystem,
+  MoDEntityNamesEnum.MLRS,
+  MoDEntityNamesEnum.plane,
+  MoDEntityNamesEnum.helicopter,
+  MoDEntityNamesEnum.cruiseMissile,
+  MoDEntityNamesEnum.UAV,
+  MoDEntityNamesEnum.ship,
+  MoDEntityNamesEnum.submarine,
+  MoDEntityNamesEnum.carCistern,
 ];
 
 export const MOD_ENTITIES_MAP: MoDEntitiesMap = {
-  [EntityCategories.personnel]: [EntityNamesEnum.personnel],
-  [EntityCategories.groundVehicles]: [
-    EntityNamesEnum.tank,
-    EntityNamesEnum.carCistern,
-    EntityNamesEnum.armoredFightingVehicle,
-    EntityNamesEnum.specialEquipment,
+  [MoDEntityCategories.personnel]: [MoDEntityNamesEnum.personnel],
+  [MoDEntityCategories.groundVehicles]: [
+    MoDEntityNamesEnum.tank,
+    MoDEntityNamesEnum.carCistern,
+    MoDEntityNamesEnum.armoredFightingVehicle,
+    MoDEntityNamesEnum.specialEquipment,
   ],
-  [EntityCategories.antiAircraftVehicles]: [EntityNamesEnum.antiAircraft],
-  [EntityCategories.artilleryVehicles]: [
-    EntityNamesEnum.artillerySystem,
-    EntityNamesEnum.MLRS,
+  [MoDEntityCategories.antiAircraftVehicles]: [MoDEntityNamesEnum.antiAircraft],
+  [MoDEntityCategories.artilleryVehicles]: [
+    MoDEntityNamesEnum.artillerySystem,
+    MoDEntityNamesEnum.MLRS,
   ],
-  [EntityCategories.aircraftVehicles]: [
-    EntityNamesEnum.plane,
-    EntityNamesEnum.helicopter,
-    EntityNamesEnum.cruiseMissile,
-    EntityNamesEnum.UAV,
+  [MoDEntityCategories.aircraftVehicles]: [
+    MoDEntityNamesEnum.plane,
+    MoDEntityNamesEnum.helicopter,
+    MoDEntityNamesEnum.cruiseMissile,
+    MoDEntityNamesEnum.UAV,
   ],
-  [EntityCategories.waterVehicles]: [
-    EntityNamesEnum.ship,
-    EntityNamesEnum.submarine,
+  [MoDEntityCategories.waterVehicles]: [
+    MoDEntityNamesEnum.ship,
+    MoDEntityNamesEnum.submarine,
   ],
 };

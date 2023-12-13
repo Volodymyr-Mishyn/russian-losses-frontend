@@ -1,34 +1,27 @@
 import { CommonModule } from '@angular/common';
-import {
-  AfterViewInit,
-  Component,
-  Input,
-  OnDestroy,
-  OnInit,
-} from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 import { BaseChartDirective } from '../base-chart.directive';
 import { PlatformService } from '../../../../services/platform.service';
-import chroma from 'chroma-js';
 import { ChartData } from '../_models/chart-data';
 
-const DISTINGUISHABLE_COLORS = chroma.scale('Set3').colors(20);
-
 @Component({
-  selector: 'app-pie-chart',
+  selector: 'app-multiple-datasets-data-chart',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './pie-chart.component.html',
-  styleUrl: './pie-chart.component.scss',
+  templateUrl: './multiple-datasets-data-chart.component.html',
+  styleUrl: './multiple-datasets-data-chart.component.scss',
 })
-export class PieChartComponent
+export class MultipleDatasetsDataChartComponent
   extends BaseChartDirective
-  implements OnInit, AfterViewInit, OnDestroy
+  implements AfterViewInit
 {
   @Input()
   public title!: string;
 
   @Input()
-  public data: Array<ChartData> = [];
+  public labels: Array<string> = [];
+  @Input()
+  public data: Array<{ label: string; data: Array<ChartData> }> = [];
 
   @Input() customColors: { [k: string]: string } | null = null;
 
@@ -37,14 +30,20 @@ export class PieChartComponent
   }
 
   protected override updateChart(): void {
-    this.chart.data.labels = this.data.map((element) => element.name);
-    const data = this.data.map((entry) => entry.value);
-    this.chart.data.datasets[0].data = data;
-    if (this.customColors !== null) {
-      const customColors: { [k: string]: string } = this.customColors;
-      const colors = this.data.map((value) => customColors[value.name]);
-      this.chart.data.datasets[0].backgroundColor = colors;
-    }
+    this.chart.data.labels = this.labels;
+    this.data.forEach(({ data, label }, index) => {
+      this.chart.data.datasets[index] = {
+        label,
+        data: this.labels.map(
+          (label) =>
+            data.find((singleData) => singleData.name === label)?.value || 0
+        ),
+        ...(this.customColors != null &&
+          this.customColors[label] && {
+            backgroundColor: this.customColors[label],
+          }),
+      };
+    });
     this.chart.update();
   }
 
@@ -59,28 +58,20 @@ export class PieChartComponent
       const ctx = canvas.getContext('2d');
       if (ctx) {
         this.chart = new Chart(ctx, {
-          type: 'pie',
+          type: 'bar',
           data: {
             labels: [],
-            datasets: [
-              {
-                data: [],
-                backgroundColor: DISTINGUISHABLE_COLORS,
-              },
-            ],
+            datasets: [],
           },
           options: {
             responsive: true,
             plugins: {
               legend: {
-                position: 'top',
+                display: false,
               },
               title: {
                 display: true,
                 text: `${this.title}`,
-              },
-              colors: {
-                enabled: false,
               },
             },
           },
@@ -91,8 +82,6 @@ export class PieChartComponent
       console.error('Error loading Chart.js dependencies:', error);
     }
   }
-
-  public ngOnInit(): void {}
 
   public async ngAfterViewInit(): Promise<void> {
     if (!this.platformService.isRunningOnBrowser()) {

@@ -137,6 +137,12 @@ export class DateDataChartComponent
         return;
       }
       const canvas: HTMLCanvasElement = this.chartCanvas.nativeElement;
+      console.log(
+        canvas?.parentElement?.clientWidth,
+        canvas?.parentElement?.clientHeight
+      );
+      // canvas.width = canvas?.parentElement?.clientWidth || 960;
+      // canvas.height = canvas?.parentElement?.clientHeight || 540;
       const ctx = canvas.getContext('2d');
       if (ctx) {
         this.chart = new Chart(ctx, {
@@ -153,6 +159,8 @@ export class DateDataChartComponent
             ],
           },
           options: {
+            responsive: true,
+            maintainAspectRatio: false,
             scales: {
               x: {
                 type: 'time',

@@ -1,5 +1,8 @@
-import { EntityNamesEnum } from '../../_models/data/mod/mod-entities';
-import { CalculatedData, MoDDataFlat } from '../../_models/data/mod/mod-model';
+import { MoDEntityNamesEnum } from '../../../_models/data/mod/mod-entities';
+import {
+  CalculatedData,
+  MoDDataFlat,
+} from '../../../_models/data/mod/mod-model';
 
 export function calculateSummary(modData: MoDDataFlat): CalculatedData {
   const averageData: CalculatedData = {
@@ -20,7 +23,7 @@ export function calculateSummary(modData: MoDDataFlat): CalculatedData {
   };
   return modData.reduce((accumulator, dayData) => {
     Object.entries(dayData.data).forEach(([key, value]) => {
-      const typeName = key as unknown as EntityNamesEnum;
+      const typeName = key as unknown as MoDEntityNamesEnum;
       accumulator[typeName] = (accumulator[typeName] || 0) + value.increment;
     });
     return accumulator;
@@ -30,7 +33,7 @@ export function calculateSummary(modData: MoDDataFlat): CalculatedData {
 export function calculateAverage(modData: MoDDataFlat): CalculatedData {
   const calculatedSummary = calculateSummary(modData);
   return Object.keys(calculatedSummary).reduce((accumulated, type) => {
-    const typeName = type as EntityNamesEnum;
+    const typeName = type as MoDEntityNamesEnum;
     accumulated[typeName] = +(
       calculatedSummary[typeName] / modData.length
     ).toFixed(1);

@@ -8,6 +8,7 @@ import {
 import { OryxEntityLossDetailDialogComponent } from './oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component';
 import { PieChartComponent } from '../../../../components/charts/pie-chart/pie-chart.component';
 import { ChartData } from '../../../../components/charts/_models/chart-data';
+import { sortOryxData } from '../../../../_helpers/oryx.sort';
 
 const FIELDS_TO_DISPLAY = [
   'destroyed',
@@ -39,10 +40,21 @@ export class OryxEntityLossesDetailsComponent {
   @Input()
   public set entityModel(entityModel: OryxEntityModel) {
     this._entityModel = entityModel;
+    this._setStatisticsData();
+    this._setStatisticsChartData();
+  }
+
+  public get entityModel(): OryxEntityModel {
+    return this._entityModel;
+  }
+
+  constructor(private _dialog: MatDialog) {}
+
+  private _setStatisticsData(): void {
     const statistics: Array<DetailedEntityStatistics> = [];
-    Object.keys(entityModel).forEach((key) => {
-      if (FIELDS_TO_DISPLAY_SET.has(key) && key in entityModel) {
-        const entityStatusInfo = entityModel[
+    Object.keys(this.entityModel).forEach((key) => {
+      if (FIELDS_TO_DISPLAY_SET.has(key) && key in this.entityModel) {
+        const entityStatusInfo = this.entityModel[
           key as keyof OryxEntityModel
         ] as EntityStatusInfo;
         statistics.push({
@@ -53,17 +65,15 @@ export class OryxEntityLossesDetailsComponent {
       }
     });
     this.statistics = statistics;
-    this.chartData = statistics.map((element) => ({
+  }
+
+  private _setStatisticsChartData(): void {
+    const chartData = this.statistics.map((element) => ({
       name: element.name,
       value: element.count,
     }));
+    this.chartData = sortOryxData(chartData, 'name');
   }
-
-  public get entityModel(): OryxEntityModel {
-    return this._entityModel;
-  }
-
-  constructor(private _dialog: MatDialog) {}
 
   public openInfo(statisticsFor: DetailedEntityStatistics): void {
     if (statisticsFor.count === 0) {

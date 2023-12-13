@@ -11,7 +11,7 @@ import {
 import {
   calculateAverage,
   calculateSummary,
-} from '../_helpers/mod-calculation.utils';
+} from '../_helpers/mod/mod-calculation.utils';
 
 export const modAdapter: EntityAdapter<MoDDayResultFlat> =
   createEntityAdapter<MoDDayResultFlat>({

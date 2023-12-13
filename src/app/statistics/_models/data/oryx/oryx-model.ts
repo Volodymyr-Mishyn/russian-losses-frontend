@@ -2,8 +2,8 @@ export interface OryxStatistics {
   count: number;
   destroyed: number;
   damaged: number;
-  abandoned: number;
   captured: number;
+  abandoned: number;
 }
 
 export interface EntityStatusInfo {
