@@ -204,7 +204,7 @@ export function getTopMoDForPeriods1(
     const moDRankings: MoDRankings = {
       entityName: entityName as MoDEntityNamesEnum,
       places: topNPeriods.map((data, index) => ({
-        place: index + 1,
+        place: index,
         daysInPeriod: data.daysInPeriod,
         dates: data.dates,
         daysOfInvasion: data.daysOfInvasion,
