@@ -2,7 +2,7 @@ import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { modAdapter } from '../reducers/mod.reducer';
 import { MoDEntityState } from '../_models/mod.entity-state';
 import { MoDDayResultFlat } from '../../_models/data/mod/mod-model';
-import { calculateMoDSliceData } from '../_helpers/mod-calculation.utils';
+import { calculateMoDSliceData } from '../_helpers/mod/mod-calculation.utils';
 import { DateRange } from '../../_models/range';
 
 export const selectMoDState = createFeatureSelector<MoDEntityState>('mod');

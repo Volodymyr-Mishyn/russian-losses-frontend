@@ -17,7 +17,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import {
   ALL_MOD_ENTITIES,
-  EntityNamesEnum,
+  MoDEntityNamesEnum,
 } from '../../../../_models/data/mod/mod-entities';
 import { CasualtyCellComponent } from './casualty-cell/casualty-cell.component';
 import { MatButtonModule } from '@angular/material/button';
@@ -51,7 +51,7 @@ export class MinistryOfDefenseDaysTableComponent
 {
   public pageSize = BASE_PAGE_SIZE;
   public showIncrementComparisonToAverage = false;
-  public currentDisplayedEntities: Array<EntityNamesEnum> = [];
+  public currentDisplayedEntities: Array<MoDEntityNamesEnum> = [];
   public displayedColumns: Array<string> = [];
   @Input()
   public daysData: MoDDataFlat = [];

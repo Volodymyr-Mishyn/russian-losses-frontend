@@ -5,7 +5,7 @@ import {
   CalculatedDataElement,
 } from '../../../../_models/data/mod/mod-model';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { EntityNamesEnum } from '../../../../_models/data/mod/mod-entities';
+import { MoDEntityNamesEnum } from '../../../../_models/data/mod/mod-entities';
 import { getCategoryByEntityName } from '../../../_helpers/mod-data-mapping';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -27,8 +27,8 @@ export class MinistryOfDefenseCalculatedTableComponent extends TableDirective {
   @Input()
   public set calculatedData(calculated: CalculatedData) {
     this.data = Object.entries(calculated).map(([key, value]) => ({
-      entityType: key as EntityNamesEnum,
-      entityCategory: getCategoryByEntityName(key as EntityNamesEnum),
+      entityType: key as MoDEntityNamesEnum,
+      entityCategory: getCategoryByEntityName(key as MoDEntityNamesEnum),
       value,
     }));
     this.dataSource = new MatTableDataSource<CalculatedDataElement>(this.data);
