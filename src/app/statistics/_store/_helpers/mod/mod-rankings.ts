@@ -1,7 +1,7 @@
 import { MoDEntityNamesEnum } from '../../../_models/data/mod/mod-entities';
 import {
   MoDDataFlat,
-  MoDRankingFormat,
+  MoDRankingsFormat,
   MoDRankings,
 } from '../../../_models/data/mod/mod-model';
 
@@ -61,7 +61,7 @@ function calculateTotalIncrement(daysInfoList: Array<MoDEntityIncrement>) {
 function getTopPeriodsForEntity(
   entityData: Array<MoDEntityIncrement>,
   numberOfPlaces: number,
-  periodType: MoDRankingFormat
+  periodType: MoDRankingsFormat
 ) {
   const groupedData = groupEntityDataByPeriod(entityData, periodType);
 
@@ -95,7 +95,7 @@ function getTopPeriodsForEntity(
 export function getTopMoDForPeriods(
   data: MoDDataFlat,
   numberOfPlaces: number,
-  periodType: MoDRankingFormat
+  periodType: MoDRankingsFormat
 ): Array<MoDRankings> {
   const rankings: Array<MoDRankings> = [];
 
