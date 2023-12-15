@@ -141,6 +141,5 @@ export function createOryxComparison(
       entitiesComparison: fillEmptyEntities(singleType.entitiesComparison),
     })
   );
-  console.log(combined);
   return combined;
 }

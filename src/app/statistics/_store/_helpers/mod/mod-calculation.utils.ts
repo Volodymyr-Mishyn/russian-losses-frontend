@@ -34,7 +34,6 @@ export function calculateMoDSliceData(
     3,
     'days'
   );
-  console.log(weeklyRanking);
   const updatedDataWithCalculations: MoDDataSliceWithCalculated = {
     data: updatedMoDData,
     averageData,
