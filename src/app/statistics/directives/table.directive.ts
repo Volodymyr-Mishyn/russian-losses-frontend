@@ -12,9 +12,9 @@ export class TableDirective {
   public tableTitle!: ElementRef;
 
   public export(data: unknown) {
-    this._exporter.exportDataAsJSON(
-      data,
-      this.tableTitle.nativeElement?.innerHTML
-    );
+    const title =
+      this.tableTitle?.nativeElement?.innerHTML ||
+      `table ${new Date().toLocaleString()}`;
+    this._exporter.exportDataAsJSON(data, title);
   }
 }

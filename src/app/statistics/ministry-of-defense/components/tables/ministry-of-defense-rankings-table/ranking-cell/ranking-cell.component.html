@@ -1,0 +1,19 @@
+<div class="flex flex-col justify-start items-stretch">
+  <ng-container class="flex flex-col justify-start items-stretch gap-1">
+    @if (placeRanking.increment!==0) {
+    <div class="bold-text">
+      {{ placeRanking.increment }}
+    </div>
+    <div>
+      @switch (rankingsFormat) { @case ('days') {
+      {{ placeRanking.dates.start | date : "dd.MM.YYYY" }}
+      } @case ('weeks') {
+      {{ placeRanking.dates.start | date : "dd.MM.YYYY" }}
+      {{ placeRanking.dates.end | date : "dd.MM.YYYY" }}
+      } @case ('months') {
+      {{ placeRanking.dates.start | date : "MMMM YYYY" }}
+      } }
+    </div>
+    }@else { - }
+  </ng-container>
+</div>
