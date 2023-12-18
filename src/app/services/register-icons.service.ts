@@ -14,13 +14,14 @@ export class RegisterIconsService {
   public registerIcons(
     icons: string[],
     iconNamePrefix = '',
-    source = 'assets/img'
+    source?: string
   ): void {
+    const baseUrl = source ? `assets/img/${source}` : 'assets/img';
     icons.forEach((icon) => {
       this._matIconRegistry.addSvgIcon(
         iconNamePrefix + icon,
         this._domSanitizer.bypassSecurityTrustResourceUrl(
-          `${source}/${icon}.svg`
+          `${baseUrl}/${icon}.svg`
         )
       );
     });

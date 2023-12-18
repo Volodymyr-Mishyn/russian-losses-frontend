@@ -16,7 +16,6 @@ import { MoDDataSliceWithCalculated } from '../_models/data/mod/mod-model';
 import { DATE_OF_INVASION_INSTANCE } from '../../_constants/russian-invasion-date';
 import { RegisterIconsService } from '../../services/register-icons.service';
 import { ALL_MOD_ENTITIES } from '../_models/data/mod/mod-entities';
-import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   standalone: true,
@@ -51,7 +50,7 @@ export class MinistryOfDefenseComponent implements OnDestroy {
   }
 
   private _registerIcons(): void {
-    this._registerIconsService.registerIcons(ALL_MOD_ENTITIES, 'mod_');
+    this._registerIconsService.registerIcons(ALL_MOD_ENTITIES, 'mod_', 'mod');
   }
 
   private _setLocalRange(start: Date, end: Date): void {
