@@ -14,6 +14,9 @@ import { selectMoDDataInRangeWithCalculation } from '../_store/selectors/mod.sel
 import { MinistryOfDefenseStatisticsPresenterComponent } from './components/ministry-of-defense-statistics-presenter/ministry-of-defense-statistics-presenter.component';
 import { MoDDataSliceWithCalculated } from '../_models/data/mod/mod-model';
 import { DATE_OF_INVASION_INSTANCE } from '../../_constants/russian-invasion-date';
+import { RegisterIconsService } from '../../services/register-icons.service';
+import { ALL_MOD_ENTITIES } from '../_models/data/mod/mod-entities';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   standalone: true,
@@ -39,8 +42,16 @@ export class MinistryOfDefenseComponent implements OnDestroy {
     )
   );
 
-  constructor(private _store: Store) {
+  constructor(
+    private _store: Store,
+    private _registerIconsService: RegisterIconsService
+  ) {
     this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
+    this._registerIcons();
+  }
+
+  private _registerIcons(): void {
+    this._registerIconsService.registerIcons(ALL_MOD_ENTITIES, 'mod_');
   }
 
   private _setLocalRange(start: Date, end: Date): void {
