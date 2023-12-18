@@ -36,6 +36,8 @@ export interface MoDDayResultFlat {
 
 export type MoDDataFlat = Array<MoDDayResultFlat>;
 
+export type MoDRankingsFormat = 'days' | 'weeks' | 'months';
+
 export interface MoDRankingsPlace {
   place: number;
   daysInPeriod: number;
@@ -48,6 +50,7 @@ export interface MoDRankingsPlace {
     end: number;
   };
   increment: number;
+  format: MoDRankingsFormat;
 }
 
 export interface MoDRankings {

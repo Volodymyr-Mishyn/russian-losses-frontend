@@ -1,0 +1,23 @@
+<div class="flex flex-row justify-stretch items-start gap-4">
+  <div class="flex-1 mat-elevation-z2 p-2">
+    <app-ministry-of-defense-rankings-table
+      [modRankings]="rankings.daily"
+      [rankingsFormat]="'days'"
+    >
+      <span class="mat-h2" ngProjectAs="table-title" #tableTitle
+        >Top days of russian losses
+      </span>
+    </app-ministry-of-defense-rankings-table>
+  </div>
+
+  <div class="flex-1 mat-elevation-z2 p-2">
+    <app-ministry-of-defense-rankings-table
+      [modRankings]="rankings.monthly"
+      [rankingsFormat]="'months'"
+    >
+      <span class="mat-h2" ngProjectAs="table-title" #tableTitle
+        >Top months of russian losses
+      </span>
+    </app-ministry-of-defense-rankings-table>
+  </div>
+</div>

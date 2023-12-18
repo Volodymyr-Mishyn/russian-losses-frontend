@@ -20,7 +20,6 @@ export class OryxEffects {
       switchMap(() =>
         this._dataFetcher.getAllOryxData().pipe(
           map((data) => loadOryxDataActionSuccess({ data })),
-          tap((data) => console.log(data)),
           catchError((error: string) => of(loadOryxDataActionFailure()))
         )
       )
