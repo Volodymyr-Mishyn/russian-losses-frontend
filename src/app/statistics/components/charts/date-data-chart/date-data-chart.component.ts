@@ -14,6 +14,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { groupBy, mean } from 'lodash';
 import { Subject, takeUntil } from 'rxjs';
 import 'chartjs-adapter-date-fns';
+import { MatIconModule } from '@angular/material/icon';
 
 export interface DateDataItem {
   date: string;
@@ -29,6 +30,7 @@ export interface DateDataItem {
     ReactiveFormsModule,
     MatCheckboxModule,
     MatButtonToggleModule,
+    MatIconModule,
   ],
   templateUrl: './date-data-chart.component.html',
   styleUrl: './date-data-chart.component.scss',
@@ -46,6 +48,9 @@ export class DateDataChartComponent
 
   @Input()
   public type!: string;
+
+  @Input()
+  public iconName: string | null = null;
 
   @Input()
   public data: Array<DateDataItem> = [];

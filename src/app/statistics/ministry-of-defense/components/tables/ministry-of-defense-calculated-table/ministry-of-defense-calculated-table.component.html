@@ -8,7 +8,15 @@
 <table mat-table [dataSource]="dataSource">
   <ng-container matColumnDef="type">
     <th mat-header-cell *matHeaderCellDef>Type</th>
-    <td mat-cell *matCellDef="let element">{{ element.entityType }}</td>
+    <td mat-cell *matCellDef="let element">
+      <div class="flex flex-row justify-start items-center gap-4">
+        <mat-icon
+          [svgIcon]="'mod_' + element.entityType"
+          class="icon-m"
+        ></mat-icon>
+        <span class="mat-caption">{{ element.entityType }}</span>
+      </div>
+    </td>
   </ng-container>
   <ng-container matColumnDef="category">
     <th mat-header-cell *matHeaderCellDef>Category</th>
