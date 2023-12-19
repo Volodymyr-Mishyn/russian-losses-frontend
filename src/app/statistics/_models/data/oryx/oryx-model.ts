@@ -6,9 +6,16 @@ export interface OryxStatistics {
   abandoned: number;
 }
 
-export interface EntityStatusInfo {
+export interface OryxEntityStatusInfo {
   count: number;
   list: Array<string>;
+}
+
+export interface OryxEntityInfo {
+  title?: string;
+  description?: Array<string>;
+  images?: Array<string>;
+  url?: string;
 }
 
 export interface OryxEntityModel {
@@ -16,16 +23,15 @@ export interface OryxEntityModel {
   name: string;
   code: string;
   count: number;
-  description?: string;
-  image?: string;
+  info?: OryxEntityInfo;
   countryName: string;
   entityType: string;
-  destroyed: EntityStatusInfo;
-  damaged: EntityStatusInfo;
-  captured: EntityStatusInfo;
-  abandoned: EntityStatusInfo;
-  damagedAndCaptured: EntityStatusInfo;
-  damagedAndAbandoned: EntityStatusInfo;
+  destroyed: OryxEntityStatusInfo;
+  damaged: OryxEntityStatusInfo;
+  captured: OryxEntityStatusInfo;
+  abandoned: OryxEntityStatusInfo;
+  damagedAndCaptured: OryxEntityStatusInfo;
+  damagedAndAbandoned: OryxEntityStatusInfo;
 }
 
 export interface OryxEntityType {
@@ -33,8 +39,6 @@ export interface OryxEntityType {
   name: string;
   code: string;
   countryName: string;
-  description?: string;
-  image?: string;
   statistics: OryxStatistics;
   entities: Array<OryxEntityModel>;
 }

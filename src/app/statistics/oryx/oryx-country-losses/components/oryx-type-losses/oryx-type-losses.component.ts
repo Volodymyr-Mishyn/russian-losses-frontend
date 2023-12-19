@@ -10,7 +10,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { PieChartComponent } from '../../../../components/charts/pie-chart/pie-chart.component';
 import { ChartData } from '../../../../components/charts/_models/chart-data';
 import { NumberDataChartComponent } from '../../../../components/charts/number-data-chart/number-data-chart.component';
-import { ORYX_STATISTICS_ORDER } from '../../../../_models/data/oryx/oryx.types';
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
 @Component({
   selector: 'app-oryx-type-losses',

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import {
-  EntityStatusInfo,
+  OryxEntityStatusInfo,
   OryxEntityModel,
 } from '../../../../_models/data/oryx/oryx-model';
 import { OryxEntityLossDetailDialogComponent } from './oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component';
@@ -56,7 +56,7 @@ export class OryxEntityLossesDetailsComponent {
       if (FIELDS_TO_DISPLAY_SET.has(key) && key in this.entityModel) {
         const entityStatusInfo = this.entityModel[
           key as keyof OryxEntityModel
-        ] as EntityStatusInfo;
+        ] as OryxEntityStatusInfo;
         statistics.push({
           key,
           name: key,

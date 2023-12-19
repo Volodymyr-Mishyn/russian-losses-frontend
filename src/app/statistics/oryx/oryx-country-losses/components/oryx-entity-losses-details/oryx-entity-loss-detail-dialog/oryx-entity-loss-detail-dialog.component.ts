@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import {
-  EntityStatusInfo,
+  OryxEntityStatusInfo,
   OryxEntityModel,
 } from '../../../../../_models/data/oryx/oryx-model';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
@@ -19,12 +19,12 @@ export interface OryxEntityLossDetailDialogData {
   styleUrl: './oryx-entity-loss-detail-dialog.component.scss',
 })
 export class OryxEntityLossDetailDialogComponent {
-  public detail!: EntityStatusInfo;
+  public detail!: OryxEntityStatusInfo;
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: OryxEntityLossDetailDialogData
   ) {
     this.detail = data.entityModel[
       data.detailKey as keyof OryxEntityModel
-    ] as EntityStatusInfo;
+    ] as OryxEntityStatusInfo;
   }
 }
