@@ -50,6 +50,9 @@ export class DateDataChartComponent
   public type!: string;
 
   @Input()
+  public showLegend = true;
+
+  @Input()
   public iconName: string | null = null;
 
   @Input()
@@ -180,6 +183,12 @@ export class DateDataChartComponent
               },
             },
             plugins: {
+              title: {
+                display: false,
+              },
+              legend: {
+                display: this.showLegend,
+              },
               zoom: {
                 zoom: {
                   wheel: {
