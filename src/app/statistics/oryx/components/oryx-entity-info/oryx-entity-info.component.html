@@ -1,0 +1,27 @@
+@if (info) {
+<div class="flex flex-col justify-start items-start gap-2">
+  @if (info.url) {
+  <div class="flex flex-row justify-start items-center gap-2">
+    <div>URL:</div>
+    <a href="{{ info.url }}" target="_blank">{{ info.url }}</a>
+  </div>
+  } @if (info.description) {
+  <div class="flex-col justify-start items-start gap-1"></div>
+  @for (description of info.description; track $index) {
+  <p class="mat-caption">{{ description }}</p>
+  } } @if (info.images) {
+  <div class="flex flex-col justify-stretch items-stretch gap-2">
+    <div>Reference images:</div>
+    <div class="flex flex-row flex-wrap justify-around items-center gap-2">
+      @for (image of info.images; track $index) {
+      <img
+        src="{{ image }}"
+        alt="{{ info.title }}"
+        class="responsive-image object-cover"
+      />
+      }
+    </div>
+  </div>
+  }
+</div>
+}

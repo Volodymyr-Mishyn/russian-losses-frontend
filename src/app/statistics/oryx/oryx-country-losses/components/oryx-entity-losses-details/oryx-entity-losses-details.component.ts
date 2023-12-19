@@ -9,6 +9,8 @@ import { OryxEntityLossDetailDialogComponent } from './oryx-entity-loss-detail-d
 import { PieChartComponent } from '../../../../components/charts/pie-chart/pie-chart.component';
 import { ChartData } from '../../../../components/charts/_models/chart-data';
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
+import { OryxEntityInfoComponent } from '../../../components/oryx-entity-info/oryx-entity-info.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 const FIELDS_TO_DISPLAY = [
   'destroyed',
@@ -28,7 +30,12 @@ interface DetailedEntityStatistics {
 @Component({
   selector: 'app-oryx-entity-losses-details',
   standalone: true,
-  imports: [CommonModule, PieChartComponent],
+  imports: [
+    CommonModule,
+    MatDividerModule,
+    PieChartComponent,
+    OryxEntityInfoComponent,
+  ],
   templateUrl: './oryx-entity-losses-details.component.html',
   styleUrl: './oryx-entity-losses-details.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

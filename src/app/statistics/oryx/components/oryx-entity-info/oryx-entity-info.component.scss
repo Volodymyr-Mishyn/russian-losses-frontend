@@ -1,6 +1,13 @@
 :host {
   display: block;
 }
+.responsive-image {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  padding: 2px;
+}
+
 a {
   box-shadow: inset 0 0 0 0 #54b3d6;
   color: #54b3d6;
