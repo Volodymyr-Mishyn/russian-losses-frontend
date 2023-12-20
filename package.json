@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.js",
+    "start": "ng serve --proxy-config proxy.conf.js --configuration=development",
+    "start:uk": "ng serve --proxy-config proxy.conf.js --configuration=uk",
     "build": "ng build",
+    "build:prod": "ng build --configuration production",
+    "build:localize": "ng build --configuration development --localize",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "localize": "ng extract-i18n --output-path src/locale --format xlf"
   },
   "private": true,
   "dependencies": {

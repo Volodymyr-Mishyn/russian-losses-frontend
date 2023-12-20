@@ -5,7 +5,8 @@
   "projects": {
     "russian-losses-frontend": {
       "i18n": {
-        "sourceLocale": "en-US"
+        "sourceLocale": "en-US",
+        "locales": { "uk": "src/locale/messages.uk.xlf" }
       },
       "projectType": "application",
       "schematics": {
@@ -61,6 +62,9 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "uk": {
+              "localize": ["uk"]
             }
           },
           "defaultConfiguration": "production"
@@ -68,6 +72,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "uk": {
+              "buildTarget": "russian-losses-frontend:build:development,uk"
+            },
             "production": {
               "buildTarget": "russian-losses-frontend:build:production"
             },
