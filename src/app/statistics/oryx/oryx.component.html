@@ -1,26 +1,37 @@
-<div class="mat-elevation-z4 flex-none z-10 h-12 flex flex-row p-4">
-  <div class="flex flex-row justify-center items-center gap-8">
-    <div class="link">
-      <a
-        [routerLink]="['/statistics', 'oryx', 'country-losses', 'russia']"
-        routerLinkActive="active-route"
-        >russia</a
-      >
-    </div>
-    <div class="link">
-      <a
-        [routerLink]="['/statistics', 'oryx', 'country-losses', 'Ukraine']"
-        routerLinkActive="active-route"
-        >Ukraine</a
-      >
-    </div>
-    <div class="link">
-      <a
-        [routerLink]="['/statistics', 'oryx', 'compare-losses']"
-        routerLinkActive="active-route"
-        >Compare</a
-      >
+<div class="flex h-full flex-col justify-start items-stretch">
+  <div class="mat-elevation-z4 flex-none z-10 h-12 flex flex-row p-4">
+    <div class="flex flex-row justify-center items-center gap-8">
+      <div class="link">
+        <a
+          [routerLink]="['/statistics', 'oryx', 'country-losses', 'russia']"
+          routerLinkActive="active-route"
+          >russia</a
+        >
+      </div>
+      <div class="link">
+        <a
+          [routerLink]="['/statistics', 'oryx', 'country-losses', 'Ukraine']"
+          routerLinkActive="active-route"
+          >Ukraine</a
+        >
+      </div>
+      <div class="link">
+        <a
+          [routerLink]="['/statistics', 'oryx', 'compare-losses']"
+          routerLinkActive="active-route"
+          >Compare</a
+        >
+      </div>
     </div>
   </div>
+  <div class="flex-1 overflow-y-scroll" #scrollDiv>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>
+@if (containerReady) {
+<app-scroll-to-top
+  class="scroll-to-top w-14 h-14 z-10"
+  [scrollContainer]="scrollContainer"
+>
+</app-scroll-to-top>
+}
