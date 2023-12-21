@@ -88,7 +88,7 @@ function createTypesCountMap(
 ): Map<string, OryxSideTypeLossesCountComparison> {
   const entityTypes = sidesTypesInfo.flatMap((sideTypes) =>
     sideTypes.map((entityType) => ({
-      name: entityType.name,
+      name: entityType.code,
       countryName: entityType.countryName,
       count: entityType.statistics.count,
     }))
@@ -133,6 +133,7 @@ function combineOryxMaps(
 export function createOryxComparison(
   sidesTypesInfo: Array<Array<OryxEntityType>>
 ): OryxComparison {
+  console.log(sidesTypesInfo);
   const entitiesMap = createEntitiesMap(sidesTypesInfo);
   const typesCountMap = createTypesCountMap(sidesTypesInfo);
   const combined = combineOryxMaps(entitiesMap, typesCountMap).map(
@@ -141,5 +142,6 @@ export function createOryxComparison(
       entitiesComparison: fillEmptyEntities(singleType.entitiesComparison),
     })
   );
+  console.log(combined);
   return combined;
 }

@@ -1,4 +1,4 @@
-<div class="flex flex-row items-start p-2 m-2">
+<div class="flex flex-row items-start p-2 m-2 gap-4">
   <div class="flex-none">
     <table mat-table [dataSource]="countData" class="mat-elevation-z8">
       <ng-container matColumnDef="name">
@@ -22,7 +22,7 @@
   <div class="flex">
     <app-pie-chart
       [data]="countData"
-      [title]="'Losses count comparison'"
+      [title]="'Country (' + typeName + ') losses count comparison'"
       [customColors]="customColors"
     ></app-pie-chart>
   </div>
