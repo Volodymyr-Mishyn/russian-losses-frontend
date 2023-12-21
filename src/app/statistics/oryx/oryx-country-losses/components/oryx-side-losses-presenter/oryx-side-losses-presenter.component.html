@@ -1,11 +1,13 @@
 <div class="m-2 p-2 flex flex-col justify-start items-stretch gap-1">
   <div class="mat-h1">{{ data.countryName }} losses</div>
   <div>
-    <a [href]="metadata.url" target="_blank">Source link</a>
+    <a [href]="metadata.url" target="_blank">
+      <span i18n>Source link</span>
+    </a>
   </div>
   <div>
-    <span>Last scrapped:&nbsp;</span
-    >{{ data.updatedAt | date : "dd.MM.YYYY hh:mm:ss" }}
+    <span i18n>Last scrapped:</span>&nbsp;
+    <span>{{ data.updatedAt | date : "dd.MM.YYYY hh:mm:ss" }}</span>
   </div>
   <app-oryx-statistics
     [statistics]="data.statistics"

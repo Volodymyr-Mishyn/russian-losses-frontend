@@ -429,6 +429,188 @@
           <context context-type="linenumber">28,29</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_tanks" datatype="html">
+        <source>Tanks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_armoured_fighting_vehicles" datatype="html">
+        <source>Armoured Fighting Vehicles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_infantry_fighting_vehicles" datatype="html">
+        <source>Infantry Fighting Vehicles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_armoured_personnel_carriers" datatype="html">
+        <source>Armoured Personnel Carriers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_mine-resistant_ambush_protected" datatype="html">
+        <source>Mine-Resistant Ambush Protected</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_infantry_mobility_vehicles" datatype="html">
+        <source>Infantry Mobility Vehicles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_command_posts_and_communications_stations" datatype="html">
+        <source>Command Posts And Communications Stations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_engineering_vehicles_and_equipment" datatype="html">
+        <source>Engineering Vehicles And Equipment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_self-propelled_anti-tank_missile_systems" datatype="html">
+        <source>Self-Propelled Anti-Tank Missile Systems</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_artillery_support_vehicles_and_equipment" datatype="html">
+        <source>Artillery Support Vehicles And Equipment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_towed_artillery" datatype="html">
+        <source>Towed Artillery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_self-propelled_artillery" datatype="html">
+        <source>Self-Propelled Artillery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_multiple_rocket_launchers" datatype="html">
+        <source>Multiple Rocket Launchers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_anti-aircraft_guns" datatype="html">
+        <source>Anti-Aircraft Guns</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_self-propelled_anti-aircraft_guns" datatype="html">
+        <source>Self-Propelled Anti-Aircraft Guns</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_surface-to-air_missile_systems" datatype="html">
+        <source>Surface-To-Air Missile Systems</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_radars" datatype="html">
+        <source>Radars</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_jammers_and_deception_systems" datatype="html">
+        <source>Jammers And Deception Systems</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_aircraft" datatype="html">
+        <source>Aircraft</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_helicopters" datatype="html">
+        <source>Helicopters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_unmanned_combat_aerial_vehicles" datatype="html">
+        <source>Unmanned Combat Aerial Vehicles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_reconnaissance_unmanned_aerial_vehicles" datatype="html">
+        <source>Reconnaissance Unmanned Aerial Vehicles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_naval_ships_and_submarines" datatype="html">
+        <source>Naval Ships and Submarines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_trucks,_vehicles,_and_jeeps" datatype="html">
+        <source>Trucks, Vehicles, and Jeeps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_radars_and_communications_equipment" datatype="html">
+        <source>Radars And Communications Equipment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.type.oryx_type_naval_ships" datatype="html">
+        <source>Naval Ships</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8598886608217248074" datatype="html">
         <source>URL:</source>
         <context-group purpose="location">
