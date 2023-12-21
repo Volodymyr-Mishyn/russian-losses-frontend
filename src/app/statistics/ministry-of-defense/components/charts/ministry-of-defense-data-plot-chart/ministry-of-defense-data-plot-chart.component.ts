@@ -7,16 +7,20 @@ import {
   DateDataChartComponent,
   DateDataItem,
 } from '../../../../components/charts/date-data-chart/date-data-chart.component';
+import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-ministry-of-defense-data-plot-chart',
   standalone: true,
   imports: [CommonModule, DateDataChartComponent],
+  providers: [TranslatePipe],
   templateUrl: './ministry-of-defense-data-plot-chart.component.html',
   styleUrl: './ministry-of-defense-data-plot-chart.component.scss',
 })
 export class MinistryOfDefenseDataPlotChartComponent implements OnChanges {
   public daysData: Array<DateDataItem> = [];
+
+  public chartTitle: string = '';
 
   @Input()
   public data!: MoDDataFlat;
@@ -24,8 +28,21 @@ export class MinistryOfDefenseDataPlotChartComponent implements OnChanges {
   @Input()
   public datesRange!: DateRangeWithCount;
 
+  private _typeOfLoss!: string;
+
+  public get typeOfLoss(): string {
+    return this._typeOfLoss;
+  }
+
   @Input()
-  public typeOfLoss!: string;
+  public set typeOfLoss(value: string) {
+    this._typeOfLoss = value;
+    this.chartTitle = this._translatePipe.transform(
+      'chart_' + this._typeOfLoss
+    );
+  }
+
+  constructor(private _translatePipe: TranslatePipe) {}
 
   private _mapData(): Array<DateDataItem> {
     return this.data.map((entry) => ({

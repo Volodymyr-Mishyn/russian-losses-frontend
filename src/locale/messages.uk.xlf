@@ -252,6 +252,10 @@
           <context context-type="linenumber">25,26</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="mod.entity.tank" datatype="html">
+        <source>tank</source>
+        <target>Танк</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

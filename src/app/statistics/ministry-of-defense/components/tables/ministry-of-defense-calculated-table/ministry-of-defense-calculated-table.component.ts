@@ -10,12 +10,19 @@ import { getCategoryByEntityName } from '../../../_helpers/mod-data-mapping';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { TableDirective } from '../../../../directives/table.directive';
-const BASE_HEADER_COLUMNS = ['type', 'category', 'value'];
+import { TranslatePipe } from '../../../../../pipes/translate.pipe';
+const BASE_HEADER_COLUMNS = ['type', 'value'];
 
 @Component({
   selector: 'app-ministry-of-defense-calculated-table',
   standalone: true,
-  imports: [CommonModule, MatTableModule, MatButtonModule, MatIconModule],
+  imports: [
+    CommonModule,
+    MatTableModule,
+    MatButtonModule,
+    MatIconModule,
+    TranslatePipe,
+  ],
   templateUrl: './ministry-of-defense-calculated-table.component.html',
   styleUrl: './ministry-of-defense-calculated-table.component.scss',
 })

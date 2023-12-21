@@ -9,6 +9,7 @@ import { RankingCellComponent } from './ranking-cell/ranking-cell.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { TableDirective } from '../../../../directives/table.directive';
+import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-ministry-of-defense-rankings-table',
@@ -19,6 +20,7 @@ import { TableDirective } from '../../../../directives/table.directive';
     MatButtonModule,
     MatIconModule,
     RankingCellComponent,
+    TranslatePipe,
   ],
   templateUrl: './ministry-of-defense-rankings-table.component.html',
   styleUrl: './ministry-of-defense-rankings-table.component.scss',

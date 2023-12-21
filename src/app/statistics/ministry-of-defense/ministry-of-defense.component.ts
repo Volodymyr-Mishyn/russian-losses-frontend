@@ -24,6 +24,8 @@ import { DATE_OF_INVASION_INSTANCE } from '../../_constants/russian-invasion-dat
 import { RegisterIconsService } from '../../services/register-icons.service';
 import { ALL_MOD_ENTITIES } from '../_models/data/mod/mod-entities';
 import { ScrollToTopComponent } from '../components/scroll-to-top/scroll-to-top.component';
+import { TranslationService } from '../../_translate/translation.service';
+import { MinistryOfDefenseTranslationService } from './services/ministry-of-defense-translation.service';
 
 @Component({
   standalone: true,
@@ -32,6 +34,12 @@ import { ScrollToTopComponent } from '../components/scroll-to-top/scroll-to-top.
     RangeSelectionComponent,
     MinistryOfDefenseStatisticsPresenterComponent,
     ScrollToTopComponent,
+  ],
+  providers: [
+    {
+      provide: TranslationService,
+      useClass: MinistryOfDefenseTranslationService,
+    },
   ],
   templateUrl: './ministry-of-defense.component.html',
   styleUrl: './ministry-of-defense.component.scss',

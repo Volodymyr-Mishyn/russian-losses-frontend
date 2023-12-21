@@ -4,6 +4,8 @@ import { RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavigationElement } from './_models/navigation/navigation-element';
 import { NavigationListComponent } from './components/navigation-list/navigation-list.component';
+import { TranslationService } from '../_translate/translation.service';
+import { StatisticsTranslationService } from './services/statistics-translation.service';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -22,6 +24,9 @@ const NAVIGATION: Array<NavigationElement> = [
     RouterOutlet,
     MatSidenavModule,
     NavigationListComponent,
+  ],
+  providers: [
+    { provide: TranslationService, useClass: StatisticsTranslationService },
   ],
   templateUrl: './statistics.component.html',
   styleUrl: './statistics.component.scss',

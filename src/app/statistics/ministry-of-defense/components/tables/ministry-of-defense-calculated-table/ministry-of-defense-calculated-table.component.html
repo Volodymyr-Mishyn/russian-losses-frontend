@@ -16,16 +16,11 @@
           [svgIcon]="'mod_' + element.entityType"
           class="icon-m"
         ></mat-icon>
-        <span class="mat-caption">{{ element.entityType }}</span>
+        <span class="mat-caption">{{ element.entityType | appTranslate }}</span>
       </div>
     </td>
   </ng-container>
-  <ng-container matColumnDef="category">
-    <th mat-header-cell *matHeaderCellDef>
-      <span i18n>Category</span>
-    </th>
-    <td mat-cell *matCellDef="let element">{{ element.entityCategory }}</td>
-  </ng-container>
+
   <ng-container matColumnDef="value">
     <th mat-header-cell *matHeaderCellDef>
       <span i18n>Value</span>

@@ -25,6 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { TableDirective } from '../../../../directives/table.directive';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { TranslatePipe } from '../../../../../pipes/translate.pipe';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 const BASE_HEADER_COLUMNS = ['date', 'dayOfInvasion'];
 const BASE_PAGE_SIZE = 7;
@@ -39,7 +41,9 @@ const BASE_PAGE_SIZE = 7;
     MatButtonModule,
     MatIconModule,
     MatCheckboxModule,
+    MatTooltipModule,
     CasualtyCellComponent,
+    TranslatePipe,
   ],
   templateUrl: './ministry-of-defense-days-table.component.html',
   styleUrl: './ministry-of-defense-days-table.component.scss',
