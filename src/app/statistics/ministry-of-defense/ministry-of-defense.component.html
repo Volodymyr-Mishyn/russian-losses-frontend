@@ -5,9 +5,17 @@
   ></app-range-selection>
   @if (data$|async; as data) {
   <app-ministry-of-defense-statistics-presenter
+    #scrollContainer
     class="flex-1 overflow-y-scroll"
     [datesRange]="localRange"
     [data]="data"
   ></app-ministry-of-defense-statistics-presenter>
   }
 </div>
+@if (containerReady) {
+<app-scroll-to-top
+  class="scroll-to-top w-14 h-14 z-10"
+  [scrollContainer]="scrollContainer"
+>
+</app-scroll-to-top>
+}

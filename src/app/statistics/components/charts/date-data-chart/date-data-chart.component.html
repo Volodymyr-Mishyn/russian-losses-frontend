@@ -14,16 +14,20 @@
       [formGroup]="form"
       class="flex flex-row flex-none gap-2 justify-center items-center"
     >
-      <mat-checkbox formControlName="showDeviateFromAverage"
-        >Show compared to Average</mat-checkbox
-      >
+      <mat-checkbox formControlName="showDeviateFromAverage">
+        <span i18n>Show compared to Average</span>
+      </mat-checkbox>
       <div>
         <mat-button-toggle-group
           formControlName="gradationMode"
           aria-label="Presentation format"
         >
-          <mat-button-toggle value="daily">Daily</mat-button-toggle>
-          <mat-button-toggle value="monthly">Monthly</mat-button-toggle>
+          <mat-button-toggle value="daily">
+            <span i18n>Daily</span>
+          </mat-button-toggle>
+          <mat-button-toggle value="monthly">
+            <span i18n>Monthly</span>
+          </mat-button-toggle>
         </mat-button-toggle-group>
       </div>
     </div>

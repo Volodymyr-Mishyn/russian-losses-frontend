@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="pageTitle" datatype="html">
+        <source>Data and infographic about russian invasion of Ukraine</source>
+        <target>Дані та інфографіка про російське вторгнення в Україну</target>
+      </trans-unit>
+      <trans-unit id="8650499415827640724" datatype="html">
+        <source>Type</source>
+        <target>Тип</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-calculated-table/ministry-of-defense-calculated-table.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1806667489382256324" datatype="html">
+        <source>Category</source>
+        <target>Категорія</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-calculated-table/ministry-of-defense-calculated-table.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6555318547274416232" datatype="html">
+        <source>Value</source>
+        <target>Значення</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-calculated-table/ministry-of-defense-calculated-table.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8163774872274479112" datatype="html">
+        <source>Show increment-to-average</source>
+        <target>Порівння інкременту до середнього</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-days-table/ministry-of-defense-days-table.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3973931101896534797" datatype="html">
+        <source>Date</source>
+        <target>Дата</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-days-table/ministry-of-defense-days-table.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source>
+          <x id="INTERPOLATION" equiv-text="{{ element.date | date : &quot;dd.MM.YYYY&quot; }}" />
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-days-table/ministry-of-defense-days-table.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6092788770205309145" datatype="html">
+        <source>Day of Invasion </source>
+        <target>День вторгення</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-days-table/ministry-of-defense-days-table.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8005266349115679977" datatype="html">
+        <source>Top days of russian losses</source>
+        <target>Топ днів російських втрат</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-rankings-tables/ministry-of-defense-rankings-tables.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7805353444815541161" datatype="html">
+        <source>Top months of russian losses</source>
+        <target>Топ місяців російських втрат</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-rankings-tables/ministry-of-defense-rankings-tables.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7114015196736328610" datatype="html">
+        <source>Russian losses by date</source>
+        <target>Російськи втрати по датам</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8323422358213440128" datatype="html">
+        <source>
+          <x id="INTERPOLATION" equiv-text="{{ datesRange.end | date : &quot;dd.MM.YYYY&quot; }}" />
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7313384793054952220" datatype="html">
+        <source>(<x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" /> days)</source>
+        <target>(<x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" /> днів)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6056249674601591680" datatype="html">
+        <source>Summary russian losses in range</source>
+        <target>Сумарні російські втрати в проміжку</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6088298165216812252" datatype="html">
+        <source>Average russian daily losses in range</source>
+        <target>Середні російські втрати в проміжку</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8598886608217248074" datatype="html">
+        <source>URL:</source>
+        <target>Посилання:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8407222735578477590" datatype="html">
+        <source>Reference images:</source>
+        <target>Зображення для прикладу:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <target>Назва</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-entities/oryx-compare-type-entities.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-overall-counts/oryx-compare-type-overall-counts.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8177873832400820695" datatype="html">
+        <source>Count</source>
+        <target>Кількість</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-overall-counts/oryx-compare-type-overall-counts.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8559927064380862494" datatype="html">
+        <source>data placeholder</source>
+        <target>data placeholder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-compare/components/oryx-compare-type/oryx-compare-type.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6836949342567686088" datatype="html">
+        <source>Count:</source>
+        <target>Кількість:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22009089633910350" datatype="html">
+        <source>russia</source>
+        <target>росія</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7662198140469489463" datatype="html">
+        <source>Ukraine </source>
+        <target>Україна</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2572999724448976084" datatype="html">
+        <source>Compare</source>
+        <target>Порівняння</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mod.entity.tank" datatype="html">
+        <source>tank</source>
+        <target>Танк</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

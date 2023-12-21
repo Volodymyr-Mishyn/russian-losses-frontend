@@ -1,28 +1,28 @@
 <div class="flex flex-col justify-start items-stretch">
   <div class="mat-h4">
-    Total: <span>{{ statistics.count }}</span>
+    <span i18n>Total</span>: <span>{{ statistics.count }}</span>
   </div>
   <div class="flex flex-row content-stretch justify-start gap-4">
     <div class="flex flex-col items-center">
-      <div>Destroyed</div>
+      <div><span i18n>Destroyed</span></div>
       <div>
         {{ statistics.destroyed }}
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <div>Damaged</div>
+      <div><span i18n>Damaged</span></div>
       <div>
         {{ statistics.damaged }}
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <div>Abandoned</div>
+      <div><span i18n>Abandoned</span></div>
       <div>
         {{ statistics.abandoned }}
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <div>Captured</div>
+      <div><span i18n>Captured</span></div>
       <div>
         {{ statistics.captured }}
       </div>

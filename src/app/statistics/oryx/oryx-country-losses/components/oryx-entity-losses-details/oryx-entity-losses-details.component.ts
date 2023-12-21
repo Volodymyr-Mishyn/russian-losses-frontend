@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import {
-  EntityStatusInfo,
+  OryxEntityStatusInfo,
   OryxEntityModel,
 } from '../../../../_models/data/oryx/oryx-model';
 import { OryxEntityLossDetailDialogComponent } from './oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component';
 import { PieChartComponent } from '../../../../components/charts/pie-chart/pie-chart.component';
 import { ChartData } from '../../../../components/charts/_models/chart-data';
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
+import { OryxEntityInfoComponent } from '../../../components/oryx-entity-info/oryx-entity-info.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 const FIELDS_TO_DISPLAY = [
   'destroyed',
@@ -28,7 +30,12 @@ interface DetailedEntityStatistics {
 @Component({
   selector: 'app-oryx-entity-losses-details',
   standalone: true,
-  imports: [CommonModule, PieChartComponent],
+  imports: [
+    CommonModule,
+    MatDividerModule,
+    PieChartComponent,
+    OryxEntityInfoComponent,
+  ],
   templateUrl: './oryx-entity-losses-details.component.html',
   styleUrl: './oryx-entity-losses-details.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -56,7 +63,7 @@ export class OryxEntityLossesDetailsComponent {
       if (FIELDS_TO_DISPLAY_SET.has(key) && key in this.entityModel) {
         const entityStatusInfo = this.entityModel[
           key as keyof OryxEntityModel
-        ] as EntityStatusInfo;
+        ] as OryxEntityStatusInfo;
         statistics.push({
           key,
           name: key,

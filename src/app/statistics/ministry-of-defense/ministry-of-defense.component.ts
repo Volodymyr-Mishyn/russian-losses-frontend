@@ -1,4 +1,11 @@
-import { Component, OnDestroy } from '@angular/core';
+import {
+  AfterContentInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RangeSelectionComponent } from '../components/range-selection/range-selection.component';
 import { DateRange, DateRangeWithCount } from '../_models/range';
@@ -16,6 +23,9 @@ import { MoDDataSliceWithCalculated } from '../_models/data/mod/mod-model';
 import { DATE_OF_INVASION_INSTANCE } from '../../_constants/russian-invasion-date';
 import { RegisterIconsService } from '../../services/register-icons.service';
 import { ALL_MOD_ENTITIES } from '../_models/data/mod/mod-entities';
+import { ScrollToTopComponent } from '../components/scroll-to-top/scroll-to-top.component';
+import { TranslationService } from '../../_translate/translation.service';
+import { MinistryOfDefenseTranslationService } from './services/ministry-of-defense-translation.service';
 
 @Component({
   standalone: true,
@@ -23,17 +33,28 @@ import { ALL_MOD_ENTITIES } from '../_models/data/mod/mod-entities';
     CommonModule,
     RangeSelectionComponent,
     MinistryOfDefenseStatisticsPresenterComponent,
+    ScrollToTopComponent,
+  ],
+  providers: [
+    {
+      provide: TranslationService,
+      useClass: MinistryOfDefenseTranslationService,
+    },
   ],
   templateUrl: './ministry-of-defense.component.html',
   styleUrl: './ministry-of-defense.component.scss',
 })
-export class MinistryOfDefenseComponent implements OnDestroy {
+export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   private _rangeSubject = new BehaviorSubject<DateRange | null>(null);
   private _range$ = this._rangeSubject.asObservable();
   private _destroy$ = new Subject();
   private _currentDate = new Date();
 
+  @ViewChild('scrollContainer', { read: ElementRef, static: false })
+  public scrollContainer!: ElementRef;
+  public containerReady = false;
   public localRange!: DateRangeWithCount;
+
   public data$: Observable<MoDDataSliceWithCalculated> = this._range$.pipe(
     takeUntil(this._destroy$),
     switchMap((value) =>
@@ -80,5 +101,11 @@ export class MinistryOfDefenseComponent implements OnDestroy {
   public ngOnDestroy(): void {
     this._destroy$.next(null);
     this._destroy$.complete();
+  }
+
+  public ngOnInit(): void {
+    setTimeout(() => {
+      this.containerReady = true;
+    });
   }
 }

@@ -14,7 +14,9 @@
             [svgIcon]="'mod_' + element.entityName"
             class="icon-m"
           ></mat-icon>
-          <span class="mat-caption">{{ element.entityName }}</span>
+          <span class="mat-caption">{{
+            element.entityName | appTranslate
+          }}</span>
         </div>
       </td>
     </ng-container>
