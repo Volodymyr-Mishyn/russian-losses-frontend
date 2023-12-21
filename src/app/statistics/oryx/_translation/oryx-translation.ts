@@ -27,4 +27,11 @@ export const ORYX_TRANSLATIONS: Record<string, string> = {
   //Ukraine
   oryx_type_radars_and_communications_equipment: $localize`:@@oryx.type.oryx_type_radars_and_communications_equipment:Radars And Communications Equipment`,
   oryx_type_naval_ships: $localize`:@@oryx.type.oryx_type_naval_ships:Naval Ships`,
+
+  oryx_entity_destroyed: $localize`:@@oryx.entity.oryx_entity_destroyed:Destroyed`,
+  oryx_entity_damaged: $localize`:@@oryx.entity.oryx_entity_damaged:Damaged`,
+  oryx_entity_captured: $localize`:@@oryx.entity.oryx_entity_captured:Captured`,
+  oryx_entity_abandoned: $localize`:@@oryx.entity.oryx_entity_abandoned:Abandoned`,
+  oryx_entity_damagedAndCaptured: $localize`:@@oryx.entity.oryx_entity_damagedAndCaptured:Damaged And Captured`,
+  oryx_entity_damagedAndAbandoned: $localize`:@@oryx.entity.oryx_entity_damagedAndAbandoned:Damaged And Abandoned`,
 };

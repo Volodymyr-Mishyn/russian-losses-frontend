@@ -24,6 +24,7 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
     NumberDataChartComponent,
     TranslatePipe,
   ],
+  providers: [TranslatePipe],
   templateUrl: './oryx-type-losses.component.html',
   styleUrl: './oryx-type-losses.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -45,6 +46,8 @@ export class OryxTypeLossesComponent {
     return this._entityType;
   }
 
+  constructor(private _translatePipe: TranslatePipe) {}
+
   private _sortData(data: Array<ChartData>): Array<ChartData> {
     return sortOryxData(data, 'name');
   }
@@ -60,7 +63,14 @@ export class OryxTypeLossesComponent {
         value,
       })
     );
-    this.statisticsChartData = this._sortData(statisticsChartData);
+    const sortedStatisticsChartData = this._sortData(statisticsChartData);
+    const translatedStatisticsChartData = sortedStatisticsChartData.map(
+      ({ name, value }) => ({
+        name: this._translatePipe.transform('oryx_entity_' + name),
+        value,
+      })
+    );
+    this.statisticsChartData = translatedStatisticsChartData;
   }
 
   private _setEntitiesChartData(): void {

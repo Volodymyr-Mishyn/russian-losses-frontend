@@ -11,6 +11,7 @@ import { ChartData } from '../../../../components/charts/_models/chart-data';
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
 import { OryxEntityInfoComponent } from '../../../components/oryx-entity-info/oryx-entity-info.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 
 const FIELDS_TO_DISPLAY = [
   'destroyed',
@@ -35,7 +36,9 @@ interface DetailedEntityStatistics {
     MatDividerModule,
     PieChartComponent,
     OryxEntityInfoComponent,
+    TranslatePipe,
   ],
+  providers: [TranslatePipe],
   templateUrl: './oryx-entity-losses-details.component.html',
   styleUrl: './oryx-entity-losses-details.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -55,7 +58,10 @@ export class OryxEntityLossesDetailsComponent {
     return this._entityModel;
   }
 
-  constructor(private _dialog: MatDialog) {}
+  constructor(
+    private _dialog: MatDialog,
+    private _translatePipe: TranslatePipe
+  ) {}
 
   private _setStatisticsData(): void {
     const statistics: Array<DetailedEntityStatistics> = [];
@@ -66,7 +72,7 @@ export class OryxEntityLossesDetailsComponent {
         ] as OryxEntityStatusInfo;
         statistics.push({
           key,
-          name: key,
+          name: this._translatePipe.transform('oryx_entity_' + key),
           count: entityStatusInfo.count,
         });
       }
