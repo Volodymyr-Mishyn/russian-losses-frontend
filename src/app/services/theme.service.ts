@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable, filter } from 'rxjs';
 import { AvailableThemes, Theme } from '../_constants/themes';
 import { PlatformService } from './platform.service';
 
@@ -7,8 +7,10 @@ import { PlatformService } from './platform.service';
   providedIn: 'platform',
 })
 export class ThemeService {
-  private _theme$ = new BehaviorSubject<Theme>(AvailableThemes.LIGHT);
-  public theme$ = this._theme$.asObservable();
+  private _theme$ = new BehaviorSubject<Theme | null>(null);
+  public theme$ = this._theme$
+    .asObservable()
+    .pipe(filter((theme) => !!theme)) as Observable<Theme>;
 
   constructor(private _platformService: PlatformService) {
     if (!this._platformService.isRunningOnBrowser()) {
