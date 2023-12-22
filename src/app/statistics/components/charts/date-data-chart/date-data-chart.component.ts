@@ -15,6 +15,7 @@ import { groupBy, mean } from 'lodash';
 import { Subject, takeUntil } from 'rxjs';
 import 'chartjs-adapter-date-fns';
 import { MatIconModule } from '@angular/material/icon';
+import { DateFnsLocaleService } from '../../../services/date-fns-locale.service';
 
 export interface DateDataItem {
   date: string;
@@ -58,7 +59,11 @@ export class DateDataChartComponent
   @Input()
   public data: Array<DateDataItem> = [];
 
-  constructor(platformService: PlatformService, private _fb: FormBuilder) {
+  constructor(
+    platformService: PlatformService,
+    private _fb: FormBuilder,
+    private _dateFnsLocaleService: DateFnsLocaleService
+  ) {
     super(platformService);
     this.form = this._fb.group({
       gradationMode: ['daily'],
@@ -133,12 +138,11 @@ export class DateDataChartComponent
 
   private async _createChart(): Promise<void> {
     try {
-      const [chartModule, zoomPlugin, localeModule] = await Promise.all([
+      const [chartModule, zoomPlugin] = await Promise.all([
         import('chart.js/auto'),
         import('chartjs-plugin-zoom'),
-        import('date-fns/locale'),
       ]);
-      const uk = localeModule.uk;
+      const locale = this._dateFnsLocaleService.getLocale();
       const Chart = chartModule.default;
       Chart.register(zoomPlugin.default);
       if (!this.chartCanvas) {
@@ -171,7 +175,7 @@ export class DateDataChartComponent
                 },
                 adapters: {
                   date: {
-                    locale: uk,
+                    locale: locale,
                   },
                 },
               },
