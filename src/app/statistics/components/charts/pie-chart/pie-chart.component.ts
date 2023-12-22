@@ -1,15 +1,9 @@
 import { CommonModule } from '@angular/common';
-import {
-  AfterViewInit,
-  Component,
-  Input,
-  OnDestroy,
-  OnInit,
-} from '@angular/core';
+import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
 import { BaseChartDirective } from '../base-chart.directive';
-import { PlatformService } from '../../../../services/platform.service';
 import chroma from 'chroma-js';
 import { ChartData } from '../_models/chart-data';
+import { firstValueFrom, take } from 'rxjs';
 
 const DISTINGUISHABLE_COLORS = chroma.scale('Set3').colors(20);
 
@@ -22,7 +16,7 @@ const DISTINGUISHABLE_COLORS = chroma.scale('Set3').colors(20);
 })
 export class PieChartComponent
   extends BaseChartDirective
-  implements OnInit, AfterViewInit, OnDestroy
+  implements AfterViewInit, OnDestroy
 {
   @Input()
   public title!: string;
@@ -31,10 +25,6 @@ export class PieChartComponent
   public data: Array<ChartData> = [];
 
   @Input() customColors: { [k: string]: string } | null = null;
-
-  constructor(platformService: PlatformService) {
-    super(platformService);
-  }
 
   protected override updateChart(): void {
     this.chart.data.labels = this.data.map((element) => element.name);
@@ -48,7 +38,7 @@ export class PieChartComponent
     this.chart.update();
   }
 
-  private async _createChart(): Promise<void> {
+  protected async createChart(): Promise<void> {
     try {
       if (!this.chartCanvas) {
         return;
@@ -85,19 +75,14 @@ export class PieChartComponent
             },
           },
         });
+        const theme = await firstValueFrom(
+          this.themeService.theme$.pipe(take(1))
+        );
+        this.updateChartTheme(theme);
         this.updateChart();
       }
     } catch (error) {
       console.error('Error loading Chart.js dependencies:', error);
     }
-  }
-
-  public ngOnInit(): void {}
-
-  public async ngAfterViewInit(): Promise<void> {
-    if (!this.platformService.isRunningOnBrowser()) {
-      return;
-    }
-    await this._createChart();
   }
 }

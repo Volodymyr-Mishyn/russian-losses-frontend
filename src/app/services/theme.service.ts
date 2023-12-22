@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { AvailableThemes, Theme } from '../../_constants/themes';
+import { AvailableThemes, Theme } from '../_constants/themes';
+import { PlatformService } from './platform.service';
 
 @Injectable({
   providedIn: 'platform',
@@ -9,7 +10,10 @@ export class ThemeService {
   private _theme$ = new BehaviorSubject<Theme>(AvailableThemes.LIGHT);
   public theme$ = this._theme$.asObservable();
 
-  constructor() {
+  constructor(private _platformService: PlatformService) {
+    if (!this._platformService.isRunningOnBrowser()) {
+      return;
+    }
     const savedTheme = localStorage.getItem('theme');
     const prefersDark =
       window.matchMedia &&

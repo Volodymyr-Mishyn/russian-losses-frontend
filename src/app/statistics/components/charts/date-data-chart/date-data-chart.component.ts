@@ -1,21 +1,16 @@
 import { CommonModule } from '@angular/common';
-import {
-  AfterViewInit,
-  Component,
-  Input,
-  OnDestroy,
-  OnInit,
-} from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { BaseChartDirective } from '../base-chart.directive';
 import { PlatformService } from '../../../../services/platform.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { groupBy, mean } from 'lodash';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject, firstValueFrom, take, takeUntil } from 'rxjs';
 import 'chartjs-adapter-date-fns';
 import { MatIconModule } from '@angular/material/icon';
 import { DateFnsLocaleService } from '../../../services/date-fns-locale.service';
+import { ThemeService } from '../../../../services/theme.service';
 
 export interface DateDataItem {
   date: string;
@@ -38,7 +33,7 @@ export interface DateDataItem {
 })
 export class DateDataChartComponent
   extends BaseChartDirective
-  implements OnInit, AfterViewInit, OnDestroy
+  implements OnInit, OnDestroy
 {
   private _destroy$ = new Subject();
 
@@ -64,10 +59,11 @@ export class DateDataChartComponent
 
   constructor(
     platformService: PlatformService,
+    themeService: ThemeService,
     private _fb: FormBuilder,
     private _dateFnsLocaleService: DateFnsLocaleService
   ) {
-    super(platformService);
+    super(platformService, themeService);
     this.form = this._fb.group({
       gradationMode: ['daily'],
       showDeviateFromAverage: [false],
@@ -139,7 +135,7 @@ export class DateDataChartComponent
     }
   }
 
-  private async _createChart(): Promise<void> {
+  protected async createChart(): Promise<void> {
     try {
       const [chartModule, zoomPlugin] = await Promise.all([
         import('chart.js/auto'),
@@ -221,6 +217,10 @@ export class DateDataChartComponent
             },
           },
         });
+        const theme = await firstValueFrom(
+          this.themeService.theme$.pipe(take(1))
+        );
+        this.updateChartTheme(theme);
         this.updateChart();
       }
     } catch (error) {
@@ -240,13 +240,6 @@ export class DateDataChartComponent
     this.form.valueChanges.pipe(takeUntil(this._destroy$)).subscribe(() => {
       this.updateChart();
     });
-  }
-
-  public async ngAfterViewInit(): Promise<void> {
-    if (!this.platformService.isRunningOnBrowser()) {
-      return;
-    }
-    await this._createChart();
   }
 
   public override ngOnDestroy(): void {

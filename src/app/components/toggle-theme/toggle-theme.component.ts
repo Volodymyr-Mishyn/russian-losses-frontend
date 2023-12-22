@@ -2,9 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ThemeService } from '../../statistics/services/theme.service';
+import { ThemeService } from '../../services/theme.service';
 import { Subscription } from 'rxjs';
 import { AvailableThemes, Theme } from '../../_constants/themes';
+import { PlatformService } from '../../services/platform.service';
 
 @Component({
   selector: 'app-toggle-theme',
@@ -16,7 +17,11 @@ import { AvailableThemes, Theme } from '../../_constants/themes';
 export class ToggleThemeComponent implements OnInit, OnDestroy {
   private _themeSubscription!: Subscription;
   private _theme!: Theme;
-  constructor(private _themeService: ThemeService) {}
+  constructor(
+    private _platformService: PlatformService,
+    private _themeService: ThemeService
+  ) {}
+
   public toggleTheme(): void {
     this._themeService.setTheme(
       this._theme === AvailableThemes.DARK
@@ -25,12 +30,17 @@ export class ToggleThemeComponent implements OnInit, OnDestroy {
     );
   }
   public ngOnInit(): void {
+    if (!this._platformService.isRunningOnBrowser()) {
+      return;
+    }
     this._themeSubscription = this._themeService.theme$.subscribe((theme) => {
       this._theme = theme;
       document.body.classList.toggle('dark-theme', theme === 'dark');
     });
   }
   public ngOnDestroy(): void {
-    this._themeSubscription.unsubscribe();
+    if (this._themeSubscription?.unsubscribe) {
+      this._themeSubscription.unsubscribe();
+    }
   }
 }

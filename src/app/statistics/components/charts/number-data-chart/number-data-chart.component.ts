@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
 import { BaseChartDirective } from '../base-chart.directive';
-import { PlatformService } from '../../../../services/platform.service';
 import { ChartData } from '../_models/chart-data';
+import { firstValueFrom, take } from 'rxjs';
 
 @Component({
   selector: 'app-number-data-chart',
@@ -24,10 +24,6 @@ export class NumberDataChartComponent
   @Input()
   public color: string | null = null;
 
-  constructor(platformService: PlatformService) {
-    super(platformService);
-  }
-
   protected override updateChart(): void {
     this.chart.data.labels = this.data.map((element) => element.name);
     const data = this.data.map((entry) => entry.value);
@@ -38,7 +34,7 @@ export class NumberDataChartComponent
     this.chart.update();
   }
 
-  private async _createChart(): Promise<void> {
+  protected async createChart(): Promise<void> {
     try {
       if (!this.chartCanvas) {
         return;
@@ -71,17 +67,14 @@ export class NumberDataChartComponent
             },
           },
         });
+        const theme = await firstValueFrom(
+          this.themeService.theme$.pipe(take(1))
+        );
+        this.updateChartTheme(theme);
         this.updateChart();
       }
     } catch (error) {
       console.error('Error loading Chart.js dependencies:', error);
     }
-  }
-
-  public async ngAfterViewInit(): Promise<void> {
-    if (!this.platformService.isRunningOnBrowser()) {
-      return;
-    }
-    await this._createChart();
   }
 }

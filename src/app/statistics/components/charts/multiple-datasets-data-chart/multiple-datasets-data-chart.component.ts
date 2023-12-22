@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, Input } from '@angular/core';
 import { BaseChartDirective } from '../base-chart.directive';
-import { PlatformService } from '../../../../services/platform.service';
 import { ChartData } from '../_models/chart-data';
+import { firstValueFrom, take } from 'rxjs';
 
 @Component({
   selector: 'app-multiple-datasets-data-chart',
@@ -25,10 +25,6 @@ export class MultipleDatasetsDataChartComponent
 
   @Input() customColors: { [k: string]: string } | null = null;
 
-  constructor(platformService: PlatformService) {
-    super(platformService);
-  }
-
   protected override updateChart(): void {
     this.chart.data.labels = this.labels;
     this.data.forEach(({ data, label }, index) => {
@@ -47,7 +43,7 @@ export class MultipleDatasetsDataChartComponent
     this.chart.update();
   }
 
-  private async _createChart(): Promise<void> {
+  protected async createChart(): Promise<void> {
     try {
       if (!this.chartCanvas) {
         return;
@@ -76,17 +72,14 @@ export class MultipleDatasetsDataChartComponent
             },
           },
         });
+        const theme = await firstValueFrom(
+          this.themeService.theme$.pipe(take(1))
+        );
+        this.updateChartTheme(theme);
         this.updateChart();
       }
     } catch (error) {
       console.error('Error loading Chart.js dependencies:', error);
     }
-  }
-
-  public async ngAfterViewInit(): Promise<void> {
-    if (!this.platformService.isRunningOnBrowser()) {
-      return;
-    }
-    await this._createChart();
   }
 }
