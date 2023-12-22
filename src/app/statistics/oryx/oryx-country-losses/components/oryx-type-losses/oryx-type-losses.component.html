@@ -1,5 +1,5 @@
 <div class="flex flex-col justify-start items-stretch">
-  <div class="mat-h2">{{ "oryx_type_" + entityType.code | appTranslate }}</div>
+  <div class="mat-h2">{{ entityTypeName }}</div>
   <app-oryx-statistics
     [statistics]="entityType.statistics"
     class="m-2 p-2"
@@ -28,16 +28,15 @@
       @defer (on viewport) {
       <app-pie-chart
         [data]="statisticsChartData"
-        [title]="'oryx_type_' + entityType.code | appTranslate"
+        [title]="entityTypeName"
       ></app-pie-chart>
       <app-number-data-chart
+        [color]="chartLineColor"
         [data]="entitiesChartData"
-        [title]="'oryx_type_' + entityType.code | appTranslate"
+        [title]="entityTypeName"
       ></app-number-data-chart>
       }@placeholder {
-      <div>
-        {{ "oryx_type_" + entityType.code | appTranslate }} charts placeholder
-      </div>
+      <div>{{ entityTypeName }} charts placeholder</div>
       }
     </div>
   </div>

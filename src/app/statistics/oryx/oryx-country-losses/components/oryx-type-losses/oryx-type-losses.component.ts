@@ -12,6 +12,8 @@ import { ChartData } from '../../../../components/charts/_models/chart-data';
 import { NumberDataChartComponent } from '../../../../components/charts/number-data-chart/number-data-chart.component';
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
+import { OryxSideNames } from '../../../../_models/data/oryx/oryx.types';
+import { de } from 'date-fns/locale';
 @Component({
   selector: 'app-oryx-type-losses',
   standalone: true,
@@ -32,6 +34,8 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 export class OryxTypeLossesComponent {
   public statisticsChartData: Array<ChartData> = [];
   public entitiesChartData: Array<ChartData> = [];
+  public chartLineColor: string | null = null;
+  public entityTypeName!: string;
 
   @Input()
   private _entityType!: OryxEntityType;
@@ -39,6 +43,19 @@ export class OryxTypeLossesComponent {
   @Input()
   public set entityType(entityType: OryxEntityType) {
     this._entityType = entityType;
+    this.entityTypeName = this._translatePipe.transform(
+      'oryx_type_' + entityType.code
+    );
+    switch (entityType.countryName) {
+      case OryxSideNames.RUSSIA:
+        this.chartLineColor = 'red';
+        break;
+      case OryxSideNames.UKRAINE:
+        this.chartLineColor = 'blue';
+        break;
+      default:
+        this.chartLineColor = null;
+    }
     this._setChartsData();
   }
 

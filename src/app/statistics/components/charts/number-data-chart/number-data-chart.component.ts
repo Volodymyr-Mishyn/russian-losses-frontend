@@ -21,6 +21,9 @@ export class NumberDataChartComponent
   @Input()
   public data: Array<ChartData> = [];
 
+  @Input()
+  public color: string | null = null;
+
   constructor(platformService: PlatformService) {
     super(platformService);
   }
@@ -29,6 +32,9 @@ export class NumberDataChartComponent
     this.chart.data.labels = this.data.map((element) => element.name);
     const data = this.data.map((entry) => entry.value);
     this.chart.data.datasets[0].data = data;
+    if (this.color) {
+      this.chart.data.datasets[0].backgroundColor = this.color;
+    }
     this.chart.update();
   }
 
