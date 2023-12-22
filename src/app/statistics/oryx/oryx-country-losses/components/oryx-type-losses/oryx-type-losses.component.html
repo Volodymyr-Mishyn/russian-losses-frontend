@@ -8,8 +8,10 @@
     <mat-accordion class="flex-1" multi>
       @for (entityModel of entityType.entities; track $index) {
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title> {{ entityModel.name }} </mat-panel-title>
+        <mat-expansion-panel-header [collapsedHeight]="'auto'">
+          <mat-panel-title>
+            <span class="p-2">{{ entityModel.name }}</span>
+          </mat-panel-title>
           <mat-panel-description>
             {{ entityModel.count }}
           </mat-panel-description>

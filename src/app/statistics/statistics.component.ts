@@ -8,6 +8,7 @@ import { TranslationService } from '../_translate/translation.service';
 import { StatisticsTranslationService } from './services/statistics-translation.service';
 import { DateAdapter } from '@angular/material/core';
 import { CustomDateAdapterService } from './services/custom-date-adapter.service';
+import { ToggleThemeComponent } from '../components/toggle-theme/toggle-theme.component';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -26,6 +27,7 @@ const NAVIGATION: Array<NavigationElement> = [
     RouterOutlet,
     MatSidenavModule,
     NavigationListComponent,
+    ToggleThemeComponent,
   ],
   providers: [
     { provide: TranslationService, useClass: StatisticsTranslationService },

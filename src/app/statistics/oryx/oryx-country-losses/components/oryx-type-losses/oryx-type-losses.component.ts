@@ -13,7 +13,7 @@ import { NumberDataChartComponent } from '../../../../components/charts/number-d
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { OryxSideNames } from '../../../../_models/data/oryx/oryx.types';
-import { de } from 'date-fns/locale';
+
 @Component({
   selector: 'app-oryx-type-losses',
   standalone: true,

@@ -1,15 +1,21 @@
 <mat-drawer-container class="h-screen w-screen" autosize>
   <mat-drawer
     #drawer
-    class="w-24 flex flex-col justify-start space-y-5 items-center"
+    class="w-24 flex flex-col space-y-5"
     mode="side"
     [opened]="true"
   >
-    <div class="logo justify-center flex p-1">
-      <img src="assets/img/trident-1.svg" width="50" />
-    </div>
-    <div>
-      <app-navigation-list [list]="navigationList"></app-navigation-list>
+    <div class="h-full flex flex-col justify-start items-center gap-4">
+      <div class="logo justify-center flex p-1">
+        <img src="assets/img/trident-1.svg" width="50" />
+      </div>
+      <div>
+        <app-navigation-list [list]="navigationList"></app-navigation-list>
+      </div>
+      <div class="flex flex-1"></div>
+      <div class="flex-none p-2">
+        <app-toggle-theme></app-toggle-theme>
+      </div>
     </div>
   </mat-drawer>
 

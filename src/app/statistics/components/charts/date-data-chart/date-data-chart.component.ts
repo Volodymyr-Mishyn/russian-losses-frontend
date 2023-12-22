@@ -59,6 +59,9 @@ export class DateDataChartComponent
   @Input()
   public data: Array<DateDataItem> = [];
 
+  @Input()
+  public customColor: string | null = null;
+
   constructor(
     platformService: PlatformService,
     private _fb: FormBuilder,
@@ -227,6 +230,9 @@ export class DateDataChartComponent
 
   protected updateChart(): void {
     this._modifyGradationMode();
+    if (this.customColor) {
+      this.chart.data.datasets[0].backgroundColor = this.customColor;
+    }
     this.chart.update();
   }
 
