@@ -4,11 +4,12 @@ import {
   MoDRankingsFormat,
   MoDRankingsPlace,
 } from '../../../../../_models/data/mod/mod-model';
+import { CustomDatePipe } from '../../../../../../pipes/custom-date.pipe';
 
 @Component({
   selector: 'app-ranking-cell',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CustomDatePipe],
   templateUrl: './ranking-cell.component.html',
   styleUrl: './ranking-cell.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

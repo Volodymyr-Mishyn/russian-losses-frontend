@@ -6,6 +6,8 @@ import { NavigationElement } from './_models/navigation/navigation-element';
 import { NavigationListComponent } from './components/navigation-list/navigation-list.component';
 import { TranslationService } from '../_translate/translation.service';
 import { StatisticsTranslationService } from './services/statistics-translation.service';
+import { DateAdapter } from '@angular/material/core';
+import { CustomDateAdapterService } from './services/custom-date-adapter.service';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -27,6 +29,7 @@ const NAVIGATION: Array<NavigationElement> = [
   ],
   providers: [
     { provide: TranslationService, useClass: StatisticsTranslationService },
+    { provide: DateAdapter, useClass: CustomDateAdapterService },
   ],
   templateUrl: './statistics.component.html',
   styleUrl: './statistics.component.scss',
