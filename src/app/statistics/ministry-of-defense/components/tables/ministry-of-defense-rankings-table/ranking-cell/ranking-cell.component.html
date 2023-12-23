@@ -11,7 +11,7 @@
       {{ placeRanking.dates.start | date : "dd.MM.YYYY" }}
       {{ placeRanking.dates.end | date : "dd.MM.YYYY" }}
       } @case ('months') {
-      {{ placeRanking.dates.start | date : "MMMM YYYY" }}
+      {{ placeRanking.dates.start | appCustomDate : "MMMM YYYY" }}
       } }
     </div>
     }@else { - }

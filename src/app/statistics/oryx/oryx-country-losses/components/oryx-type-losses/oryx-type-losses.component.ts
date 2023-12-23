@@ -12,6 +12,8 @@ import { ChartData } from '../../../../components/charts/_models/chart-data';
 import { NumberDataChartComponent } from '../../../../components/charts/number-data-chart/number-data-chart.component';
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
+import { OryxSideNames } from '../../../../_models/data/oryx/oryx.types';
+
 @Component({
   selector: 'app-oryx-type-losses',
   standalone: true,
@@ -24,6 +26,7 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
     NumberDataChartComponent,
     TranslatePipe,
   ],
+  providers: [TranslatePipe],
   templateUrl: './oryx-type-losses.component.html',
   styleUrl: './oryx-type-losses.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -31,6 +34,8 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 export class OryxTypeLossesComponent {
   public statisticsChartData: Array<ChartData> = [];
   public entitiesChartData: Array<ChartData> = [];
+  public chartLineColor: string | null = null;
+  public entityTypeName!: string;
 
   @Input()
   private _entityType!: OryxEntityType;
@@ -38,12 +43,27 @@ export class OryxTypeLossesComponent {
   @Input()
   public set entityType(entityType: OryxEntityType) {
     this._entityType = entityType;
+    this.entityTypeName = this._translatePipe.transform(
+      'oryx_type_' + entityType.code
+    );
+    switch (entityType.countryName) {
+      case OryxSideNames.RUSSIA:
+        this.chartLineColor = 'red';
+        break;
+      case OryxSideNames.UKRAINE:
+        this.chartLineColor = 'blue';
+        break;
+      default:
+        this.chartLineColor = null;
+    }
     this._setChartsData();
   }
 
   public get entityType() {
     return this._entityType;
   }
+
+  constructor(private _translatePipe: TranslatePipe) {}
 
   private _sortData(data: Array<ChartData>): Array<ChartData> {
     return sortOryxData(data, 'name');
@@ -60,7 +80,14 @@ export class OryxTypeLossesComponent {
         value,
       })
     );
-    this.statisticsChartData = this._sortData(statisticsChartData);
+    const sortedStatisticsChartData = this._sortData(statisticsChartData);
+    const translatedStatisticsChartData = sortedStatisticsChartData.map(
+      ({ name, value }) => ({
+        name: this._translatePipe.transform('oryx_entity_' + name),
+        value,
+      })
+    );
+    this.statisticsChartData = translatedStatisticsChartData;
   }
 
   private _setEntitiesChartData(): void {

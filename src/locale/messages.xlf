@@ -2,11 +2,25 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="UKRAINE" datatype="html">
+        <source>Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_translate/app-translation.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="RUSSIA" datatype="html">
+        <source>Russia</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_translate/app-translation.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="statistics.date" datatype="html">
         <source>Date</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/_translate/app-translation.ts</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageTitle" datatype="html">
@@ -611,6 +625,48 @@
           <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="oryx.entity.oryx_entity_destroyed" datatype="html">
+        <source>Destroyed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.entity.oryx_entity_damaged" datatype="html">
+        <source>Damaged</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.entity.oryx_entity_captured" datatype="html">
+        <source>Captured</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.entity.oryx_entity_abandoned" datatype="html">
+        <source>Abandoned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.entity.oryx_entity_damagedAndCaptured" datatype="html">
+        <source>Damaged And Captured</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.entity.oryx_entity_damagedAndAbandoned" datatype="html">
+        <source>Damaged And Abandoned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8598886608217248074" datatype="html">
         <source>URL:</source>
         <context-group purpose="location">
@@ -647,14 +703,70 @@
         <source>data placeholder</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx-compare/components/oryx-compare-type/oryx-compare-type.component.html</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6836949342567686088" datatype="html">
         <source>Count:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7335990613004661544" datatype="html">
+        <source>Source link</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6199032950321988805" datatype="html">
+        <source>Last scrapped:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3448462145758383019" datatype="html">
+        <source>Total</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6321562733889197649" datatype="html">
+        <source>Destroyed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7883825592248882903" datatype="html">
+        <source>Damaged</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8562778474158270448" datatype="html">
+        <source>Abandoned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2307237776780334730" datatype="html">
+        <source>Captured</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="22009089633910350" datatype="html">

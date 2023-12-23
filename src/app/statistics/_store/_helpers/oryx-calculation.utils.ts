@@ -88,7 +88,7 @@ function createTypesCountMap(
 ): Map<string, OryxSideTypeLossesCountComparison> {
   const entityTypes = sidesTypesInfo.flatMap((sideTypes) =>
     sideTypes.map((entityType) => ({
-      name: entityType.name,
+      name: entityType.code,
       countryName: entityType.countryName,
       count: entityType.statistics.count,
     }))

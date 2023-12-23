@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 1024.00 1024.00">
-<path fill="#000000" d="
+<path  d="
   M 86.71 531.57
   Q 86.58 531.51 86.55 531.37
   Q 86.53 531.27 86.43 531.27
@@ -5052,7 +5052,7 @@
   Q 566.26 647.53 565.41 650.25
   Z"
 />
-<path fill="#000000" d="
+<path  d="
   M 618.39 468.34
   C 617.97 470.79 617.63 474.15 617.99 476.88
   Q 618.09 477.67 617.61 477.03
@@ -5062,7 +5062,7 @@
   Q 618.43 468.07 618.39 468.34
   Z"
 />
-<path fill="#000000" d="
+<path  d="
   M 607.93 476.24
   A 1.49 1.49 0.0 0 1 606.50 477.78
   L 597.53 478.11
@@ -5074,7 +5074,7 @@
   L 607.93 476.24
   Z"
 />
-<path fill="#000000" d="
+<path  d="
   M 765.13 474.91
   A 0.05 0.05 0.0 0 1 765.08 474.86
   L 765.08 474.65
@@ -5086,9 +5086,9 @@
   L 765.13 474.91
   Z"
 />
-<ellipse fill="#000000" cx="0.00" cy="0.00" transform="translate(113.79,476.94) rotate(49.9)" rx="1.42" ry="0.36"/>
-<ellipse fill="#000000" cx="0.00" cy="0.00" transform="translate(625.57,525.64) rotate(-2.6)" rx="2.62" ry="0.40"/>
-<path fill="#000000" d="
+<ellipse  cx="0.00" cy="0.00" transform="translate(113.79,476.94) rotate(49.9)" rx="1.42" ry="0.36"/>
+<ellipse  cx="0.00" cy="0.00" transform="translate(625.57,525.64) rotate(-2.6)" rx="2.62" ry="0.40"/>
+<path  d="
   M 870.57 560.79
   Q 870.16 561.65 869.96 560.72
   Q 869.75 559.70 870.06 558.91

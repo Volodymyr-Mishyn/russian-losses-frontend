@@ -1,6 +1,6 @@
 <div class="flex flex-col items-stretch justify-start h-full">
   <app-range-selection
-    class="mat-elevation-z4 flex-none z-10 h-20"
+    class="mat-elevation-z4 flex-none z-10 h-20 p-2"
     (rangeChanged)="setRange($event)"
   ></app-range-selection>
   @if (data$|async; as data) {

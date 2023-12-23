@@ -1,12 +1,16 @@
 <div class="flex flex-col justify-start items-stretch">
-  <div class="mat-h2">{{ entityTypeComparison.name }}</div>
+  <div class="mat-h2">
+    {{ typeName }}
+  </div>
   @defer (on viewport) {
   <div class="flex flex-col justify-start items-stretch gap-4">
     <app-oryx-compare-type-overall-counts
       [countData]="entityTypeComparison.countComparison"
+      [typeName]="typeName"
     ></app-oryx-compare-type-overall-counts>
     <app-oryx-compare-type-entities
       class="w-full"
+      [typeName]="typeName"
       [entitiesComparison]="entityTypeComparison.entitiesComparison"
     ></app-oryx-compare-type-entities>
   </div>

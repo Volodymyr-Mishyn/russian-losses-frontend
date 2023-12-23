@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.js --configuration=development",
-    "start:uk": "ng serve --proxy-config proxy.conf.js --configuration=uk",
+    "start:uk": "ng serve --proxy-config proxy.conf.js --configuration=development-uk",
     "build": "ng build",
     "build:prod": "ng build --configuration production",
     "build:localize": "ng build --configuration development --localize",

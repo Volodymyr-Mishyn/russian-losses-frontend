@@ -1,10 +1,14 @@
 <h2 mat-dialog-title>
-  {{ data.entityModel.name }} ({{ data.entityModel.countryName }})
+  {{ data.entityModel.name }} ({{
+    data.entityModel.countryName | appTranslate
+  }})
 </h2>
 <mat-dialog-content class="mat-typography">
   <div class="flex flex-col items-start justify-start">
     <div><span i18n>Count:</span> {{ data.entityModel.count }}</div>
-    <div>{{ data.detailKey }}: {{ detail.count }}</div>
+    <div>
+      {{ "oryx_entity_" + data.detailKey | appTranslate }}: {{ detail.count }}
+    </div>
   </div>
   <div class="p-4 m-2">
     <ul>
@@ -17,5 +21,7 @@
   </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button mat-dialog-close>
+    <span i18n>Close</span>
+  </button>
 </mat-dialog-actions>

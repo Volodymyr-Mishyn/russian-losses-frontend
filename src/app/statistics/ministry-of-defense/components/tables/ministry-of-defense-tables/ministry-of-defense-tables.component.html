@@ -1,9 +1,9 @@
 <div class="flex flex-col gap-8">
   <app-ministry-of-defense-days-table [daysData]="daysData">
     <span class="mat-h2" ngProjectAs="table-title" #tableTitle>
-      <span i18n>Russian losses by date</span>
+      <span i18n>Russian losses by date</span> &nbsp;
       <span i18n>{{ datesRange.start | date : "dd.MM.YYYY" }}</span> -
-      <span i18n>{{ datesRange.end | date : "dd.MM.YYYY" }} </span>
+      <span i18n>{{ datesRange.end | date : "dd.MM.YYYY" }} </span> &nbsp;
       <span i18n>({{ datesRange.days }} days)</span>
     </span>
   </app-ministry-of-defense-days-table>
@@ -14,9 +14,9 @@
       [calculatedData]="summaryData"
     >
       <span class="mat-h2" ngProjectAs="table-title" #tableTitle>
-        <span i18n>Summary russian losses in range</span>
+        <span i18n>Summary russian losses in range</span> &nbsp;
         <span i18n>{{ datesRange.start | date : "dd.MM.YYYY" }}</span> -
-        <span i18n>{{ datesRange.end | date : "dd.MM.YYYY" }}</span>
+        <span i18n>{{ datesRange.end | date : "dd.MM.YYYY" }}</span> &nbsp;
         <span i18n>({{ datesRange.days }} days)</span>
       </span>
     </app-ministry-of-defense-calculated-table>
@@ -25,9 +25,9 @@
       [calculatedData]="averageData"
     >
       <span class="mat-h2" ngProjectAs="table-title" #tableTitle>
-        <span i18n>Average russian daily losses in range</span>
+        <span i18n>Average russian daily losses in range</span> &nbsp;
         <span i18n>{{ datesRange.start | date : "dd.MM.YYYY" }}</span> -
-        <span i18n>{{ datesRange.end | date : "dd.MM.YYYY" }}</span>
+        <span i18n>{{ datesRange.end | date : "dd.MM.YYYY" }}</span> &nbsp;
         <span i18n>({{ datesRange.days }} days)</span>
       </span>
     </app-ministry-of-defense-calculated-table>

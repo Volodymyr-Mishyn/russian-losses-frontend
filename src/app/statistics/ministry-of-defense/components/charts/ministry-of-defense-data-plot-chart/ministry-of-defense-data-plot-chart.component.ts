@@ -28,6 +28,8 @@ export class MinistryOfDefenseDataPlotChartComponent implements OnChanges {
   @Input()
   public datesRange!: DateRangeWithCount;
 
+  public color = '#ff000099';
+
   private _typeOfLoss!: string;
 
   public get typeOfLoss(): string {

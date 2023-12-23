@@ -1,5 +1,5 @@
-<div class="flex flex-col justify-start items-stretch">
-  <div class="mat-h2">{{ "oryx_type_" + entityType.code | appTranslate }}</div>
+<div class="flex flex-col justify-start items-stretch gap-2">
+  <div class="mat-h2">{{ entityTypeName }}</div>
   <app-oryx-statistics
     [statistics]="entityType.statistics"
     class="m-2 p-2"
@@ -8,8 +8,10 @@
     <mat-accordion class="flex-1" multi>
       @for (entityModel of entityType.entities; track $index) {
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title> {{ entityModel.name }} </mat-panel-title>
+        <mat-expansion-panel-header [collapsedHeight]="'auto'">
+          <mat-panel-title>
+            <span class="p-2">{{ entityModel.name }}</span>
+          </mat-panel-title>
           <mat-panel-description>
             {{ entityModel.count }}
           </mat-panel-description>
@@ -28,17 +30,20 @@
       @defer (on viewport) {
       <app-pie-chart
         [data]="statisticsChartData"
-        [title]="'oryx_type_' + entityType.code | appTranslate"
+        [title]="entityTypeName"
       ></app-pie-chart>
-      <app-number-data-chart
-        [data]="entitiesChartData"
-        [title]="'oryx_type_' + entityType.code | appTranslate"
-      ></app-number-data-chart>
       }@placeholder {
-      <div>
-        {{ "oryx_type_" + entityType.code | appTranslate }} charts placeholder
-      </div>
+      <div>{{ entityTypeName }} charts placeholder</div>
       }
     </div>
   </div>
+  @defer (on viewport) {
+  <app-number-data-chart
+    [color]="chartLineColor"
+    [data]="entitiesChartData"
+    [title]="entityTypeName"
+  ></app-number-data-chart>
+  }@placeholder {
+  <div>{{ entityTypeName }} charts placeholder</div>
+  }
 </div>

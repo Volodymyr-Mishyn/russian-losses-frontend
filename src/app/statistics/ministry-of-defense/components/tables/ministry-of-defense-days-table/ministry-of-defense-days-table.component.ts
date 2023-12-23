@@ -13,7 +13,11 @@ import {
   MoDDataFlat,
   MoDDayResultFlat,
 } from '../../../../_models/data/mod/mod-model';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import {
+  MatPaginator,
+  MatPaginatorIntl,
+  MatPaginatorModule,
+} from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import {
   ALL_MOD_ENTITIES,
@@ -27,6 +31,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { CustomPaginatorIntl } from '../../../../services/custom-paginator-intl.service';
 
 const BASE_HEADER_COLUMNS = ['date', 'dayOfInvasion'];
 const BASE_PAGE_SIZE = 7;
@@ -45,6 +50,7 @@ const BASE_PAGE_SIZE = 7;
     CasualtyCellComponent,
     TranslatePipe,
   ],
+  providers: [{ provide: MatPaginatorIntl, useClass: CustomPaginatorIntl }],
   templateUrl: './ministry-of-defense-days-table.component.html',
   styleUrl: './ministry-of-defense-days-table.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

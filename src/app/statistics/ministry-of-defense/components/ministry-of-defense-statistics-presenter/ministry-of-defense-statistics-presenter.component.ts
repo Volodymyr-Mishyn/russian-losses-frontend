@@ -6,6 +6,7 @@ import { DateRangeWithCount } from '../../../_models/range';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MinistryOfDefenseChartsComponent } from '../charts/ministry-of-defense-charts/ministry-of-defense-charts.component';
 import { PlatformService } from '../../../../services/platform.service';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-ministry-of-defense-statistics-presenter',
@@ -15,6 +16,7 @@ import { PlatformService } from '../../../../services/platform.service';
     MatTabsModule,
     MinistryOfDefenseTablesComponent,
     MinistryOfDefenseChartsComponent,
+    MatIconModule,
   ],
   templateUrl: './ministry-of-defense-statistics-presenter.component.html',
   styleUrl: './ministry-of-defense-statistics-presenter.component.scss',

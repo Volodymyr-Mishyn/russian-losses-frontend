@@ -64,8 +64,26 @@
                 }
               ]
             },
+            "development-uk": {
+              "localize": ["uk"],
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.uk.ts"
+                }
+              ]
+            },
             "uk": {
-              "localize": ["uk"]
+              "localize": ["uk"],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.uk.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -81,6 +99,9 @@
             },
             "development": {
               "buildTarget": "russian-losses-frontend:build:development"
+            },
+            "development-uk": {
+              "buildTarget": "russian-losses-frontend:build:development-uk"
             }
           },
           "defaultConfiguration": "development"

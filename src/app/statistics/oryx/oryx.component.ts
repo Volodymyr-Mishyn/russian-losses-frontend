@@ -28,6 +28,21 @@ export class OryxComponent implements OnInit {
   public scrollContainer!: ElementRef;
   public containerReady = false;
 
+  public links = [
+    {
+      name: $localize`Russia`,
+      route: ['/statistics', 'oryx', 'country-losses', 'russia'],
+    },
+    {
+      name: $localize`Ukraine`,
+      route: ['/statistics', 'oryx', 'country-losses', 'Ukraine'],
+    },
+    {
+      name: $localize`Compare`,
+      route: ['/statistics', 'oryx', 'compare-losses'],
+    },
+  ];
+
   public ngOnInit(): void {
     setTimeout(() => {
       this.containerReady = true;

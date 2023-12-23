@@ -1,3 +1,6 @@
+import { environment } from '../environments/environment';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
 import { ApplicationConfig, isDevMode } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
@@ -7,8 +10,11 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideStore } from '@ngrx/store';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { MAT_DATE_LOCALE } from '@angular/material/core';
+import localeEn from '@angular/common/locales/en';
 import localeUk from '@angular/common/locales/uk';
+
+registerLocaleData(localeEn);
+registerLocaleData(localeUk);
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -24,6 +30,6 @@ export const appConfig: ApplicationConfig = {
       trace: false,
       traceLimit: 75,
     }),
-    { provide: MAT_DATE_LOCALE, useValue: 'uk-UA' },
+    { provide: LOCALE_ID, useValue: environment.locale },
   ],
 };
