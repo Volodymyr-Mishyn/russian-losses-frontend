@@ -1,20 +1,20 @@
-@for (item of list; track $index) {
-<div
-  class="flex items-center justify-center py-3 cursor-pointer h-20"
-  [matTooltip]="item.tooltip"
-  matTooltipPosition="right"
-  [routerLink]="item.route"
-  routerLinkActive="active-route"
->
-  @if (item.icon) {
-
-  <div>{{ item.icon }}</div>
-  <div>{{ item.title }}</div>
-
-  }@else {
-  <div>
-    {{ item.title }}
+<div class="flex flex-col justify-start items-stretch gap-4">
+  @for (item of list; track $index) {
+  <div
+    class="flex flex-col items-center justify-center cursor-pointer h-24 p-2"
+    [matTooltip]="item.tooltip"
+    matTooltipPosition="right"
+    [routerLink]="item.route"
+    routerLinkActive="active-route mat-elevation-z4"
+  >
+    @if (item.icon) {
+    <div>
+      <img [src]="item.icon" width="50" />
+    </div>
+    }
+    <div>
+      {{ item.title }}
+    </div>
   </div>
   }
 </div>
-}

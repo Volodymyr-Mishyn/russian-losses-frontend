@@ -12,12 +12,15 @@
 
 // Define your theme with color palettes, typography and density
 
+$base-blue-color: #0056b9;
+$base-yellow-color: #ffd800;
+
 $mat-theme-primary-palette: map-merge(
   mat.$blue-palette,
   (
-    501: #0056b9,
-    201: #0056b9,
-    601: #0056b9,
+    501: $base-blue-color,
+    201: $base-blue-color,
+    601: $base-blue-color,
     contrast: (
       100: #150c4a,
     ),
@@ -63,8 +66,8 @@ $mat-dark-theme-primary-palette: map-merge(
   mat.$blue-palette,
   (
     501: #2c71c1,
-    201: #0056b9,
-    601: #0056b9,
+    201: $base-blue-color,
+    601: $base-blue-color,
   )
 );
 $mat-dark-theme-primary: mat.define-palette(
@@ -78,9 +81,9 @@ $mat-dark-theme-primary: mat.define-palette(
 $mat-dark-theme-accent-palette: map-merge(
   mat.$amber-palette,
   (
-    501: #ffd800,
-    201: #ffd800,
-    601: #ffd800,
+    501: $base-yellow-color,
+    201: $base-yellow-color,
+    601: $base-yellow-color,
     contrast: (
       A400: black,
     ),
@@ -187,13 +190,23 @@ body {
   height: 64px;
 }
 
-.mat-icon.my-icon {
+.mat-icon.rl-app-icon {
   fill: black;
 }
 
+.active-sub-route {
+  color: $base-blue-color;
+}
+
 .dark-theme {
-  .mat-icon.my-icon {
+  .mat-icon.rl-app-icon {
     fill: white;
+  }
+  .active-route {
+    color: $base-yellow-color;
+  }
+  .active-sub-route {
+    color: $base-yellow-color;
   }
 }
 
