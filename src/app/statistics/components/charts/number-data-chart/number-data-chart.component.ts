@@ -65,6 +65,14 @@ export class NumberDataChartComponent
                 text: `${this.title}`,
               },
             },
+            scales: {
+              x: {
+                ticks: {
+                  maxRotation: 180,
+                  minRotation: 0,
+                },
+              },
+            },
           },
         });
         const theme = await firstValueFrom(

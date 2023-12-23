@@ -13,7 +13,7 @@ export class TableDirective {
 
   public export(data: unknown) {
     const title =
-      this.tableTitle?.nativeElement?.innerHTML ||
+      this.tableTitle?.nativeElement?.innerText ||
       `table ${new Date().toLocaleString()}`;
     this._exporter.exportDataAsJSON(data, title);
   }

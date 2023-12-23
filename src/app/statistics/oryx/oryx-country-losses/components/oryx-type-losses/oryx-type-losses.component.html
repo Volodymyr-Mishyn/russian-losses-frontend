@@ -32,14 +32,18 @@
         [data]="statisticsChartData"
         [title]="entityTypeName"
       ></app-pie-chart>
-      <app-number-data-chart
-        [color]="chartLineColor"
-        [data]="entitiesChartData"
-        [title]="entityTypeName"
-      ></app-number-data-chart>
       }@placeholder {
       <div>{{ entityTypeName }} charts placeholder</div>
       }
     </div>
   </div>
+  @defer (on viewport) {
+  <app-number-data-chart
+    [color]="chartLineColor"
+    [data]="entitiesChartData"
+    [title]="entityTypeName"
+  ></app-number-data-chart>
+  }@placeholder {
+  <div>{{ entityTypeName }} charts placeholder</div>
+  }
 </div>
