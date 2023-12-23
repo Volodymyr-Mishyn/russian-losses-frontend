@@ -1,7 +1,7 @@
 <div class="flex flex-col justify-start items-stretch gap-4">
   @for (item of list; track $index) {
   <div
-    class="flex flex-col items-center justify-center cursor-pointer h-24 p-2"
+    class="flex flex-col items-center justify-center cursor-pointer h-24 p-2 gap-1"
     [matTooltip]="item.tooltip"
     matTooltipPosition="right"
     [routerLink]="item.route"

@@ -9,6 +9,8 @@ import { StatisticsTranslationService } from './services/statistics-translation.
 import { DateAdapter } from '@angular/material/core';
 import { CustomDateAdapterService } from './services/custom-date-adapter.service';
 import { ToggleThemeComponent } from '../components/toggle-theme/toggle-theme.component';
+import { RegisterIconsService } from '../services/register-icons.service';
+import { MatIconModule } from '@angular/material/icon';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -38,6 +40,7 @@ const NAVIGATION: Array<NavigationElement> = [
     MatSidenavModule,
     NavigationListComponent,
     ToggleThemeComponent,
+    MatIconModule,
   ],
   providers: [
     { provide: TranslationService, useClass: StatisticsTranslationService },
@@ -48,4 +51,8 @@ const NAVIGATION: Array<NavigationElement> = [
 })
 export class StatisticsComponent {
   public navigationList = NAVIGATION;
+
+  constructor(private _registerIconsService: RegisterIconsService) {
+    this._registerIconsService.registerIcons(['trident']);
+  }
 }
