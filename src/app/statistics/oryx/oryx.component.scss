@@ -1,4 +1,13 @@
+@import "../../../styles/variables.scss";
 .link-container {
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.active-oryx-route {
+  border-bottom: 2px solid $base-primary-color;
+}
+
+:host-context(.dark-theme) .active-oryx-route {
+  border-bottom: 2px solid $base-accent-color;
 }

@@ -1,6 +1,8 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
+@import "styles/_variables.scss";
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -12,15 +14,15 @@
 
 // Define your theme with color palettes, typography and density
 
-$base-blue-color: #0056b9;
-$base-yellow-color: #ffd800;
+// $base-primary-color: #0056b9;
+// $base-accent-color: #ffd800;
 
 $mat-theme-primary-palette: map-merge(
   mat.$blue-palette,
   (
-    501: $base-blue-color,
-    201: $base-blue-color,
-    601: $base-blue-color,
+    501: $base-primary-color,
+    201: $base-primary-color,
+    601: $base-primary-color,
     contrast: (
       100: #150c4a,
     ),
@@ -66,8 +68,8 @@ $mat-dark-theme-primary-palette: map-merge(
   mat.$blue-palette,
   (
     501: #2c71c1,
-    201: $base-blue-color,
-    601: $base-blue-color,
+    201: $base-primary-color,
+    601: $base-primary-color,
   )
 );
 $mat-dark-theme-primary: mat.define-palette(
@@ -81,9 +83,9 @@ $mat-dark-theme-primary: mat.define-palette(
 $mat-dark-theme-accent-palette: map-merge(
   mat.$amber-palette,
   (
-    501: $base-yellow-color,
-    201: $base-yellow-color,
-    601: $base-yellow-color,
+    501: $base-accent-color,
+    201: $base-accent-color,
+    601: $base-accent-color,
     contrast: (
       A400: black,
     ),
@@ -195,7 +197,7 @@ body {
 }
 
 .active-sub-route {
-  color: $base-blue-color;
+  color: $base-primary-color;
 }
 
 .dark-theme {
@@ -203,10 +205,10 @@ body {
     fill: white;
   }
   .active-route {
-    color: $base-yellow-color;
+    color: $base-accent-color;
   }
   .active-sub-route {
-    color: $base-yellow-color;
+    color: $base-accent-color;
   }
 }
 
