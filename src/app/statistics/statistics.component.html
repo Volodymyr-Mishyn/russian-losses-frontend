@@ -1,8 +1,7 @@
 <mat-sidenav-container class="h-screen w-screen" autosize>
   <mat-sidenav
     #leftSidenav
-    class="w-24 flex flex-col space-y-5"
-    [ngClass]="{ 'w-28': isMobile() }"
+    class="w-28 sm:w-24 flex flex-col space-y-5"
     [mode]="isMobile() ? 'over' : 'side'"
     [fixedInViewport]="isMobile()"
     [opened]="!isMobile()"
@@ -21,7 +20,7 @@
     </div>
   </mat-sidenav>
 
-  <mat-sidenav-content class="content h-screen w-full">
+  <mat-sidenav-content class="content h-screen">
     @if (isMobile()) {
     <mat-toolbar color="accent">
       <button mat-icon-button (click)="leftSidenav.toggle()" color="primary">
