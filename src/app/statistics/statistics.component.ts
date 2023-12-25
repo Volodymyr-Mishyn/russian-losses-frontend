@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -11,6 +12,7 @@ import { CustomDateAdapterService } from './services/custom-date-adapter.service
 import { ToggleThemeComponent } from '../components/toggle-theme/toggle-theme.component';
 import { RegisterIconsService } from '../services/register-icons.service';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -41,6 +43,7 @@ const NAVIGATION: Array<NavigationElement> = [
     NavigationListComponent,
     ToggleThemeComponent,
     MatIconModule,
+    MatToolbarModule,
   ],
   providers: [
     { provide: TranslationService, useClass: StatisticsTranslationService },
@@ -49,10 +52,27 @@ const NAVIGATION: Array<NavigationElement> = [
   templateUrl: './statistics.component.html',
   styleUrl: './statistics.component.scss',
 })
-export class StatisticsComponent {
+export class StatisticsComponent implements OnDestroy {
+  public mobileQuery: MediaQueryList;
   public navigationList = NAVIGATION;
+  private _mobileQueryListener!: () => void;
 
-  constructor(private _registerIconsService: RegisterIconsService) {
+  constructor(
+    private _registerIconsService: RegisterIconsService,
+    private _changeDetectorRef: ChangeDetectorRef,
+    private _media: MediaMatcher
+  ) {
     this._registerIconsService.registerIcons(['trident']);
+    this.mobileQuery = this._media.matchMedia('(max-width: 640px)');
+    this._mobileQueryListener = () => this._changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this._mobileQueryListener);
+  }
+
+  public ngOnDestroy(): void {
+    this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  public isMobile(): boolean {
+    return this.mobileQuery.matches;
   }
 }
