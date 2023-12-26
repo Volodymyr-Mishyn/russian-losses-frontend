@@ -2,9 +2,11 @@
   <div class="mat-h2">{{ entityTypeName }}</div>
   <app-oryx-statistics
     [statistics]="entityType.statistics"
-    class="m-2 p-2"
+    class="sm:m-2 p-2"
   ></app-oryx-statistics>
-  <div class="ml-6 flex flex-row justify-stretch items-start">
+  <div
+    class="ml-3 md:ml-6 flex flex-col justify-stretch items-stretch lg:items-start lg:flex-row"
+  >
     <mat-accordion class="flex-1" multi>
       @for (entityModel of entityType.entities; track $index) {
       <mat-expansion-panel>

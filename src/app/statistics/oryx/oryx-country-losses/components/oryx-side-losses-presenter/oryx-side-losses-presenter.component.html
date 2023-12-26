@@ -1,4 +1,4 @@
-<div class="m-2 p-2 flex flex-col justify-start items-stretch gap-1">
+<div class="sm:m-2 p-2 flex flex-col justify-start items-stretch gap-1">
   <div class="mat-h1">{{ data.countryName }} losses</div>
   <div>
     <a [href]="metadata.url" target="_blank">
@@ -11,10 +11,10 @@
   </div>
   <app-oryx-statistics
     [statistics]="data.statistics"
-    class="m-2 p-2"
+    class="sm:m-2 p-2"
   ></app-oryx-statistics>
 </div>
-<div class="m-2 p-2 flex flex-col justify-start items-stretch">
+<div class="sm:m-2 p-2 flex flex-col justify-start items-stretch">
   @for (entityType of data.entityTypes; track $index) {
   <div class="flex flex-col justify-start items-stretch mb-10">
     <app-oryx-type-losses
