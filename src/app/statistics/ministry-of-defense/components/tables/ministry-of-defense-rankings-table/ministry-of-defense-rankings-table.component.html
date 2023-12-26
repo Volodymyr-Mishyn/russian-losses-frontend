@@ -7,7 +7,9 @@
   </div>
   <table mat-table [dataSource]="modRankings">
     <ng-container matColumnDef="entityName" sticky>
-      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <th mat-header-cell *matHeaderCellDef>
+        <span i18n>Type</span>
+      </th>
       <td mat-cell *matCellDef="let element">
         <div class="flex flex-row justify-start items-center gap-4">
           <mat-icon
