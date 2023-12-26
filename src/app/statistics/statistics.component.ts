@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavigationElement } from './_models/navigation/navigation-element';
 import { NavigationListComponent } from './components/navigation-list/navigation-list.component';
@@ -44,6 +44,7 @@ const NAVIGATION: Array<NavigationElement> = [
   standalone: true,
   imports: [
     CommonModule,
+    RouterLink,
     RouterOutlet,
     MatSidenavModule,
     NavigationListComponent,
@@ -66,7 +67,8 @@ export class StatisticsComponent implements OnDestroy {
   constructor(
     private _registerIconsService: RegisterIconsService,
     private _changeDetectorRef: ChangeDetectorRef,
-    private _media: MediaMatcher
+    private _media: MediaMatcher,
+    private _router: Router
   ) {
     this._registerIconsService.registerIcons(['trident']);
     this.mobileQuery = this._media.matchMedia('(max-width: 640px)');
@@ -80,5 +82,9 @@ export class StatisticsComponent implements OnDestroy {
 
   public isMobile(): boolean {
     return this.mobileQuery.matches;
+  }
+
+  public goHome(): void {
+    this._router.navigate(['/statistics/home']);
   }
 }
