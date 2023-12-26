@@ -28,6 +28,12 @@ const NAVIGATION: Array<NavigationElement> = [
     route: `/statistics/oryx`,
   },
   {
+    title: $localize`Support Ukraine`,
+    icon: 'assets/img/flag_with_trident.svg',
+    tooltip: $localize`Support/Donate Ukraine`,
+    route: `/statistics/support`,
+  },
+  {
     title: $localize`About`,
     tooltip: $localize`About`,
     route: `/statistics/about`,

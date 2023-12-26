@@ -10,6 +10,7 @@ import { MoDEffects } from './_store/effects/mod.effects';
 import { oryxStoreFeature } from './_store/features/oryx.feature';
 import { OryxEffects } from './_store/effects/oryx.effects';
 import { oryxResolver } from './resolvers/oryx.resolver';
+import { SupportComponent } from './support/support.component';
 
 export const STATISTICS_ROUTES: Routes = [
   {
@@ -19,6 +20,7 @@ export const STATISTICS_ROUTES: Routes = [
       { path: '', pathMatch: 'full', redirectTo: 'home' },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'support', component: SupportComponent },
       {
         path: 'ministry-of-defense',
         loadComponent: () =>
