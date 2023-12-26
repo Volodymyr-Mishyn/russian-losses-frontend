@@ -103,7 +103,9 @@ export class DateDataChartComponent
         entry > average ? 'green' : 'red'
       );
     } else {
-      this.chart.data.datasets[0].backgroundColor = data.map(() => 'teal');
+      this.chart.data.datasets[0].backgroundColor = data.map(() =>
+        this.customColor ? this.customColor : 'teal'
+      );
     }
   }
 
@@ -159,7 +161,7 @@ export class DateDataChartComponent
                 label: `${this.title} ${this.type}`,
                 data: [],
                 borderColor: 'blue',
-                backgroundColor: 'teal',
+                backgroundColor: this.customColor ? this.customColor : 'teal',
               },
             ],
           },
@@ -230,9 +232,6 @@ export class DateDataChartComponent
 
   protected updateChart(): void {
     this._modifyGradationMode();
-    if (this.customColor) {
-      this.chart.data.datasets[0].backgroundColor = this.customColor;
-    }
     this.chart.update();
   }
 
