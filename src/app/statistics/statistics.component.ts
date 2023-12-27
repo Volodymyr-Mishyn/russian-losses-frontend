@@ -83,8 +83,4 @@ export class StatisticsComponent implements OnDestroy {
   public isMobile(): boolean {
     return this.mobileQuery.matches;
   }
-
-  public goHome(): void {
-    this._router.navigate(['/statistics/home']);
-  }
 }

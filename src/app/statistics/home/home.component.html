@@ -1,32 +1,99 @@
-<div class="mt-8 mx-16 md:mx-32 lg:mx-40 xl:mx-64">
+<div class="mt-8 mx-16 md:mx-32 lg:mx-40 xl:mx-56">
   <p class="mat-h1">%NAME_HERE%</p>
   <article class="text-justify">
     <p class="mat-h2">
-      On February 24th, 2022, the world witnessed the stark reality of russian
-      imperialistic aggression in Ukraine.
+      <span i18n>
+        On February 24th, 2022, the world witnessed the stark reality of russian
+        imperialistic aggression in Ukraine.
+      </span>
     </p>
     <p class="mat-h2">
-      Since then, Ukraine has been a symbol of resilience, bravely confronting
-      against military superpower. It's a battle not only for land but for the
-      preservation of culture and identity.
+      <span i18n>
+        Since then, Ukraine has been a symbol of resilience, bravely confronting
+        against military superpower. It's a battle not only for land but for the
+        preservation of culture and identity.
+      </span>
     </p>
     <p class="mat-h2">
-      <span>
+      <span i18n>
         Many experts predicted that Ukraine's fall would be a matter of weeks,
         yet it's been already
       </span>
-      <span class="bold-text text-3xl bg-red-500">{{ daysCount }} days</span>
-      <span
-        >, and the Ukrainian military forces not only continue to stand strong
+      <span class="bold-text text-3xl bg-red-500" i18n>
+        {{ daysCount }} days
+      </span>
+      <span i18n>
+        , and the Ukrainian military forces not only continue to stand strong
         but have also grown significantly stronger.
       </span>
     </p>
     <p class="mat-h2">
-      It's crucially important to continue fighting against this existential
-      threat as well as remember ukrainian soldiers and people who gave their
-      lives fighting for brighter future and freedom of our country. This
-      website is a tribute to all those who gave their lives for Ukraine.
+      <span i18n>
+        It's crucially important to continue fighting against this existential
+        threat as well as remember ukrainian soldiers and people who gave their
+        lives fighting for brighter future and freedom of Ukraine and whole
+        Europe. This website is a tribute to all those who gave their lives for
+        Ukraine.
+      </span>
     </p>
-    <p class="mat-h2"></p>
+    <p class="mat-h2">
+      <span i18n>
+        On these pages, you will see the severe losses in personnel and military
+        vehicles that the Ukrainian military has inflicted on the russian
+        occupying forces, clearly demonstrating the strength and effectiveness
+        of Ukraine's defense.
+      </span>
+    </p>
+    <div
+      class="flex flex-row justify-around items-stretch flex-wrap md:flex-nowrap pb-4"
+    >
+      <div
+        class="flex flex-col items-center justify-center p-2 m-2 mat-elevation-z4 cursor-pointer statistic-card"
+        routerLink="/statistics/ministry-of-defense"
+      >
+        <a
+          routerLink="/statistics/ministry-of-defense"
+          class="no-global-a flex flex-col items-center justify-center cursor-pointer gap-4"
+        >
+          <div>
+            <img src="assets/img/mod.svg" width="128" />
+          </div>
+          <div class="flex justify-center items-center">
+            <div class="text-center leading-tight">
+              <span i18n class="text-xl">
+                Russian losses according to Ministry of defense of Ukraine
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center p-2 m-2 mat-elevation-z4 cursor-pointer statistic-card"
+        routerLink="/statistics/oryx"
+      >
+        <a
+          routerLink="/statistics/oryx"
+          class="no-global-a flex flex-col items-center justify-center cursor-pointer gap-4"
+        >
+          <div>
+            <img src="assets/img/oryx.svg" width="128" />
+          </div>
+          <div class="flex justify-center items-center">
+            <div class="text-center leading-tight">
+              <span i18n class="text-xl">
+                Russian losses according Oryx Open Source Intelligence
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <p class="mat-h2">
+      Stand with Ukraine:
+      <a routerLink="/statistics/support">
+        <span>&nbsp;Your support can make a difference&nbsp;</span>
+      </a>
+      in this crucial fight for freedom and sovereignty.
+    </p>
   </article>
 </div>

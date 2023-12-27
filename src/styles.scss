@@ -230,3 +230,15 @@ a:hover {
   box-shadow: inset 1000px 0 0 0 #54b3d6;
   color: white;
 }
+
+a.no-global-a {
+  box-shadow: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  transition: none;
+  &:hover {
+    box-shadow: none;
+    color: inherit;
+  }
+}

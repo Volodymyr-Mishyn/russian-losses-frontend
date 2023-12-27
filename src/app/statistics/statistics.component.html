@@ -7,11 +7,10 @@
     [opened]="!isMobile()"
   >
     <div class="h-full flex flex-col justify-start items-stretch gap-4">
-      <div
-        class="logo justify-center flex pt-2 pb-2 cursor-pointer"
-        (click)="goHome()"
-      >
-        <mat-icon svgIcon="trident" class="logo-svg"></mat-icon>
+      <div class="logo justify-center flex pt-2 pb-2">
+        <a routerLink="'/statistics/home'" class="no-global-a">
+          <mat-icon svgIcon="trident" class="logo-svg"></mat-icon>
+        </a>
       </div>
       <div>
         <app-navigation-list [list]="navigationList"></app-navigation-list>
