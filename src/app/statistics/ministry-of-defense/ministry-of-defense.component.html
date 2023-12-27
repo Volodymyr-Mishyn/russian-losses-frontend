@@ -1,4 +1,8 @@
-<div class="flex flex-col items-stretch justify-start h-full">
+<div
+  class="flex flex-col items-stretch justify-start h-full"
+  [ngClass]="{ 'overflow-y-scroll': isMobile() }"
+  #scrollContainerMobile
+>
   <app-range-selection
     class="mat-elevation-z4 flex-none z-10 h-20 p-2"
     (rangeChanged)="setRange($event)"
@@ -6,7 +10,8 @@
   @if (data$|async; as data) {
   <app-ministry-of-defense-statistics-presenter
     #scrollContainer
-    class="flex-1 overflow-y-scroll"
+    class="flex-1"
+    [ngClass]="{ 'overflow-y-scroll': !isMobile() }"
     [datesRange]="localRange"
     [data]="data"
   ></app-ministry-of-defense-statistics-presenter>
@@ -15,7 +20,7 @@
 @if (containerReady) {
 <app-scroll-to-top
   class="scroll-to-top w-14 h-14 z-10"
-  [scrollContainer]="scrollContainer"
+  [scrollContainer]="currentScrollContainer"
 >
 </app-scroll-to-top>
 }

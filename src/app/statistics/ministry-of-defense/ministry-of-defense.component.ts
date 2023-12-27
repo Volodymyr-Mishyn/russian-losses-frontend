@@ -1,5 +1,6 @@
 import {
   AfterContentInit,
+  ChangeDetectorRef,
   Component,
   ElementRef,
   OnDestroy,
@@ -26,6 +27,7 @@ import { ALL_MOD_ENTITIES } from '../_models/data/mod/mod-entities';
 import { ScrollToTopComponent } from '../components/scroll-to-top/scroll-to-top.component';
 import { TranslationService } from '../../_translate/translation.service';
 import { MinistryOfDefenseTranslationService } from './services/ministry-of-defense-translation.service';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
   standalone: true,
@@ -49,9 +51,15 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   private _range$ = this._rangeSubject.asObservable();
   private _destroy$ = new Subject();
   private _currentDate = new Date();
+  private _mobileQuery!: MediaQueryList;
+  private _mobileQueryListener!: (event: MediaQueryListEvent) => void;
 
   @ViewChild('scrollContainer', { read: ElementRef, static: false })
   public scrollContainer!: ElementRef;
+  @ViewChild('scrollContainerMobile', { read: ElementRef, static: false })
+  public scrollContainerMobile!: ElementRef;
+
+  public currentScrollContainer!: ElementRef;
   public containerReady = false;
   public localRange!: DateRangeWithCount;
 
@@ -64,10 +72,13 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
 
   constructor(
     private _store: Store,
-    private _registerIconsService: RegisterIconsService
+    private _registerIconsService: RegisterIconsService,
+    private _changeDetectorRef: ChangeDetectorRef,
+    private _media: MediaMatcher
   ) {
     this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
     this._registerIcons();
+    this._registerMediaQuery();
   }
 
   private _registerIcons(): void {
@@ -82,6 +93,25 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
       end,
       days: diffDays,
     };
+  }
+
+  private _registerMediaQuery(): void {
+    const matchesSmallScreen = (matches: boolean) => {
+      if (matches) {
+        this.currentScrollContainer = this.scrollContainerMobile;
+      } else {
+        this.currentScrollContainer = this.scrollContainer;
+      }
+      this._changeDetectorRef.detectChanges();
+    };
+    this._mobileQuery = this._media.matchMedia('(max-width: 640px)');
+    this._mobileQueryListener = (event) => {
+      matchesSmallScreen(event.matches);
+    };
+    this._mobileQuery.addListener(this._mobileQueryListener);
+    setTimeout(() => {
+      matchesSmallScreen(this._mobileQuery.matches);
+    });
   }
 
   public setRange(range: DateRange | null) {
@@ -99,6 +129,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
+    this._mobileQuery.removeListener(this._mobileQueryListener);
     this._destroy$.next(null);
     this._destroy$.complete();
   }
@@ -107,5 +138,9 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.containerReady = true;
     });
+  }
+
+  public isMobile(): boolean {
+    return this._mobileQuery.matches;
   }
 }

@@ -1,13 +1,16 @@
-<mat-drawer-container class="h-screen w-screen" autosize>
-  <mat-drawer
-    #drawer
-    class="w-24 flex flex-col space-y-5"
-    mode="side"
-    [opened]="true"
+<mat-sidenav-container class="h-screen w-screen" autosize>
+  <mat-sidenav
+    #leftSidenav
+    class="w-28 sm:w-24 flex flex-col space-y-5"
+    [mode]="isMobile() ? 'over' : 'side'"
+    [fixedInViewport]="isMobile()"
+    [opened]="!isMobile()"
   >
     <div class="h-full flex flex-col justify-start items-stretch gap-4">
-      <div class="logo justify-center flex p-1 m-2 pb-2">
-        <img src="assets/img/trident.svg" width="55" />
+      <div class="logo justify-center flex pt-2 pb-2">
+        <a routerLink="'/statistics/home'" class="no-global-a">
+          <mat-icon svgIcon="trident" class="logo-svg"></mat-icon>
+        </a>
       </div>
       <div>
         <app-navigation-list [list]="navigationList"></app-navigation-list>
@@ -17,9 +20,16 @@
         <app-toggle-theme></app-toggle-theme>
       </div>
     </div>
-  </mat-drawer>
+  </mat-sidenav>
 
-  <div class="content h-screen w-full">
+  <mat-sidenav-content class="content h-screen">
+    @if (isMobile()) {
+    <mat-toolbar color="accent">
+      <button mat-icon-button (click)="leftSidenav.toggle()" color="primary">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    }
     <router-outlet></router-outlet>
-  </div>
-</mat-drawer-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -14,8 +14,10 @@ li {
 a {
   color: #007bff;
   text-decoration: none;
+  box-shadow: unset;
 }
 
 a:hover {
+  box-shadow: unset;
   text-decoration: underline;
 }

@@ -1,0 +1,120 @@
+<div class="flex flex-col justify-start items-stretch m-4 gap-2">
+  <div class="mat-h1">
+    <span i18n>
+      Stand against russian imperialistic aggression: Support Ukraine's Victory
+    </span>
+  </div>
+  <div class="mat-h3">
+    <span i18n>Donate to Ukrainian Army or verified charity platforms</span>
+  </div>
+  <div class="flex flex-row flex-wrap justify-start mb-4">
+    @for (option of donateOptions; track $index) {
+    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+      <mat-card-header>
+        <img
+          mat-card-avatar
+          class="donation-header-image"
+          [src]="option.smallImage"
+        />
+        <mat-card-title>{{ option.title }}</mat-card-title>
+        <mat-card-subtitle>{{ option.shortSummary }}</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        mat-card-image
+        [src]="option.image"
+        class="logo"
+        alt="donate organization image"
+        class="m-2"
+      />
+      <mat-card-content class="m-2 p-2">
+        <p class="text-justify">
+          {{ option.description }}
+        </p>
+        <div>
+          <a [href]="option.link" target="_blank">
+            <span i18n class="text-lg">Donation Link</span>
+          </a>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    }
+    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+      <mat-card-header>
+        <img
+          mat-card-avatar
+          class="donation-header-image"
+          src="assets/img/ukraine_flag.png"
+        />
+        <mat-card-title>
+          <span i18n>Consider other charity platforms</span>
+        </mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="assets/img/ukraine_flag.png"
+        alt="standforukraine"
+        class="m-2"
+      />
+      <mat-card-content class="m-2 p-2">
+        <div>
+          <a [href]="'https://standforukraine.com/'" target="_blank">
+            <span i18n class="text-lg">Stand For Ukraine</span>
+          </a>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="mat-h3">
+    <span i18n class="text-justify"
+      >Consider donating to Open Source Intelligence contributors whose hard
+      work allows to preserve and document all losses of russian invaders</span
+    >
+  </div>
+  <div class="flex flex-row flex-wrap justify-start mb-4">
+    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+      <mat-card-header>
+        <mat-card-title>
+          <span i18n>Jakub Janovsky</span>
+          <mat-card-subtitle><span>&#64;Rebel44CZ</span></mat-card-subtitle>
+        </mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="https://1.bp.blogspot.com/-HLfgaUHRLnc/XwNGwWwCQYI/AAAAAAAAN5g/Uh4v-kIdiWoEuTZgIs6TUabEYBEzGswDgCK4BGAYYCw/s1600/23.png"
+        alt="oryx"
+        class="m-2"
+      />
+      <mat-card-content class="m-2 p-2">
+        <div>
+          <p i18n>Bellingcat and Oryx Blog contributor.</p>
+          <a href="http://ko-fi.com/rebel44cz" target="_blank">
+            <span class="text-lg">http://ko-fi.com/rebel44cz</span>
+          </a>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+      <mat-card-header>
+        <mat-card-title>
+          <span i18n>WarSpotting</span>
+          <mat-card-subtitle>
+            <span i18n>open-source intelligence group</span>
+          </mat-card-subtitle>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="m-2 p-2">
+        <div>
+          <p class="text-justify" i18n>
+            WarSpotting is a database of documented losses in 2022 Russian
+            invasion in Ukraine. They use photo evidences found across open
+            sources on the web such as social media as proofs.
+          </p>
+          <a href="https://ukr.warspotting.net/about/#donate" target="_blank">
+            <span i18n class="text-lg">Donation link</span>
+          </a>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

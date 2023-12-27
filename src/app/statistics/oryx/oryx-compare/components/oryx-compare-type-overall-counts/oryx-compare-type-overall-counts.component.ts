@@ -17,6 +17,7 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 })
 export class OryxCompareTypeOverallCountsComponent {
   public displayedColumns: string[] = ['name', 'value'];
+  public chartTitle: string = $localize`overall count comparison`;
 
   @Input()
   public countData!: OryxSideTypeLossesCountComparison;

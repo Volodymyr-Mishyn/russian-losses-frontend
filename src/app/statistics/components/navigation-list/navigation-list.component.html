@@ -1,19 +1,28 @@
 <div class="flex flex-col justify-start items-stretch gap-4">
   @for (item of list; track $index) {
   <div
-    class="flex flex-col items-center justify-center cursor-pointer h-24 p-2"
+    class="flex flex-col items-center justify-center cursor-pointer h-24 p-2 gap-1"
     [matTooltip]="item.tooltip"
     matTooltipPosition="right"
     [routerLink]="item.route"
-    routerLinkActive="active-route mat-elevation-z4"
+    routerLinkActive="mat-elevation-z4"
   >
     @if (item.icon) {
     <div>
+      @if (item.isIconRegistered) {
+      <mat-icon [svgIcon]="item.icon" class="icon-m"></mat-icon>
+      } @else {
       <img [src]="item.icon" width="50" />
+      }
     </div>
     }
-    <div>
-      {{ item.title }}
+    <div
+      class="flex justify-center items-center"
+      routerLinkActive="active-route"
+    >
+      <div class="text-center leading-tight">
+        {{ item.title }}
+      </div>
     </div>
   </div>
   }

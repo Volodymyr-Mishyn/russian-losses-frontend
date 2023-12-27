@@ -1,1 +1,98 @@
-<p>about works!</p>
+<div
+  class="mt-8 mx-16 md:mx-32 lg:mx-40 xl:mx-56 flex flex-col justify-start items-stretch p-4 m-4"
+>
+  <article class="text-justify">
+    <p class="text-2xl" i18n>About Me</p>
+    <p i18n>Hello, I'm Volodymyr Mishyn</p>
+    <p i18n>
+      I am a software developer based in Kyiv, Ukraine. I dedicated my life to
+      programming and technology. And it would be a sin if I had not used my
+      skills to develop something that could potentially help a good cause:
+      bring additional attention to the ongoing War in Ukraine.
+    </p>
+    <p class="text-2xl" i18n>The Goal of This Site</p>
+
+    <p i18n>
+      To bring additional awareness to the ongoing War in Ukraine and to
+      demonstrate the strength and effectiveness of Ukraine's defense against
+      russian occupying forces.
+    </p>
+    <p>
+      <span i18n>Stand with Ukraine:</span>
+      <a routerLink="/statistics/support">
+        <span i18 class="text-xl">
+          &nbsp;Your support can make a difference&nbsp;
+        </span>
+      </a>
+      <span i18n>in this crucial fight for freedom and sovereignty.</span>
+    </p>
+    <div class="ml-8">
+      <p class="text-lg" i18n>How this site works</p>
+
+      <p i18n>This site is group of applications.</p>
+
+      <p>
+        <span i18n>
+          Scrapper app for scrapping data of russian losses from two sources:
+          Ministry of defense of Ukraine and Oryx OSINT :
+        </span>
+        <a
+          href="https://github.com/Volodymyr-Mishyn/russian-losses-scrapper"
+          target="_blank"
+        >
+          <span i18n>Scrapper code</span>
+        </a>
+      </p>
+      <p>
+        <span i18n>
+          Backend app for processing storing and providing access to data:
+        </span>
+        <a
+          href="https://github.com/Volodymyr-Mishyn/russian-losses-core"
+          target="_blank"
+        >
+          <span i18n>Backend code</span>
+        </a>
+      </p>
+      <p>
+        <span i18n>
+          Frontend app for displaying data You are seeing in front of You:
+        </span>
+        <a
+          href="https://github.com/Volodymyr-Mishyn/russian-losses-frontend"
+          target="_blank"
+        >
+          <span i18n>Frontend code</span>
+        </a>
+      </p>
+      <p i18n>
+        Backend Node.js app periodically on schedule runs scrapper data and
+        persists it. Frontend app is Angular Application on bleeding-edge
+        Angular17 with brand new SSR support. Most data grouping is performed on
+        frontend to minimize network traffic.
+      </p>
+    </div>
+    <p class="text-2xl" i18n>Let's Connect and Collaborate</p>
+
+    <p i18n>
+      Your feedback and support are invaluable. If you come across any bugs or
+      have suggestions to improve this site, please don't hesitate to reach out.
+    </p>
+    <p>
+      Twitter:
+      <a href="https://twitter.com/Mishyn_V" target="_blank">
+        <span>Mishyn_V</span>
+      </a>
+    </p>
+    <p>
+      GitHub:
+      <a href="https://github.com/Volodymyr-Mishyn" target="_blank">
+        <span>Volodymyr Mishyn</span>
+      </a>
+    </p>
+    <p i18n>
+      Together, we stand with Ukraine. Every contribution, big or small, makes a
+      difference.
+    </p>
+  </article>
+</div>
