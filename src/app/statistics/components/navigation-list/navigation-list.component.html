@@ -5,14 +5,21 @@
     [matTooltip]="item.tooltip"
     matTooltipPosition="right"
     [routerLink]="item.route"
-    routerLinkActive="active-route mat-elevation-z4"
+    routerLinkActive="mat-elevation-z4"
   >
     @if (item.icon) {
     <div>
+      @if (item.isIconRegistered) {
+      <mat-icon [svgIcon]="item.icon" class="icon-m"></mat-icon>
+      } @else {
       <img [src]="item.icon" width="50" />
+      }
     </div>
     }
-    <div class="flex justify-center items-center">
+    <div
+      class="flex justify-center items-center"
+      routerLinkActive="active-route"
+    >
       <div class="text-center leading-tight">
         {{ item.title }}
       </div>

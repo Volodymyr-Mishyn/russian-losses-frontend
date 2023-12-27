@@ -34,6 +34,13 @@ const NAVIGATION: Array<NavigationElement> = [
     route: `/statistics/support`,
   },
   {
+    title: $localize`API`,
+    isIconRegistered: true,
+    icon: 'api',
+    tooltip: $localize`Application programming interface`,
+    route: `/statistics/api`,
+  },
+  {
     title: $localize`About`,
     tooltip: $localize`About`,
     route: `/statistics/about`,
@@ -70,7 +77,7 @@ export class StatisticsComponent implements OnDestroy {
     private _media: MediaMatcher,
     private _router: Router
   ) {
-    this._registerIconsService.registerIcons(['trident']);
+    this._registerIconsService.registerIcons(['trident', 'api']);
     this.mobileQuery = this._media.matchMedia('(max-width: 640px)');
     this._mobileQueryListener = () => this._changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);

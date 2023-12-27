@@ -11,6 +11,7 @@ import { oryxStoreFeature } from './_store/features/oryx.feature';
 import { OryxEffects } from './_store/effects/oryx.effects';
 import { oryxResolver } from './resolvers/oryx.resolver';
 import { SupportComponent } from './support/support.component';
+import { ApplicationProgrammingInterfaceComponent } from './application-programming-interface/application-programming-interface.component';
 
 export const STATISTICS_ROUTES: Routes = [
   {
@@ -19,8 +20,9 @@ export const STATISTICS_ROUTES: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'home' },
       { path: 'home', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
       { path: 'support', component: SupportComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'api', component: ApplicationProgrammingInterfaceComponent },
       {
         path: 'ministry-of-defense',
         loadComponent: () =>

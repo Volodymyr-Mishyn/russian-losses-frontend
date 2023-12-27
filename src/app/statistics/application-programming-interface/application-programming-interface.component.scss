@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+
+:host {
+  display: block;
+}
+
+pre {
+  padding: 4px;
+  overflow: auto;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+  border: 2px solid $base-primary-color;
+}
+
+:host-context(.dark-theme) pre {
+  border: 2px solid $base-accent-color;
+}
