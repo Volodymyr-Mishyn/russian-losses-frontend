@@ -23,6 +23,8 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 export class OryxCompareTypeEntitiesComponent {
   private _entitiesComparison!: OryxEntitiesComparison;
 
+  public chartTitle: string = $localize`entities types comparison`;
+
   public tableData: Array<Record<string, number | string>> = [];
   public displayedColumns: Array<string> = ['name'];
 
