@@ -65,6 +65,207 @@
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6018686961415145811" datatype="html">
+        <source>About Me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2494166633463387339" datatype="html">
+        <source>Hello, I&apos;m Volodymyr Mishyn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5398702728240104213" datatype="html">
+        <source> I am a software developer based in Kyiv, Ukraine. I dedicated my life to programming and technology. And it would be a sin if I had not used my skills to develop something that could potentially help a good cause: bring additional attention to the ongoing War in Ukraine. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3826556071114579812" datatype="html">
+        <source>The Goal of This Site</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3404572305580935327" datatype="html">
+        <source> To bring additional awareness to the ongoing War in Ukraine and to demonstrate the strength and effectiveness of Ukraine&apos;s defense against russian occupying forces. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6842543518564496842" datatype="html">
+        <source>Stand with Ukraine:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5557993089585608362" datatype="html">
+        <source>in this crucial fight for freedom and sovereignty.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="705795795223421229" datatype="html">
+        <source>How this site works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2195631262837281823" datatype="html">
+        <source>This site is group of applications.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6354284488127407002" datatype="html">
+        <source> Scrapper app for scrapping data of russian losses from two sources: Ministry of defense of Ukraine and Oryx OSINT : </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7098580969197244921" datatype="html">
+        <source>Scrapper code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4342228426643996624" datatype="html">
+        <source> Backend app for processing storing and providing access to data: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2731591547855930214" datatype="html">
+        <source>Backend code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2625336236008554479" datatype="html">
+        <source> Frontend app for displaying data You are seeing in front of You: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="123404351716950983" datatype="html">
+        <source>Frontend code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4344323767084096621" datatype="html">
+        <source> Backend Node.js app periodically on schedule runs scrapper data and persists it. Frontend app is Angular Application on bleeding-edge Angular17 with brand new SSR support. Most data grouping is performed on frontend to minimize network traffic. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">69,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3125133585423664436" datatype="html">
+        <source>Let&apos;s Connect and Collaborate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">75,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5701617899005510730" datatype="html">
+        <source> Your feedback and support are invaluable. If you come across any bugs or have suggestions to improve this site, please don&apos;t hesitate to reach out. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3071317530320332117" datatype="html">
+        <source> Together, we stand with Ukraine. Every contribution, big or small, makes a difference. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5319928736812616614" datatype="html">
+        <source> Endpoint for accessing the data from the Ministry of Defense of Ukraine. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2474480145906832012" datatype="html">
+        <source>string in Date ISO format</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4166774598423340967" datatype="html">
+        <source>optional</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8047913459123982775" datatype="html">
+        <source>Examples:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2971380537622044838" datatype="html">
+        <source>Endpoint for accessing the data from the Oryx OSINT.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4832056586737439470" datatype="html">
+        <source>Example:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="678447940395340832" datatype="html">
+        <source>where</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2596944931874721088" datatype="html">
+        <source>is hierarchical list of all types of entities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="376445160625906550" datatype="html">
         <source>Show compared to Average</source>
         <context-group purpose="location">
@@ -112,6 +313,76 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/components/range-selection/range-selection.component.html</context>
           <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5756718847204508154" datatype="html">
+        <source> On February 24th, 2022, the world witnessed the stark reality of russian imperialistic aggression in Ukraine. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4386234774950609369" datatype="html">
+        <source> Since then, Ukraine has been a symbol of resilience, bravely confronting against military superpower. It&apos;s a battle not only for land but for the preservation of culture and identity. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2377626507679932315" datatype="html">
+        <source> Many experts predicted that Ukraine&apos;s fall would be a matter of weeks, yet it&apos;s been already </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5063160707272203792" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ daysCount }}"/> days </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="435548562001132671" datatype="html">
+        <source> , and the Ukrainian military forces not only continue to stand strong but have also grown significantly stronger. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7023912407778426298" datatype="html">
+        <source> It&apos;s crucially important to continue fighting against this existential threat as well as remember ukrainian soldiers and people who gave their lives fighting for brighter future and freedom of Ukraine and whole Europe. This website is a tribute to all those who gave their lives for Ukraine. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">32,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8840340278650410053" datatype="html">
+        <source> On these pages, you will see the severe losses in personnel and military vehicles that the Ukrainian military has inflicted on the russian occupying forces, clearly demonstrating the strength and effectiveness of Ukraine&apos;s defense. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">41,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2143837202499135623" datatype="html">
+        <source> Russian losses according to Ministry of defense of Ukraine </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5186869044371722705" datatype="html">
+        <source> Russian losses according to Oryx Open Source Intelligence </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9018120851096423740" datatype="html">
+        <source> Your support can make a difference </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="mod.entity.tank" datatype="html">
@@ -710,6 +981,13 @@
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7914460825314891506" datatype="html">
+        <source>Losses comparison</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6836949342567686088" datatype="html">
         <source>Count:</source>
         <context-group purpose="location">
@@ -878,15 +1156,241 @@
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1726363342938046830" datatype="html">
-        <source>About</source>
+      <trans-unit id="7841393750423304845" datatype="html">
+        <source>Support Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="8370893771306210378" datatype="html">
+        <source>Support/Donate Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8942351587754185907" datatype="html">
+        <source>API</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7630523254791692641" datatype="html">
+        <source>Application programming interface</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6480669984551358454" datatype="html">
+        <source> Stand against russian imperialistic aggression: Support Ukraine&apos;s Victory </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2622738355749158552" datatype="html">
+        <source>Donate to Ukrainian Army or verified charity platforms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2671611485995200913" datatype="html">
+        <source>Donation Link</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5240845113469440487" datatype="html">
+        <source>Consider other charity platforms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2532677915884331546" datatype="html">
+        <source>Stand For Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6662264093560886762" datatype="html">
+        <source>Consider donating to Open Source Intelligence contributors whose hard work allows to preserve and document all losses of russian invaders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2908091680525924665" datatype="html">
+        <source>Jakub Janovsky</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6906875077433020025" datatype="html">
+        <source>WarSpotting</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="834130773883980090" datatype="html">
+        <source>open-source intelligence group</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6311622191770407007" datatype="html">
+        <source>Donation link</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8654975325889711886" datatype="html">
+        <source>Armed Forces of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4860282815579634562" datatype="html">
+        <source>Government, Military</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7962580994936643499" datatype="html">
+        <source>An official fundraising account created by NBU to support the Armed Forces of Ukraine. All collected funds are directed to enhance Ukraine&apos;s defense capability: weapons, equipment, food, medicine, and other supplies.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2629641195318238092" datatype="html">
+        <source>Come Back Alive</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6284251546140951576" datatype="html">
+        <source>Military, Non-government, Medical</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4557633441592131034" datatype="html">
+        <source>The Foundation stands with the Ukrainian Armed Forces by funding defensive initiatives. We supply technology, training, and ammunition. After arriving home from the front line of defense, our troops receive support with sports rehabilitation and the development of veteran-run businesses.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8839025064939381445" datatype="html">
+        <source>UNITED24</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="641816222561991296" datatype="html">
+        <source>Government, Military, Medical, Humanitarian, Education and Science</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9161556193420142674" datatype="html">
+        <source>The platform allows one-click donations to Ukraine from anywhere. Why is this so important? Because Ukraine itself knows best what is needed and can deliver aid directly.
+
+    No one was ready for a full-scale war in the heart of Europe. Charitable foundations, no matter how well-organized, cannot meet the needs of a country as large as Ukraine. We can, however, do it together.
+
+    UNITED24 is designed for collaboration with charities, partners, donors, and public figures worldwide.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">35,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8531588785359604671" datatype="html">
+        <source>The Ukraine Humanitarian Fund</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8378636028447540308" datatype="html">
+        <source>Non-government, Humanitarian, Medical</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5873315661267451729" datatype="html">
+        <source>One of the UN&apos;s country-based pooled funds. Your donation will help humanitarian NGOs and UN agencies in Ukraine to assist the most vulnerable communities and people, and to provide them with urgently needed food, water, shelter, and other basic support.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6104243289101225885" datatype="html">
+        <source>Serhiy Prytula Charity Foundation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7125540950643386534" datatype="html">
+        <source>Serhiy Prytula Charity Foundation is focused on strengthening the Defence Forces of Ukraine and providing assistance to the civilians affected by russian aggression.
+    Over 200 volunteers and employees of the Foundation work every day to ensure that every donation we receive becomes valuable assistance to Ukraine.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4344912555294983986" datatype="html">
+        <source>Ministry of Healthcare of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7907214101238932357" datatype="html">
+        <source>Government, Humanitarian, Medical</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2816348974830694094" datatype="html">
+        <source>All funds will be used to meet the needs of hospitals and emergency medical institutions that are the first to provide assistance to the wounded and enter the struggle for the life and health of Ukrainians.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
     </body>
