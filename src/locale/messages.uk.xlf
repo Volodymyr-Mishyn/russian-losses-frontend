@@ -83,12 +83,12 @@
         <target>Про мене</target>
       </trans-unit>
       <trans-unit id="2494166633463387339" datatype="html">
-        <source>Hello, I'm Volodymyr Mishyn</source>
+        <source>Hello, I'm Volodymyr</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
-        <target>Привіт, я Володимир Мішин</target>
+        <target>Привіт, я Володимир</target>
       </trans-unit>
       <trans-unit id="5398702728240104213" datatype="html">
         <source> I am a software developer based in Kyiv, Ukraine. I dedicated my life to
