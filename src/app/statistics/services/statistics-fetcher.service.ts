@@ -10,7 +10,8 @@ import { OryxSide, OryxSideNames } from '../_models/data/oryx/oryx.types';
   providedIn: 'root',
 })
 export class StatisticsFetcherService {
-  private static _baseAPIUrl: string = environment.apiUrl;
+  private static _baseAPIUrl: string =
+    environment.backendUrl + environment.apiUrl;
   constructor(private _httpClient: HttpClient) {}
 
   private _createOryxSideLossesRequest(
