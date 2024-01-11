@@ -200,6 +200,12 @@ body {
   color: $base-primary-color;
 }
 
+.active-language {
+  color: $base-primary-color !important;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #d5d5d5, 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
 .dark-theme {
   .mat-icon.rl-app-icon {
     fill: white;
@@ -209,6 +215,10 @@ body {
   }
   .active-sub-route {
     color: $base-accent-color;
+  }
+  .active-language {
+    color: $base-accent-color !important;
+    text-shadow: none;
   }
 }
 

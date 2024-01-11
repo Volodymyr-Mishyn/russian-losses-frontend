@@ -1,4 +1,9 @@
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  OnDestroy,
+  isDevMode,
+} from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
@@ -13,6 +18,7 @@ import { ToggleThemeComponent } from '../components/toggle-theme/toggle-theme.co
 import { RegisterIconsService } from '../services/register-icons.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ChangeLanguageComponent } from '../components/change-language/change-language.component';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -54,10 +60,11 @@ const NAVIGATION: Array<NavigationElement> = [
     RouterLink,
     RouterOutlet,
     MatSidenavModule,
-    NavigationListComponent,
-    ToggleThemeComponent,
     MatIconModule,
     MatToolbarModule,
+    NavigationListComponent,
+    ToggleThemeComponent,
+    ChangeLanguageComponent,
   ],
   providers: [
     { provide: TranslationService, useClass: StatisticsTranslationService },
@@ -74,8 +81,7 @@ export class StatisticsComponent implements OnDestroy {
   constructor(
     private _registerIconsService: RegisterIconsService,
     private _changeDetectorRef: ChangeDetectorRef,
-    private _media: MediaMatcher,
-    private _router: Router
+    private _media: MediaMatcher
   ) {
     this._registerIconsService.registerIcons(['trident', 'api']);
     this.mobileQuery = this._media.matchMedia('(max-width: 640px)');
@@ -89,5 +95,9 @@ export class StatisticsComponent implements OnDestroy {
 
   public isMobile(): boolean {
     return this.mobileQuery.matches;
+  }
+
+  public isLanguageChangeAvailable(): boolean {
+    return !isDevMode();
   }
 }

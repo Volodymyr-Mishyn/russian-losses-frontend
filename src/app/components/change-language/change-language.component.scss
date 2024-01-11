@@ -1,0 +1,11 @@
+@import "../../../styles/variables.scss";
+
+:host {
+  display: block;
+}
+
+.language-icon {
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}

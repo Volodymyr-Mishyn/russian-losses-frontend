@@ -2,6 +2,22 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="5866254605255506989" datatype="html">
+        <source>English</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_constants/languages.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <target>англійською (English)</target>
+      </trans-unit>
+      <trans-unit id="3578644052206125685" datatype="html">
+        <source>Ukrainian (Українська)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_constants/languages.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <target>українською</target>
+      </trans-unit>
       <trans-unit id="UKRAINE" datatype="html">
         <source>Ukraine</source>
         <context-group purpose="location">
@@ -82,8 +98,8 @@
         </context-group>
         <target>Про мене</target>
       </trans-unit>
-      <trans-unit id="2494166633463387339" datatype="html">
-        <source>Hello, I'm Volodymyr</source>
+      <trans-unit id="7178983124619736289" datatype="html">
+        <source>Hello, I&apos;m Volodymyr</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">6,7</context>
@@ -1487,7 +1503,7 @@
         <source>MoD</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">25</context>
         </context-group>
         <target>Мін. Оборони</target>
       </trans-unit>
@@ -1495,7 +1511,7 @@
         <source>Ministry of defense of Ukraine data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <target>Дані Міністерства оборони України</target>
       </trans-unit>
@@ -1503,7 +1519,7 @@
         <source>Oryx</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <target>Oryx</target>
       </trans-unit>
@@ -1511,7 +1527,7 @@
         <source>Oryx OSINT data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <target>Дані Oryx OSINT</target>
       </trans-unit>
@@ -1519,7 +1535,7 @@
         <source>Support Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <target>Підтримайте Україну</target>
       </trans-unit>
@@ -1527,7 +1543,7 @@
         <source>Support/Donate Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <target>Підтримка/Пожертвування Україні</target>
       </trans-unit>
@@ -1535,7 +1551,7 @@
         <source>API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <target>API</target>
       </trans-unit>
@@ -1543,7 +1559,7 @@
         <source>Application programming interface</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <target>Інтерфейс прикладного програмування</target>
       </trans-unit>
@@ -1551,11 +1567,11 @@
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <target>Інфо</target>
       </trans-unit>
@@ -1579,7 +1595,7 @@
         <source>Donation Link</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">35,36</context>
+          <context context-type="linenumber">37,38</context>
         </context-group>
         <target>Посилання для пожертвувань</target>
       </trans-unit>
@@ -1587,7 +1603,7 @@
         <source>Consider other charity platforms</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">49,50</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
         <target>Розгляньте інші благодійні платформи</target>
       </trans-unit>
@@ -1595,7 +1611,7 @@
         <source>Stand For Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">61,62</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
         <target>Stand For Ukraine</target>
       </trans-unit>
@@ -1604,7 +1620,7 @@
           preserve and document all losses of russian invaders</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">70,71</context>
+          <context context-type="linenumber">75,76</context>
         </context-group>
         <target>Подумайте про пожертвування учасникам Open Source Intelligence, чия наполеглива
           праця дозволяє зберегти та задокументувати всі втрати російських загарбників</target>
@@ -1613,7 +1629,7 @@
         <source>Jakub Janovsky</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">78,79</context>
+          <context context-type="linenumber">83,84</context>
         </context-group>
         <target>Jakub Janovsky</target>
       </trans-unit>
@@ -1621,7 +1637,7 @@
         <source>Bellingcat and Oryx Blog contributor.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">90,91</context>
+          <context context-type="linenumber">98,99</context>
         </context-group>
         <target>Bellingcat та Oryx вкладник.</target>
       </trans-unit>
@@ -1629,7 +1645,7 @@
         <source>WarSpotting</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">100,101</context>
+          <context context-type="linenumber">108,109</context>
         </context-group>
         <target>WarSpotting</target>
       </trans-unit>
@@ -1637,7 +1653,7 @@
         <source>open-source intelligence group</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">110,111</context>
         </context-group>
         <target>розвідувальна група відкритих джерел інформації</target>
       </trans-unit>
@@ -1647,7 +1663,7 @@
           proofs. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">109,111</context>
+          <context context-type="linenumber">117,119</context>
         </context-group>
         <target>WarSpotting — це база даних про задокументовані втрати під час російського
           вторгнення в Україну у 2022 році. Як докази вони використовують фотодокази, знайдені у
@@ -1657,7 +1673,7 @@
         <source>Donation link</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">114,115</context>
+          <context context-type="linenumber">122,123</context>
         </context-group>
         <target>Посилання для пожертвувань</target>
       </trans-unit>
