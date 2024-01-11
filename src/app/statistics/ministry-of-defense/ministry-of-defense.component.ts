@@ -1,5 +1,4 @@
 import {
-  AfterContentInit,
   ChangeDetectorRef,
   Component,
   ElementRef,
@@ -72,9 +71,9 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
 
   constructor(
     private _store: Store,
-    private _registerIconsService: RegisterIconsService,
     private _changeDetectorRef: ChangeDetectorRef,
-    private _media: MediaMatcher
+    private _media: MediaMatcher,
+    private _registerIconsService: RegisterIconsService
   ) {
     this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
     this._registerIcons();

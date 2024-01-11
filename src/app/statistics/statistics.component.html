@@ -32,6 +32,12 @@
         <mat-icon>menu</mat-icon>
       </button>
     </mat-toolbar>
+    } @if(isLoading$|async){
+    <div
+      class="loading-indication glassmorphism-container flex flex-col justify-center items-center"
+    >
+      <mat-spinner [color]="spinnerColor"></mat-spinner>
+    </div>
     }
     <router-outlet></router-outlet>
   </mat-sidenav-content>

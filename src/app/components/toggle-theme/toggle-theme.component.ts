@@ -29,6 +29,7 @@ export class ToggleThemeComponent implements OnInit, OnDestroy {
         : AvailableThemes.DARK
     );
   }
+
   public ngOnInit(): void {
     if (!this._platformService.isRunningOnBrowser()) {
       return;

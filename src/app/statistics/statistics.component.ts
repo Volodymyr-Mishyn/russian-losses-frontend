@@ -6,8 +6,9 @@ import {
 } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
-import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { NavigationElement } from './_models/navigation/navigation-element';
 import { NavigationListComponent } from './components/navigation-list/navigation-list.component';
 import { TranslationService } from '../_translate/translation.service';
@@ -19,6 +20,9 @@ import { RegisterIconsService } from '../services/register-icons.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ChangeLanguageComponent } from '../components/change-language/change-language.component';
+import { Observable, Subscription } from 'rxjs';
+import { LoadingIndicationService } from './services/loading-indication.service';
+import { ThemeService } from '../services/theme.service';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -62,6 +66,7 @@ const NAVIGATION: Array<NavigationElement> = [
     MatSidenavModule,
     MatIconModule,
     MatToolbarModule,
+    MatProgressSpinnerModule,
     NavigationListComponent,
     ToggleThemeComponent,
     ChangeLanguageComponent,
@@ -74,23 +79,34 @@ const NAVIGATION: Array<NavigationElement> = [
   styleUrl: './statistics.component.scss',
 })
 export class StatisticsComponent implements OnDestroy {
+  public isLoading$: Observable<boolean> =
+    this._loadingIndicationService.loading$;
+
   public mobileQuery: MediaQueryList;
   public navigationList = NAVIGATION;
+  public spinnerColor: 'primary' | 'accent' = 'primary';
+  private _themeSubscription!: Subscription;
   private _mobileQueryListener!: () => void;
 
   constructor(
-    private _registerIconsService: RegisterIconsService,
     private _changeDetectorRef: ChangeDetectorRef,
-    private _media: MediaMatcher
+    private _media: MediaMatcher,
+    private _registerIconsService: RegisterIconsService,
+    private _loadingIndicationService: LoadingIndicationService,
+    private _themeService: ThemeService
   ) {
     this._registerIconsService.registerIcons(['trident', 'api']);
     this.mobileQuery = this._media.matchMedia('(max-width: 640px)');
     this._mobileQueryListener = () => this._changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+    this._themeSubscription = this._themeService.theme$.subscribe((theme) => {
+      this.spinnerColor = theme === 'dark' ? 'accent' : 'primary';
+    });
   }
 
   public ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+    this._themeSubscription.unsubscribe();
   }
 
   public isMobile(): boolean {
