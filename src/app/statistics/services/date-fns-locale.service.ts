@@ -11,6 +11,8 @@ export class DateFnsLocaleService {
     switch (this.locale) {
       case 'en-US':
         return enUS;
+      case 'en':
+        return enUS;
       case 'uk':
         return uk;
       default:
