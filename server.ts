@@ -23,15 +23,14 @@ export function app(locale: string): express.Express {
   const commonEngine = new CommonEngine();
 
   server.set('view engine', 'html');
-  server.set('views', browserDistFolder + '/');
+  server.set('views', browserDistFolder);
   // Serve static files from /browser
   server.get(
     `*.*`,
-    express.static(browserDistFolder + '/', {
+    express.static(browserDistFolder, {
       maxAge: '1y',
     })
   );
-
   // All regular routes use the Angular engine
   server.get(`*`, (req, res, next) => {
     const { protocol, originalUrl, headers, baseUrl } = req;

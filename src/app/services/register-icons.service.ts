@@ -16,7 +16,7 @@ export class RegisterIconsService {
     iconNamePrefix = '',
     source?: string
   ): void {
-    const baseUrl = source ? `assets/img/${source}` : 'assets/img';
+    const baseUrl = source ? `./assets/img/${source}` : './assets/img';
     icons.forEach((icon) => {
       this._matIconRegistry.addSvgIcon(
         iconNamePrefix + icon,
