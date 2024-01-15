@@ -63,11 +63,18 @@ function run(): void {
   // different instance of express app for each locale
   server.use('/en', app('en-US'));
   server.use('/uk', app('uk'));
+  server.get('/interface-health', (req, res) => {
+    const health = {
+      uptime: process.uptime(),
+      message: 'Ok',
+      date: new Date(),
+    };
+    res.status(200).send(health);
+  });
   server.get('*', (req, res) => {
     const { headers, protocol } = req;
     res.redirect(`${protocol}://${headers.host}/en`);
   });
-
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
