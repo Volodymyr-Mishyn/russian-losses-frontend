@@ -19,13 +19,15 @@
         <mat-card-title>{{ option.title }}</mat-card-title>
         <mat-card-subtitle>{{ option.shortSummary }}</mat-card-subtitle>
       </mat-card-header>
-      <img
-        mat-card-image
-        [src]="option.image"
-        class="logo"
-        alt="donate organization image"
-        class="m-2"
-      />
+      <div class="logo-container">
+        <img
+          mat-card-image
+          [ngSrc]="option.image"
+          fill
+          class="logo"
+          alt="donate organization image"
+        />
+      </div>
       <mat-card-content class="m-2 p-2">
         <p class="text-justify">
           {{ option.description }}
@@ -49,12 +51,15 @@
           <span i18n>Consider other charity platforms</span>
         </mat-card-title>
       </mat-card-header>
-      <img
-        mat-card-image
-        src="assets/img/ukraine_flag.png"
-        alt="standforukraine"
-        class="m-2"
-      />
+      <div class="logo-container">
+        <img
+          mat-card-image
+          ngSrc="assets/img/ukraine_flag.png"
+          fill
+          alt="standforukraine"
+          class="logo"
+        />
+      </div>
       <mat-card-content class="m-2 p-2">
         <div>
           <a [href]="'https://standforukraine.com/'" target="_blank">
@@ -79,12 +84,15 @@
           <mat-card-subtitle><span>&#64;Rebel44CZ</span></mat-card-subtitle>
         </mat-card-title>
       </mat-card-header>
-      <img
-        mat-card-image
-        src="https://1.bp.blogspot.com/-HLfgaUHRLnc/XwNGwWwCQYI/AAAAAAAAN5g/Uh4v-kIdiWoEuTZgIs6TUabEYBEzGswDgCK4BGAYYCw/s1600/23.png"
-        alt="oryx"
-        class="m-2"
-      />
+      <div class="logo-container">
+        <img
+          mat-card-image
+          ngSrc="https://1.bp.blogspot.com/-HLfgaUHRLnc/XwNGwWwCQYI/AAAAAAAAN5g/Uh4v-kIdiWoEuTZgIs6TUabEYBEzGswDgCK4BGAYYCw/s1600/23.png"
+          fill
+          class="logo"
+          alt="oryx"
+        />
+      </div>
       <mat-card-content class="m-2 p-2">
         <div>
           <p i18n>Bellingcat and Oryx Blog contributor.</p>

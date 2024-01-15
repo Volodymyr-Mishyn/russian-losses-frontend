@@ -17,6 +17,9 @@
       </div>
       <div class="flex flex-1"></div>
       <div class="flex-none flex flex-col p-2 justify-center items-center">
+        @if (isLanguageChangeAvailable()) {
+        <app-change-language></app-change-language>
+        }
         <app-toggle-theme></app-toggle-theme>
       </div>
     </div>
@@ -29,6 +32,12 @@
         <mat-icon>menu</mat-icon>
       </button>
     </mat-toolbar>
+    } @if(isLoading$|async){
+    <div
+      class="loading-indication glassmorphism-container flex flex-col justify-center items-center"
+    >
+      <mat-spinner [color]="spinnerColor"></mat-spinner>
+    </div>
     }
     <router-outlet></router-outlet>
   </mat-sidenav-content>

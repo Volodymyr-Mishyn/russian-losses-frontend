@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
@@ -71,7 +71,7 @@ const SUPPORT_ELEMENTS: Array<SupportElement> = [
 @Component({
   selector: 'app-support',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatDividerModule],
+  imports: [CommonModule, MatCardModule, MatDividerModule, NgOptimizedImage],
   templateUrl: './support.component.html',
   styleUrl: './support.component.scss',
 })

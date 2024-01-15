@@ -1,0 +1,27 @@
+<button
+  mat-icon-button
+  [matMenuTriggerFor]="menu"
+  aria-label="Example icon-button with a menu"
+>
+  <mat-icon>language</mat-icon>
+</button>
+<mat-menu #menu="matMenu" xPosition="after">
+  @for (lang of languages; track $index) {
+  <button
+    mat-menu-item
+    (click)="changeLanguage(lang)"
+    [ngClass]="{ 'active-language': lang.localeName === currentLanguage }"
+  >
+    <div class="flex flex-row justify-start items-center gap-2">
+      <div>
+        <img
+          [src]="lang.icon"
+          [alt]="lang.name"
+          class="w-6 h-6 language-icon"
+        />
+      </div>
+      <div>{{ lang.name }}</div>
+    </div>
+  </button>
+  }
+</mat-menu>
