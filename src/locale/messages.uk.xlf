@@ -181,11 +181,15 @@
         </context-group>
         <target>Допомагайте Україні:</target>
       </trans-unit>
-      <trans-unit id="9018120851096423749" datatype="html">
+      <trans-unit id="9018120851096423740" datatype="html">
         <source> Your support can make a difference </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">94</context>
         </context-group>
         <target>Ваша підтримка може змінити ситуацію </target>
       </trans-unit>
@@ -193,7 +197,7 @@
         <source>in this crucial fight for freedom and sovereignty.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
@@ -205,7 +209,7 @@
         <source>How this site works</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">30,32</context>
         </context-group>
         <target>Як працює цей сайт</target>
       </trans-unit>
@@ -213,7 +217,7 @@
         <source>This site is group of applications.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">34,36</context>
+          <context context-type="linenumber">32,3</context>
         </context-group>
         <target>Цей сайт є групою програм.</target>
       </trans-unit>
@@ -222,7 +226,7 @@
           defense of Ukraine and Oryx OSINT : </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
         <target> Додаток Scrapper для збирання даних про російські втрати з двох джерел:
           Міністерство оборони України та Oryx OSINT:</target>
@@ -231,7 +235,7 @@
         <source>Scrapper code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">45,46</context>
+          <context context-type="linenumber">43,44</context>
         </context-group>
         <target>Код скрапера</target>
       </trans-unit>
@@ -239,7 +243,7 @@
         <source> Backend app for processing storing and providing access to data: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">48,49</context>
         </context-group>
         <target> Бекенд-програма для обробки, зберігання та надання доступу до даних:</target>
       </trans-unit>
@@ -247,7 +251,7 @@
         <source>Backend code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">56,57</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
         <target>Серверний код</target>
       </trans-unit>
@@ -255,7 +259,7 @@
         <source> Frontend app for displaying data You are seeing in front of You: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">61,62</context>
+          <context context-type="linenumber">59,60</context>
         </context-group>
         <target> Інтерфейсний додаток для відображення даних, які ви бачите перед собою:</target>
       </trans-unit>
@@ -263,7 +267,7 @@
         <source>Frontend code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">67,68</context>
+          <context context-type="linenumber">65,66</context>
         </context-group>
         <target>Код інтерфейсу</target>
       </trans-unit>
@@ -273,7 +277,7 @@
           Most data grouping is performed on frontend to minimize network traffic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">69,72</context>
         </context-group>
         <target> Бекенд додаток Node.js періодично (за розкладом) запускає дані скраппера та
           зберігає їх. Додаток Frontend — це додаток Angular на сучасному Angular17 із абсолютно
@@ -282,10 +286,10 @@
           мінімізувати мережевий трафік.</target>
       </trans-unit>
       <trans-unit id="3125133585423664436" datatype="html">
-        <source>Let's Connect and Collaborate</source>
+        <source>Let&apos;s Connect and Collaborate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">78,80</context>
+          <context context-type="linenumber">76,78</context>
         </context-group>
         <target>Спілкування та співпраця</target>
       </trans-unit>
@@ -294,7 +298,7 @@
           suggestions to improve this site, please don't hesitate to reach out. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">81,82</context>
+          <context context-type="linenumber">79,80</context>
         </context-group>
         <target> Ваш відгук і підтримка безцінні. Якщо ви виявите будь-які помилки або маєте
           пропозиції щодо покращення цього сайту, будь ласка, не соромтеся зв’язатися.</target>
@@ -304,7 +308,7 @@
           difference. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">97,98</context>
+          <context context-type="linenumber">95,96</context>
         </context-group>
         <target> Разом ми з Україною. Кожен внесок, великий чи малий, має значення.</target>
       </trans-unit>

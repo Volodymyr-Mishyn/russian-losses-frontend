@@ -155,11 +155,22 @@
           <context context-type="linenumber">92,93</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="9018120851096423740" datatype="html">
+        <source> Your support can make a difference </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5557993089585608362" datatype="html">
         <source>in this crucial fight for freedom and sovereignty.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
@@ -170,14 +181,14 @@
         <source>How this site works</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">30,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2195631262837281823" datatype="html">
         <source>This site is group of applications.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">34,36</context>
+          <context context-type="linenumber">32,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6354284488127407002" datatype="html">
@@ -185,42 +196,42 @@
           defense of Ukraine and Oryx OSINT : </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7098580969197244921" datatype="html">
         <source>Scrapper code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">45,46</context>
+          <context context-type="linenumber">43,44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4342228426643996624" datatype="html">
         <source> Backend app for processing storing and providing access to data: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">48,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2731591547855930214" datatype="html">
         <source>Backend code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">56,57</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2625336236008554479" datatype="html">
         <source> Frontend app for displaying data You are seeing in front of You: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">61,62</context>
+          <context context-type="linenumber">59,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="123404351716950983" datatype="html">
         <source>Frontend code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">67,68</context>
+          <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4344323767084096621" datatype="html">
@@ -229,14 +240,14 @@
           Most data grouping is performed on frontend to minimize network traffic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">69,72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3125133585423664436" datatype="html">
         <source>Let&apos;s Connect and Collaborate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">78,80</context>
+          <context context-type="linenumber">76,78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5701617899005510730" datatype="html">
@@ -244,7 +255,7 @@
           suggestions to improve this site, please don&apos;t hesitate to reach out. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">81,82</context>
+          <context context-type="linenumber">79,80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3071317530320332117" datatype="html">
@@ -252,7 +263,7 @@
           difference. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">97,98</context>
+          <context context-type="linenumber">95,96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5319928736812616614" datatype="html">
@@ -451,13 +462,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">84</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="9018120851096423740" datatype="html">
-        <source> Your support can make a difference </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
-          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="mod.entity.tank" datatype="html">
