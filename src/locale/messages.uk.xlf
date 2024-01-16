@@ -479,9 +479,8 @@
         <target> Багато експертів прогнозували, що падіння України буде питанням тижнів, але вже
           минуло </target>
       </trans-unit>
-      <trans-unit id="5063160707272203792" datatype="html">
-        <source> days <x id="INTERPOLATION" equiv-text="{{ daysCount }}" />
-        </source>
+      <trans-unit id="7494361412465596264" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ daysCount }}" /> days</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">23,25</context>

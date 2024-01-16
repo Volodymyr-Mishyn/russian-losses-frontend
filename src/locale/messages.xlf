@@ -405,9 +405,8 @@
           <context context-type="linenumber">19,20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5063160707272203792" datatype="html">
-        <source>
-          <x id="INTERPOLATION" equiv-text="{{ daysCount }}" /> days </source>
+      <trans-unit id="7494361412465596264" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ daysCount }}" /> days</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">23,25</context>
