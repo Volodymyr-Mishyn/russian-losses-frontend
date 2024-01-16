@@ -96,7 +96,6 @@ export class GoogleAnalyticsService {
   }
 
   public sendPageView(url: string): void {
-    console.log('sendPageView', url);
     if (!this._checkAnalyticsAllowedAndAvailable()) {
       return;
     }

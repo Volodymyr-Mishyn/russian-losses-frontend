@@ -1,10 +1,10 @@
 <div
-  class="mt-8 mx-16 md:mx-32 flex flex-col lg:flex-row lg:justify-stretch items-start gap-8"
+  class="mt-2 mx-2 sm:mt-8 md:mx-32 flex flex-col lg:flex-row lg:justify-stretch items-start gap-8"
 >
   <div
     class="flex-1 mat-elevation-z3 flex flex-col justify-start items-stretch p-4 m-4"
   >
-    <p class="text-3xl">{{ baseUrl }}/api/mod</p>
+    <p class="text-2xl">/api/mod</p>
     <p>
       <span i18n>
         Endpoint for accessing the data from the Ministry of Defense of Ukraine.
@@ -23,13 +23,13 @@
       <p class="text-2xl"><span i18n>Examples:</span></p>
       <div class="flex flex-col justify-start items-stretch gap-8">
         <div>
-          <p class="text-xl">
+          <p class="sm:text-sm word-break-anywhere">
             {{ baseUrl }}/api/mod?start=2022-03-24&end=2022-03-26
           </p>
           <pre><code>{{modData|json}}</code></pre>
         </div>
         <div>
-          <p class="text-xl">
+          <p class="sm:text-sm word-break-anywhere">
             {{ baseUrl }}/api/mod?start=2022-03-24&end=2022-03-26&flat=true
           </p>
           <pre><code>{{modDataFlat|json}}</code></pre>
@@ -41,7 +41,7 @@
   <div
     class="flex-1 mat-elevation-z3 flex flex-col justify-start items-stretch p-4 m-4"
   >
-    <p class="text-3xl">{{ baseUrl }}/api/oryx</p>
+    <p class="text-2xl">/api/oryx</p>
     <p>
       <span i18n>Endpoint for accessing the data from the Oryx OSINT.</span>
     </p>
@@ -50,11 +50,13 @@
       <p class="text-2xl"><span i18n>Example:</span></p>
       <div class="flex flex-col justify-start items-stretch gap-8">
         <div>
-          <p class="text-xl">{{ baseUrl }}/api/oryx?country=russia</p>
+          <p class="sm:text-sm word-break-anywhere">
+            {{ baseUrl }}/api/oryx?country=russia
+          </p>
           <pre><code>{{oryxData|json}}</code></pre>
         </div>
         <p>
-          <span i18n>where</span> <code>entityTypes</code>
+          <span i18n>where</span>&nbsp;<code>entityTypes</code>&nbsp;
           <span i18n>is hierarchical list of all types of entities</span>
         </p>
 

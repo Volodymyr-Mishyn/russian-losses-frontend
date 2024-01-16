@@ -20,3 +20,12 @@ pre {
 :host-context(.dark-theme) pre {
   border: 2px solid $base-accent-color;
 }
+
+@media screen and (max-width: 480px) {
+  pre {
+    font-size: 10px;
+  }
+}
+.word-break-anywhere {
+  word-break: break-all;
+}
