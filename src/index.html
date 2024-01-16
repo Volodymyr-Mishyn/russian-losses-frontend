@@ -66,7 +66,10 @@
               window.matchMedia &&
               window.matchMedia("(prefers-color-scheme: dark)").matches;
             var defaultTheme = prefersDark ? "dark" : "light";
-            document.body.classList.toggle("dark-theme", theme === "dark");
+            document.body.classList.toggle(
+              "dark-theme",
+              defaultTheme === "dark"
+            );
           }
         } catch (e) {
           console.error("Error applying theme", e);
