@@ -2,6 +2,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { GoogleAnalyticsService } from '../../services/google-analytics.service';
 
 interface SupportElement {
   title: string;
@@ -77,4 +78,14 @@ const SUPPORT_ELEMENTS: Array<SupportElement> = [
 })
 export class SupportComponent {
   public donateOptions: Array<SupportElement> = SUPPORT_ELEMENTS;
+
+  constructor(private _googleAnalytics: GoogleAnalyticsService) {}
+  donationLinkClicked(link: string, name: string) {
+    this._googleAnalytics.sendEvent(
+      'donation_link_clicked',
+      'support',
+      link,
+      name
+    );
+  }
 }

@@ -7,9 +7,11 @@
   <div class="mat-h3">
     <span i18n>Donate to Ukrainian Army or verified charity platforms</span>
   </div>
-  <div class="flex flex-row flex-wrap justify-start mb-4">
+  <div class="flex flex-row flex-wrap justify-start mb-4 m-2">
     @for (option of donateOptions; track $index) {
-    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+    <mat-card
+      class="w-full flex-grow md:flex-shrink donation-card mb-4 sm:mx-2"
+    >
       <mat-card-header>
         <img
           mat-card-avatar
@@ -33,14 +35,20 @@
           {{ option.description }}
         </p>
         <div>
-          <a [href]="option.link" target="_blank">
+          <a
+            [href]="option.link"
+            target="_blank"
+            (click)="donationLinkClicked(option.link, option.title)"
+          >
             <span i18n class="text-lg">Donation Link</span>
           </a>
         </div>
       </mat-card-content>
     </mat-card>
     }
-    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+    <mat-card
+      class="w-full flex-grow md:flex-shrink mb-4 sm:mx-2 donation-card"
+    >
       <mat-card-header>
         <img
           mat-card-avatar
@@ -62,7 +70,16 @@
       </div>
       <mat-card-content class="m-2 p-2">
         <div>
-          <a [href]="'https://standforukraine.com/'" target="_blank">
+          <a
+            [href]="'https://standforukraine.com/'"
+            target="_blank"
+            (click)="
+              donationLinkClicked(
+                'https://standforukraine.com/',
+                'Stand For Ukraine'
+              )
+            "
+          >
             <span i18n class="text-lg">Stand For Ukraine</span>
           </a>
         </div>
@@ -76,8 +93,10 @@
       work allows to preserve and document all losses of russian invaders</span
     >
   </div>
-  <div class="flex flex-row flex-wrap justify-start mb-4">
-    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+  <div class="flex flex-row flex-wrap justify-start mb-4 m-2">
+    <mat-card
+      class="w-full flex-grow md:flex-shrink mb-4 sm:mx-2 donation-card"
+    >
       <mat-card-header>
         <mat-card-title>
           <span i18n>Jakub Janovsky</span>
@@ -96,13 +115,24 @@
       <mat-card-content class="m-2 p-2">
         <div>
           <p i18n>Bellingcat and Oryx Blog contributor.</p>
-          <a href="http://ko-fi.com/rebel44cz" target="_blank">
+          <a
+            href="http://ko-fi.com/rebel44cz"
+            target="_blank"
+            (click)="
+              donationLinkClicked(
+                'http://ko-fi.com/rebel44cz',
+                'Jakub Janovsky'
+              )
+            "
+          >
             <span class="text-lg">http://ko-fi.com/rebel44cz</span>
           </a>
         </div>
       </mat-card-content>
     </mat-card>
-    <mat-card class="w-full flex-grow md:flex-shrink m-2 donation-card">
+    <mat-card
+      class="w-full flex-grow md:flex-shrink mb-4 sm:mx-2 donation-card"
+    >
       <mat-card-header>
         <mat-card-title>
           <span i18n>WarSpotting</span>
@@ -118,7 +148,16 @@
             invasion in Ukraine. They use photo evidences found across open
             sources on the web such as social media as proofs.
           </p>
-          <a href="https://ukr.warspotting.net/about/#donate" target="_blank">
+          <a
+            href="https://ukr.warspotting.net/about/#donate"
+            target="_blank"
+            (click)="
+              donationLinkClicked(
+                'https://ukr.warspotting.net/about/#donate',
+                'WarSpotting'
+              )
+            "
+          >
             <span i18n class="text-lg">Donation link</span>
           </a>
         </div>
