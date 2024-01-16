@@ -46,9 +46,40 @@
         <source>Data and infographic about russian invasion of Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">16</context>
         </context-group>
         <target>Дані та інфографіка про російське вторгнення в Україну</target>
+      </trans-unit>
+      <trans-unit id="googleAnalyticsSnackbarQuestion" datatype="html">
+        <source>Hey, I am using Google Analytics to collect data about your visit to know which
+          languages to translate the site into next. Therefore I need your consent for using
+          cookies. Do you agree?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/services/google-analytics-snackbar/google-analytics-snackbar.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <target>Привіт, я використовую Google Analytics для збору даних про ваші відвідування, щоб
+          знати, на які мови перекладати сайт далі. Тому мені потрібна ваша згода на використання
+          файлів cookie. Ви згодні?</target>
+      </trans-unit>
+      <trans-unit id="googleAnalyticsSnackbarYes" datatype="html">
+        <source>Accept</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/services/google-analytics-snackbar/google-analytics-snackbar.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <target>Прийняти</target>
+      </trans-unit>
+      <trans-unit id="googleAnalyticsSnackbarNo" datatype="html">
+        <source>Decline</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/services/google-analytics-snackbar/google-analytics-snackbar.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <target>Відмовитись</target>
       </trans-unit>
       <trans-unit id="statistics.increment" datatype="html">
         <source>Incr.</source>
@@ -124,7 +155,7 @@
         <source>The Goal of This Site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">13,15</context>
+          <context context-type="linenumber">15,17</context>
         </context-group>
         <target>Мета цього сайту</target>
       </trans-unit>
@@ -133,7 +164,7 @@
           strength and effectiveness of Ukraine's defense against russian occupying forces. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">16,18</context>
+          <context context-type="linenumber">18,20</context>
         </context-group>
         <target> Додатково привернути увагу до війни, яка триває в Україні, та продемонструвати силу
           та ефективність захисту України від російських окупаційних військ.</target>
@@ -142,7 +173,7 @@
         <source>Stand with Ukraine:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">21,22</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
@@ -150,11 +181,15 @@
         </context-group>
         <target>Допомагайте Україні:</target>
       </trans-unit>
-      <trans-unit id="9018120851096423749" datatype="html">
+      <trans-unit id="9018120851096423740" datatype="html">
         <source> Your support can make a difference </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">94</context>
         </context-group>
         <target>Ваша підтримка може змінити ситуацію </target>
       </trans-unit>
@@ -182,7 +217,7 @@
         <source>This site is group of applications.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">32,3</context>
         </context-group>
         <target>Цей сайт є групою програм.</target>
       </trans-unit>
@@ -251,10 +286,10 @@
           мінімізувати мережевий трафік.</target>
       </trans-unit>
       <trans-unit id="3125133585423664436" datatype="html">
-        <source>Let's Connect and Collaborate</source>
+        <source>Let&apos;s Connect and Collaborate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">75,77</context>
+          <context context-type="linenumber">76,78</context>
         </context-group>
         <target>Спілкування та співпраця</target>
       </trans-unit>
@@ -263,7 +298,7 @@
           suggestions to improve this site, please don't hesitate to reach out. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">78,79</context>
+          <context context-type="linenumber">79,80</context>
         </context-group>
         <target> Ваш відгук і підтримка безцінні. Якщо ви виявите будь-які помилки або маєте
           пропозиції щодо покращення цього сайту, будь ласка, не соромтеся зв’язатися.</target>
@@ -273,7 +308,7 @@
           difference. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">94,95</context>
+          <context context-type="linenumber">95,96</context>
         </context-group>
         <target> Разом ми з Україною. Кожен внесок, великий чи малий, має значення.</target>
       </trans-unit>
@@ -341,7 +376,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <target>де </target>
       </trans-unit>
@@ -350,7 +385,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">58,59</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
         <target> є ієрархічним списком усіх типів сутностей</target>
       </trans-unit>
@@ -448,9 +483,8 @@
         <target> Багато експертів прогнозували, що падіння України буде питанням тижнів, але вже
           минуло </target>
       </trans-unit>
-      <trans-unit id="5063160707272203792" datatype="html">
-        <source> days <x id="INTERPOLATION" equiv-text="{{ daysCount }}" />
-        </source>
+      <trans-unit id="7494361412465596264" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ daysCount }}" /> days</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">23,25</context>
@@ -1332,7 +1366,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
-          <context context-type="linenumber">25,26</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
         <target>Закрити</target>
       </trans-unit>
@@ -1503,7 +1537,7 @@
         <source>MoD</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <target>Мін. Оборони</target>
       </trans-unit>
@@ -1511,7 +1545,7 @@
         <source>Ministry of defense of Ukraine data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <target>Дані Міністерства оборони України</target>
       </trans-unit>
@@ -1519,7 +1553,7 @@
         <source>Oryx</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">35</context>
         </context-group>
         <target>Oryx</target>
       </trans-unit>
@@ -1527,7 +1561,7 @@
         <source>Oryx OSINT data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">36</context>
         </context-group>
         <target>Дані Oryx OSINT</target>
       </trans-unit>
@@ -1535,7 +1569,7 @@
         <source>Support Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <target>Підтримайте Україну</target>
       </trans-unit>
@@ -1543,7 +1577,7 @@
         <source>Support/Donate Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <target>Підтримка/Пожертвування Україні</target>
       </trans-unit>
@@ -1551,7 +1585,7 @@
         <source>API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <target>API</target>
       </trans-unit>
@@ -1559,7 +1593,7 @@
         <source>Application programming interface</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <target>Інтерфейс прикладного програмування</target>
       </trans-unit>
@@ -1567,11 +1601,11 @@
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">54</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">55</context>
         </context-group>
         <target>Інфо</target>
       </trans-unit>
@@ -1595,7 +1629,7 @@
         <source>Donation Link</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">43,44</context>
         </context-group>
         <target>Посилання для пожертвувань</target>
       </trans-unit>
@@ -1603,7 +1637,7 @@
         <source>Consider other charity platforms</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">59,60</context>
         </context-group>
         <target>Розгляньте інші благодійні платформи</target>
       </trans-unit>
@@ -1611,7 +1645,7 @@
         <source>Stand For Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">66,67</context>
+          <context context-type="linenumber">83,84</context>
         </context-group>
         <target>Stand For Ukraine</target>
       </trans-unit>
@@ -1620,7 +1654,7 @@
           preserve and document all losses of russian invaders</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">75,76</context>
+          <context context-type="linenumber">92,93</context>
         </context-group>
         <target>Подумайте про пожертвування учасникам Open Source Intelligence, чия наполеглива
           праця дозволяє зберегти та задокументувати всі втрати російських загарбників</target>
@@ -1629,7 +1663,7 @@
         <source>Jakub Janovsky</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">83,84</context>
+          <context context-type="linenumber">102,103</context>
         </context-group>
         <target>Jakub Janovsky</target>
       </trans-unit>
@@ -1637,7 +1671,7 @@
         <source>Bellingcat and Oryx Blog contributor.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">98,99</context>
+          <context context-type="linenumber">117,118</context>
         </context-group>
         <target>Bellingcat та Oryx вкладник.</target>
       </trans-unit>
@@ -1645,7 +1679,7 @@
         <source>WarSpotting</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">108,109</context>
+          <context context-type="linenumber">138,139</context>
         </context-group>
         <target>WarSpotting</target>
       </trans-unit>
@@ -1653,7 +1687,7 @@
         <source>open-source intelligence group</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">110,111</context>
+          <context context-type="linenumber">140,141</context>
         </context-group>
         <target>розвідувальна група відкритих джерел інформації</target>
       </trans-unit>
@@ -1663,7 +1697,7 @@
           proofs. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">117,119</context>
+          <context context-type="linenumber">147,149</context>
         </context-group>
         <target>WarSpotting — це база даних про задокументовані втрати під час російського
           вторгнення в Україну у 2022 році. Як докази вони використовують фотодокази, знайдені у
@@ -1673,7 +1707,7 @@
         <source>Donation link</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">122,123</context>
+          <context context-type="linenumber">161,162</context>
         </context-group>
         <target>Посилання для пожертвувань</target>
       </trans-unit>
@@ -1681,7 +1715,7 @@
         <source>Armed Forces of Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <target>Збройні сили України</target>
       </trans-unit>
@@ -1689,7 +1723,7 @@
         <source>Government, Military</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <target>Урядова, Військова</target>
       </trans-unit>
@@ -1699,7 +1733,7 @@
           weapons, equipment, food, medicine, and other supplies.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <target>Офіційний збір коштів, створений НБУ для підтримки Збройних Сил України. Усі зібрані
           кошти спрямовані на підвищення обороноздатності України: озброєння, техніка,
@@ -1709,7 +1743,7 @@
         <source>Come Back Alive</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">25</context>
         </context-group>
         <target>Повернись живим</target>
       </trans-unit>
@@ -1717,11 +1751,11 @@
         <source>Military, Non-government, Medical</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">55</context>
         </context-group>
         <target>Військова, неурядова, медична</target>
       </trans-unit>
@@ -1732,7 +1766,7 @@
           development of veteran-run businesses.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <target>Фонд підтримує Збройні сили України, фінансуючи оборонні ініціативи. Ми постачаємо
           технологію, навчання та амуніцію. Після прибуття додому з передової оборони, наші
@@ -1744,7 +1778,7 @@
         <source>UNITED24</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">34</context>
         </context-group>
         <target>UNITED24</target>
       </trans-unit>
@@ -1752,7 +1786,7 @@
         <source>Government, Military, Medical, Humanitarian, Education and Science</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">35</context>
         </context-group>
         <target>Урядова, військова, медична, гуманітарна, освітнта та наукова</target>
       </trans-unit>
@@ -1767,7 +1801,7 @@
           figures worldwide.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">35,39</context>
+          <context context-type="linenumber">36,40</context>
         </context-group>
         <target>Платформа дозволяє робити пожертви для України в один клік з будь-якого місця. Чому
           це
@@ -1785,7 +1819,7 @@
         <source>The Ukraine Humanitarian Fund</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <target>Український гуманітарний фонд</target>
       </trans-unit>
@@ -1793,7 +1827,7 @@
         <source>Non-government, Humanitarian, Medical</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <target>Недержавна, гуманітарна, медична</target>
       </trans-unit>
@@ -1803,7 +1837,7 @@
           to provide them with urgently needed food, water, shelter, and other basic support.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <target>Один із об’єднаних фондів ООН у країні. Ваша пожертва допоможе гуманітарним НУО та
           агентствам ООН в Україні допомогти найбільш уразливим групам і людям, а також забезпечити
@@ -1813,7 +1847,7 @@
         <source>Serhiy Prytula Charity Foundation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">54</context>
         </context-group>
         <target>Serhiy Prytula Charity Foundation</target>
       </trans-unit>
@@ -1824,7 +1858,7 @@
           donation we receive becomes valuable assistance to Ukraine.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">55,56</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
         <target>Благодійний фонд Сергія Притули спрямований на зміцнення Сил оборони України та
           надання допомоги мирним жителям, які постраждали внаслідок російської агресії.
@@ -1835,7 +1869,7 @@
         <source>Ministry of Healthcare of Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">63</context>
         </context-group>
         <target>МОЗ України</target>
       </trans-unit>
@@ -1843,7 +1877,7 @@
         <source>Government, Humanitarian, Medical</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">64</context>
         </context-group>
         <target>Державна, гуманітарна, медична</target>
       </trans-unit>

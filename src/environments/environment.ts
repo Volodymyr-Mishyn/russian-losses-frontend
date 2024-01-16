@@ -1,7 +1,5 @@
 export const environment = {
-  // backendUrl: 'http://localhost:3000',
-  backendUrl:
-    'http://russian-losses-load-balancer-1002635241.eu-central-1.elb.amazonaws.com',
+  backendUrl: 'https://russian-losses.in.ua',
   apiUrl: '/api',
   production: true,
 };

@@ -32,7 +32,6 @@
       sizes="16x16"
       href="./assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
       href="./assets/favicon/safari-pinned-tab.svg"
@@ -40,6 +39,19 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-636PZZN0Y2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-636PZZN0Y2");
+    </script>
   </head>
   <body class="mat-typography">
     <script>
@@ -54,7 +66,10 @@
               window.matchMedia &&
               window.matchMedia("(prefers-color-scheme: dark)").matches;
             var defaultTheme = prefersDark ? "dark" : "light";
-            document.body.classList.toggle("dark-theme", theme === "dark");
+            document.body.classList.toggle(
+              "dark-theme",
+              defaultTheme === "dark"
+            );
           }
         } catch (e) {
           console.error("Error applying theme", e);

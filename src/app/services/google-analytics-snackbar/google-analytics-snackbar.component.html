@@ -1,0 +1,11 @@
+<span class="example-pizza-party" matSnackBarLabel>
+  {{ question }}
+</span>
+<span matSnackBarActions>
+  <button mat-button matSnackBarAction (click)="selectAnswer(true)">
+    {{ yes }}
+  </button>
+  <button mat-button matSnackBarAction (click)="selectAnswer(false)">
+    {{ no }}
+  </button>
+</span>
