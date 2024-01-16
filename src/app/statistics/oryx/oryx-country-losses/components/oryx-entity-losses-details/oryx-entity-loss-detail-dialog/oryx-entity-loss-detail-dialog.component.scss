@@ -1,5 +1,9 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: start;
+  align-items: stretch;
 }
 
 ul {
@@ -20,4 +24,11 @@ a {
 a:hover {
   box-shadow: unset;
   text-decoration: underline;
+}
+
+.image-container {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }

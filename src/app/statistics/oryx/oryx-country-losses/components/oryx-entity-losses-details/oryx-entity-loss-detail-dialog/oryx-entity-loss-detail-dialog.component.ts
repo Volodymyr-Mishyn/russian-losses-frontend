@@ -8,16 +8,22 @@ import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { TranslatePipe } from '../../../../../../pipes/translate.pipe';
 import { TranslationService } from '../../../../../../_translate/translation.service';
 import { OryxTranslationService } from '../../../../services/oryx-translation.service';
+import { MatButtonModule } from '@angular/material/button';
 
 export interface OryxEntityLossDetailDialogData {
   entityModel: OryxEntityModel;
   detailKey: string;
 }
 
+export interface ImageLinkItem {
+  link: string;
+  type: 'image' | 'web';
+}
+
 @Component({
   selector: 'app-oryx-entity-loss-detail-dialog',
   standalone: true,
-  imports: [CommonModule, MatDialogModule, TranslatePipe],
+  imports: [CommonModule, MatDialogModule, MatButtonModule, TranslatePipe],
   providers: [
     {
       provide: TranslationService,
@@ -28,6 +34,7 @@ export interface OryxEntityLossDetailDialogData {
   styleUrl: './oryx-entity-loss-detail-dialog.component.scss',
 })
 export class OryxEntityLossDetailDialogComponent {
+  public images: Array<ImageLinkItem> = [];
   public detail!: OryxEntityStatusInfo;
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: OryxEntityLossDetailDialogData
@@ -35,5 +42,21 @@ export class OryxEntityLossDetailDialogComponent {
     this.detail = data.entityModel[
       data.detailKey as keyof OryxEntityModel
     ] as OryxEntityStatusInfo;
+    this._setImages();
+  }
+
+  private _isImage(link: string): boolean {
+    return link.endsWith('.png') || link.endsWith('.jpg');
+  }
+
+  private _setImages(): void {
+    if (this.detail.list) {
+      this.images = this.detail.list.map((image) => {
+        return {
+          link: image,
+          type: this._isImage(image) ? 'image' : 'web',
+        };
+      });
+    }
   }
 }

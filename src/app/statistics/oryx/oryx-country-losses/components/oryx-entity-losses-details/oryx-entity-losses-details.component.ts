@@ -12,6 +12,7 @@ import { sortOryxData } from '../../../../_helpers/oryx.sort';
 import { OryxEntityInfoComponent } from '../../../components/oryx-entity-info/oryx-entity-info.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
+import { MatIconModule } from '@angular/material/icon';
 
 const FIELDS_TO_DISPLAY = [
   'destroyed',
@@ -34,6 +35,7 @@ interface DetailedEntityStatistics {
   imports: [
     CommonModule,
     MatDividerModule,
+    MatIconModule,
     PieChartComponent,
     OryxEntityInfoComponent,
     TranslatePipe,
@@ -97,6 +99,9 @@ export class OryxEntityLossesDetailsComponent {
         entityModel: this._entityModel,
         detailKey: statisticsFor.key,
       },
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      panelClass: 'custom-dialog-container',
     });
   }
 }
