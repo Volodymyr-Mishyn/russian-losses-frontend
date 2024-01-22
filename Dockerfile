@@ -11,6 +11,8 @@ COPY . .
 
 RUN npm run build
 
+RUN npm run build:copy-additional
+
 RUN rm -rf node_modules
 
 EXPOSE 4000

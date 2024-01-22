@@ -263,6 +263,11 @@ a.no-global-a {
 .mat-tooltip-trigger {
   touch-action: auto !important;
 }
+
+.word-break-anywhere {
+  word-break: break-all;
+}
+
 @media only screen and (min-width: 961px) {
   .mat-mdc-dialog-container {
     width: 100vw;
