@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://russian-losses.in.ua/sitemap.xml

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/home</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/home" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/home" />
+
+  </url>
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/ministry-of-defense</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/ministry-of-defense" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/ministry-of-defense" />
+
+  </url>
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/oryx/country-losses/russia</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/oryx/country-losses/russia" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/oryx/country-losses/russia" />
+
+  </url>
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/oryx/country-losses/Ukraine</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/oryx/country-losses/Ukraine" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/oryx/country-losses/Ukraine" />
+
+  </url>
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/oryx/compare-losses</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/oryx/compare-losses" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/oryx/compare-losses" />
+
+  </url>
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/support</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/support" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/support" />
+
+  </url>
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/api</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/api" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/api" />
+
+  </url>
+  <url>
+    <loc>https://russian-losses.in.ua/uk/statistics/about</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://russian-losses.in.ua/uk/statistics/about" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://russian-losses.in.ua/en/statistics/about" />
+
+  </url>
+</urlset>
