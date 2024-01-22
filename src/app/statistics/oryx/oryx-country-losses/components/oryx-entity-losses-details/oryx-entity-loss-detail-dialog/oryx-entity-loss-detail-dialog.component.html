@@ -1,8 +1,17 @@
-<h2 mat-dialog-title>
-  {{ data.entityModel.name }} ({{
-    data.entityModel.countryName | appTranslate
-  }})
-</h2>
+<div class="flex flex-row space-between w-full">
+  <div class="flex-1">
+    <h2 mat-dialog-title>
+      {{ data.entityModel.name }} ({{
+        data.entityModel.countryName | appTranslate
+      }})
+    </h2>
+  </div>
+  <div class="flex flex-col justify-center items-center">
+    <button mat-icon-button (click)="closeDialog()" color="accent">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</div>
 <mat-dialog-content class="mat-typography flex-1">
   <div class="flex flex-col items-start justify-start">
     <div><span i18n>Count:</span> {{ data.entityModel.count }}</div>
@@ -16,18 +25,26 @@
     <div class="flex flex-col justify-start items-start image-container">
       <p>
         {{ $index + 1 }}.&nbsp;
-        <a [href]="item.link" target="_blank" rel="noopener noreferrer">{{
-          item.link
-        }}</a>
+        <a
+          [href]="item.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="word-break-anywhere"
+          >{{ item.link }}</a
+        >
       </p>
       <img [src]="item.link" [alt]="data.entityModel.name + '-' + $index" />
     </div>
     } @else {
     <p>
       {{ $index + 1 }}.&nbsp;
-      <a [href]="item.link" target="_blank" rel="noopener noreferrer">{{
-        item.link
-      }}</a>
+      <a
+        [href]="item.link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="word-break-anywhere"
+        >{{ item.link }}</a
+      >
     </p>
     } }@placeholder {
     <div>

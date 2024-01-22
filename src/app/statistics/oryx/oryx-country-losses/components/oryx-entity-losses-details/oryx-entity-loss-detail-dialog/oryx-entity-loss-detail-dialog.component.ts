@@ -4,11 +4,16 @@ import {
   OryxEntityStatusInfo,
   OryxEntityModel,
 } from '../../../../../_models/data/oryx/oryx-model';
-import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
+import {
+  MAT_DIALOG_DATA,
+  MatDialogModule,
+  MatDialogRef,
+} from '@angular/material/dialog';
 import { TranslatePipe } from '../../../../../../pipes/translate.pipe';
 import { TranslationService } from '../../../../../../_translate/translation.service';
 import { OryxTranslationService } from '../../../../services/oryx-translation.service';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 export interface OryxEntityLossDetailDialogData {
   entityModel: OryxEntityModel;
@@ -23,7 +28,13 @@ export interface ImageLinkItem {
 @Component({
   selector: 'app-oryx-entity-loss-detail-dialog',
   standalone: true,
-  imports: [CommonModule, MatDialogModule, MatButtonModule, TranslatePipe],
+  imports: [
+    CommonModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule,
+    TranslatePipe,
+  ],
   providers: [
     {
       provide: TranslationService,
@@ -37,7 +48,8 @@ export class OryxEntityLossDetailDialogComponent {
   public images: Array<ImageLinkItem> = [];
   public detail!: OryxEntityStatusInfo;
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: OryxEntityLossDetailDialogData
+    @Inject(MAT_DIALOG_DATA) public data: OryxEntityLossDetailDialogData,
+    private _dialogRef: MatDialogRef<OryxEntityLossDetailDialogComponent>
   ) {
     this.detail = data.entityModel[
       data.detailKey as keyof OryxEntityModel
@@ -58,5 +70,9 @@ export class OryxEntityLossDetailDialogComponent {
         };
       });
     }
+  }
+
+  public closeDialog(): void {
+    this._dialogRef.close();
   }
 }
