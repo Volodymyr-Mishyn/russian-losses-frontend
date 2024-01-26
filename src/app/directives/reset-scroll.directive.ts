@@ -5,7 +5,7 @@ import {
   Input,
   OnDestroy,
 } from '@angular/core';
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { Subscription, filter } from 'rxjs';
 
 @Directive({
