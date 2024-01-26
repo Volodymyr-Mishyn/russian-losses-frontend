@@ -1281,7 +1281,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
-          <context context-type="linenumber">6,7</context>
+          <context context-type="linenumber">8,9</context>
         </context-group>
         <target>URL:</target>
       </trans-unit>
@@ -1290,7 +1290,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
-          <context context-type="linenumber">17,18</context>
+          <context context-type="linenumber">19,20</context>
         </context-group>
         <target>Довідкові зображення:</target>
       </trans-unit>
@@ -1333,15 +1333,6 @@
             src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-overall-counts/oryx-compare-type-overall-counts.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="8559927064380862494" datatype="html">
-        <source>data placeholder</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/oryx-compare/components/oryx-compare-type/oryx-compare-type.component.html</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <target>заповнювач даних</target>
       </trans-unit>
       <trans-unit id="7914460825314891506" datatype="html">
         <source>Losses comparison</source>
@@ -1446,7 +1437,7 @@
         <source>Russia</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">35</context>
         </context-group>
         <target>Росія</target>
       </trans-unit>
@@ -1454,7 +1445,7 @@
         <source>Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <target>Україна</target>
       </trans-unit>
@@ -1462,7 +1453,7 @@
         <source>Compare</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <target>Порівняння</target>
       </trans-unit>
