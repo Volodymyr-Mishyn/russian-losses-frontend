@@ -32,7 +32,7 @@ export class ScrollToTopComponent implements OnDestroy {
         'scroll',
         () => {
           this.showScroll =
-            this._scrollContainer.nativeElement.scrollTop > this.threshold; // Show after scrolling 300px
+            this._scrollContainer.nativeElement.scrollTop > this.threshold;
         }
       );
     }

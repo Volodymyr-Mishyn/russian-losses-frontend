@@ -14,8 +14,11 @@
           <mat-panel-title>
             <span class="p-2">{{ entityModel.name }}</span>
           </mat-panel-title>
-          <mat-panel-description>
+          <mat-panel-description class="flex-row justify-between">
             {{ entityModel.count }}
+            @if(entityModel?.info?.title||entityModel?.info?.url){
+            <mat-icon>info</mat-icon>
+            }
           </mat-panel-description>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
@@ -35,7 +38,9 @@
         [title]="entityTypeName"
       ></app-pie-chart>
       }@placeholder {
-      <div>{{ entityTypeName }} charts placeholder</div>
+      <div class="w-full h-20 m-4 flex items-center justify-center">
+        <mat-spinner color="accent"></mat-spinner>
+      </div>
       }
     </div>
   </div>
@@ -46,6 +51,8 @@
     [title]="entityTypeName"
   ></app-number-data-chart>
   }@placeholder {
-  <div>{{ entityTypeName }} charts placeholder</div>
+  <div class="w-full h-20 m-4 flex items-center justify-center">
+    <mat-spinner color="accent"></mat-spinner>
+  </div>
   }
 </div>

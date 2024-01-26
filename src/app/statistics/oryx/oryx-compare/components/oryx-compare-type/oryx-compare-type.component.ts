@@ -5,12 +5,14 @@ import { OryxCompareTypeOverallCountsComponent } from '../oryx-compare-type-over
 import { OryxCompareTypeEntitiesComponent } from '../oryx-compare-type-entities/oryx-compare-type-entities.component';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { th } from 'date-fns/locale';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-oryx-compare-type',
   standalone: true,
   imports: [
     CommonModule,
+    MatProgressSpinnerModule,
     OryxCompareTypeOverallCountsComponent,
     OryxCompareTypeEntitiesComponent,
     TranslatePipe,

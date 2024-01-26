@@ -99,9 +99,10 @@ export class OryxEntityLossesDetailsComponent {
         entityModel: this._entityModel,
         detailKey: statisticsFor.key,
       },
-      maxWidth: '100vw',
-      maxHeight: '100vh',
+      maxWidth: '90vw',
+      maxHeight: '90vh',
       panelClass: 'custom-dialog-container',
+      autoFocus: false,
     });
   }
 }

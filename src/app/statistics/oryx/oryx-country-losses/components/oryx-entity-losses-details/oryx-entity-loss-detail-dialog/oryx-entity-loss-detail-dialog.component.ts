@@ -14,6 +14,7 @@ import { TranslationService } from '../../../../../../_translate/translation.ser
 import { OryxTranslationService } from '../../../../services/oryx-translation.service';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 export interface OryxEntityLossDetailDialogData {
   entityModel: OryxEntityModel;
@@ -33,6 +34,7 @@ export interface ImageLinkItem {
     MatDialogModule,
     MatButtonModule,
     MatIconModule,
+    MatProgressSpinnerModule,
     TranslatePipe,
   ],
   providers: [

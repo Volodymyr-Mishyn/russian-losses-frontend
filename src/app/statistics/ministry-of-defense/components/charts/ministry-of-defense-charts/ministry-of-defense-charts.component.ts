@@ -7,11 +7,16 @@ import {
 import { DateRangeWithCount } from '../../../../_models/range';
 import { MinistryOfDefenseDataPlotChartComponent } from '../ministry-of-defense-data-plot-chart/ministry-of-defense-data-plot-chart.component';
 import { ALL_MOD_ENTITIES } from '../../../../_models/data/mod/mod-entities';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-ministry-of-defense-charts',
   standalone: true,
-  imports: [CommonModule, MinistryOfDefenseDataPlotChartComponent],
+  imports: [
+    CommonModule,
+    MatProgressSpinnerModule,
+    MinistryOfDefenseDataPlotChartComponent,
+  ],
   templateUrl: './ministry-of-defense-charts.component.html',
   styleUrl: './ministry-of-defense-charts.component.scss',
 })

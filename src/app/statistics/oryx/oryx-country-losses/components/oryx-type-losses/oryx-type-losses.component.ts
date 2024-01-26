@@ -13,6 +13,8 @@ import { NumberDataChartComponent } from '../../../../components/charts/number-d
 import { sortOryxData } from '../../../../_helpers/oryx.sort';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { OryxSideNames } from '../../../../_models/data/oryx/oryx.types';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-oryx-type-losses',
@@ -20,6 +22,8 @@ import { OryxSideNames } from '../../../../_models/data/oryx/oryx.types';
   imports: [
     CommonModule,
     MatExpansionModule,
+    MatProgressSpinnerModule,
+    MatIconModule,
     OryxStatisticsComponent,
     OryxEntityLossesComponent,
     PieChartComponent,
