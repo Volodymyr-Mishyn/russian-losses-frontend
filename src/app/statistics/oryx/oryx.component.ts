@@ -4,6 +4,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ScrollToTopComponent } from '../components/scroll-to-top/scroll-to-top.component';
 import { TranslationService } from '../../_translate/translation.service';
 import { OryxTranslationService } from './services/oryx-translation.service';
+import { ResetScrollDirective } from '../../directives/reset-scroll.directive';
 
 @Component({
   standalone: true,
@@ -13,6 +14,7 @@ import { OryxTranslationService } from './services/oryx-translation.service';
     RouterLink,
     RouterLinkActive,
     ScrollToTopComponent,
+    ResetScrollDirective,
   ],
   providers: [
     {

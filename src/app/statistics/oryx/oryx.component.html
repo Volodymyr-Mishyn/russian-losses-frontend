@@ -2,17 +2,22 @@
   <div
     class="mat-elevation-z4 flex-none z-10 h-12 flex flex-row justify-start items-stretch pl-8"
   >
+    @if(containerReady) {
     <div class="flex flex-row justify-center items-stretch gap-8">
       @for (link of links; track $index) {
       <div
         class="link-container flex flex-row justify-center items-center w-24"
         routerLinkActive="active-sub-route mat-elevation-z2 active-oryx-route"
         [routerLink]="link.route"
+        appResetScroll
+        [appRoutePath]="link.route"
+        [scrollContainer]="scrollContainer"
       >
         <span>{{ link.name }}</span>
       </div>
       }
     </div>
+    }
   </div>
   <div class="flex-1 overflow-y-scroll" #scrollDiv>
     <router-outlet></router-outlet>
