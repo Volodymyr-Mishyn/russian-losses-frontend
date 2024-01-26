@@ -1,13 +1,43 @@
 @import "../../../styles/variables.scss";
-.link-container {
-  text-transform: uppercase;
-  cursor: pointer;
+.sub-routes-container {
+  .link-container {
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .active-oryx-route {
+    border-bottom: 2px solid $base-primary-color;
+  }
+
+  .navigation-list-item {
+    box-shadow: inset 0 0 0 0 $base-primary-color;
+    color: unset;
+    transition: color 0.4s ease-in, box-shadow 0.2s ease-in-out;
+  }
+
+  .navigation-list-item:hover {
+    box-shadow: inset 0 100px 0 0 $base-primary-color;
+    color: white;
+  }
 }
 
-.active-oryx-route {
-  border-bottom: 2px solid $base-primary-color;
-}
+:host-context(.dark-theme) {
+  .sub-routes-container {
+    .navigation-list-item {
+      box-shadow: inset 0 0 0 0 $base-accent-color;
+      color: unset;
+      transition: color 0.4s ease-in, box-shadow 0.2s ease-in-out;
+    }
+    .active-oryx-route {
+      border-bottom: 2px solid $base-accent-color;
+    }
 
-:host-context(.dark-theme) .active-oryx-route {
-  border-bottom: 2px solid $base-accent-color;
+    .navigation-list-item:hover {
+      box-shadow: inset 0 100px 0 0 $base-accent-color;
+      color: black;
+      .active-route {
+        color: black;
+      }
+    }
+  }
 }
