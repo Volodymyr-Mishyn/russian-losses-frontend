@@ -2,17 +2,19 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { OryxEntityInfo } from '../../../_models/data/oryx/oryx-model';
 import { UNUSABLE_RESOURCES } from '../../../../_constants/unusable-resources';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-oryx-entity-info',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatIconModule],
   templateUrl: './oryx-entity-info.component.html',
   styleUrl: './oryx-entity-info.component.scss',
 })
 export class OryxEntityInfoComponent {
   private _info!: OryxEntityInfo | null;
   public images: Array<string> | null = null;
+
   @Input()
   public set info(info: OryxEntityInfo | undefined) {
     if (info) {

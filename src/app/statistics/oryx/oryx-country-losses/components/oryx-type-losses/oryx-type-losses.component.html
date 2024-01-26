@@ -14,8 +14,11 @@
           <mat-panel-title>
             <span class="p-2">{{ entityModel.name }}</span>
           </mat-panel-title>
-          <mat-panel-description>
+          <mat-panel-description class="flex-row justify-between">
             {{ entityModel.count }}
+            @if(entityModel?.info?.title||entityModel?.info?.url){
+            <mat-icon>info</mat-icon>
+            }
           </mat-panel-description>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
