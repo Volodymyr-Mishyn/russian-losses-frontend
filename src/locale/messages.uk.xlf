@@ -1524,8 +1524,8 @@
             equiv-text="amountPages" />
         </target>
       </trans-unit>
-      <trans-unit id="8303798425629888031" datatype="html">
-        <source>MoD</source>
+      <trans-unit id="7171949989092460632" datatype="html">
+        <source>Min. of Defense</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">29</context>
@@ -1584,7 +1584,7 @@
         <source>Application programming interface</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <target>Інтерфейс прикладного програмування</target>
       </trans-unit>
@@ -1592,13 +1592,17 @@
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">55</context>
+          <target>Інформація</target>
         </context-group>
+      </trans-unit>
+      <trans-unit id="3768870590847399574" datatype="html">
+        <source>How it works / About me</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">56</context>
         </context-group>
-        <target>Інфо</target>
+        <target>Як це працює / Про мене</target>
       </trans-unit>
       <trans-unit id="6480669984551358454" datatype="html">
         <source> Stand against russian imperialistic aggression: Support Ukraine's Victory </source>

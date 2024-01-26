@@ -26,7 +26,7 @@ import { ThemeService } from '../services/theme.service';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
-    title: $localize`MoD`,
+    title: $localize`Min. of Defense`,
     tooltip: $localize`Ministry of defense of Ukraine data`,
     icon: 'assets/img/mod.svg',
     route: `/statistics/ministry-of-defense`,
@@ -45,6 +45,7 @@ const NAVIGATION: Array<NavigationElement> = [
   },
   {
     title: $localize`API`,
+    isMatIcon: true,
     isIconRegistered: true,
     icon: 'api',
     tooltip: $localize`Application programming interface`,
@@ -52,7 +53,9 @@ const NAVIGATION: Array<NavigationElement> = [
   },
   {
     title: $localize`About`,
-    tooltip: $localize`About`,
+    tooltip: $localize`How it works / About me`,
+    isMatIcon: true,
+    icon: 'info',
     route: `/statistics/about`,
   },
 ];

@@ -14,9 +14,11 @@
       >
         @if (item.icon) {
         <div>
-          @if (item.isIconRegistered) {
+          @if (item.isMatIcon) { @if(item.isIconRegistered){
           <mat-icon [svgIcon]="item.icon" class="icon-m"></mat-icon>
           } @else {
+          <mat-icon class="icon-m">{{ item.icon }}</mat-icon>
+          } } @else {
           <img [src]="item.icon" width="50" />
           }
         </div>
