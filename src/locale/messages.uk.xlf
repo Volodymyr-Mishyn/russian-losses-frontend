@@ -1229,7 +1229,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
-        <target>Зруйновано</target>
+        <target>Знищено</target>
       </trans-unit>
       <trans-unit id="oryx.entity.oryx_entity_damaged" datatype="html">
         <source>Damaged</source>
