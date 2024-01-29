@@ -15,6 +15,8 @@ export class OryxEntityInfoComponent {
   private _info!: OryxEntityInfo | null;
   public images: Array<string> | null = null;
 
+  public isInfoPresent: boolean = false;
+
   @Input()
   public set info(info: OryxEntityInfo | undefined) {
     if (info) {
@@ -25,8 +27,13 @@ export class OryxEntityInfoComponent {
             !UNUSABLE_RESOURCES.some((unusable) => image.includes(unusable))
         );
       }
+      this.isInfoPresent =
+        !!this._info.url ||
+        (this._info.description && this._info.description?.length > 0) ||
+        (this.images !== null && this.images.length > 0);
     } else {
       this._info = null;
+      this.isInfoPresent = false;
     }
   }
 

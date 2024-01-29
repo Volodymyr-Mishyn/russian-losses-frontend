@@ -1,7 +1,7 @@
-@if (info) {
+@if (info&&isInfoPresent) {
 <div class="flex flex-col justify-start items-start gap-2">
   <mat-icon>info</mat-icon>
-
+  <!-- url -->
   @if (info.url) {
   <div class="flex flex-row justify-start items-center gap-2">
     <div>
@@ -9,11 +9,15 @@
     </div>
     <a href="{{ info.url }}" target="_blank">{{ info.url }}</a>
   </div>
-  } @if (info.description) {
+  }
+  <!-- description -->
+  @if (info.description) {
   <div class="flex-col justify-start items-start gap-1"></div>
   @for (description of info.description; track $index) {
   <p class="mat-caption">{{ description }}</p>
-  } } @if (images&& images.length > 0) {
+  } }
+  <!-- images -->
+  @if (images&& images.length > 0) {
   <div class="flex flex-col justify-stretch items-stretch gap-2">
     <div>
       <span i18n>Reference images:</span>
