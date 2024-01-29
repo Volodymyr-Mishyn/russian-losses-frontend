@@ -1,34 +1,75 @@
 @import "../../../../styles/variables";
-
 .navigation-list {
   .navigation-list-item {
-    box-shadow: inset 0 0 0 0 $base-primary-color;
     color: unset;
-    transition: color 0.4s ease-in, box-shadow 0.2s ease-in-out;
-  }
-
-  .navigation-list-item:hover {
-    box-shadow: inset 100px 0 0 0 $base-primary-color;
-    color: white;
   }
 }
 
-:host-context(.dark-theme) {
+// Styling for desktop
+@media (hover: hover) and (pointer: fine) {
   .navigation-list {
     .navigation-list-item {
-      box-shadow: inset 0 0 0 0 $base-accent-color;
-      color: unset;
+      box-shadow: inset 0 0 0 0 $base-primary-color;
       transition: color 0.4s ease-in, box-shadow 0.2s ease-in-out;
-    }
-    .active-route {
-      color: $base-accent-color;
     }
 
     .navigation-list-item:hover {
-      box-shadow: inset 100px 0 0 0 $base-accent-color;
-      color: black;
+      box-shadow: inset 100px 0 0 0 $base-primary-color;
+      color: white;
+    }
+  }
+
+  :host-context(.dark-theme) {
+    .navigation-list {
+      .navigation-list-item {
+        box-shadow: inset 0 0 0 0 $base-accent-color;
+        transition: color 0.4s ease-in, box-shadow 0.2s ease-in-out;
+      }
       .active-route {
+        color: $base-accent-color;
+      }
+
+      .navigation-list-item:hover {
+        box-shadow: inset 100px 0 0 0 $base-accent-color;
         color: black;
+        .active-route {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+// Styling for touch devices
+@media (hover: none) and (pointer: coarse) {
+  .navigation-list {
+    .navigation-list-item {
+      box-shadow: inset 0 0 0 0 $base-primary-color;
+      transition: color 0.2s ease-in, box-shadow 0.2s ease-in-out;
+    }
+
+    .navigation-list-item:active {
+      box-shadow: inset 100px 0 0 0 $base-primary-color;
+      color: white;
+    }
+  }
+
+  :host-context(.dark-theme) {
+    .navigation-list {
+      .navigation-list-item {
+        box-shadow: inset 0 0 0 0 $base-accent-color;
+        transition: color 0.2s ease-in, box-shadow 0.2s ease-in-out;
+      }
+      .active-route {
+        color: $base-accent-color;
+      }
+
+      .navigation-list-item:active {
+        box-shadow: inset 100px 0 0 0 $base-accent-color;
+        color: black;
+        .active-route {
+          color: black;
+        }
       }
     }
   }
