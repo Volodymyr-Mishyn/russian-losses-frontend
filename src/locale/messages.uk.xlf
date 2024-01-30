@@ -1524,6 +1524,14 @@
             equiv-text="amountPages" />
         </target>
       </trans-unit>
+      <trans-unit id="7505806954101170506" datatype="html">
+        <source>Russian losses in UA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/statistics.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+        <target>Russian losses in UA</target>
+      </trans-unit>
       <trans-unit id="7171949989092460632" datatype="html">
         <source>Min. of Defense</source>
         <context-group purpose="location">
