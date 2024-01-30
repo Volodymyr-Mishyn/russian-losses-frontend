@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { TableDirective } from '../../../../directives/table.directive';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
+import { SvgIconComponent } from '../../../../../components/svg-icon/svg-icon.component';
 const BASE_HEADER_COLUMNS = ['type', 'value'];
 
 @Component({
@@ -21,6 +22,7 @@ const BASE_HEADER_COLUMNS = ['type', 'value'];
     MatTableModule,
     MatButtonModule,
     MatIconModule,
+    SvgIconComponent,
     TranslatePipe,
   ],
   templateUrl: './ministry-of-defense-calculated-table.component.html',

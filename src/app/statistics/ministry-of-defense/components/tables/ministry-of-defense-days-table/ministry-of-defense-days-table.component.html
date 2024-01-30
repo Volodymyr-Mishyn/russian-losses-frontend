@@ -38,10 +38,10 @@
           [matTooltip]="item | appTranslate"
         >
           <div class="flex flex-col justify-center items-center">
-            <mat-icon
-              [svgIcon]="'mod_' + item"
-              class="icon-l rl-app-icon"
-            ></mat-icon>
+            <app-svg-icon
+              [icon]="'mod_' + item"
+              [classes]="'icon-l rl-app-icon'"
+            ></app-svg-icon>
           </div>
         </th>
         <td mat-cell *matCellDef="let element">

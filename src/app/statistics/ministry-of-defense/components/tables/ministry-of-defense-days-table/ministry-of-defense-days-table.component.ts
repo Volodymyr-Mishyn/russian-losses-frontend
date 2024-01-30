@@ -32,6 +32,7 @@ import { FormsModule } from '@angular/forms';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CustomPaginatorIntl } from '../../../../services/custom-paginator-intl.service';
+import { SvgIconComponent } from '../../../../../components/svg-icon/svg-icon.component';
 
 const BASE_HEADER_COLUMNS = ['date', 'dayOfInvasion'];
 const BASE_PAGE_SIZE = 7;
@@ -48,6 +49,7 @@ const BASE_PAGE_SIZE = 7;
     MatCheckboxModule,
     MatTooltipModule,
     CasualtyCellComponent,
+    SvgIconComponent,
     TranslatePipe,
   ],
   providers: [{ provide: MatPaginatorIntl, useClass: CustomPaginatorIntl }],
