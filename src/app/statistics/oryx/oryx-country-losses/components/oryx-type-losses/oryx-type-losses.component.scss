@@ -1,3 +1,6 @@
 :host {
   display: block;
 }
+.flex-grow-fix {
+  flex-grow: 1 !important;
+}

@@ -1,5 +1,6 @@
 @if (info&&isInfoPresent) {
 <div class="flex flex-col justify-start items-start gap-2">
+  @if (info.url||(info.description??[]).length > 0) {
   <mat-icon>info</mat-icon>
   <!-- url -->
   @if (info.url) {
@@ -15,9 +16,10 @@
   <div class="flex-col justify-start items-start gap-1"></div>
   @for (description of info.description; track $index) {
   <p class="mat-caption">{{ description }}</p>
-  } }
+  } } }
   <!-- images -->
   @if (images&& images.length > 0) {
+  <mat-icon>image</mat-icon>
   <div class="flex flex-col justify-stretch items-stretch gap-2">
     <div>
       <span i18n>Reference images:</span>
