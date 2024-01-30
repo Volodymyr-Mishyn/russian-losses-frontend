@@ -11,9 +11,9 @@ import { SeoService } from '../../services/seo.service';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
-  public title = $localize`:@@pageTitle:Data and infographic about russian invasion of Ukraine`;
-  public ogTitle = $localize`:@@ogTitle:Russian losses in Ukraine: In-Depth statistics and infographic`;
-  public ogDescription = $localize`:@@ogDescription:Constantly updating data about Russian losses in the ongoing Russian invasion of Ukraine`;
+  public title = $localize`:@@pageTitleHome:Data and infographic about russian invasion of Ukraine`;
+  public ogTitle = $localize`:@@ogTitleHome:Russian losses in Ukraine: In-Depth statistics and infographic`;
+  public ogDescription = $localize`:@@ogDescriptionHome:Constantly updating data about Russian losses in the ongoing Russian invasion of Ukraine`;
 
   private _currentDate = new Date();
 
