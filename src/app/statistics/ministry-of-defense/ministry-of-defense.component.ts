@@ -27,6 +27,7 @@ import { ScrollToTopComponent } from '../components/scroll-to-top/scroll-to-top.
 import { TranslationService } from '../../_translate/translation.service';
 import { MinistryOfDefenseTranslationService } from './services/ministry-of-defense-translation.service';
 import { MediaMatcher } from '@angular/cdk/layout';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   standalone: true,
@@ -46,6 +47,10 @@ import { MediaMatcher } from '@angular/cdk/layout';
   styleUrl: './ministry-of-defense.component.scss',
 })
 export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
+  public title = $localize`:@@pageTitleMoD:Ministry of Defense of Ukraine data and infographic about russian losses during invasion of Ukraine`;
+  public ogTitle = $localize`:@@ogTitleMoD:Ministry of Defense of Ukraine data and infographic about russian losses during invasion of Ukraine`;
+  public ogDescription = $localize`:@@ogDescriptionMoD:Constantly updating data of Ministry of defense of Ukraine about russian losses in the ongoing russian invasion of Ukraine`;
+
   private _rangeSubject = new BehaviorSubject<DateRange | null>(null);
   private _range$ = this._rangeSubject.asObservable();
   private _destroy$ = new Subject();
@@ -73,6 +78,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     private _store: Store,
     private _changeDetectorRef: ChangeDetectorRef,
     private _media: MediaMatcher,
+    private _seoService: SeoService,
     private _registerIconsService: RegisterIconsService
   ) {
     this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
@@ -113,6 +119,16 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     });
   }
 
+  private _setMetaTags(): void {
+    this._seoService.updateTitle(this.title);
+    this._seoService.updateMetaTags([
+      { name: 'og:title', content: this.ogTitle },
+      { name: 'og:description', content: this.ogDescription },
+      { name: 'twitter:title', content: this.ogTitle },
+      { name: 'twitter:description', content: this.ogDescription },
+    ]);
+  }
+
   public setRange(range: DateRange | null) {
     if (range === null) {
       this._rangeSubject.next(null);
@@ -134,6 +150,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   }
 
   public ngOnInit(): void {
+    this._setMetaTags();
     setTimeout(() => {
       this.containerReady = true;
     });

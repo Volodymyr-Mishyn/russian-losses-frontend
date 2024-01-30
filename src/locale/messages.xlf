@@ -38,10 +38,25 @@
         </context-group>
       </trans-unit>
       <trans-unit id="pageTitle" datatype="html">
-        <source>Data and infographic about russian invasion of Ukraine</source>
+        <source>Data and infographic about russian losses during invasion of Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitle" datatype="html">
+        <source>Russian losses in Ukraine: In-Depth statistics and infographic</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescription" datatype="html">
+        <source>Constantly updating data about Russian losses in the ongoing Russian invasion of
+          Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="googleAnalyticsSnackbarQuestion" datatype="html">
@@ -266,6 +281,27 @@
           <context context-type="linenumber">95,96</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="pageTitleAbout" datatype="html">
+        <source>About me &amp; about this application of russian losses in Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleAbout" datatype="html">
+        <source>About me &amp; about this application of russian losses in Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionAbout" datatype="html">
+        <source>About me &amp; about this application of russian losses in Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5319928736812616614" datatype="html">
         <source> Endpoint for accessing the data from the Ministry of Defense of Ukraine. </source>
         <context-group purpose="location">
@@ -333,6 +369,33 @@
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleAPI" datatype="html">
+        <source>Data and infographic about russian invasion of Ukraine Application Programming
+          Interface (API)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/application-programming-interface/application-programming-interface.component.ts</context>
+          <context context-type="linenumber">485</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleAPI" datatype="html">
+        <source>Data and infographic about russian invasion of Ukraine Application Programming
+          Interface (API)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/application-programming-interface/application-programming-interface.component.ts</context>
+          <context context-type="linenumber">486</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionAPI" datatype="html">
+        <source>Application programming interface (API) for data about russian losses during
+          invasion of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/application-programming-interface/application-programming-interface.component.ts</context>
+          <context context-type="linenumber">487</context>
         </context-group>
       </trans-unit>
       <trans-unit id="376445160625906550" datatype="html">
@@ -462,6 +525,28 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleHome" datatype="html">
+        <source>Data and infographic about russian invasion of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleHome" datatype="html">
+        <source>Russian losses in Ukraine: In-Depth statistics and infographic</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionHome" datatype="html">
+        <source>Constantly updating data about Russian losses in the ongoing Russian invasion of
+          Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.ts</context>
+          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="mod.entity.tank" datatype="html">
@@ -852,6 +937,33 @@
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="pageTitleMoD" datatype="html">
+        <source>Ministry of Defense of Ukraine data and infographic about russian losses during
+          invasion of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleMoD" datatype="html">
+        <source>Ministry of Defense of Ukraine data and infographic about russian losses during
+          invasion of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionMoD" datatype="html">
+        <source>Constantly updating data of Ministry of defense of Ukraine about russian losses in
+          the ongoing russian invasion of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="oryx.type.oryx_type_tanks" datatype="html">
         <source>Tanks</source>
         <context-group purpose="location">
@@ -1169,6 +1281,33 @@
           <context context-type="linenumber">3,4</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="pageTitleComparisonOryx" datatype="html">
+        <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
+          Ukraine according to Oryx OSINT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleComparisonOryx" datatype="html">
+        <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
+          Ukraine according to Oryx OSINT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionComparisonOryx" datatype="html">
+        <source>Constantly updating comparison of russian and Ukrainian losses in the ongoing
+          Russian invasion of Ukraine according to Oryx OSINT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6836949342567686088" datatype="html">
         <source>Count:</source>
         <context-group purpose="location">
@@ -1247,6 +1386,58 @@
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
           <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleOryxRussia" datatype="html">
+        <source>Russian losses during invasion of Ukraine according to Oryx OSINT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleOryxRussia" datatype="html">
+        <source>Russian losses during invasion of Ukraine according to Oryx OSINT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionOryxRussia" datatype="html">
+        <source>Constantly updating data from Oryx OSINT about russian losses in the ongoing russian
+          invasion of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleOryxUkraine" datatype="html">
+        <source>Ukrainian losses during unjustified russian invasion of Ukraine according to Oryx
+          OSINT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleOryxUkraine" datatype="html">
+        <source>Ukrainian losses during unjustified russian invasion of Ukraine according to Oryx
+          OSINT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionOryxUkraine" datatype="html">
+        <source>Constantly updating data from Oryx OSINT about ukrainian losses in the ongoing
+          russian invasion of Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="185815212249169742" datatype="html">
@@ -1494,14 +1685,14 @@
         <source>Armed Forces of Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4860282815579634562" datatype="html">
         <source>Government, Military</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7962580994936643499" datatype="html">
@@ -1510,25 +1701,25 @@
           weapons, equipment, food, medicine, and other supplies.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2629641195318238092" datatype="html">
         <source>Come Back Alive</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6284251546140951576" datatype="html">
         <source>Military, Non-government, Medical</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4557633441592131034" datatype="html">
@@ -1538,21 +1729,21 @@
           development of veteran-run businesses.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8839025064939381445" datatype="html">
         <source>UNITED24</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="641816222561991296" datatype="html">
         <source>Government, Military, Medical, Humanitarian, Education and Science</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9161556193420142674" datatype="html">
@@ -1566,21 +1757,21 @@
           figures worldwide.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">36,40</context>
+          <context context-type="linenumber">37,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8531588785359604671" datatype="html">
         <source>The Ukraine Humanitarian Fund</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8378636028447540308" datatype="html">
         <source>Non-government, Humanitarian, Medical</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5873315661267451729" datatype="html">
@@ -1590,14 +1781,14 @@
           support.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6104243289101225885" datatype="html">
         <source>Serhiy Prytula Charity Foundation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7125540950643386534" datatype="html">
@@ -1607,21 +1798,21 @@
           donation we receive becomes valuable assistance to Ukraine.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">56,57</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4344912555294983986" datatype="html">
         <source>Ministry of Healthcare of Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7907214101238932357" datatype="html">
         <source>Government, Humanitarian, Medical</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2816348974830694094" datatype="html">
@@ -1630,7 +1821,28 @@
           struggle for the life and health of Ukrainians.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleSupport" datatype="html">
+        <source>Support Ukraine against russian invasion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogTitleSupport" datatype="html">
+        <source>Support Ukraine against russian invasion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ogDescriptionSupport" datatype="html">
+        <source>List of verified ways to support Ukraine against russian invasion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
+          <context context-type="linenumber">83</context>
         </context-group>
       </trans-unit>
     </body>

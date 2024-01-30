@@ -12,10 +12,10 @@
       </th>
       <td mat-cell *matCellDef="let element">
         <div class="flex flex-row justify-start items-center gap-4">
-          <mat-icon
-            [svgIcon]="'mod_' + element.entityName"
-            class="icon-m"
-          ></mat-icon>
+          <app-svg-icon
+            [icon]="'mod_' + element.entityName"
+            [classes]="'icon-m'"
+          ></app-svg-icon>
           <span class="mat-caption">{{
             element.entityName | appTranslate
           }}</span>

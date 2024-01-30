@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { TableDirective } from '../../../../directives/table.directive';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
+import { SvgIconComponent } from '../../../../../components/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'app-ministry-of-defense-rankings-table',
@@ -20,6 +21,7 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
     MatButtonModule,
     MatIconModule,
     RankingCellComponent,
+    SvgIconComponent,
     TranslatePipe,
   ],
   templateUrl: './ministry-of-defense-rankings-table.component.html',
