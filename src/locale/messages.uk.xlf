@@ -1477,36 +1477,36 @@
       </trans-unit>
       <trans-unit id="pageTitleComparisonOryx" datatype="html">
         <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
-          Ukraine</source>
+          Ukraine according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
         <target>Порівняння російських і українських втрат під час невиправданого російського
-          вторгнення в Україну</target>
+          вторгнення в Україну за даними Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="ogTitleComparisonOryx" datatype="html">
         <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
-          Ukraine</source>
+          Ukraine according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
         <target>Порівняння російських і українських втрат під час невиправданого російського
-          вторгнення в Україну</target>
+          вторгнення в Україну за даними Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="ogDescriptionComparisonOryx" datatype="html">
         <source>Constantly updating comparison of russian and Ukrainian losses in the ongoing
-          Russian invasion of Ukraine</source>
+          Russian invasion of Ukraine according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
           <context context-type="linenumber">21</context>
         </context-group>
         <target>Постійно оновлювані порівняння російських і українських втрат під час російського
-          вторгнення в Україну</target>
+          вторгнення в Україну за даними Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="6836949342567686088" datatype="html">
         <source>Count:</source>

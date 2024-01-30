@@ -16,9 +16,9 @@ import { SeoService } from '../../../services/seo.service';
   styleUrl: './oryx-compare.component.scss',
 })
 export class OryxCompareComponent implements OnInit {
-  public title = $localize`:@@pageTitleComparisonOryx:Comparison of russian and Ukrainian losses during unjustified russian invasion of Ukraine`;
-  public ogTitle = $localize`:@@ogTitleComparisonOryx:Comparison of russian and Ukrainian losses during unjustified russian invasion of Ukraine`;
-  public ogDescription = $localize`:@@ogDescriptionComparisonOryx:Constantly updating comparison of russian and Ukrainian losses in the ongoing Russian invasion of Ukraine`;
+  public title = $localize`:@@pageTitleComparisonOryx:Comparison of russian and Ukrainian losses during unjustified russian invasion of Ukraine according to Oryx OSINT`;
+  public ogTitle = $localize`:@@ogTitleComparisonOryx:Comparison of russian and Ukrainian losses during unjustified russian invasion of Ukraine according to Oryx OSINT`;
+  public ogDescription = $localize`:@@ogDescriptionComparisonOryx:Constantly updating comparison of russian and Ukrainian losses in the ongoing Russian invasion of Ukraine according to Oryx OSINT`;
 
   public oryxTypesComparison$: Observable<OryxComparison> =
     this._store.select(selectOryxComparison);

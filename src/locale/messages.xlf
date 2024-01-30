@@ -1283,7 +1283,7 @@
       </trans-unit>
       <trans-unit id="pageTitleComparisonOryx" datatype="html">
         <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
-          Ukraine</source>
+          Ukraine according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
@@ -1292,7 +1292,7 @@
       </trans-unit>
       <trans-unit id="ogTitleComparisonOryx" datatype="html">
         <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
-          Ukraine</source>
+          Ukraine according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
@@ -1301,7 +1301,7 @@
       </trans-unit>
       <trans-unit id="ogDescriptionComparisonOryx" datatype="html">
         <source>Constantly updating comparison of russian and Ukrainian losses in the ongoing
-          Russian invasion of Ukraine</source>
+          Russian invasion of Ukraine according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
