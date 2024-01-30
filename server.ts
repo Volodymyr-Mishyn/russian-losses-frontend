@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 import bootstrap from './src/main.server';
 import { LOCALE_ID } from '@angular/core';
+import compression from 'compression';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(locale: string): express.Express {
@@ -56,6 +57,7 @@ export function app(locale: string): express.Express {
 function run(): void {
   const port = process.env['PORT'] || 4000;
   const server = express();
+  server.use(compression());
   server.get('/', (req, res) => {
     const { headers, protocol } = req;
     res.redirect(`${protocol}://${headers.host}/en`);
