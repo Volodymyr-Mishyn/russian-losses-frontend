@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { PlatformService } from '../../services/platform.service';
+import { SeoService } from '../../services/seo.service';
 const MOD_DATA = [
   {
     _id: '65674bf0d8d545dcf72e4bfa',
@@ -475,17 +476,38 @@ export interface OryxEntityType {
   templateUrl: './application-programming-interface.component.html',
   styleUrl: './application-programming-interface.component.scss',
 })
-export class ApplicationProgrammingInterfaceComponent {
+export class ApplicationProgrammingInterfaceComponent implements OnInit {
   public modData = MOD_DATA;
   public modDataFlat = MOD_DATA_FLAT;
   public oryxData = ORYX_DATA;
   public oryxModel = ORYX_MODEL;
 
+  public title = $localize`:@@pageTitleAPI:Data and infographic about russian invasion of Ukraine Application Programming Interface (API)`;
+  public ogTitle = $localize`:@@ogTitleAPI:Data and infographic about russian invasion of Ukraine Application Programming Interface (API)`;
+  public ogDescription = $localize`:@@ogDescriptionAPI:Application programming interface (API) for data about russian losses during invasion of Ukraine`;
+
   public baseUrl: string = '';
 
-  constructor(private _platformService: PlatformService) {
+  constructor(
+    private _platformService: PlatformService,
+    private _seoService: SeoService
+  ) {
     if (this._platformService.isRunningOnBrowser()) {
       this.baseUrl = window.location.origin;
     }
+  }
+
+  private _setMetaTags(): void {
+    this._seoService.updateTitle(this.title);
+    this._seoService.updateMetaTags([
+      { name: 'og:title', content: this.ogTitle },
+      { name: 'og:description', content: this.ogDescription },
+      { name: 'twitter:title', content: this.ogTitle },
+      { name: 'twitter:description', content: this.ogDescription },
+    ]);
+  }
+
+  public ngOnInit(): void {
+    this._setMetaTags();
   }
 }

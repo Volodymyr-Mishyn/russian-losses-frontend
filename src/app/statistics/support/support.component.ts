@@ -1,8 +1,9 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { GoogleAnalyticsService } from '../../services/google-analytics.service';
+import { SeoService } from '../../services/seo.service';
 
 interface SupportElement {
   title: string;
@@ -76,11 +77,33 @@ const SUPPORT_ELEMENTS: Array<SupportElement> = [
   templateUrl: './support.component.html',
   styleUrl: './support.component.scss',
 })
-export class SupportComponent {
+export class SupportComponent implements OnInit {
+  public title = $localize`:@@pageTitleSupport:Support Ukraine against russian invasion`;
+  public ogTitle = $localize`:@@ogTitleSupport:Support Ukraine against russian invasion`;
+  public ogDescription = $localize`:@@ogDescriptionSupport:List of verified ways to support Ukraine against russian invasion`;
+
   public donateOptions: Array<SupportElement> = SUPPORT_ELEMENTS;
 
-  constructor(private _googleAnalytics: GoogleAnalyticsService) {}
-  donationLinkClicked(link: string, name: string) {
+  constructor(
+    private _googleAnalytics: GoogleAnalyticsService,
+    private _seoService: SeoService
+  ) {}
+
+  private _setMetaTags(): void {
+    this._seoService.updateTitle(this.title);
+    this._seoService.updateMetaTags([
+      { name: 'og:title', content: this.ogTitle },
+      { name: 'og:description', content: this.ogDescription },
+      { name: 'twitter:title', content: this.ogTitle },
+      { name: 'twitter:description', content: this.ogDescription },
+    ]);
+  }
+
+  public ngOnInit(): void {
+    this._setMetaTags();
+  }
+
+  public donationLinkClicked(link: string, name: string) {
     this._googleAnalytics.sendEvent(
       'donation_link_clicked',
       'support',
