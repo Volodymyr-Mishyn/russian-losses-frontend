@@ -26,7 +26,7 @@ const SEO_METADATA = {
   [OryxSideNames.UKRAINE]: {
     title: $localize`:@@pageTitleOryxUkraine:Ukrainian losses during unjustified russian invasion of Ukraine according to Oryx OSINT`,
     ogTitle: $localize`:@@ogTitleOryxUkraine:Ukrainian losses during unjustified russian invasion of Ukraine according to Oryx OSINT`,
-    ogDescription: $localize`:@@ogDescriptionOryxUkraine:Constantly updating data from Oryx OSIN about ukrainian losses in the ongoing russian invasion of Ukraine`,
+    ogDescription: $localize`:@@ogDescriptionOryxUkraine:Constantly updating data from Oryx OSINT about ukrainian losses in the ongoing russian invasion of Ukraine`,
   },
 };
 
