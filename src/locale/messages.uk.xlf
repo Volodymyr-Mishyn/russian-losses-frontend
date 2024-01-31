@@ -273,13 +273,13 @@
         </context-group>
         <target>Серверний код</target>
       </trans-unit>
-      <trans-unit id="2625336236008554479" datatype="html">
-        <source> Frontend app for displaying data You are seeing in front of You: </source>
+      <trans-unit id="2610669715749386175" datatype="html">
+        <source> Frontend app for displaying data, which You can observe on this site: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">59,60</context>
         </context-group>
-        <target> Інтерфейсний додаток для відображення даних, які ви бачите перед собою:</target>
+        <target> Інтерфейсний додаток для відображення даних, які ви бачите на цьому сайті:</target>
       </trans-unit>
       <trans-unit id="123404351716950983" datatype="html">
         <source>Frontend code</source>
@@ -287,21 +287,22 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">65,66</context>
         </context-group>
-        <target>Код інтерфейсу</target>
+        <target>Код фронтенд додатку</target>
       </trans-unit>
-      <trans-unit id="4344323767084096621" datatype="html">
-        <source> Backend Node.js app periodically on schedule runs scrapper data and persists it.
-          Frontend app is Angular Application on bleeding-edge Angular17 with brand new SSR support.
-          Most data grouping is performed on frontend to minimize network traffic. </source>
+      <trans-unit id="1908492724494500400" datatype="html">
+        <source> Backend Node.js app periodically (on schedule) runs scraping, receives data and
+          persists it in mongo DB. Frontend app is Angular Application on bleeding-edge Angular17
+          with brand new SSR support. Most data grouping is performed on frontend to minimize
+          network traffic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">69,72</context>
         </context-group>
-        <target> Бекенд додаток Node.js періодично (за розкладом) запускає дані скраппера та
-          зберігає їх. Додаток Frontend — це додаток Angular на сучасному Angular17 із абсолютно
-          новою підтримкою SSR. Більшість групування та розрахунку даних виконується на інтерфейсі,
-          щоб
-          мінімізувати мережевий трафік.</target>
+        <target> Бекенд додаток Node.js періодично (за розкладом) запускає скрапер та
+          зберігає отримані дані в MongoDB. Додаток Frontend — це додаток Angular на сучасному
+          Angular17 із абсолютно
+          новою підтримкою SSR. Більшість групуваннь та розрахунку даних виконується на стороні
+          фронт-енду, щоб мінімізувати мережевий трафік.</target>
       </trans-unit>
       <trans-unit id="3125133585423664436" datatype="html">
         <source>Let&apos;s Connect and Collaborate</source>
