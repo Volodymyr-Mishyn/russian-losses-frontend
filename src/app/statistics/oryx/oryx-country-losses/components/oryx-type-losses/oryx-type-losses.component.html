@@ -1,5 +1,15 @@
-<div class="flex flex-col justify-start items-stretch gap-2">
-  <div class="mat-h2">{{ entityTypeName }}</div>
+<div
+  class="flex flex-col justify-start items-stretch gap-2"
+  [id]="entityType.code"
+>
+  <div class="mat-h2">
+    <a
+      [routerLink]="['/statistics/oryx/country-losses', currentCountryName]"
+      [fragment]="entityType.code"
+      class="no-global-a"
+      >{{ entityTypeName }}
+    </a>
+  </div>
   <app-oryx-statistics
     [statistics]="entityType.statistics"
     class="sm:m-2 p-2"

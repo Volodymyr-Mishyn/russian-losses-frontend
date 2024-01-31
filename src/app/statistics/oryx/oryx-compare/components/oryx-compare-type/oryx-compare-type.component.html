@@ -1,6 +1,14 @@
-<div class="flex flex-col justify-start items-stretch">
+<div
+  class="flex flex-col justify-start items-stretch"
+  [id]="typeCode + '_compare'"
+>
   <div class="mat-h2">
-    {{ typeName }}
+    <a
+      [routerLink]="['/statistics/oryx/compare-losses']"
+      [fragment]="typeCode + '_compare'"
+      class="no-global-a"
+      >{{ typeName }}
+    </a>
   </div>
   @defer (on viewport) {
   <div class="flex flex-col justify-start items-stretch gap-4">

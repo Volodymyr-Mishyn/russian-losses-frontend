@@ -15,12 +15,14 @@ import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { OryxSideNames } from '../../../../_models/data/oryx/oryx.types';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-oryx-type-losses',
   standalone: true,
   imports: [
     CommonModule,
+    RouterLink,
     MatExpansionModule,
     MatProgressSpinnerModule,
     MatIconModule,
@@ -40,6 +42,7 @@ export class OryxTypeLossesComponent {
   public entitiesChartData: Array<ChartData> = [];
   public chartLineColor: string | null = null;
   public entityTypeName!: string;
+  public currentCountryName!: string;
 
   @Input()
   private _entityType!: OryxEntityType;
@@ -53,9 +56,11 @@ export class OryxTypeLossesComponent {
     switch (entityType.countryName) {
       case OryxSideNames.RUSSIA:
         this.chartLineColor = 'red';
+        this.currentCountryName = 'russia';
         break;
       case OryxSideNames.UKRAINE:
         this.chartLineColor = 'blue';
+        this.currentCountryName = 'Ukraine';
         break;
       default:
         this.chartLineColor = null;
