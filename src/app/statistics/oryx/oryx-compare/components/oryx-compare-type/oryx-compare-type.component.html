@@ -2,14 +2,14 @@
   class="flex flex-col justify-start items-stretch"
   [id]="typeCode + '_compare'"
 >
-  <div class="mat-h2">
+  <h2 class="mat-h2">
     <a
       [routerLink]="['/statistics/oryx/compare-losses']"
       [fragment]="typeCode + '_compare'"
       class="no-global-a"
       >{{ typeName }}
     </a>
-  </div>
+  </h2>
   @defer (on viewport) {
   <div class="flex flex-col justify-start items-stretch gap-4">
     <app-oryx-compare-type-overall-counts

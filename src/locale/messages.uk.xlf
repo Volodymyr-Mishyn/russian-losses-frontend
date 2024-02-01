@@ -1887,8 +1887,8 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">55</context>
-          <target>Інформація</target>
         </context-group>
+        <target>Інформація</target>
       </trans-unit>
       <trans-unit id="3768870590847399574" datatype="html">
         <source>How it works / About me</source>
@@ -1902,7 +1902,7 @@
         <source> Stand against russian imperialistic aggression: Support Ukraine's Victory </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">4,5</context>
+          <context context-type="linenumber">3,4</context>
         </context-group>
         <target> Зупиніть російську імперіалістичну агресію: Підтримайте Перемогу України</target>
       </trans-unit>
@@ -1910,7 +1910,7 @@
         <source>Donate to Ukrainian Army or verified charity platforms</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">8,9</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
         <target>Зробіть пожертву на користь української армії або перевірених благодійних платформ</target>
       </trans-unit>
@@ -1918,7 +1918,7 @@
         <source>Donation Link</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">43,44</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
         <target>Посилання для пожертвувань</target>
       </trans-unit>
@@ -1926,7 +1926,7 @@
         <source>Consider other charity platforms</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">59,60</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
         <target>Розгляньте інші благодійні платформи</target>
       </trans-unit>
@@ -1934,13 +1934,13 @@
         <source>Stand For Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">83,84</context>
+          <context context-type="linenumber">81,82</context>
         </context-group>
         <target>Stand For Ukraine</target>
       </trans-unit>
-      <trans-unit id="6662264093560886762" datatype="html">
-        <source>Consider donating to Open Source Intelligence contributors whose hard work allows to
-          preserve and document all losses of russian invaders</source>
+      <trans-unit id="2376156035855171103" datatype="html">
+        <source> Consider donating to Open Source Intelligence contributors whose hard work allows
+          to preserve and document all losses of russian invaders </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">92,93</context>
@@ -1952,7 +1952,7 @@
         <source>Jakub Janovsky</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">100,101</context>
         </context-group>
         <target>Jakub Janovsky</target>
       </trans-unit>
@@ -1960,7 +1960,7 @@
         <source>Bellingcat and Oryx Blog contributor.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">117,118</context>
+          <context context-type="linenumber">115,116</context>
         </context-group>
         <target>Bellingcat та Oryx вкладник.</target>
       </trans-unit>
@@ -1968,7 +1968,7 @@
         <source>WarSpotting</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">138,139</context>
+          <context context-type="linenumber">136,137</context>
         </context-group>
         <target>WarSpotting</target>
       </trans-unit>
@@ -1976,7 +1976,7 @@
         <source>open-source intelligence group</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">140,141</context>
+          <context context-type="linenumber">138,139</context>
         </context-group>
         <target>розвідувальна група відкритих джерел інформації</target>
       </trans-unit>
@@ -1986,7 +1986,7 @@
           proofs. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">147,149</context>
+          <context context-type="linenumber">145,147</context>
         </context-group>
         <target>WarSpotting — це база даних про задокументовані втрати під час російського
           вторгнення в Україну у 2022 році. Як докази вони використовують фотодокази, знайдені у
@@ -1996,7 +1996,7 @@
         <source>Donation link</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">161,162</context>
+          <context context-type="linenumber">159,160</context>
         </context-group>
         <target>Посилання для пожертвувань</target>
       </trans-unit>

@@ -2,14 +2,14 @@
   class="flex flex-col justify-start items-stretch gap-2"
   [id]="entityType.code"
 >
-  <div class="mat-h2">
+  <h2 class="mat-h2">
     <a
       [routerLink]="['/statistics/oryx/country-losses', currentCountryName]"
       [fragment]="entityType.code"
       class="no-global-a"
       >{{ entityTypeName }}
     </a>
-  </div>
+  </h2>
   <app-oryx-statistics
     [statistics]="entityType.statistics"
     class="sm:m-2 p-2"
