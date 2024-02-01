@@ -14,7 +14,7 @@
     }
 
     .navigation-list-item:hover {
-      box-shadow: inset 100px 0 0 0 $base-primary-color;
+      box-shadow: inset 140px 0 0 0 $base-primary-color;
       color: white;
     }
   }
@@ -30,7 +30,7 @@
       }
 
       .navigation-list-item:hover {
-        box-shadow: inset 100px 0 0 0 $base-accent-color;
+        box-shadow: inset 140px 0 0 0 $base-accent-color;
         color: black;
         .active-route {
           color: black;

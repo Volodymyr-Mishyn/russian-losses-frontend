@@ -1,66 +1,71 @@
 <div
-  class="mt-1 mx-1 sm:mt-8 md:mx-32 flex flex-col lg:flex-row lg:justify-stretch items-start gap-8"
+  class="mt-8 mx-6 md:mx-32 lg:mx-40 xl:mx-56 flex flex-col items-start justify-stretch"
 >
-  <div
-    class="flex-1 mat-elevation-z3 flex flex-col justify-start items-stretch p-1 m-1 sm:p-4 sm:m-4"
-  >
-    <p class="text-2xl">/api/mod</p>
-    <p>
-      <span i18n>
-        Endpoint for accessing the data from the Ministry of Defense of Ukraine.
-      </span>
-    </p>
-    <ul class="pl-2">
-      <li>
-        <p>start: <span i18n>string in Date ISO format</span></p>
-        <p>end: <span i18n>string in Date ISO format</span></p>
-      </li>
-      <li>
-        <p>flat: boolean (<span i18n>optional</span>)</p>
-      </li>
-    </ul>
-    <div class="flex flex-col justify-start items-stretch pl-4">
-      <p class="text-2xl"><span i18n>Examples:</span></p>
-      <div class="flex flex-col justify-start items-stretch gap-8">
-        <div>
-          <p class="sm:text-sm word-break-anywhere">
-            {{ baseUrl }}/api/mod?start=2022-03-24&end=2022-03-26
-          </p>
-          <pre><code>{{modData|json}}</code></pre>
-        </div>
-        <div>
-          <p class="sm:text-sm word-break-anywhere">
-            {{ baseUrl }}/api/mod?start=2022-03-24&end=2022-03-26&flat=true
-          </p>
-          <pre><code>{{modDataFlat|json}}</code></pre>
+  <h1 i18n>API / Data access</h1>
+
+  <div class="flex flex-col lg:flex-row lg:justify-stretch items-start gap-8">
+    <div
+      class="flex-1 mat-elevation-z3 flex flex-col justify-start items-stretch p-1 m-1 sm:p-4 sm:m-4"
+    >
+      <p class="text-2xl">/api/mod</p>
+      <p>
+        <span i18n>
+          Endpoint for accessing the data from the Ministry of Defense of
+          Ukraine.
+        </span>
+      </p>
+      <ul class="pl-2">
+        <li>
+          <p>start: <span i18n>string in Date ISO format</span></p>
+          <p>end: <span i18n>string in Date ISO format</span></p>
+        </li>
+        <li>
+          <p>flat: boolean (<span i18n>optional</span>)</p>
+        </li>
+      </ul>
+      <div class="flex flex-col justify-start items-stretch pl-4">
+        <p class="text-2xl"><span i18n>Examples:</span></p>
+        <div class="flex flex-col justify-start items-stretch gap-8">
+          <div>
+            <p class="sm:text-sm word-break-anywhere">
+              {{ baseUrl }}/api/mod?start=2022-03-24&end=2022-03-26
+            </p>
+            <pre><code>{{modData|json}}</code></pre>
+          </div>
+          <div>
+            <p class="sm:text-sm word-break-anywhere">
+              {{ baseUrl }}/api/mod?start=2022-03-24&end=2022-03-26&flat=true
+            </p>
+            <pre><code>{{modDataFlat|json}}</code></pre>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div
-    class="flex-1 mat-elevation-z3 flex flex-col justify-start items-stretch p-1 m-1 sm:p-4 sm:m-4"
-  >
-    <p class="text-2xl">/api/oryx</p>
-    <p>
-      <span i18n>Endpoint for accessing the data from the Oryx OSINT.</span>
-    </p>
-    <p class="pl-2">country: string "russia"| "Ukraine"</p>
-    <div class="flex flex-col justify-start items-stretch pl-4">
-      <p class="text-2xl"><span i18n>Example:</span></p>
-      <div class="flex flex-col justify-start items-stretch gap-8">
-        <div>
-          <p class="sm:text-sm word-break-anywhere">
-            {{ baseUrl }}/api/oryx?country=russia
+    <div
+      class="flex-1 mat-elevation-z3 flex flex-col justify-start items-stretch p-1 m-1 sm:p-4 sm:m-4"
+    >
+      <p class="text-2xl">/api/oryx</p>
+      <p>
+        <span i18n>Endpoint for accessing the data from the Oryx OSINT.</span>
+      </p>
+      <p class="pl-2">country: string "russia"| "Ukraine"</p>
+      <div class="flex flex-col justify-start items-stretch pl-4">
+        <p class="text-2xl"><span i18n>Example:</span></p>
+        <div class="flex flex-col justify-start items-stretch gap-8">
+          <div>
+            <p class="sm:text-sm word-break-anywhere">
+              {{ baseUrl }}/api/oryx?country=russia
+            </p>
+            <pre><code>{{oryxData|json}}</code></pre>
+          </div>
+          <p>
+            <span i18n>where</span>&nbsp;<code>entityTypes</code>&nbsp;
+            <span i18n>is hierarchical list of all types of entities</span>
           </p>
-          <pre><code>{{oryxData|json}}</code></pre>
-        </div>
-        <p>
-          <span i18n>where</span>&nbsp;<code>entityTypes</code>&nbsp;
-          <span i18n>is hierarchical list of all types of entities</span>
-        </p>
 
-        <pre><code>{{oryxModel}}</code></pre>
+          <pre><code>{{oryxModel}}</code></pre>
+        </div>
       </div>
     </div>
   </div>

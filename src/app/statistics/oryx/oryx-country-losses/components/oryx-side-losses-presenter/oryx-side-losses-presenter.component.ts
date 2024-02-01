@@ -34,7 +34,9 @@ export class OryxSideLossesPresenterComponent {
 
   public set data(value: OryxSideLosses) {
     this._data = value;
-    this.sideName = this._translatePipe.transform(this._data.countryName);
+    this.sideName = this._translatePipe.transform(
+      this._data.countryName + '_name_oryx'
+    );
   }
   constructor(private _translatePipe: TranslatePipe) {}
 }
