@@ -1,6 +1,5 @@
 export const ORYX_TRANSLATIONS: Record<string, string> = {
   //russia
-  RUSSIA_name_oryx: $localize`:@@oryx.side_name.RUSSIA_name_oryx:Russian`,
   oryx_type_tanks: $localize`:@@oryx.type.oryx_type_tanks:Tanks`,
   oryx_type_armoured_fighting_vehicles: $localize`:@@oryx.type.oryx_type_armoured_fighting_vehicles:Armoured Fighting Vehicles`,
   oryx_type_infantry_fighting_vehicles: $localize`:@@oryx.type.oryx_type_infantry_fighting_vehicles:Infantry Fighting Vehicles`,
@@ -26,7 +25,6 @@ export const ORYX_TRANSLATIONS: Record<string, string> = {
   oryx_type_naval_ships_and_submarines: $localize`:@@oryx.type.oryx_type_naval_ships_and_submarines:Naval Ships and Submarines`,
   'oryx_type_trucks,_vehicles,_and_jeeps': $localize`:@@oryx.type.oryx_type_trucks,_vehicles,_and_jeeps:Trucks, Vehicles, and Jeeps`,
   //Ukraine
-  UKRAINE_name_oryx: $localize`:@@oryx.side_name.UKRAINE_name_oryx:Ukrainian`,
   oryx_type_radars_and_communications_equipment: $localize`:@@oryx.type.oryx_type_radars_and_communications_equipment:Radars And Communications Equipment`,
   oryx_type_naval_ships: $localize`:@@oryx.type.oryx_type_naval_ships:Naval Ships`,
 
@@ -36,4 +34,7 @@ export const ORYX_TRANSLATIONS: Record<string, string> = {
   oryx_entity_abandoned: $localize`:@@oryx.entity.oryx_entity_abandoned:Abandoned`,
   oryx_entity_damagedAndCaptured: $localize`:@@oryx.entity.oryx_entity_damagedAndCaptured:Damaged And Captured`,
   oryx_entity_damagedAndAbandoned: $localize`:@@oryx.entity.oryx_entity_damagedAndAbandoned:Damaged And Abandoned`,
+  //names
+  RUSSIA_name_oryx: $localize`:@@oryx.side_name.RUSSIA_name_oryx:Russian`,
+  UKRAINE_name_oryx: $localize`:@@oryx.side_name.UKRAINE_name_oryx:Ukrainian`,
 };

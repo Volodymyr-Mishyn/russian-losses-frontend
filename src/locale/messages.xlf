@@ -120,18 +120,25 @@
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="9161489379731041054" datatype="html">
+        <source>About Russian Losses in UA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6018686961415145811" datatype="html">
         <source>About Me</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7178983124619736289" datatype="html">
         <source>Hello, I&apos;m Volodymyr</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">6,7</context>
+          <context context-type="linenumber">7,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5398702728240104213" datatype="html">
@@ -141,14 +148,14 @@
           ongoing War in Ukraine. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">8,11</context>
+          <context context-type="linenumber">9,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3826556071114579812" datatype="html">
         <source>The Goal of This Site</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">15,17</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3404572305580935327" datatype="html">
@@ -156,14 +163,14 @@
           strength and effectiveness of Ukraine&apos;s defense against russian occupying forces. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">18,20</context>
+          <context context-type="linenumber">19,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6842543518564496842" datatype="html">
         <source>Stand with Ukraine:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">24,25</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
@@ -174,7 +181,7 @@
         <source> Your support can make a difference </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
@@ -185,7 +192,7 @@
         <source>in this crucial fight for freedom and sovereignty.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">27,28</context>
+          <context context-type="linenumber">28,29</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
@@ -196,14 +203,14 @@
         <source>How this site works</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">30,32</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2195631262837281823" datatype="html">
         <source>This site is group of applications.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">33,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6354284488127407002" datatype="html">
@@ -211,42 +218,42 @@
           defense of Ukraine and Oryx OSINT : </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">36,37</context>
+          <context context-type="linenumber">37,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7098580969197244921" datatype="html">
         <source>Scrapper code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">43,44</context>
+          <context context-type="linenumber">44,45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4342228426643996624" datatype="html">
         <source> Backend app for processing storing and providing access to data: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">48,49</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2731591547855930214" datatype="html">
         <source>Backend code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">54,55</context>
+          <context context-type="linenumber">55,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2610669715749386175" datatype="html">
         <source> Frontend app for displaying data, which You can observe on this site: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">59,60</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="123404351716950983" datatype="html">
         <source>Frontend code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">65,66</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1908492724494500400" datatype="html">
@@ -256,14 +263,14 @@
           network traffic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">69,72</context>
+          <context context-type="linenumber">70,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3125133585423664436" datatype="html">
         <source>Let&apos;s Connect and Collaborate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">76,78</context>
+          <context context-type="linenumber">77,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5701617899005510730" datatype="html">
@@ -271,7 +278,7 @@
           suggestions to improve this site, please don&apos;t hesitate to reach out. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">79,80</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3071317530320332117" datatype="html">
@@ -279,7 +286,7 @@
           difference. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
-          <context context-type="linenumber">95,96</context>
+          <context context-type="linenumber">96,97</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageTitleAbout" datatype="html">
@@ -303,12 +310,20 @@
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8939731286968070677" datatype="html">
+        <source>API / Data access</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5319928736812616614" datatype="html">
         <source> Endpoint for accessing the data from the Ministry of Defense of Ukraine. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">10,11</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2474480145906832012" datatype="html">
@@ -316,12 +331,12 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4166774598423340967" datatype="html">
@@ -329,7 +344,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8047913459123982775" datatype="html">
@@ -337,7 +352,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2971380537622044838" datatype="html">
@@ -345,7 +360,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">46,47</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4832056586737439470" datatype="html">
@@ -353,7 +368,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="678447940395340832" datatype="html">
@@ -361,7 +376,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2596944931874721088" datatype="html">
@@ -369,7 +384,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
-          <context context-type="linenumber">60,61</context>
+          <context context-type="linenumber">64,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageTitleAPI" datatype="html">
@@ -774,6 +789,16 @@
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1274798046896666882" datatype="html">
+        <source> Infographic of casualties of the russian troops in Ukraine according to General
+          Staff/Ministry of Defense of Ukraine
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/charts/ministry-of-defense-charts/ministry-of-defense-charts.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4114020677798356875" datatype="html">
         <source>Tables</source>
         <context-group purpose="location">
@@ -839,27 +864,27 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">18,19</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">19,20</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">30,31</context>
+          <context context-type="linenumber">34,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6092788770205309145" datatype="html">
@@ -886,12 +911,22 @@
           <context context-type="linenumber">19,20</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="621839843319392469" datatype="html">
+        <source> Summary of casualties of the russian troops in Ukraine according to General
+          Staff/Ministry of Defense of Ukraine
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="7114015196736328610" datatype="html">
         <source>Russian losses by date</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8323422358213440128" datatype="html">
@@ -901,7 +936,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">6,7</context>
+          <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7313384793054952220" datatype="html">
@@ -909,17 +944,17 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">7,8</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">24,25</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">31,32</context>
+          <context context-type="linenumber">35,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6056249674601591680" datatype="html">
@@ -927,7 +962,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6088298165216812252" datatype="html">
@@ -935,7 +970,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageTitleMoD" datatype="html">
@@ -1221,6 +1256,22 @@
           <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="oryx.side_name.RUSSIA_name_oryx" datatype="html">
+        <source>Russian</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oryx.side_name.UKRAINE_name_oryx" datatype="html">
+        <source>Ukrainian</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/_translation/oryx-translation.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8598886608217248074" datatype="html">
         <source>URL:</source>
         <context-group purpose="location">
@@ -1274,12 +1325,12 @@
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7914460825314891506" datatype="html">
-        <source>Losses comparison</source>
+      <trans-unit id="7551409567832763014" datatype="html">
+        <source>Losses comparison of russia and Ukraine according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
-          <context context-type="linenumber">3,4</context>
+          <context context-type="linenumber">4,6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageTitleComparisonOryx" datatype="html">
@@ -1325,8 +1376,8 @@
           <context context-type="linenumber">58,59</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2591887334880098375" datatype="html">
-        <source>losses</source>
+      <trans-unit id="8356038489237301171" datatype="html">
+        <source>losses according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
@@ -1445,21 +1496,21 @@
         <source>Russia</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4346283537747431562" datatype="html">
         <source>Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2572999724448976084" datatype="html">
         <source>Compare</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8642445555713453888" datatype="html">
