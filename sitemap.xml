@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/home</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/home</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -15,10 +15,30 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/home" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/home" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/home" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/home" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/home" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/home" />
   </url>
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/ministry-of-defense</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/ministry-of-defense</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -30,10 +50,30 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/ministry-of-defense" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/ministry-of-defense" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/ministry-of-defense" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/ministry-of-defense" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/ministry-of-defense" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/ministry-of-defense" />
   </url>
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/oryx/country-losses/russia</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/oryx/country-losses/russia</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -45,10 +85,31 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/oryx/country-losses/russia" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/oryx/country-losses/russia" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/oryx/country-losses/russia" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/oryx/country-losses/russia" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/oryx/country-losses/russia" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/oryx/country-losses/russia" />
+
   </url>
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/oryx/country-losses/Ukraine</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/oryx/country-losses/Ukraine</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -60,10 +121,30 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/oryx/country-losses/Ukraine" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/oryx/country-losses/Ukraine" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/oryx/country-losses/Ukraine" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/oryx/country-losses/Ukraine" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/oryx/country-losses/Ukraine" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/oryx/country-losses/Ukraine" />
   </url>
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/oryx/compare-losses</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/oryx/compare-losses</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -75,10 +156,30 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/oryx/compare-losses" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/oryx/compare-losses" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/oryx/compare-losses" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/oryx/compare-losses" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/oryx/compare-losses" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/oryx/compare-losses" />
   </url>
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/support</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/support</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -90,10 +191,30 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/support" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/support" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/support" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/support" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/support" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/support" />
   </url>
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/api</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/api</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -105,10 +226,30 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/api" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/api" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/api" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/api" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/api" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/api" />
   </url>
   <url>
-    <loc>https://russian-losses.in.ua/uk/statistics/about</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://russian-losses.in.ua/en/statistics/about</loc>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -120,5 +261,25 @@
       hreflang="en"
       href="https://russian-losses.in.ua/en/statistics/about" />
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://russian-losses.in.ua/de/statistics/about" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://russian-losses.in.ua/es/statistics/about" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://russian-losses.in.ua/fr/statistics/about" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://russian-losses.in.ua/it/statistics/about" />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://russian-losses.in.ua/ja/statistics/about" />
   </url>
 </urlset>
