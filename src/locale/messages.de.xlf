@@ -16,7 +16,47 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
-        <target>Ukrainisch (Ukrainisch)</target>
+        <target>Ukrainisch (Українська)</target>
+      </trans-unit>
+      <trans-unit id="5617444435810976495" datatype="html">
+        <source>Spanish (Español)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_constants/languages.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <target>Spanisch (Español)</target>
+      </trans-unit>
+      <trans-unit id="7667732962087584460" datatype="html">
+        <source>French (Français)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_constants/languages.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <target>Französisch (Français)</target>
+      </trans-unit>
+      <trans-unit id="3715419195693447389" datatype="html">
+        <source>German (Deutsch)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_constants/languages.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <target>Deutsch (Deutsch)</target>
+      </trans-unit>
+      <trans-unit id="7005092336759556398" datatype="html">
+        <source>Italian (Italiano)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_constants/languages.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <target>Italienisch (Italiano)</target>
+      </trans-unit>
+      <trans-unit id="1296467384954842854" datatype="html">
+        <source>Japanese (日本語)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_constants/languages.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <target>Japanisch (日本語)</target>
       </trans-unit>
       <trans-unit id="UKRAINE" datatype="html">
         <source>Ukraine</source>
