@@ -12,6 +12,21 @@
         "locales": {
           "uk": {
             "translation": "src/locale/messages.uk.xlf"
+          },
+          "es": {
+            "translation": "src/locale/messages.es.xlf"
+          },
+          "de": {
+            "translation": "src/locale/messages.de.xlf"
+          },
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf"
+          },
+          "it": {
+            "translation": "src/locale/messages.it.xlf"
+          },
+          "ja": {
+            "translation": "src/locale/messages.ja.xlf"
           }
         }
       },
@@ -28,7 +43,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize": true,
+            "localize": ["en-US", "es", "de", "uk", "fr", "it", "ja"],
             "outputPath": "dist/russian-losses-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -50,12 +65,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "10kb"
                 }
               ],
               "outputHashing": "all"
