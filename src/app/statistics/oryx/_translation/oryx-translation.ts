@@ -34,4 +34,7 @@ export const ORYX_TRANSLATIONS: Record<string, string> = {
   oryx_entity_abandoned: $localize`:@@oryx.entity.oryx_entity_abandoned:Abandoned`,
   oryx_entity_damagedAndCaptured: $localize`:@@oryx.entity.oryx_entity_damagedAndCaptured:Damaged And Captured`,
   oryx_entity_damagedAndAbandoned: $localize`:@@oryx.entity.oryx_entity_damagedAndAbandoned:Damaged And Abandoned`,
+  //names
+  RUSSIA_name_oryx: $localize`:@@oryx.side_name.RUSSIA_name_oryx:Russian`,
+  UKRAINE_name_oryx: $localize`:@@oryx.side_name.UKRAINE_name_oryx:Ukrainian`,
 };

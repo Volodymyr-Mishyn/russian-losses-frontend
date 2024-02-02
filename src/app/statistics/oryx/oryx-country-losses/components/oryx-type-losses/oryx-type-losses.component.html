@@ -2,14 +2,14 @@
   class="flex flex-col justify-start items-stretch gap-2"
   [id]="entityType.code"
 >
-  <div class="mat-h2">
+  <h2 class="mat-h2">
     <a
       [routerLink]="['/statistics/oryx/country-losses', currentCountryName]"
       [fragment]="entityType.code"
       class="no-global-a"
       >{{ entityTypeName }}
     </a>
-  </div>
+  </h2>
   <app-oryx-statistics
     [statistics]="entityType.statistics"
     class="sm:m-2 p-2"
@@ -58,15 +58,17 @@
       }
     </div>
   </div>
-  @defer (on viewport) {
-  <app-number-data-chart
-    [color]="chartLineColor"
-    [data]="entitiesChartData"
-    [title]="entityTypeName"
-  ></app-number-data-chart>
-  }@placeholder {
-  <div class="w-full h-20 m-4 flex items-center justify-center">
-    <mat-spinner color="accent"></mat-spinner>
+  <div class="flex flex-1 flex-col justify-start items-stretch pl-2 pr-2">
+    @defer (on viewport) {
+    <app-number-data-chart
+      [color]="chartLineColor"
+      [data]="entitiesChartData"
+      [title]="entityTypeName"
+    ></app-number-data-chart>
+    }@placeholder {
+    <div class="w-full h-20 m-4 flex items-center justify-center">
+      <mat-spinner color="accent"></mat-spinner>
+    </div>
+    }
   </div>
-  }
 </div>

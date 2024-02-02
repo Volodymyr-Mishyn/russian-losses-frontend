@@ -1,3 +1,5 @@
+# Build: docker build -t russian-losses .
+# Run: docker run -p 4000:4000 russian-losses
 FROM node:alpine
 
 # Set working directory

@@ -65,6 +65,11 @@ function run(): void {
   // different instance of express app for each locale
   server.use('/en', app('en-US'));
   server.use('/uk', app('uk'));
+  server.use('/de', app('de'));
+  server.use('/es', app('es'));
+  server.use('/fr', app('fr'));
+  server.use('/it', app('it'));
+  server.use('/ja', app('ja'));
 
   server.get('/interface-health', (req, res) => {
     const health = {

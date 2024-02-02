@@ -8,7 +8,7 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
-        <target>англійською (English)</target>
+        <target>Inglese</target>
       </trans-unit>
       <trans-unit id="1355397393429244775" datatype="html">
         <source>Ukrainian (Українська)</source>
@@ -16,7 +16,7 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
-        <target>українською</target>
+        <target>Ucraino (ucraino)</target>
       </trans-unit>
       <trans-unit id="5617444435810976495" datatype="html">
         <source>Spanish (Español)</source>
@@ -24,7 +24,7 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
-        <target>іспанською (Español)</target>
+        <target>Spagnolo (Español)</target>
       </trans-unit>
       <trans-unit id="7667732962087584460" datatype="html">
         <source>French (Français)</source>
@@ -32,7 +32,7 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">32</context>
         </context-group>
-        <target>французькою (Français)</target>
+        <target>Francese (Français)</target>
       </trans-unit>
       <trans-unit id="3715419195693447389" datatype="html">
         <source>German (Deutsch)</source>
@@ -40,7 +40,7 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
-        <target>німецькою (Deutsch)</target>
+        <target>Tedesco (Deutsch)</target>
       </trans-unit>
       <trans-unit id="7005092336759556398" datatype="html">
         <source>Italian (Italiano)</source>
@@ -48,7 +48,7 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">46</context>
         </context-group>
-        <target>італійською (Italiano)</target>
+        <target>Italiano (Italiano)</target>
       </trans-unit>
       <trans-unit id="1296467384954842854" datatype="html">
         <source>Japanese (日本語)</source>
@@ -56,7 +56,7 @@
           <context context-type="sourcefile">src/app/_constants/languages.ts</context>
           <context context-type="linenumber">53</context>
         </context-group>
-        <target>японською (日本語)</target>
+        <target>Giapponese (日本語)</target>
       </trans-unit>
       <trans-unit id="UKRAINE" datatype="html">
         <source>Ukraine</source>
@@ -64,7 +64,7 @@
           <context context-type="sourcefile">src/app/_translate/app-translation.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Україна</target>
+        <target>Ucraina</target>
       </trans-unit>
       <trans-unit id="RUSSIA" datatype="html">
         <source>Russia</source>
@@ -72,7 +72,7 @@
           <context context-type="sourcefile">src/app/_translate/app-translation.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>Росія</target>
+        <target>Russia</target>
       </trans-unit>
       <trans-unit id="statistics.date" datatype="html">
         <source>Date</source>
@@ -80,7 +80,7 @@
           <context context-type="sourcefile">src/app/_translate/app-translation.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
-        <target>Дата</target>
+        <target>Data</target>
       </trans-unit>
       <trans-unit id="pageTitle" datatype="html">
         <source>Data and infographic about russian losses during invasion of Ukraine</source>
@@ -88,7 +88,7 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
-        <target>Дані та інфографіка російських втрат під час російського вторгнення в Україну</target>
+        <target>Dati e infografica sulle perdite russe durante l&apos;invasione dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="ogTitle" datatype="html">
         <source>Russian losses in Ukraine: In-Depth statistics and infographic</source>
@@ -96,7 +96,7 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
-        <target>Російські втрати в Україні: детальна статистика та інфографіка</target>
+        <target>Perdite russe in Ucraina: statistiche approfondite e infografica</target>
       </trans-unit>
       <trans-unit id="ogDescription" datatype="html">
         <source>Constantly updating data about Russian losses in the ongoing Russian invasion of
@@ -105,8 +105,10 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
-        <target>Дані про втрати росіян (постійно оновлюються) під час російського вторгнення в
-          Україну</target>
+        <target>Aggiornamento costante dei dati sulle perdite russe durante l&apos;invasione russa
+          in
+          corso
+          Ucraina</target>
       </trans-unit>
       <trans-unit id="googleAnalyticsSnackbarQuestion" datatype="html">
         <source>Hey, I am using Google Analytics to collect data about your visit to know which
@@ -117,9 +119,11 @@
             src/app/services/google-analytics-snackbar/google-analytics-snackbar.component.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
-        <target>Привіт, я використовую Google Analytics для збору даних про ваші відвідування, щоб
-          знати, на які мови перекладати сайт далі. Тому мені потрібна ваша згода на використання
-          файлів cookie. Ви згодні?</target>
+        <target>Ehi, sto utilizzando Google Analytics per raccogliere dati sulla tua visita per
+          sapere quali
+          lingue in cui tradurre il sito successivo. Pertanto ho bisogno del tuo consenso per
+          l&apos;utilizzo
+          biscotti. Sei d&apos;accordo?</target>
       </trans-unit>
       <trans-unit id="googleAnalyticsSnackbarYes" datatype="html">
         <source>Accept</source>
@@ -128,7 +132,7 @@
             src/app/services/google-analytics-snackbar/google-analytics-snackbar.component.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
-        <target>Прийняти</target>
+        <target>Accettare</target>
       </trans-unit>
       <trans-unit id="googleAnalyticsSnackbarNo" datatype="html">
         <source>Decline</source>
@@ -137,7 +141,7 @@
             src/app/services/google-analytics-snackbar/google-analytics-snackbar.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
-        <target>Відмовитись</target>
+        <target>Declino</target>
       </trans-unit>
       <trans-unit id="statistics.increment" datatype="html">
         <source>Incr.</source>
@@ -145,7 +149,7 @@
           <context context-type="sourcefile">src/app/statistics/_translate/statistic.translation.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Incr.</target>
+        <target>Incremento</target>
       </trans-unit>
       <trans-unit id="statistics.average" datatype="html">
         <source>Average</source>
@@ -153,7 +157,7 @@
           <context context-type="sourcefile">src/app/statistics/_translate/statistic.translation.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>Середній</target>
+        <target>Media</target>
       </trans-unit>
       <trans-unit id="statistics.summary" datatype="html">
         <source>Summary</source>
@@ -161,7 +165,7 @@
           <context context-type="sourcefile">src/app/statistics/_translate/statistic.translation.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
-        <target>Резюме</target>
+        <target>Riepilogo</target>
       </trans-unit>
       <trans-unit id="statistics.total" datatype="html">
         <source>Total</source>
@@ -169,7 +173,7 @@
           <context context-type="sourcefile">src/app/statistics/_translate/statistic.translation.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
-        <target>Всього</target>
+        <target>Totale</target>
       </trans-unit>
       <trans-unit id="statistics.compared_to_average" datatype="html">
         <source>Comp. to average</source>
@@ -177,7 +181,7 @@
           <context context-type="sourcefile">src/app/statistics/_translate/statistic.translation.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
-        <target>комп. до середнього</target>
+        <target>Comp. alla media</target>
       </trans-unit>
       <trans-unit id="9161489379731041054" datatype="html">
         <source>About Russian Losses in UA</source>
@@ -185,7 +189,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
-        <target>Про Russian Losses in UA</target>
+        <target>Informazioni sulle perdite russe negli Emirati Arabi Uniti</target>
       </trans-unit>
       <trans-unit id="6018686961415145811" datatype="html">
         <source>About Me</source>
@@ -193,7 +197,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
-        <target>Про мене</target>
+        <target>Su di me</target>
       </trans-unit>
       <trans-unit id="7178983124619736289" datatype="html">
         <source>Hello, I&apos;m Volodymyr</source>
@@ -201,7 +205,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">7,8</context>
         </context-group>
-        <target>Привіт, я Володимир</target>
+        <target>Ciao, sono Volodymyr</target>
       </trans-unit>
       <trans-unit id="5398702728240104213" datatype="html">
         <source> I am a software developer based in Kyiv, Ukraine. I dedicated my life to
@@ -212,10 +216,13 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">9,12</context>
         </context-group>
-        <target> Я розробник програмного забезпечення з Києва, Україна. Я присвятив своє життя
-          програмуванню та технологіям. І було б гріхом, якби я не використав свої навички, щоб
-          розробити щось, що потенційно могло б допомогти добрій справі: привернути додаткову увагу
-          до триваючої війни в Україні.</target>
+        <target> Sono uno sviluppatore di software con sede a Kiev, Ucraina. Ho dedicato la mia vita
+          a
+          programmazione e tecnologia. E sarebbe un peccato se non avessi usato le mie capacità per
+          svilupparmi
+          qualcosa che potrebbe potenzialmente aiutare una buona causa: portare ulteriore attenzione
+          al
+          Guerra in corso in Ucraina.</target>
       </trans-unit>
       <trans-unit id="3826556071114579812" datatype="html">
         <source>The Goal of This Site</source>
@@ -223,17 +230,18 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">16,18</context>
         </context-group>
-        <target>Мета цього сайту</target>
+        <target>L&apos;obiettivo di questo sito</target>
       </trans-unit>
       <trans-unit id="3404572305580935327" datatype="html">
         <source> To bring additional awareness to the ongoing War in Ukraine and to demonstrate the
-          strength and effectiveness of Ukraine&amp;s defense against russian occupying forces. </source>
+          strength and effectiveness of Ukraine&apos;s defense against russian occupying forces. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">19,21</context>
         </context-group>
-        <target> Додатково привернути увагу до війни, яка триває в Україні, та продемонструвати силу
-          та ефективність захисту України від російських окупаційних військ.</target>
+        <target> Per portare ulteriore consapevolezza sulla guerra in corso in Ucraina e per
+          dimostrare la
+          forza ed efficacia della difesa dell&apos;Ucraina contro le forze di occupazione russe.</target>
       </trans-unit>
       <trans-unit id="6842543518564496842" datatype="html">
         <source>Stand with Ukraine:</source>
@@ -245,7 +253,7 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">92,93</context>
         </context-group>
-        <target>Допомагайте Україні:</target>
+        <target>Stare con l’Ucraina:</target>
       </trans-unit>
       <trans-unit id="9018120851096423740" datatype="html">
         <source> Your support can make a difference </source>
@@ -257,7 +265,7 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">94</context>
         </context-group>
-        <target>Ваша підтримка може змінити ситуацію </target>
+        <target>Il tuo supporto può fare la differenza</target>
       </trans-unit>
       <trans-unit id="5557993089585608362" datatype="html">
         <source>in this crucial fight for freedom and sovereignty.</source>
@@ -269,7 +277,7 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">96,97</context>
         </context-group>
-        <target>у цій надважливій боротьбі за свободу та суверенітет.</target>
+        <target>in questa battaglia cruciale per la libertà e la sovranità.</target>
       </trans-unit>
       <trans-unit id="705795795223421229" datatype="html">
         <source>How this site works</source>
@@ -277,7 +285,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">31,33</context>
         </context-group>
-        <target>Як працює цей сайт</target>
+        <target>Come funziona questo sito</target>
       </trans-unit>
       <trans-unit id="2195631262837281823" datatype="html">
         <source>This site is group of applications.</source>
@@ -285,7 +293,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">33,35</context>
         </context-group>
-        <target>Цей сайт є групою програм.</target>
+        <target>Questo sito è un gruppo di applicazioni.</target>
       </trans-unit>
       <trans-unit id="6354284488127407002" datatype="html">
         <source> Scrapper app for scrapping data of russian losses from two sources: Ministry of
@@ -294,8 +302,9 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">37,38</context>
         </context-group>
-        <target> Додаток Scrapper для збирання даних про російські втрати з двох джерел:
-          Міністерство оборони України та Oryx OSINT:</target>
+        <target> App Scrapper per la demolizione dei dati delle perdite russe da due fonti:
+          Ministero di
+          difesa dell&apos;Ucraina e dell&apos;Oryx OSINT:</target>
       </trans-unit>
       <trans-unit id="7098580969197244921" datatype="html">
         <source>Scrapper code</source>
@@ -303,7 +312,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">44,45</context>
         </context-group>
-        <target>Код скрапера</target>
+        <target>Codice rottamatore</target>
       </trans-unit>
       <trans-unit id="4342228426643996624" datatype="html">
         <source> Backend app for processing storing and providing access to data: </source>
@@ -311,7 +320,9 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">49,50</context>
         </context-group>
-        <target> Бекенд-програма для обробки, зберігання та надання доступу до даних:</target>
+        <target> App backend per l&apos;elaborazione, l&apos;archiviazione e la fornitura
+          dell&apos;accesso ai
+          dati:</target>
       </trans-unit>
       <trans-unit id="2731591547855930214" datatype="html">
         <source>Backend code</source>
@@ -319,7 +330,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">55,56</context>
         </context-group>
-        <target>Серверний код</target>
+        <target>Codice di back-end</target>
       </trans-unit>
       <trans-unit id="2610669715749386175" datatype="html">
         <source> Frontend app for displaying data, which You can observe on this site: </source>
@@ -327,7 +338,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">60,61</context>
         </context-group>
-        <target> Інтерфейсний додаток для відображення даних, які ви бачите на цьому сайті:</target>
+        <target> App frontend per la visualizzazione dei dati, che puoi osservare su questo sito:</target>
       </trans-unit>
       <trans-unit id="123404351716950983" datatype="html">
         <source>Frontend code</source>
@@ -335,7 +346,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">66,67</context>
         </context-group>
-        <target>Код фронтенд додатку</target>
+        <target>Codice frontend</target>
       </trans-unit>
       <trans-unit id="1908492724494500400" datatype="html">
         <source> Backend Node.js app periodically (on schedule) runs scraping, receives data and
@@ -346,11 +357,13 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">70,73</context>
         </context-group>
-        <target> Бекенд додаток Node.js періодично (за розкладом) запускає скрапер та
-          зберігає отримані дані в MongoDB. Додаток Frontend - це додаток Angular на сучасному
-          Angular17 із абсолютно
-          новою підтримкою SSR. Більшість групуваннь та розрахунку даних виконується на стороні
-          фронт-енду, щоб мінімізувати мережевий трафік.</target>
+        <target> L&apos;app backend Node.js periodicamente (secondo la pianificazione) esegue lo
+          scraping, riceve dati e
+          lo persiste in Mongo DB. L&apos;app frontend è un&apos;applicazione Angular su Angular17
+          all&apos;avanguardia
+          con il nuovissimo supporto SSR. La maggior parte del raggruppamento dei dati viene
+          eseguito sul frontend per minimizzarli
+          traffico di rete.</target>
       </trans-unit>
       <trans-unit id="3125133585423664436" datatype="html">
         <source>Let&apos;s Connect and Collaborate</source>
@@ -358,17 +371,17 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">77,79</context>
         </context-group>
-        <target>Спілкування та співпраця</target>
+        <target>Connettiamoci e collaboriamo</target>
       </trans-unit>
       <trans-unit id="5701617899005510730" datatype="html">
         <source> Your feedback and support are invaluable. If you come across any bugs or have
-          suggestions to improve this site, please don&amp;t hesitate to reach out. </source>
+          suggestions to improve this site, please don&apos;t hesitate to reach out. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">80,81</context>
         </context-group>
-        <target> Ваш відгук і підтримка безцінні. Якщо ви виявите будь-які помилки або маєте
-          пропозиції щодо покращення цього сайту, будь ласка, не соромтеся зв&amp;язатися.</target>
+        <target> Il tuo feedback e il tuo supporto sono preziosi. Se riscontri bug o hai
+          suggerimenti per migliorare questo sito, non esitate a contattarci.</target>
       </trans-unit>
       <trans-unit id="3071317530320332117" datatype="html">
         <source> Together, we stand with Ukraine. Every contribution, big or small, makes a
@@ -377,7 +390,8 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.html</context>
           <context context-type="linenumber">96,97</context>
         </context-group>
-        <target> Разом ми з Україною. Кожен внесок, великий чи малий, має значення.</target>
+        <target> Insieme, siamo dalla parte dell’Ucraina. Ogni contributo, grande o piccolo, fa a
+          differenza.</target>
       </trans-unit>
       <trans-unit id="pageTitleAbout" datatype="html">
         <source>About me &amp; about this application of russian losses in Ukraine</source>
@@ -385,7 +399,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <target>Про мене &amp; про цей застосунок про російські втрати в Україні</target>
+        <target>Su di me e su questa applicazione delle perdite russe in Ucraina</target>
       </trans-unit>
       <trans-unit id="ogTitleAbout" datatype="html">
         <source>About me &amp; about this application of russian losses in Ukraine</source>
@@ -393,7 +407,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
-        <target>Про мене &amp; про цей застосунок про російські втрати в Україні</target>
+        <target>Su di me e su questa applicazione delle perdite russe in Ucraina</target>
       </trans-unit>
       <trans-unit id="ogDescriptionAbout" datatype="html">
         <source>About me &amp; about this application of russian losses in Ukraine</source>
@@ -401,7 +415,7 @@
           <context context-type="sourcefile">src/app/statistics/about/about.component.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
-        <target>Про мене &amp; про цей застосунок про російські втрати в Україні</target>
+        <target>Su di me e su questa applicazione delle perdite russe in Ucraina</target>
       </trans-unit>
       <trans-unit id="8939731286968070677" datatype="html">
         <source>API / Data access</source>
@@ -410,7 +424,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">4,6</context>
         </context-group>
-        <target>API / Запит даних</target>
+        <target>API/Accesso ai dati</target>
       </trans-unit>
       <trans-unit id="5319928736812616614" datatype="html">
         <source> Endpoint for accessing the data from the Ministry of Defense of Ukraine. </source>
@@ -419,7 +433,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">13,14</context>
         </context-group>
-        <target> Кінцева точка доступу до даних Міністерства оборони України.</target>
+        <target> Endpoint per l&apos;accesso ai dati del Ministero della Difesa dell&apos;Ucraina.</target>
       </trans-unit>
       <trans-unit id="2474480145906832012" datatype="html">
         <source>string in Date ISO format</source>
@@ -433,7 +447,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target>рядок у форматі дати ISO</target>
+        <target>stringa in formato Data ISO</target>
       </trans-unit>
       <trans-unit id="4166774598423340967" datatype="html">
         <source>optional</source>
@@ -442,7 +456,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
-        <target>необов&amp;язковий</target>
+        <target>opzionale</target>
       </trans-unit>
       <trans-unit id="8047913459123982775" datatype="html">
         <source>Examples:</source>
@@ -451,7 +465,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
-        <target>приклади:</target>
+        <target>Esempi:</target>
       </trans-unit>
       <trans-unit id="2971380537622044838" datatype="html">
         <source>Endpoint for accessing the data from the Oryx OSINT.</source>
@@ -460,7 +474,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">50,51</context>
         </context-group>
-        <target>Кінцева точка для доступу до даних з Oryx OSINT.</target>
+        <target>Endpoint per l&apos;accesso ai dati dall&apos;Oryx OSINT.</target>
       </trans-unit>
       <trans-unit id="4832056586737439470" datatype="html">
         <source>Example:</source>
@@ -469,7 +483,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">54</context>
         </context-group>
-        <target>приклад:</target>
+        <target>Esempio:</target>
       </trans-unit>
       <trans-unit id="678447940395340832" datatype="html">
         <source>where</source>
@@ -478,7 +492,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">63</context>
         </context-group>
-        <target>де </target>
+        <target>Dove</target>
       </trans-unit>
       <trans-unit id="2596944931874721088" datatype="html">
         <source>is hierarchical list of all types of entities</source>
@@ -487,7 +501,7 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.html</context>
           <context context-type="linenumber">64,65</context>
         </context-group>
-        <target> є ієрархічним списком усіх типів сутностей</target>
+        <target>è un elenco gerarchico di tutti i tipi di entità</target>
       </trans-unit>
       <trans-unit id="pageTitleAPI" datatype="html">
         <source>Data and infographic about russian invasion of Ukraine Application Programming
@@ -497,8 +511,9 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.ts</context>
           <context context-type="linenumber">485</context>
         </context-group>
-        <target>Дані та інфографіка про російське вторгнення в Україну Інтерфейс прикладного
-          програмування (API)</target>
+        <target>Dati e infografica sull&apos;invasione russa dell&apos;Ucraina Programmazione
+          applicativa
+          Interfaccia (API)</target>
       </trans-unit>
       <trans-unit id="ogTitleAPI" datatype="html">
         <source>Data and infographic about russian invasion of Ukraine Application Programming
@@ -508,8 +523,9 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.ts</context>
           <context context-type="linenumber">486</context>
         </context-group>
-        <target>Дані та інфографіка про російське вторгнення в Україну Інтерфейс прикладного
-          програмування (API)</target>
+        <target>Dati e infografica sull&apos;invasione russa dell&apos;Ucraina Programmazione
+          applicativa
+          Interfaccia (API)</target>
       </trans-unit>
       <trans-unit id="ogDescriptionAPI" datatype="html">
         <source>Application programming interface (API) for data about russian losses during
@@ -519,8 +535,10 @@
             src/app/statistics/application-programming-interface/application-programming-interface.component.ts</context>
           <context context-type="linenumber">487</context>
         </context-group>
-        <target>нтерфейс прикладного програмування (API) для даних про втрати Росії під час
-          вторгнення в Україну</target>
+        <target>Interfaccia di programmazione dell&apos;applicazione (API) per i dati sulle perdite
+          russe
+          durante
+          invasione dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="376445160625906550" datatype="html">
         <source>Show compared to Average</source>
@@ -529,7 +547,7 @@
             src/app/statistics/components/charts/date-data-chart/date-data-chart.component.html</context>
           <context context-type="linenumber">18,19</context>
         </context-group>
-        <target>Показати порівняно із середнім</target>
+        <target>Mostra rispetto alla media</target>
       </trans-unit>
       <trans-unit id="2988589012964101797" datatype="html">
         <source>Daily</source>
@@ -538,7 +556,7 @@
             src/app/statistics/components/charts/date-data-chart/date-data-chart.component.html</context>
           <context context-type="linenumber">26,27</context>
         </context-group>
-        <target>По дням</target>
+        <target>Quotidiano</target>
       </trans-unit>
       <trans-unit id="6762743264882388498" datatype="html">
         <source>Monthly</source>
@@ -547,7 +565,7 @@
             src/app/statistics/components/charts/date-data-chart/date-data-chart.component.html</context>
           <context context-type="linenumber">29,30</context>
         </context-group>
-        <target>По місяцям</target>
+        <target>Mensile</target>
       </trans-unit>
       <trans-unit id="7979446993035882440" datatype="html">
         <source>Full range</source>
@@ -556,7 +574,7 @@
             src/app/statistics/components/range-selection/range-selection.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
-        <target>Весь діапазон з початку вторгнення</target>
+        <target>Gamma completa</target>
       </trans-unit>
       <trans-unit id="193735854885505934" datatype="html">
         <source>Enter a date range</source>
@@ -565,7 +583,7 @@
             src/app/statistics/components/range-selection/range-selection.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
-        <target>Введіть діапазон дат</target>
+        <target>Inserisci un intervallo di date</target>
       </trans-unit>
       <trans-unit id="888341446683346521" datatype="html">
         <source>Start date</source>
@@ -574,7 +592,7 @@
             src/app/statistics/components/range-selection/range-selection.component.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
-        <target>Дата початку</target>
+        <target>Data d&apos;inizio</target>
       </trans-unit>
       <trans-unit id="126074860850048964" datatype="html">
         <source>End date</source>
@@ -583,7 +601,7 @@
             src/app/statistics/components/range-selection/range-selection.component.html</context>
           <context context-type="linenumber">29,30</context>
         </context-group>
-        <target>Дата закінчення</target>
+        <target>Data di fine</target>
       </trans-unit>
       <trans-unit id="5756718847204508154" datatype="html">
         <source> On February 24th, 2022, the world witnessed the stark reality of russian
@@ -592,39 +610,42 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
-        <target> 24 лютого 2022 року світ став свідком суворої реальності російської
-          імперіалістичної агресії в Україні.</target>
+        <target> Il 24 febbraio 2022, il mondo è stato testimone della cruda realtà del russo
+          aggressione imperialistica in Ucraina.</target>
       </trans-unit>
       <trans-unit id="4386234774950609369" datatype="html">
         <source> Since then, Ukraine has been a symbol of resilience, bravely confronting against
-          military superpower. It&amp;s a battle not only for land but for the preservation of
-          culture
-          and identity. </source>
+          military superpower. It&apos;s a battle not only for land but for the preservation of
+          culture and identity. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">12,14</context>
         </context-group>
-        <target> Відтоді Україна є символом стійкості, і мужньо протистоїть ядерній наддержаві.
-          Це боротьба не лише за землі, а й за збереження культури та ідентичності.</target>
+        <target> Da allora, l’Ucraina è stata un simbolo di resilienza, capace di affrontare
+          coraggiosamente la situazione
+          superpotenza militare. È una battaglia non solo per la terra ma per la sua preservazione
+          cultura e identità.</target>
       </trans-unit>
       <trans-unit id="2377626507679932315" datatype="html">
-        <source> Many experts predicted that Ukraine&amp;s fall would be a matter of weeks, yet
-          it&amp;s
-          been already </source>
+        <source> Many experts predicted that Ukraine&apos;s fall would be a matter of weeks, yet
+          it&apos;s been already </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">19,20</context>
         </context-group>
-        <target> Багато експертів прогнозували, що падіння України буде питанням тижнів, але вже
-          минуло </target>
+        <target> Molti esperti prevedevano che la caduta dell&apos;Ucraina sarebbe stata ancora
+          questione
+          di settimane
+          è già stato</target>
       </trans-unit>
       <trans-unit id="7494361412465596264" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ daysCount }}" /> days</source>
+        <source> days <x id="INTERPOLATION" equiv-text="{{ daysCount }}" />
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">23,25</context>
         </context-group>
-        <target><x id="INTERPOLATION" equiv-text="{{ daysCount }}" /> днів</target>
+        <target> giorni <x id="INTERPOLATION" equiv-text="{{ daysCount }}" /></target>
       </trans-unit>
       <trans-unit id="435548562001132671" datatype="html">
         <source> , and the Ukrainian military forces not only continue to stand strong but have also
@@ -633,38 +654,37 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">26,27</context>
         </context-group>
-        <target>, і українські військові сили не тільки продовжують залишатися сильними, але й
-          значно зміцнилися.</target>
+        <target> , e le forze militari ucraine non solo continuano a mantenersi forti, ma lo hanno
+          fatto anche
+          diventato significativamente più forte.</target>
       </trans-unit>
       <trans-unit id="7023912407778426298" datatype="html">
-        <source> It&amp;s crucially important to continue fighting against this existential threat
-          as
-          well as remember ukrainian soldiers and people who gave their lives fighting for brighter
-          future and freedom of Ukraine and whole Europe. This website is a tribute to all those who
-          gave their lives for Ukraine. </source>
+        <source> It&apos;s crucially important to continue fighting against this existential threat
+          as well as remember ukrainian soldiers and people who gave their lives fighting for
+          brighter future and freedom of Ukraine and whole Europe. This website is a tribute to all
+          those who gave their lives for Ukraine. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">32,35</context>
         </context-group>
-        <target> Надзвичайно важливо продовжувати боротьбу з цією екзистенційною загрозою, а також
-          пам&amp;ятати українських воїнів та людей, які віддали своє життя, борючись за світле
-          майбутнє
-          та свободу України та всієї Європи. Цей сайт - данина пам&amp;яті всім, хто віддав своє
-          життя
-          за Україну.</target>
+        <target> È di fondamentale importanza continuare a lottare contro questa minaccia
+          esistenziale
+          così come ricordare i soldati ucraini e le persone che hanno dato la vita combattendo
+          un futuro migliore e la libertà dell’Ucraina e dell’intera Europa. Questo sito è un
+          omaggio a tutti
+          coloro che hanno dato la vita per l’Ucraina.</target>
       </trans-unit>
       <trans-unit id="8840340278650410053" datatype="html">
         <source> On these pages, you will see the severe losses in personnel and military vehicles
           that the Ukrainian military has inflicted on the russian occupying forces, clearly
-          demonstrating the strength and effectiveness of Ukraine&amp;s defense. </source>
+          demonstrating the strength and effectiveness of Ukraine&apos;s defense. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">41,44</context>
         </context-group>
-        <target> На сторінках цього сайту ви побачите статистику неймовірних втрат в особовому
-          складі та військовій
-          техніці, яких українські військові завдали російсько-окупаційним військам, яскраво
-          демонструючи міць та ефективність оборони України.</target>
+        <target> In queste pagine potrete vedere le gravi perdite di personale e di veicoli militari
+          che l’esercito ucraino ha chiaramente inflitto alle forze di occupazione russe
+          dimostrando la forza e l&apos;efficacia della difesa dell&apos;Ucraina.</target>
       </trans-unit>
       <trans-unit id="2143837202499135623" datatype="html">
         <source> Russian losses according to Ministry of defense of Ukraine </source>
@@ -672,7 +692,7 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">64</context>
         </context-group>
-        <target> Втрати росіян за даними Міноборони України</target>
+        <target> Le perdite russe secondo il Ministero della Difesa ucraino</target>
       </trans-unit>
       <trans-unit id="5186869044371722705" datatype="html">
         <source> Russian losses according to Oryx Open Source Intelligence </source>
@@ -680,7 +700,7 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
           <context context-type="linenumber">84</context>
         </context-group>
-        <target> Російські втрати за даними Oryx Open Source Intelligence</target>
+        <target> Perdite russe secondo Oryx Open Source Intelligence</target>
       </trans-unit>
       <trans-unit id="pageTitleHome" datatype="html">
         <source>Data and infographic about russian invasion of Ukraine</source>
@@ -688,7 +708,7 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
-        <target>Дані та інфографіка російських втрат під час російського вторгнення в Україну</target>
+        <target>Dati e infografica sull&apos;invasione russa dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="ogTitleHome" datatype="html">
         <source>Russian losses in Ukraine: In-Depth statistics and infographic</source>
@@ -696,7 +716,7 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
-        <target>Російські втрати в Україні: детальна статистика та інфографіка</target>
+        <target>Perdite russe in Ucraina: statistiche approfondite e infografica</target>
       </trans-unit>
       <trans-unit id="ogDescriptionHome" datatype="html">
         <source>Constantly updating data about Russian losses in the ongoing Russian invasion of
@@ -705,8 +725,10 @@
           <context context-type="sourcefile">src/app/statistics/home/home.component.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
-        <target>Дані про російські втрати під час російського вторгнення в Україну. Дані постійно
-          оновлюються.</target>
+        <target>Aggiornamento costante dei dati sulle perdite russe durante l&apos;invasione russa
+          in
+          corso
+          Ucraina</target>
       </trans-unit>
       <trans-unit id="mod.entity.tank" datatype="html">
         <source>Tank</source>
@@ -715,7 +737,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Танк</target>
+        <target>Cisterna</target>
       </trans-unit>
       <trans-unit id="mod.entity.armored_fighting_vehicle" datatype="html">
         <source>Armored fighting vehicle</source>
@@ -724,7 +746,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>Бойова броньована машина</target>
+        <target>Veicolo corazzato da combattimento</target>
       </trans-unit>
       <trans-unit id="mod.entity.artillery_system" datatype="html">
         <source>Artillery system</source>
@@ -733,7 +755,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
-        <target>Артилерійська система</target>
+        <target>Sistema di artiglieria</target>
       </trans-unit>
       <trans-unit id="mod.entity.mlrs" datatype="html">
         <source>MLRS</source>
@@ -742,7 +764,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
-        <target>РСЗВ</target>
+        <target>MLRS</target>
       </trans-unit>
       <trans-unit id="mod.entity.anti_aircraft" datatype="html">
         <source>Anti-aircraft system</source>
@@ -751,7 +773,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
-        <target>Зенітна система</target>
+        <target>Sistema antiaereo</target>
       </trans-unit>
       <trans-unit id="mod.entity.plane" datatype="html">
         <source>Plane</source>
@@ -760,7 +782,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">7</context>
         </context-group>
-        <target>Літак</target>
+        <target>Aereo</target>
       </trans-unit>
       <trans-unit id="mod.entity.helicopter" datatype="html">
         <source>Helicopter</source>
@@ -769,7 +791,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">8</context>
         </context-group>
-        <target>Вертоліт</target>
+        <target>Elicottero</target>
       </trans-unit>
       <trans-unit id="mod.entity.uav" datatype="html">
         <source>UAV</source>
@@ -778,7 +800,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">9</context>
         </context-group>
-        <target>БПЛА</target>
+        <target>UAV</target>
       </trans-unit>
       <trans-unit id="mod.entity.cruise_missile" datatype="html">
         <source>Cruise missile</source>
@@ -787,7 +809,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
-        <target>Крилата ракета</target>
+        <target>Missile da crociera</target>
       </trans-unit>
       <trans-unit id="mod.entity.ship" datatype="html">
         <source>Ship</source>
@@ -796,7 +818,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
-        <target>Корабель</target>
+        <target>Nave</target>
       </trans-unit>
       <trans-unit id="mod.entity.submarine" datatype="html">
         <source>Submarine</source>
@@ -805,7 +827,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
-        <target>Підводний човен</target>
+        <target>Sottomarino</target>
       </trans-unit>
       <trans-unit id="mod.entity.car_cistern" datatype="html">
         <source>Car/Cistern</source>
@@ -814,7 +836,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <target>Автомобіль/цистерна</target>
+        <target>Auto/Cisterna</target>
       </trans-unit>
       <trans-unit id="mod.entity.special_equipment" datatype="html">
         <source>Special equipment</source>
@@ -823,7 +845,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
-        <target>Спеціальне обладнання</target>
+        <target>Equipaggiamento speciale</target>
       </trans-unit>
       <trans-unit id="mod.entity.personnel" datatype="html">
         <source>Aprx. Personnel</source>
@@ -832,7 +854,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
-        <target>прибл. Окупанти</target>
+        <target>ca. Personale</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_tank" datatype="html">
         <source>Tanks destroyed</source>
@@ -841,7 +863,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
-        <target>Танки знищені</target>
+        <target>Carri armati distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_armored_fighting_vehicle" datatype="html">
         <source>Armored fighting vehicles destroyed</source>
@@ -850,7 +872,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
-        <target>Знищено бойову броньовану техніку</target>
+        <target>Veicoli corazzati da combattimento distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_artillery_system" datatype="html">
         <source>Artillery systems destroyed</source>
@@ -859,7 +881,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target>Знищено артилерійські системи</target>
+        <target>Sistemi di artiglieria distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_mlrs" datatype="html">
         <source>Multiple Launch Rocket System destroyed</source>
@@ -868,7 +890,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target>Ракетна система залпового вогню знищена</target>
+        <target>Sistema di lancio multiplo di razzi distrutto</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_anti_aircraft" datatype="html">
         <source>Anti-aircraft systems destroyed</source>
@@ -877,7 +899,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">21</context>
         </context-group>
-        <target>Зенітні комплекси знищені</target>
+        <target>Sistemi antiaerei distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_plane" datatype="html">
         <source>Planes destroyed</source>
@@ -886,7 +908,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">22</context>
         </context-group>
-        <target>Літаки знищені</target>
+        <target>Aerei distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_helicopter" datatype="html">
         <source>Helicopters destroyed</source>
@@ -895,7 +917,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">23</context>
         </context-group>
-        <target>Вертольоти знищені</target>
+        <target>Elicotteri distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_uav" datatype="html">
         <source>UAV destroyed</source>
@@ -904,7 +926,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">24</context>
         </context-group>
-        <target>БПЛА знищено</target>
+        <target>UAV distrutto</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_cruise_missile" datatype="html">
         <source>Cruise missiles intercepted/destroyed</source>
@@ -913,7 +935,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
-        <target>Перехоплені/знищені крилаті ракети</target>
+        <target>Missili da crociera intercettati/distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_ship" datatype="html">
         <source>Ships/boats sunken or destroyed</source>
@@ -922,7 +944,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
-        <target>Затонули або знищили кораблі/човни</target>
+        <target>Navi/barche affondate o distrutte</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_submarine" datatype="html">
         <source>Submarines destroyed</source>
@@ -931,7 +953,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
-        <target>Підводні човни знищені</target>
+        <target>Sottomarini distrutti</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_car_cistern" datatype="html">
         <source>Cars or Cisterns destroyed</source>
@@ -940,7 +962,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
-        <target>Знищені автомобілі чи цистерни</target>
+        <target>Auto o cisterne distrutte</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_special_equipment" datatype="html">
         <source>Special equipment destroyed</source>
@@ -949,7 +971,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">29</context>
         </context-group>
-        <target>Спецобладнання знищено</target>
+        <target>Attrezzature speciali distrutte</target>
       </trans-unit>
       <trans-unit id="mod.entity.chart_personnel" datatype="html">
         <source>Aprx. russian Personnel eliminated</source>
@@ -958,7 +980,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">30</context>
         </context-group>
-        <target>російські окупанти ліквідовані (прибл.)</target>
+        <target>ca. Eliminato il personale russo</target>
       </trans-unit>
       <trans-unit id="3581006453611209886" datatype="html">
         <source> Infographic of casualties of the russian troops in Ukraine according to General
@@ -968,8 +990,8 @@
             src/app/statistics/ministry-of-defense/components/charts/ministry-of-defense-charts/ministry-of-defense-charts.component.html</context>
           <context context-type="linenumber">3,5</context>
         </context-group>
-        <target>Інфографіка втрат російських військ в Україні за даними Генштабу/Міністерства
-          оборони України</target>
+        <target> Infografica sulle vittime delle truppe russe in Ucraina secondo il generale
+          Stato Maggiore/Ministero della Difesa dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="4114020677798356875" datatype="html">
         <source>Tables</source>
@@ -978,7 +1000,7 @@
             src/app/statistics/ministry-of-defense/components/ministry-of-defense-statistics-presenter/ministry-of-defense-statistics-presenter.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
-        <target>Таблиці</target>
+        <target>Tabelle</target>
       </trans-unit>
       <trans-unit id="4960524097614109439" datatype="html">
         <source>Charts</source>
@@ -987,7 +1009,7 @@
             src/app/statistics/ministry-of-defense/components/ministry-of-defense-statistics-presenter/ministry-of-defense-statistics-presenter.component.html</context>
           <context context-type="linenumber">16,17</context>
         </context-group>
-        <target>Графіки</target>
+        <target>Grafici</target>
       </trans-unit>
       <trans-unit id="8650499415827640724" datatype="html">
         <source>Type</source>
@@ -1001,7 +1023,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-rankings-table/ministry-of-defense-rankings-table.component.html</context>
           <context context-type="linenumber">11,12</context>
         </context-group>
-        <target>Тип</target>
+        <target>Tipo</target>
       </trans-unit>
       <trans-unit id="6555318547274416232" datatype="html">
         <source>Value</source>
@@ -1010,7 +1032,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-calculated-table/ministry-of-defense-calculated-table.component.html</context>
           <context context-type="linenumber">26,27</context>
         </context-group>
-        <target>Значення</target>
+        <target>Valore</target>
       </trans-unit>
       <trans-unit id="8163774872274479112" datatype="html">
         <source>Show increment-to-average</source>
@@ -1019,7 +1041,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-days-table/ministry-of-defense-days-table.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
-        <target>Показати приріст до середнього</target>
+        <target>Mostra incremento rispetto alla media</target>
       </trans-unit>
       <trans-unit id="3973931101896534797" datatype="html">
         <source>Date</source>
@@ -1028,7 +1050,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-days-table/ministry-of-defense-days-table.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target>Дата</target>
+        <target>Data</target>
       </trans-unit>
       <trans-unit id="187187500641108332" datatype="html">
         <source>
@@ -1075,7 +1097,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-days-table/ministry-of-defense-days-table.component.html</context>
           <context context-type="linenumber">28,29</context>
         </context-group>
-        <target>День вторгнення</target>
+        <target>Giorno dell&apos;invasione</target>
       </trans-unit>
       <trans-unit id="8005266349115679977" datatype="html">
         <source>Top days of russian losses</source>
@@ -1084,7 +1106,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-rankings-tables/ministry-of-defense-rankings-tables.component.html</context>
           <context context-type="linenumber">8,9</context>
         </context-group>
-        <target>Топ днів російських втрат</target>
+        <target>Giorni migliori di sconfitte russe</target>
       </trans-unit>
       <trans-unit id="7805353444815541161" datatype="html">
         <source>Top months of russian losses</source>
@@ -1093,7 +1115,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-rankings-tables/ministry-of-defense-rankings-tables.component.html</context>
           <context context-type="linenumber">19,20</context>
         </context-group>
-        <target>Топ місяців російських втрат</target>
+        <target>Mesi migliori di perdite russe</target>
       </trans-unit>
       <trans-unit id="4863729615092921696" datatype="html">
         <source> Summary of casualties of the russian troops in Ukraine according to General
@@ -1103,8 +1125,8 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
           <context context-type="linenumber">3,5</context>
         </context-group>
-        <target>Зведення втрат російських військ в Україні за даними Генштабу/Міністерства оборони
-          України</target>
+        <target> Riepilogo delle vittime delle truppe russe in Ucraina secondo il generale
+          Stato Maggiore/Ministero della Difesa dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="7114015196736328610" datatype="html">
         <source>Russian losses by date</source>
@@ -1113,7 +1135,7 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
-        <target>Російські втрати за датою</target>
+        <target>Perdite russe per data</target>
       </trans-unit>
       <trans-unit id="8323422358213440128" datatype="html">
         <source>
@@ -1145,25 +1167,25 @@
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
           <context context-type="linenumber">36,37</context>
         </context-group>
-        <target> (<x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" /> днів)</target>
+        <target> ( <x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" />giorni) </target>
       </trans-unit>
       <trans-unit id="6056249674601591680" datatype="html">
         <source>Summary russian losses in range</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">33</context>
         </context-group>
-        <target>Підсумок російських втрат за період</target>
+        <target>Riepilogo delle perdite russe nel raggio d&apos;azione</target>
       </trans-unit>
       <trans-unit id="6088298165216812252" datatype="html">
         <source>Average russian daily losses in range</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">32</context>
         </context-group>
-        <target>Середні російські добові втрати за період</target>
+        <target>Perdite giornaliere medie russe nel range</target>
       </trans-unit>
       <trans-unit id="pageTitleMoD" datatype="html">
         <source>Ministry of Defense of Ukraine data and infographic about russian losses during
@@ -1173,7 +1195,8 @@
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
           <context context-type="linenumber">50</context>
         </context-group>
-        <target>Дані Міноборони України про втрати росії під час вторгнення в Україну</target>
+        <target>Dati e infografica del Ministero della Difesa ucraino sulle perdite russe durante
+          invasione dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="ogTitleMoD" datatype="html">
         <source>Ministry of Defense of Ukraine data and infographic about russian losses during
@@ -1183,7 +1206,8 @@
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
           <context context-type="linenumber">51</context>
         </context-group>
-        <target>Дані Міноборони України про втрати росії під час вторгнення в Україну</target>
+        <target>Dati e infografica del Ministero della Difesa ucraino sulle perdite russe durante
+          invasione dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="ogDescriptionMoD" datatype="html">
         <source>Constantly updating data of Ministry of defense of Ukraine about russian losses in
@@ -1193,8 +1217,9 @@
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
           <context context-type="linenumber">52</context>
         </context-group>
-        <target>Постійно оновлювані дані Міністерства оборони України про втрати росіян під час
-          російського вторгнення в Україну</target>
+        <target>Aggiornamento costante dei dati del Ministero della Difesa ucraino sulle perdite
+          russe
+          l’invasione russa in corso dell’Ucraina</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_tanks" datatype="html">
         <source>Tanks</source>
@@ -1203,7 +1228,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>Танки</target>
+        <target>Carri armati</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_armoured_fighting_vehicles" datatype="html">
         <source>Armoured Fighting Vehicles</source>
@@ -1212,7 +1237,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
-        <target>Бойові броньовані машини</target>
+        <target>Veicoli corazzati da combattimento</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_infantry_fighting_vehicles" datatype="html">
         <source>Infantry Fighting Vehicles</source>
@@ -1221,7 +1246,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
-        <target>Бойові машини піхоти</target>
+        <target>Veicoli da combattimento della fanteria</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_armoured_personnel_carriers" datatype="html">
         <source>Armoured Personnel Carriers</source>
@@ -1230,7 +1255,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
-        <target>Бронетранспортери</target>
+        <target>Veicoli corazzati per il personale</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_mine-resistant_ambush_protected" datatype="html">
         <source>Mine-Resistant Ambush Protected</source>
@@ -1239,7 +1264,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">7</context>
         </context-group>
-        <target>Мінно-стійкі машини, машини захисту від засідки</target>
+        <target>Protetto contro le imboscate resistenti alle mine</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_infantry_mobility_vehicles" datatype="html">
         <source>Infantry Mobility Vehicles</source>
@@ -1248,7 +1273,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">8</context>
         </context-group>
-        <target>Мобільні машини піхоти</target>
+        <target>Veicoli per la mobilità della fanteria</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_command_posts_and_communications_stations" datatype="html">
         <source>Command Posts And Communications Stations</source>
@@ -1257,7 +1282,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">9</context>
         </context-group>
-        <target>Командні пункти та станції зв&amp;язку</target>
+        <target>Posti di comando e stazioni di comunicazione</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_engineering_vehicles_and_equipment" datatype="html">
         <source>Engineering Vehicles And Equipment</source>
@@ -1266,7 +1291,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
-        <target>Інженерні транспортні засоби та обладнання</target>
+        <target>Veicoli e attrezzature di ingegneria</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_self-propelled_anti-tank_missile_systems" datatype="html">
         <source>Self-Propelled Anti-Tank Missile Systems</source>
@@ -1275,7 +1300,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
-        <target>Самохідні протитанкові ракетні комплекси</target>
+        <target>Sistemi missilistici anticarro semoventi</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_artillery_support_vehicles_and_equipment" datatype="html">
         <source>Artillery Support Vehicles And Equipment</source>
@@ -1284,7 +1309,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
-        <target>Машини та засоби артилерійської підтримки</target>
+        <target>Veicoli e attrezzature di supporto dell&apos;artiglieria</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_towed_artillery" datatype="html">
         <source>Towed Artillery</source>
@@ -1293,7 +1318,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <target>Буксирувана артилерія</target>
+        <target>Artiglieria trainata</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_self-propelled_artillery" datatype="html">
         <source>Self-Propelled Artillery</source>
@@ -1302,7 +1327,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
-        <target>Самохідна артилерія</target>
+        <target>Artiglieria semovente</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_multiple_rocket_launchers" datatype="html">
         <source>Multiple Rocket Launchers</source>
@@ -1311,7 +1336,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
-        <target>Ракетні установки залпового вогню</target>
+        <target>Lanciarazzi multipli</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_anti-aircraft_guns" datatype="html">
         <source>Anti-Aircraft Guns</source>
@@ -1320,7 +1345,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
-        <target>Зенітні гармати</target>
+        <target>Cannoni antiaerei</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_self-propelled_anti-aircraft_guns" datatype="html">
         <source>Self-Propelled Anti-Aircraft Guns</source>
@@ -1329,7 +1354,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
-        <target>Самохідні зенітні гармати</target>
+        <target>Cannoni antiaerei semoventi</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_surface-to-air_missile_systems" datatype="html">
         <source>Surface-To-Air Missile Systems</source>
@@ -1338,7 +1363,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
-        <target>Зенітно-ракетні системи</target>
+        <target>Sistemi missilistici terra-aria</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_radars" datatype="html">
         <source>Radars</source>
@@ -1347,7 +1372,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target>Радари</target>
+        <target>Radar</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_jammers_and_deception_systems" datatype="html">
         <source>Jammers And Deception Systems</source>
@@ -1356,7 +1381,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target>Системи перешкод і обману</target>
+        <target>Jammer e sistemi di inganno</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_aircraft" datatype="html">
         <source>Aircraft</source>
@@ -1365,7 +1390,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">21</context>
         </context-group>
-        <target>Літаки</target>
+        <target>Aereo</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_helicopters" datatype="html">
         <source>Helicopters</source>
@@ -1374,7 +1399,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">22</context>
         </context-group>
-        <target>Вертольоти</target>
+        <target>Elicotteri</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_unmanned_combat_aerial_vehicles" datatype="html">
         <source>Unmanned Combat Aerial Vehicles</source>
@@ -1383,7 +1408,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">23</context>
         </context-group>
-        <target>Бойові безпілотні літальні апарати</target>
+        <target>Veicoli aerei da combattimento senza pilota</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_reconnaissance_unmanned_aerial_vehicles" datatype="html">
         <source>Reconnaissance Unmanned Aerial Vehicles</source>
@@ -1392,7 +1417,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">24</context>
         </context-group>
-        <target>Розвідувальні безпілотні літальні апарати</target>
+        <target>Veicoli aerei senza pilota da ricognizione</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_naval_ships_and_submarines" datatype="html">
         <source>Naval Ships and Submarines</source>
@@ -1401,7 +1426,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
-        <target>Морські кораблі та підводні човни</target>
+        <target>Navi da guerra e sottomarini</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_trucks,_vehicles,_and_jeeps" datatype="html">
         <source>Trucks, Vehicles, and Jeeps</source>
@@ -1410,7 +1435,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
-        <target>Вантажівки, транспортні засоби та джипи</target>
+        <target>Camion, veicoli e jeep</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_radars_and_communications_equipment" datatype="html">
         <source>Radars And Communications Equipment</source>
@@ -1419,7 +1444,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
-        <target>Радари та обладнання зв&amp;язку</target>
+        <target>Radar e apparecchiature di comunicazione</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_naval_ships" datatype="html">
         <source>Naval Ships</source>
@@ -1428,7 +1453,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">29</context>
         </context-group>
-        <target>Військово-морські кораблі</target>
+        <target>Navi militari</target>
       </trans-unit>
       <trans-unit id="oryx.entity.oryx_entity_destroyed" datatype="html">
         <source>Destroyed</source>
@@ -1437,7 +1462,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
-        <target>Знищено</target>
+        <target>Distrutto</target>
       </trans-unit>
       <trans-unit id="oryx.entity.oryx_entity_damaged" datatype="html">
         <source>Damaged</source>
@@ -1446,7 +1471,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">32</context>
         </context-group>
-        <target>Пошкоджено</target>
+        <target>Danneggiato</target>
       </trans-unit>
       <trans-unit id="oryx.entity.oryx_entity_captured" datatype="html">
         <source>Captured</source>
@@ -1455,7 +1480,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
-        <target>Захоплено</target>
+        <target>Catturato</target>
       </trans-unit>
       <trans-unit id="oryx.entity.oryx_entity_abandoned" datatype="html">
         <source>Abandoned</source>
@@ -1464,7 +1489,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">34</context>
         </context-group>
-        <target>Покинуто</target>
+        <target>Abbandonato</target>
       </trans-unit>
       <trans-unit id="oryx.entity.oryx_entity_damagedAndCaptured" datatype="html">
         <source>Damaged And Captured</source>
@@ -1473,7 +1498,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
-        <target>Пошкоджено і захоплено</target>
+        <target>Danneggiato e catturato</target>
       </trans-unit>
       <trans-unit id="oryx.entity.oryx_entity_damagedAndAbandoned" datatype="html">
         <source>Damaged And Abandoned</source>
@@ -1482,7 +1507,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">36</context>
         </context-group>
-        <target>Пошкоджено і покинуто</target>
+        <target>Danneggiato e abbandonato</target>
       </trans-unit>
       <trans-unit id="oryx.side_name.RUSSIA_name_oryx" datatype="html">
         <source>Russian</source>
@@ -1491,7 +1516,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">38</context>
         </context-group>
-        <target>Російські</target>
+        <target>russo</target>
       </trans-unit>
       <trans-unit id="oryx.side_name.UKRAINE_name_oryx" datatype="html">
         <source>Ukrainian</source>
@@ -1500,7 +1525,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
-        <target>Українські</target>
+        <target>ucraino</target>
       </trans-unit>
       <trans-unit id="8598886608217248074" datatype="html">
         <source>URL:</source>
@@ -1518,7 +1543,7 @@
             src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
           <context context-type="linenumber">25,26</context>
         </context-group>
-        <target>Довідкові зображення:</target>
+        <target>Immagini di riferimento:</target>
       </trans-unit>
       <trans-unit id="8953033926734869941" datatype="html">
         <source>Name</source>
@@ -1532,7 +1557,7 @@
             src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-overall-counts/oryx-compare-type-overall-counts.component.html</context>
           <context context-type="linenumber">8,9</context>
         </context-group>
-        <target>Назва</target>
+        <target>Nome</target>
       </trans-unit>
       <trans-unit id="7196896228891761160" datatype="html">
         <source>entities types comparison</source>
@@ -1541,7 +1566,7 @@
             src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-entities/oryx-compare-type-entities.component.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
-        <target>порівняння</target>
+        <target>confronto dei tipi di entità</target>
       </trans-unit>
       <trans-unit id="8177873832400820695" datatype="html">
         <source>Count</source>
@@ -1550,15 +1575,16 @@
             src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-overall-counts/oryx-compare-type-overall-counts.component.html</context>
           <context context-type="linenumber">15,16</context>
         </context-group>
-        <target>Кількість</target>
+        <target>Contare</target>
       </trans-unit>
       <trans-unit id="3336431637194222969" datatype="html">
-        <source>загальне порівняння кількості</source>
+        <source>overall count comparison</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/components/oryx-compare-type-overall-counts/oryx-compare-type-overall-counts.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
+        <target>confronto dei conteggi complessivi</target>
       </trans-unit>
       <trans-unit id="7551409567832763014" datatype="html">
         <source>Losses comparison of russia and Ukraine according to Oryx OSINT</source>
@@ -1567,7 +1593,7 @@
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
-        <target>Порівняння втрат росії і України за даними Oryx OSINT</target>
+        <target>Confronto delle perdite tra Russia e Ucraina secondo Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="pageTitleComparisonOryx" datatype="html">
         <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
@@ -1577,8 +1603,9 @@
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target>Порівняння російських і українських втрат під час невиправданого російського
-          вторгнення в Україну за даними Oryx OSINT</target>
+        <target>Confronto delle perdite russe e ucraine durante l&apos;ingiustificata invasione
+          russa del
+          L&apos;Ucraina secondo Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="ogTitleComparisonOryx" datatype="html">
         <source>Comparison of russian and Ukrainian losses during unjustified russian invasion of
@@ -1588,8 +1615,9 @@
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target>Порівняння російських і українських втрат під час невиправданого російського
-          вторгнення в Україну за даними Oryx OSINT</target>
+        <target>Confronto delle perdite russe e ucraine durante l&apos;ingiustificata invasione
+          russa del
+          L&apos;Ucraina secondo Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="ogDescriptionComparisonOryx" datatype="html">
         <source>Constantly updating comparison of russian and Ukrainian losses in the ongoing
@@ -1599,8 +1627,8 @@
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
           <context context-type="linenumber">21</context>
         </context-group>
-        <target>Постійно оновлювані порівняння російських і українських втрат під час російського
-          вторгнення в Україну за даними Oryx OSINT</target>
+        <target>Aggiornamento costante del confronto delle perdite russe e ucraine in corso
+          Invasione russa dell&apos;Ucraina secondo Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="6836949342567686088" datatype="html">
         <source>Count:</source>
@@ -1609,7 +1637,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
           <context context-type="linenumber">17</context>
         </context-group>
-        <target>Кількість:</target>
+        <target>Contare:</target>
       </trans-unit>
       <trans-unit id="7819314041543176992" datatype="html">
         <source>Close</source>
@@ -1618,7 +1646,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
           <context context-type="linenumber">58,59</context>
         </context-group>
-        <target>Закрити</target>
+        <target>Vicino</target>
       </trans-unit>
       <trans-unit id="8356038489237301171" datatype="html">
         <source>losses according to Oryx OSINT</source>
@@ -1627,7 +1655,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-        <target>втрати за даними Oryx OSINT</target>
+        <target>perdite secondo Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="7335990613004661544" datatype="html">
         <source>Source link</source>
@@ -1636,7 +1664,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
           <context context-type="linenumber">8,9</context>
         </context-group>
-        <target>Посилання на джерело</target>
+        <target>Collegamento alla fonte</target>
       </trans-unit>
       <trans-unit id="6199032950321988805" datatype="html">
         <source>Last scrapped:</source>
@@ -1645,7 +1673,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
-        <target>Дані зібрано:</target>
+        <target>Ultimo rottamato:</target>
       </trans-unit>
       <trans-unit id="3448462145758383019" datatype="html">
         <source>Total</source>
@@ -1654,7 +1682,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>Всього</target>
+        <target>Totale</target>
       </trans-unit>
       <trans-unit id="6321562733889197649" datatype="html">
         <source>Destroyed</source>
@@ -1663,7 +1691,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
-        <target>Знищено</target>
+        <target>Distrutto</target>
       </trans-unit>
       <trans-unit id="7883825592248882903" datatype="html">
         <source>Damaged</source>
@@ -1672,7 +1700,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <target>Пошкоджено</target>
+        <target>Danneggiato</target>
       </trans-unit>
       <trans-unit id="8562778474158270448" datatype="html">
         <source>Abandoned</source>
@@ -1681,7 +1709,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target>Покинуто</target>
+        <target>Abbandonato</target>
       </trans-unit>
       <trans-unit id="2307237776780334730" datatype="html">
         <source>Captured</source>
@@ -1690,7 +1718,7 @@
             src/app/statistics/oryx/oryx-country-losses/components/oryx-statistics/oryx-statistics.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
-        <target>Захоплено</target>
+        <target>Catturato</target>
       </trans-unit>
       <trans-unit id="pageTitleOryxRussia" datatype="html">
         <source>Russian losses during invasion of Ukraine according to Oryx OSINT</source>
@@ -1699,7 +1727,7 @@
             src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
           <context context-type="linenumber">22</context>
         </context-group>
-        <target>Втрати росіян під час вторгнення в Україну за даними Oryx OSINT</target>
+        <target>Perdite russe durante l&apos;invasione dell&apos;Ucraina secondo Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="ogTitleOryxRussia" datatype="html">
         <source>Russian losses during invasion of Ukraine according to Oryx OSINT</source>
@@ -1708,7 +1736,7 @@
             src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
           <context context-type="linenumber">23</context>
         </context-group>
-        <target>Втрати росіян під час вторгнення в Україну за даними Oryx OSINT</target>
+        <target>Perdite russe durante l&apos;invasione dell&apos;Ucraina secondo Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="ogDescriptionOryxRussia" datatype="html">
         <source>Constantly updating data from Oryx OSINT about russian losses in the ongoing russian
@@ -1718,8 +1746,8 @@
             src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
           <context context-type="linenumber">24</context>
         </context-group>
-        <target>Постійно оновлювані дані з Oryx OSINT про російські втрати під час російського
-          вторгнення в Україну</target>
+        <target>Aggiornamento costante dei dati di Oryx OSINT sulle perdite russe nel russo in corso
+          invasione dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="pageTitleOryxUkraine" datatype="html">
         <source>Ukrainian losses during unjustified russian invasion of Ukraine according to Oryx
@@ -1729,7 +1757,8 @@
             src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
-        <target>Втрати України під час підлого російського вторгнення в Україну за матеріалами Oryx
+        <target>Perdite ucraine durante l&apos;ingiustificata invasione russa dell&apos;Ucraina
+          secondo Oryx
           OSINT</target>
       </trans-unit>
       <trans-unit id="ogTitleOryxUkraine" datatype="html">
@@ -1740,19 +1769,20 @@
             src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
-        <target>Втрати України під час підлого російського вторгнення в Україну за матеріалами Oryx
+        <target>Perdite ucraine durante l&apos;ingiustificata invasione russa dell&apos;Ucraina
+          secondo Oryx
           OSINT</target>
       </trans-unit>
       <trans-unit id="ogDescriptionOryxUkraine" datatype="html">
-        <source>Constantly updating data from Oryx OSIN about ukrainian losses in the ongoing
+        <source>Constantly updating data from Oryx OSINT about ukrainian losses in the ongoing
           russian invasion of Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/oryx-country-losses.component.ts</context>
           <context context-type="linenumber">29</context>
         </context-group>
-        <target>Постійно оновлювані дані з Oryx OSINT про втрати України під час російського
-          вторгнення в Україну.</target>
+        <target>Aggiornamento costante dei dati di Oryx OSINT sulle perdite ucraine in corso
+          invasione russa dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="185815212249169742" datatype="html">
         <source>Russia</source>
@@ -1760,7 +1790,7 @@
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
           <context context-type="linenumber">48</context>
         </context-group>
-        <target>Росія</target>
+        <target>Russia</target>
       </trans-unit>
       <trans-unit id="4346283537747431562" datatype="html">
         <source>Ukraine</source>
@@ -1768,7 +1798,7 @@
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
           <context context-type="linenumber">52</context>
         </context-group>
-        <target>Україна</target>
+        <target>Ucraina</target>
       </trans-unit>
       <trans-unit id="2572999724448976084" datatype="html">
         <source>Compare</source>
@@ -1776,7 +1806,7 @@
           <context context-type="sourcefile">src/app/statistics/oryx/oryx.component.ts</context>
           <context context-type="linenumber">56</context>
         </context-group>
-        <target>Порівняння</target>
+        <target>Confrontare</target>
       </trans-unit>
       <trans-unit id="8642445555713453888" datatype="html">
         <source>First page</source>
@@ -1785,7 +1815,7 @@
             src/app/statistics/services/custom-paginator-intl.service.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
-        <target>Перша сторінка</target>
+        <target>Prima pagina</target>
       </trans-unit>
       <trans-unit id="4743002849260529978" datatype="html">
         <source>Items per page:</source>
@@ -1794,7 +1824,7 @@
             src/app/statistics/services/custom-paginator-intl.service.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
-        <target>Елементів на сторінці:</target>
+        <target>Oggetti per pagina:</target>
       </trans-unit>
       <trans-unit id="6784758141439994527" datatype="html">
         <source>Last page</source>
@@ -1803,7 +1833,7 @@
             src/app/statistics/services/custom-paginator-intl.service.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <target>Остання сторінка</target>
+        <target>Ultima pagina</target>
       </trans-unit>
       <trans-unit id="3337301694210287595" datatype="html">
         <source>Next page</source>
@@ -1812,7 +1842,7 @@
             src/app/statistics/services/custom-paginator-intl.service.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
-        <target>Наступна сторінка</target>
+        <target>Pagina successiva</target>
       </trans-unit>
       <trans-unit id="3629960544875360046" datatype="html">
         <source>Previous page</source>
@@ -1821,7 +1851,7 @@
             src/app/statistics/services/custom-paginator-intl.service.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
-        <target>Попередня сторінка</target>
+        <target>Pagina precedente</target>
       </trans-unit>
       <trans-unit id="125401261339317585" datatype="html">
         <source>Page 1 of 1</source>
@@ -1830,7 +1860,7 @@
             src/app/statistics/services/custom-paginator-intl.service.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target>Сторінка 1 з 1</target>
+        <target>Pagina 1 di 1</target>
       </trans-unit>
       <trans-unit id="6221116945238325541" datatype="html">
         <source> Page of <x id="PH" equiv-text="page + 1" />
@@ -1841,9 +1871,7 @@
             src/app/statistics/services/custom-paginator-intl.service.ts</context>
           <context context-type="linenumber">22</context>
         </context-group>
-        <target> Сторінка <x id="PH" equiv-text="page + 1" /> з <x id="PH_1"
-            equiv-text="amountPages" />
-        </target>
+        <target> Pagina <x id="PH" equiv-text="page + 1" /> di <x id="PH_1" equiv-text="amountPages" /></target>
       </trans-unit>
       <trans-unit id="7505806954101170506" datatype="html">
         <source>Russian losses in UA</source>
@@ -1851,7 +1879,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.html</context>
           <context context-type="linenumber">34,35</context>
         </context-group>
-        <target>Russian losses in UA</target>
+        <target>Perdite russe negli Emirati Arabi Uniti</target>
       </trans-unit>
       <trans-unit id="7171949989092460632" datatype="html">
         <source>Min. of Defense</source>
@@ -1859,7 +1887,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">29</context>
         </context-group>
-        <target>Мін. Оборони</target>
+        <target>minimo della Difesa</target>
       </trans-unit>
       <trans-unit id="4674136163546082296" datatype="html">
         <source>Ministry of defense of Ukraine data</source>
@@ -1867,7 +1895,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">30</context>
         </context-group>
-        <target>Дані Міністерства оборони України</target>
+        <target>Dati del Ministero della Difesa dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="7349113730459134835" datatype="html">
         <source>Oryx</source>
@@ -1883,7 +1911,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">36</context>
         </context-group>
-        <target>Дані Oryx OSINT</target>
+        <target>Dati Oryx OSINT</target>
       </trans-unit>
       <trans-unit id="7841393750423304845" datatype="html">
         <source>Support Ukraine</source>
@@ -1891,7 +1919,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">41</context>
         </context-group>
-        <target>Підтримайте Україну</target>
+        <target>Sostieni l&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="8370893771306210378" datatype="html">
         <source>Support/Donate Ukraine</source>
@@ -1899,7 +1927,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">43</context>
         </context-group>
-        <target>Підтримка/Пожертвування Україні</target>
+        <target>Sostieni/Fai una donazione all&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="8942351587754185907" datatype="html">
         <source>API</source>
@@ -1915,7 +1943,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">51</context>
         </context-group>
-        <target>Інтерфейс прикладного програмування</target>
+        <target>Interfaccia di programmazione applicazioni</target>
       </trans-unit>
       <trans-unit id="1726363342938046830" datatype="html">
         <source>About</source>
@@ -1923,7 +1951,7 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">55</context>
         </context-group>
-        <target>Інформація</target>
+        <target>Di</target>
       </trans-unit>
       <trans-unit id="3768870590847399574" datatype="html">
         <source>How it works / About me</source>
@@ -1931,15 +1959,15 @@
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
           <context context-type="linenumber">56</context>
         </context-group>
-        <target>Як це працює / Про мене</target>
+        <target>Come funziona / Chi sono</target>
       </trans-unit>
       <trans-unit id="6480669984551358454" datatype="html">
-        <source> Stand against russian imperialistic aggression: Support Ukraine&amp;s Victory </source>
+        <source> Stand against russian imperialistic aggression: Support Ukraine&apos;s Victory </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">3,4</context>
         </context-group>
-        <target> Зупиніть російську імперіалістичну агресію: Підтримайте Перемогу України</target>
+        <target> Resistete all’aggressione imperialistica russa: sostenete la vittoria dell’Ucraina</target>
       </trans-unit>
       <trans-unit id="2622738355749158552" datatype="html">
         <source>Donate to Ukrainian Army or verified charity platforms</source>
@@ -1947,7 +1975,8 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
-        <target>Зробіть пожертву на користь української армії або перевірених благодійних платформ</target>
+        <target>Fai una donazione all&apos;esercito ucraino o a piattaforme di beneficenza
+          verificate</target>
       </trans-unit>
       <trans-unit id="2671611485995200913" datatype="html">
         <source>Donation Link</source>
@@ -1955,7 +1984,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">41,42</context>
         </context-group>
-        <target>Посилання для пожертвувань</target>
+        <target>Collegamento per la donazione</target>
       </trans-unit>
       <trans-unit id="5240845113469440487" datatype="html">
         <source>Consider other charity platforms</source>
@@ -1963,7 +1992,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">57,58</context>
         </context-group>
-        <target>Розгляньте інші благодійні платформи</target>
+        <target>Prendi in considerazione altre piattaforme di beneficenza</target>
       </trans-unit>
       <trans-unit id="2532677915884331546" datatype="html">
         <source>Stand For Ukraine</source>
@@ -1971,17 +2000,18 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">81,82</context>
         </context-group>
-        <target>Stand For Ukraine</target>
+        <target>Sostieni l&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="2376156035855171103" datatype="html">
         <source> Consider donating to Open Source Intelligence contributors whose hard work allows
           to preserve and document all losses of russian invaders </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
-          <context context-type="linenumber">92,93</context>
+          <context context-type="linenumber">90,91</context>
         </context-group>
-        <target>Подумайте про пожертвування учасникам Open Source Intelligence, чия наполеглива
-          праця дозволяє зберегти та задокументувати всі втрати російських загарбників</target>
+        <target> Prendi in considerazione la possibilità di donare ai contributori di Open Source
+          Intelligence il cui duro lavoro lo consente
+          per preservare e documentare tutte le perdite degli invasori russi</target>
       </trans-unit>
       <trans-unit id="2908091680525924665" datatype="html">
         <source>Jakub Janovsky</source>
@@ -1997,7 +2027,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">115,116</context>
         </context-group>
-        <target>Bellingcat та Oryx вкладник.</target>
+        <target>Collaboratore di Bellingcat e Oryx Blog.</target>
       </trans-unit>
       <trans-unit id="6906875077433020025" datatype="html">
         <source>WarSpotting</source>
@@ -2013,7 +2043,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">138,139</context>
         </context-group>
-        <target>розвідувальна група відкритих джерел інформації</target>
+        <target>gruppo di intelligence open source</target>
       </trans-unit>
       <trans-unit id="4967874244174043655" datatype="html">
         <source> WarSpotting is a database of documented losses in 2022 Russian invasion in Ukraine.
@@ -2023,9 +2053,10 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">145,147</context>
         </context-group>
-        <target>WarSpotting - це база даних про задокументовані втрати під час російського
-          вторгнення в Україну у 2022 році. Як докази вони використовують фотодокази, знайдені у
-          відкритих джерелах в Інтернеті, таких як соціальні мережі.</target>
+        <target> WarSpotting è un database di perdite documentate durante l&apos;invasione russa in
+          Ucraina del 2022.
+          Utilizzano prove fotografiche trovate in fonti aperte sul Web come i social media
+          prove.</target>
       </trans-unit>
       <trans-unit id="6311622191770407007" datatype="html">
         <source>Donation link</source>
@@ -2033,7 +2064,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.html</context>
           <context context-type="linenumber">159,160</context>
         </context-group>
-        <target>Посилання для пожертвувань</target>
+        <target>Collegamento per la donazione</target>
       </trans-unit>
       <trans-unit id="8654975325889711886" datatype="html">
         <source>Armed Forces of Ukraine</source>
@@ -2041,7 +2072,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
-        <target>Збройні сили України</target>
+        <target>Forze armate dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="4860282815579634562" datatype="html">
         <source>Government, Military</source>
@@ -2049,19 +2080,20 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target>Урядова, Військова</target>
+        <target>Governo, militare</target>
       </trans-unit>
       <trans-unit id="7962580994936643499" datatype="html">
         <source>An official fundraising account created by NBU to support the Armed Forces of
-          Ukraine. All collected funds are directed to enhance Ukraine&amp;s defense capability:
+          Ukraine. All collected funds are directed to enhance Ukraine&apos;s defense capability:
           weapons, equipment, food, medicine, and other supplies.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target>Офіційний збір коштів, створений НБУ для підтримки Збройних Сил України. Усі зібрані
-          кошти спрямовані на підвищення обороноздатності України: озброєння, техніка,
-          продовольство, медикаменти та інше.</target>
+        <target>Un conto ufficiale di raccolta fondi creato da NBU per sostenere le Forze Armate di
+          Ucraina. Tutti i fondi raccolti sono destinati a rafforzare la capacità di difesa
+          dell&apos;Ucraina:
+          armi, attrezzature, cibo, medicine e altre forniture.</target>
       </trans-unit>
       <trans-unit id="2629641195318238092" datatype="html">
         <source>Come Back Alive</source>
@@ -2069,7 +2101,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
-        <target>Повернись живим</target>
+        <target>Torna vivo</target>
       </trans-unit>
       <trans-unit id="6284251546140951576" datatype="html">
         <source>Military, Non-government, Medical</source>
@@ -2081,7 +2113,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">56</context>
         </context-group>
-        <target>Військова, неурядова, медична</target>
+        <target>Militare, non governativo, medico</target>
       </trans-unit>
       <trans-unit id="4557633441592131034" datatype="html">
         <source>The Foundation stands with the Ukrainian Armed Forces by funding defensive
@@ -2092,11 +2124,12 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">29</context>
         </context-group>
-        <target>Фонд підтримує Збройні сили України, фінансуючи оборонні ініціативи. Ми постачаємо
-          технологію, навчання та амуніцію. Після прибуття додому з передової оборони, наші
-          військові
-          отримують підтримку спортивною реабілітацією та допомогу з розвитком ветеранського
-          бізнесу.</target>
+        <target>La Fondazione sostiene le forze armate ucraine finanziando la difesa
+          iniziative. Forniamo tecnologia, addestramento e munizioni. Dopo essere arrivato a casa
+          dal
+          prima linea di difesa, le nostre truppe ricevono supporto con la riabilitazione sportiva e
+          il
+          sviluppo di imprese gestite da veterani.</target>
       </trans-unit>
       <trans-unit id="8839025064939381445" datatype="html">
         <source>UNITED24</source>
@@ -2104,7 +2137,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
-        <target>UNITED24</target>
+        <target>REGNO24</target>
       </trans-unit>
       <trans-unit id="641816222561991296" datatype="html">
         <source>Government, Military, Medical, Humanitarian, Education and Science</source>
@@ -2112,7 +2145,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">36</context>
         </context-group>
-        <target>Урядова, військова, медична, гуманітарна, освітнта та наукова</target>
+        <target>Governo, militare, medico, umanitario, istruzione e scienza</target>
       </trans-unit>
       <trans-unit id="9161556193420142674" datatype="html">
         <source>The platform allows one-click donations to Ukraine from anywhere. Why is this so
@@ -2127,17 +2160,20 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">37,41</context>
         </context-group>
-        <target>Платформа дозволяє робити пожертви для України в один клік з будь-якого місця. Чому
-          це
-          так важливо? Тому що Україна сама найкраще знає, що потрібно, і може надати допомогу
-          напряму.
+        <target>La piattaforma consente donazioni all&apos;Ucraina con un clic da qualsiasi luogo.
+          Perché
+          è così?
+          importante? Perché l’Ucraina stessa sa meglio di cosa ha bisogno e può fornire aiuti
+          direttamente.
+          Nessuno era pronto per una guerra su vasta scala nel cuore dell’Europa. Fondazioni di
+          beneficenza, no
+          per quanto ben organizzata, non può soddisfare le esigenze di un paese grande come
+          l’Ucraina. Noi possiamo,
+          tuttavia, fatelo insieme.
 
-          Ніхто не був готовий до повномасштабної війни в центрі Європи. Благодійні фонди, якими б
-          добре не були організовані, не можуть забезпечити потреби такої великої країни, як
-          Україна. Однак ми можемо зробити це разом.
-
-          UNITED24 призначений для співпраці з благодійними організаціями, партнерами, донорами та
-          громадськими діячами по всьому світу.</target>
+          UNITED24 è progettato per la collaborazione con enti di beneficenza, partner, donatori e
+          pubblico
+          cifre in tutto il mondo.</target>
       </trans-unit>
       <trans-unit id="8531588785359604671" datatype="html">
         <source>The Ukraine Humanitarian Fund</source>
@@ -2145,7 +2181,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
-        <target>Український гуманітарний фонд</target>
+        <target>Il Fondo umanitario ucraino</target>
       </trans-unit>
       <trans-unit id="8378636028447540308" datatype="html">
         <source>Non-government, Humanitarian, Medical</source>
@@ -2153,20 +2189,24 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">48</context>
         </context-group>
-        <target>Недержавна, гуманітарна, медична</target>
+        <target>Non governativo, umanitario, medico</target>
       </trans-unit>
       <trans-unit id="5873315661267451729" datatype="html">
-        <source>One of the UN&amp;s country-based pooled funds. Your donation will help humanitarian
-          NGOs and UN agencies in Ukraine to assist the most vulnerable communities and people, and
-          to provide them with urgently needed food, water, shelter, and other basic support.</source>
+        <source>One of the UN&apos;s country-based pooled funds. Your donation will help
+          humanitarian NGOs and UN agencies in Ukraine to assist the most vulnerable communities and
+          people, and to provide them with urgently needed food, water, shelter, and other basic
+          support.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">49</context>
         </context-group>
-        <target>Один із об&amp;єднаних фондів ООН у країні. Ваша пожертва допоможе гуманітарним НУО
-          та
-          агентствам ООН в Україні допомогти найбільш уразливим групам і людям, а також забезпечити
-          їх необхідною їжею, водою, притулком та іншою основною підтримкою.</target>
+        <target>Uno dei fondi comuni delle Nazioni Unite a livello nazionale. La tua donazione
+          aiuterà
+          ONG umanitarie e agenzie delle Nazioni Unite in Ucraina per assistere le comunità più
+          vulnerabili e
+          persone e fornire loro cibo, acqua, riparo e altri beni di prima necessità urgentemente
+          necessari
+          supporto.</target>
       </trans-unit>
       <trans-unit id="6104243289101225885" datatype="html">
         <source>Serhiy Prytula Charity Foundation</source>
@@ -2174,7 +2214,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">55</context>
         </context-group>
-        <target>Serhiy Prytula Charity Foundation</target>
+        <target>Fondazione di beneficenza Serhiy Prytula</target>
       </trans-unit>
       <trans-unit id="7125540950643386534" datatype="html">
         <source>Serhiy Prytula Charity Foundation is focused on strengthening the Defence Forces of
@@ -2185,10 +2225,12 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">57,58</context>
         </context-group>
-        <target>Благодійний фонд Сергія Притули спрямований на зміцнення Сил оборони України та
-          надання допомоги мирним жителям, які постраждали внаслідок російської агресії.
-          Понад 200 волонтерів і співробітників Фонду щодня працюють над тим, щоб кожна наша
-          пожертва ставала цінною допомогою для України.</target>
+        <target>La Serhiy Prytula Charity Foundation si concentra sul rafforzamento delle forze di
+          difesa del
+          Ucraina e fornendo assistenza ai civili colpiti dall’aggressione russa.
+          Oltre 200 volontari e dipendenti della Fondazione lavorano ogni giorno per garantire che
+          ogni
+          la donazione che riceviamo diventa un prezioso aiuto per l&apos;Ucraina.</target>
       </trans-unit>
       <trans-unit id="4344912555294983986" datatype="html">
         <source>Ministry of Healthcare of Ukraine</source>
@@ -2196,7 +2238,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">64</context>
         </context-group>
-        <target>МОЗ України</target>
+        <target>Ministero della Sanità dell&apos;Ucraina</target>
       </trans-unit>
       <trans-unit id="7907214101238932357" datatype="html">
         <source>Government, Humanitarian, Medical</source>
@@ -2204,7 +2246,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">65</context>
         </context-group>
-        <target>Державна, гуманітарна, медична</target>
+        <target>Governativo, umanitario, medico</target>
       </trans-unit>
       <trans-unit id="2816348974830694094" datatype="html">
         <source>All funds will be used to meet the needs of hospitals and emergency medical
@@ -2214,9 +2256,10 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">66</context>
         </context-group>
-        <target>Усі кошти будуть спрямовані на забезпечення потреб лікарень та закладів швидкої
-          медичної допомоги, які першими надають допомогу пораненим і вступають у боротьбу за життя
-          та здоров&amp;я українців.</target>
+        <target>Tutti i fondi verranno utilizzati per soddisfare le esigenze degli ospedali e delle
+          emergenze mediche
+          istituzioni che sono le prime a fornire assistenza ai feriti e ad entrare nel
+          lotta per la vita e la salute degli ucraini.</target>
       </trans-unit>
       <trans-unit id="pageTitleSupport" datatype="html">
         <source>Support Ukraine against russian invasion</source>
@@ -2224,7 +2267,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">81</context>
         </context-group>
-        <target>Підтримайте Україну проти російського вторгнення</target>
+        <target>Sostieni l&apos;Ucraina contro l&apos;invasione russa</target>
       </trans-unit>
       <trans-unit id="ogTitleSupport" datatype="html">
         <source>Support Ukraine against russian invasion</source>
@@ -2232,7 +2275,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">82</context>
         </context-group>
-        <target>Підтримайте Україну проти російського вторгнення</target>
+        <target>Sostieni l&apos;Ucraina contro l&apos;invasione russa</target>
       </trans-unit>
       <trans-unit id="ogDescriptionSupport" datatype="html">
         <source>List of verified ways to support Ukraine against russian invasion</source>
@@ -2240,7 +2283,7 @@
           <context context-type="sourcefile">src/app/statistics/support/support.component.ts</context>
           <context context-type="linenumber">83</context>
         </context-group>
-        <target>Список перевірених способів підтримки України проти російського вторгнення</target>
+        <target>Elenco di modi verificati per sostenere l&apos;Ucraina contro l&apos;invasione russa</target>
       </trans-unit>
     </body>
   </file>

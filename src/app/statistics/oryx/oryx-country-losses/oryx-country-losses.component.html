@@ -1,10 +1,12 @@
-@if(sideMetadata$|async; as metadata) {
-<ng-container>
-  @if (sideData$|async; as data) {
-  <app-oryx-side-losses-presenter
-    [data]="data"
-    [metadata]="metadata"
-  ></app-oryx-side-losses-presenter>
+<div class="sm:m-2 p-2 flex flex-col justify-start items-stretch gap-1">
+  @if(sideMetadata$|async; as metadata) {
+  <ng-container>
+    @if (sideData$|async; as data) {
+    <app-oryx-side-losses-presenter
+      [data]="data"
+      [metadata]="metadata"
+    ></app-oryx-side-losses-presenter>
+    }
+  </ng-container>
   }
-</ng-container>
-}
+</div>
