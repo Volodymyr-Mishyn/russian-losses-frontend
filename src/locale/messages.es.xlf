@@ -969,14 +969,13 @@
         </context-group>
         <target>Aprox. Personal ruso eliminado</target>
       </trans-unit>
-      <trans-unit id="1274798046896666882" datatype="html">
+      <trans-unit id="3581006453611209886" datatype="html">
         <source> Infographic of casualties of the russian troops in Ukraine according to General
-          Staff/Ministry of Defense of Ukraine
-</source>
+          Staff/Ministry of Defense of Ukraine </source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/charts/ministry-of-defense-charts/ministry-of-defense-charts.component.html</context>
-          <context context-type="linenumber">2,5</context>
+          <context context-type="linenumber">3,5</context>
         </context-group>
         <target> Infografía de las bajas de las tropas rusas en Ucrania según el general
           Estado Mayor/Ministerio de Defensa de Ucrania
@@ -1053,12 +1052,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">10,11</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
@@ -1068,12 +1062,17 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">33,34</context>
+          <context context-type="linenumber">24,25</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
           <context context-type="linenumber">34,35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
+          <context context-type="linenumber">35,36</context>
         </context-group>
         <target>
           <x id="INTERPOLATION" equiv-text="{{ element.date | date : &quot;dd.MM.YYYY&quot; }}" />
@@ -1106,14 +1105,13 @@
         </context-group>
         <target>Principales meses de pérdidas rusas</target>
       </trans-unit>
-      <trans-unit id="621839843319392469" datatype="html">
+      <trans-unit id="4863729615092921696" datatype="html">
         <source> Summary of casualties of the russian troops in Ukraine according to General
-          Staff/Ministry of Defense of Ukraine
-</source>
+          Staff/Ministry of Defense of Ukraine </source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">2,5</context>
+          <context context-type="linenumber">3,5</context>
         </context-group>
         <target> Resumen de las bajas de las tropas rusas en ucrania según el general
           Estado Mayor/Ministerio de Defensa de Ucrania
@@ -1124,7 +1122,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">9</context>
         </context-group>
         <target>Pérdidas rusas por fecha</target>
       </trans-unit>
@@ -1135,39 +1133,37 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">10,11</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
         <target>
           <x id="INTERPOLATION" equiv-text="{{ datesRange.end | date : &quot;dd.MM.YYYY&quot; }}" />
         </target>
       </trans-unit>
       <trans-unit id="7313384793054952220" datatype="html">
-        <source> ( days) <x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" />
-        </source>
+        <source>(<x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" /> days)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">12,13</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">35,36</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
-        <target> ( días) <x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" />
-        </target>
+        <target> ( <x id="INTERPOLATION" equiv-text="{{ datesRange.days }}" /> días)</target>
       </trans-unit>
       <trans-unit id="6056249674601591680" datatype="html">
         <source>Summary russian losses in range</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">22</context>
         </context-group>
         <target>Resumen de pérdidas rusas en rango.</target>
       </trans-unit>
@@ -1176,7 +1172,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/components/tables/ministry-of-defense-tables/ministry-of-defense-tables.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <target>Pérdidas diarias medias rusas en rango</target>
       </trans-unit>
@@ -1586,7 +1582,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
-          <context context-type="linenumber">4,6</context>
+          <context context-type="linenumber">5,6</context>
         </context-group>
         <target>Comparación de pérdidas de Rusia y Ucrania según Oryx OSINT</target>
       </trans-unit>
