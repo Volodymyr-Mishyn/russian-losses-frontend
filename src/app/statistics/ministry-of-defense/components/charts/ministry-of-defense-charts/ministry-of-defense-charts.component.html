@@ -1,19 +1,21 @@
-<h1 i18n>
-  Infographic of casualties of the russian troops in Ukraine according to
-  General Staff/Ministry of Defense of Ukraine
-</h1>
-<div class="flex flex-col justify-start items-stretch gap-4">
-  @for (entity of entitiesNames; track $index) { @defer (on viewport) {
-  <div class="mat-elevation-z2 chart-size">
-    <app-ministry-of-defense-data-plot-chart
-      class="h-full w-full"
-      [data]="daysData"
-      [typeOfLoss]="entity"
-    ></app-ministry-of-defense-data-plot-chart>
+<div class="sm:m-2 p-2 flex flex-col justify-start items-stretch gap-1">
+  <h1 i18n>
+    Infographic of casualties of the russian troops in Ukraine according to
+    General Staff/Ministry of Defense of Ukraine
+  </h1>
+  <div class="flex flex-col justify-start items-stretch gap-4">
+    @for (entity of entitiesNames; track $index) { @defer (on viewport) {
+    <div class="mat-elevation-z2 chart-size">
+      <app-ministry-of-defense-data-plot-chart
+        class="h-full w-full"
+        [data]="daysData"
+        [typeOfLoss]="entity"
+      ></app-ministry-of-defense-data-plot-chart>
+    </div>
+    }@placeholder {
+    <div class="w-full h-20 m-4 flex items-center justify-center">
+      <mat-spinner color="accent"></mat-spinner>
+    </div>
+    } }
   </div>
-  }@placeholder {
-  <div class="w-full h-20 m-4 flex items-center justify-center">
-    <mat-spinner color="accent"></mat-spinner>
-  </div>
-  } }
 </div>

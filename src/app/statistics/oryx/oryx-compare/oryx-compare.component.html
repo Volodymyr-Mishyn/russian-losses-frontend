@@ -1,17 +1,19 @@
-@if(oryxTypesComparison$|async; as oryxTypesComparison) {
-<h1 class="mat-h1 sm:m-2 p-4">
-  <span i18n
-    >Losses comparison of russia and Ukraine according to Oryx OSINT</span
-  >
-</h1>
-<ng-container>
-  @for (type of oryxTypesComparison; track $index) {
-  <div class="flex flex-col justify-start items-stretch mb-10">
-    <app-oryx-compare-type
-      [entityTypeComparison]="type"
-      class="sm:m-2 p-2"
-    ></app-oryx-compare-type>
-    <mat-divider></mat-divider>
-  </div>
-  } </ng-container
->}
+<div class="sm:m-2 p-2 flex flex-col justify-start items-stretch gap-1">
+  @if(oryxTypesComparison$|async; as oryxTypesComparison) {
+  <h1 class="mat-h1 sm:m-2 p-4">
+    <span i18n
+      >Losses comparison of russia and Ukraine according to Oryx OSINT</span
+    >
+  </h1>
+  <ng-container>
+    @for (type of oryxTypesComparison; track $index) {
+    <div class="flex flex-col justify-start items-stretch mb-10">
+      <app-oryx-compare-type
+        [entityTypeComparison]="type"
+        class="sm:m-2 p-2"
+      ></app-oryx-compare-type>
+      <mat-divider></mat-divider>
+    </div>
+    } </ng-container
+  >}
+</div>

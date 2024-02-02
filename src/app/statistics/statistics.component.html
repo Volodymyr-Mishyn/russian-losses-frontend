@@ -41,5 +41,8 @@
     </div>
     }
     <router-outlet></router-outlet>
+    @if (isMobile()) {
+    <div class="w-full h-16"></div>
+    }
   </mat-sidenav-content>
 </mat-sidenav-container>
