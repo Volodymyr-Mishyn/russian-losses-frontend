@@ -13,7 +13,6 @@ export class BaseUrlBuilderService {
       const isLocalhost =
         window.location.hostname === 'localhost' ||
         window.location.hostname === '192.168.0.116';
-      console.log(window.location);
       if (environment.production && isLocalhost) {
         return environment.backendUrl + environment.apiUrl;
       }
