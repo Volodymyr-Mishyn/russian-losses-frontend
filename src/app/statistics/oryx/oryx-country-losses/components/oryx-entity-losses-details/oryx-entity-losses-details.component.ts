@@ -101,7 +101,7 @@ export class OryxEntityLossesDetailsComponent {
       },
       maxWidth: '90vw',
       maxHeight: '90vh',
-      panelClass: 'custom-dialog-container',
+      panelClass: 'custom-large-dialog',
       autoFocus: false,
     });
   }
