@@ -57,9 +57,6 @@ export class SocialShareComponent {
   private _openShare(platform: string) {
     let shareUrl = '';
     const encodedUrl = encodeURIComponent(this.url);
-    // const encodedUrl = encodeURIComponent(
-    //   'https://russian-losses.in.ua/en/statistics/ministry-of-defense'
-    // );
 
     switch (platform) {
       case 'twitter':

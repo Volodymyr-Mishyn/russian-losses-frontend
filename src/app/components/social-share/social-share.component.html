@@ -1,5 +1,5 @@
-<div class="flex flex-col justify-start items-stretch gap-2">
-  <div class="flex flex-row flex-wrap items-center justify-start gap-2">
+<div class="flex flex-col justify-start items-stretch gap-4">
+  <div class="flex flex-row flex-wrap items-center justify-between gap-2">
     @for (item of socialShareOptions; track $index) {
     <div>
       <fa-icon
@@ -12,9 +12,13 @@
     }
   </div>
   <div class="flex flex-row justify-start items-center gap-2">
-    <div class="flex flex-row items-center justify-start flex-1">
-      <span class="text-xs font-bold" i18n>URL:</span>
-      <span class="text-xs ml-2">{{ url }}</span>
+    <div
+      class="flex flex-row items-center justify-start flex-1 w-56 overflow-x-scroll py-4"
+    >
+      <div class="text-xs font-bold" i18n>URL:</div>
+      <div class="text-xs ml-2 text-nowrap">
+        {{ url }}
+      </div>
     </div>
     <button mat-icon-button (click)="copy()">
       <mat-icon>content_copy</mat-icon>
