@@ -1228,7 +1228,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <target>Datos e infografía del Ministerio de Defensa de Ucrania sobre las pérdidas rusas
           durante
@@ -1240,7 +1240,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">55</context>
         </context-group>
         <target>Datos e infografía del Ministerio de Defensa de Ucrania sobre las pérdidas rusas
           durante
@@ -1619,7 +1619,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
         <target>Comparación de pérdidas de Rusia y Ucrania según Oryx OSINT</target>
       </trans-unit>
@@ -1629,7 +1629,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <target>Comparación de las pérdidas rusas y ucranianas durante la invasión rusa
           injustificada de
@@ -1641,7 +1641,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <target>Comparación de las pérdidas rusas y ucranianas durante la invasión rusa
           injustificada de
@@ -1653,7 +1653,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <target>Comparación constantemente actualizada de las pérdidas rusas y ucranianas en el
           curso de los años.
@@ -1673,7 +1673,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">4,5</context>
+          <context context-type="linenumber">5,6</context>
         </context-group>
         <target>pérdidas según Oryx OSINT</target>
       </trans-unit>
@@ -1682,7 +1682,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">8,9</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
         <target>Enlace fuente</target>
       </trans-unit>
@@ -1691,7 +1691,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <target>Último desechado:</target>
       </trans-unit>

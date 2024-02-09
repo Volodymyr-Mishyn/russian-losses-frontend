@@ -1245,7 +1245,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1258,7 +1258,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">54</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1271,7 +1271,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">55</context>
         </context-group>
         <target>Constamment mettre à jour les données du Ministère de la défense de l&apos;Ukraine
           sur
@@ -1639,7 +1639,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
         <target>Comparaison des pertes de la Russie et de l&apos;Ukraine selon Oryx OSINT</target>
       </trans-unit>
@@ -1649,7 +1649,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <target>Comparaison des pertes russes et ukrainiennes lors de l&apos;invasion russe
           injustifiée
@@ -1662,7 +1662,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <target>Comparaison des pertes russes et ukrainiennes lors de l&apos;invasion russe
           injustifiée
@@ -1675,7 +1675,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <target>Comparaison constamment mise à jour des pertes russes et ukrainiennes au cours de la
           période actuelle
@@ -1695,7 +1695,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">4,5</context>
+          <context context-type="linenumber">5,6</context>
         </context-group>
         <target>pertes selon Oryx OSINT</target>
       </trans-unit>
@@ -1704,7 +1704,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">8,9</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
         <target>Lien source</target>
       </trans-unit>
@@ -1713,7 +1713,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <target>Dernière mise au rebut :</target>
       </trans-unit>
