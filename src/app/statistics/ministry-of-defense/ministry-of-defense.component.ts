@@ -28,6 +28,10 @@ import { TranslationService } from '../../_translate/translation.service';
 import { MinistryOfDefenseTranslationService } from './services/ministry-of-defense-translation.service';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { SeoService } from '../../services/seo.service';
+import { SocialShareButtonComponent } from '../../components/social-share/social-share-button/social-share-button.component';
+import { PlatformService } from '../../services/platform.service';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   standalone: true,
@@ -36,6 +40,7 @@ import { SeoService } from '../../services/seo.service';
     RangeSelectionComponent,
     MinistryOfDefenseStatisticsPresenterComponent,
     ScrollToTopComponent,
+    SocialShareButtonComponent,
   ],
   providers: [
     {
@@ -66,6 +71,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   public currentScrollContainer!: ElementRef;
   public containerReady = false;
   public localRange!: DateRangeWithCount;
+  public baseUrl: string | null = null;
 
   public data$: Observable<MoDDataSliceWithCalculated> = this._range$.pipe(
     takeUntil(this._destroy$),
@@ -79,11 +85,24 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     private _changeDetectorRef: ChangeDetectorRef,
     private _media: MediaMatcher,
     private _seoService: SeoService,
-    private _registerIconsService: RegisterIconsService
+    private _registerIconsService: RegisterIconsService,
+    private _platformService: PlatformService,
+    private _location: Location,
+    private _router: Router
   ) {
     this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
     this._registerIcons();
     this._registerMediaQuery();
+    this._prepareBaseUrl();
+  }
+
+  private _prepareBaseUrl(): void {
+    if (!this._platformService.isRunningOnBrowser()) {
+      return;
+    }
+    this.baseUrl =
+      window.location.origin +
+      this._location.prepareExternalUrl(this._router.url);
   }
 
   private _registerIcons(): void {
