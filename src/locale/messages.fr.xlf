@@ -789,7 +789,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Réservoir</target>
+        <target>Char</target>
       </trans-unit>
       <trans-unit id="mod.entity.armored_fighting_vehicle" datatype="html">
         <source>Armored fighting vehicle</source>
@@ -1285,7 +1285,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>réservoirs</target>
+        <target>Chars</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_armoured_fighting_vehicles" datatype="html">
         <source>Armoured Fighting Vehicles</source>

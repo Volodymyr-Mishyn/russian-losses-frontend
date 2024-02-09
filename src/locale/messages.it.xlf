@@ -783,7 +783,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Cisterna</target>
+        <target>Carro armato</target>
       </trans-unit>
       <trans-unit id="mod.entity.armored_fighting_vehicle" datatype="html">
         <source>Armored fighting vehicle</source>
