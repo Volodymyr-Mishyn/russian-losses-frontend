@@ -118,12 +118,17 @@
         </context-group>
         <target>Compartir</target>
       </trans-unit>
-      <trans-unit id="202442244688100878" datatype="html">
+      <trans-unit id="7819314041543176992" datatype="html">
         <source>Close</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
           <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
+          <context context-type="linenumber">58,59</context>
         </context-group>
         <target>Cerca</target>
       </trans-unit>
@@ -1662,15 +1667,6 @@
           <context context-type="linenumber">17</context>
         </context-group>
         <target>Contar:</target>
-      </trans-unit>
-      <trans-unit id="7819314041543176992" datatype="html">
-        <source>Close</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
-          <context context-type="linenumber">58,59</context>
-        </context-group>
-        <target>Cerca</target>
       </trans-unit>
       <trans-unit id="8356038489237301171" datatype="html">
         <source>losses according to Oryx OSINT</source>
