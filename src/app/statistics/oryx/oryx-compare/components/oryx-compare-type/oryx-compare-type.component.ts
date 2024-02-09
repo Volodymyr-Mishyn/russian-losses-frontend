@@ -5,10 +5,9 @@ import { OryxCompareTypeOverallCountsComponent } from '../oryx-compare-type-over
 import { OryxCompareTypeEntitiesComponent } from '../oryx-compare-type-entities/oryx-compare-type-entities.component';
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { Router, RouterLink } from '@angular/router';
-import { Location } from '@angular/common';
-import { PlatformService } from '../../../../../services/platform.service';
+import { RouterLink } from '@angular/router';
 import { SocialShareButtonComponent } from '../../../../../components/social-share/social-share-button/social-share-button.component';
+import { BaseRouteUrlService } from '../../../../services/base-route-url.service';
 
 @Component({
   selector: 'app-oryx-compare-type',
@@ -55,19 +54,12 @@ export class OryxCompareTypeComponent {
 
   constructor(
     private _translatePipe: TranslatePipe,
-    private _platformService: PlatformService,
-    private _location: Location,
-    private _router: Router
+    private _baseRouteUrlService: BaseRouteUrlService
   ) {
     this._prepareBaseUrl();
   }
 
   private _prepareBaseUrl(): void {
-    if (!this._platformService.isRunningOnBrowser()) {
-      return;
-    }
-    this.baseUrl =
-      window.location.origin +
-      this._location.prepareExternalUrl(this._router.url);
+    this.baseUrl = this._baseRouteUrlService.getBaseUrl();
   }
 }

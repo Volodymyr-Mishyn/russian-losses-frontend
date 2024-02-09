@@ -29,9 +29,7 @@ import { MinistryOfDefenseTranslationService } from './services/ministry-of-defe
 import { MediaMatcher } from '@angular/cdk/layout';
 import { SeoService } from '../../services/seo.service';
 import { SocialShareButtonComponent } from '../../components/social-share/social-share-button/social-share-button.component';
-import { PlatformService } from '../../services/platform.service';
-import { Router } from '@angular/router';
-import { Location } from '@angular/common';
+import { BaseRouteUrlService } from '../services/base-route-url.service';
 
 @Component({
   standalone: true,
@@ -86,9 +84,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     private _media: MediaMatcher,
     private _seoService: SeoService,
     private _registerIconsService: RegisterIconsService,
-    private _platformService: PlatformService,
-    private _location: Location,
-    private _router: Router
+    private _baseRouteUrlService: BaseRouteUrlService
   ) {
     this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
     this._registerIcons();
@@ -97,12 +93,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   }
 
   private _prepareBaseUrl(): void {
-    if (!this._platformService.isRunningOnBrowser()) {
-      return;
-    }
-    this.baseUrl =
-      window.location.origin +
-      this._location.prepareExternalUrl(this._router.url);
+    this.baseUrl = this._baseRouteUrlService.getBaseUrl();
   }
 
   private _registerIcons(): void {
