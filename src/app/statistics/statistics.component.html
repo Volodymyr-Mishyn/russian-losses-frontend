@@ -25,7 +25,7 @@
     </div>
   </mat-sidenav>
 
-  <mat-sidenav-content class="content h-screen">
+  <mat-sidenav-content class="flex flex-col justify-start items-stretch">
     @if (isMobile()) {
     <mat-toolbar color="accent">
       <button mat-icon-button (click)="leftSidenav.toggle()" color="primary">
@@ -40,9 +40,8 @@
       <mat-spinner [color]="spinnerColor"></mat-spinner>
     </div>
     }
-    <router-outlet></router-outlet>
-    @if (isMobile()) {
-    <div class="w-full h-16"></div>
-    }
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -20,3 +20,20 @@
   font-weight: bold;
   text-shadow: 1px 0px 0px #d5d5d5, 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
+
+mat-sidenav-container,
+mat-sidenav-content {
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  height: 100vh;
+}
+
+@media screen and (max-width: 640px) {
+  .content-wrapper {
+    height: calc(100vh - var(--mat-toolbar-standard-height));
+  }
+}
