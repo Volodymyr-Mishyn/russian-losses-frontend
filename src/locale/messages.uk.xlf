@@ -522,6 +522,47 @@
         <target>нтерфейс прикладного програмування (API) для даних про втрати Росії під час
           вторгнення в Україну</target>
       </trans-unit>
+      <trans-unit id="7419704019640008953" datatype="html">
+        <source>Share</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <target>Поділитися</target>
+      </trans-unit>
+      <trans-unit id="202442244688100878" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <target>Закрити</target>
+      </trans-unit>
+      <trans-unit id="8598886608217248074" datatype="html">
+        <source>URL:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <target>URL:</target>
+      </trans-unit>
+      <trans-unit id="2903030540583693411" datatype="html">
+        <source>Link copied to clipboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <target>Посилання скопійовано в буфер обміну</target>
+      </trans-unit>
       <trans-unit id="376445160625906550" datatype="html">
         <source>Show compared to Average</source>
         <context-group purpose="location">
@@ -1501,15 +1542,6 @@
           <context context-type="linenumber">39</context>
         </context-group>
         <target>Українські</target>
-      </trans-unit>
-      <trans-unit id="8598886608217248074" datatype="html">
-        <source>URL:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-        <target>URL:</target>
       </trans-unit>
       <trans-unit id="8407222735578477590" datatype="html">
         <source>Reference images:</source>

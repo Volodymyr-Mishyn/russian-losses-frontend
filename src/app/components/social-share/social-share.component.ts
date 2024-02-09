@@ -85,7 +85,7 @@ export class SocialShareComponent {
 
   public copy() {
     this._clipboard.copy(this.url);
-    this._snackBar.open('Link copied to clipboard', undefined, {
+    this._snackBar.open($localize`Link copied to clipboard`, undefined, {
       duration: 5000,
     });
   }

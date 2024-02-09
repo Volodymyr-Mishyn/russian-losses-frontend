@@ -109,6 +109,47 @@
           Invasion
           Ukraine</target>
       </trans-unit>
+      <trans-unit id="7419704019640008953" datatype="html">
+        <source>Share</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <target>Teilen</target>
+      </trans-unit>
+      <trans-unit id="202442244688100878" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <target>Schließen</target>
+      </trans-unit>
+      <trans-unit id="8598886608217248074" datatype="html">
+        <source>URL:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <target>URL:</target>
+      </trans-unit>
+      <trans-unit id="2903030540583693411" datatype="html">
+        <source>Link copied to clipboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <target>Link in die Zwischenablage kopiert</target>
+      </trans-unit>
       <trans-unit id="googleAnalyticsSnackbarQuestion" datatype="html">
         <source>Hey, I am using Google Analytics to collect data about your visit to know which
           languages to translate the site into next. Therefore I need your consent for using
@@ -1532,15 +1573,6 @@
           <context context-type="linenumber">39</context>
         </context-group>
         <target>ukrainisch</target>
-      </trans-unit>
-      <trans-unit id="8598886608217248074" datatype="html">
-        <source>URL:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-        <target>URL:</target>
       </trans-unit>
       <trans-unit id="8407222735578477590" datatype="html">
         <source>Reference images:</source>
