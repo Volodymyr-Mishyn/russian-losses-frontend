@@ -28,6 +28,8 @@ import { TranslationService } from '../../_translate/translation.service';
 import { MinistryOfDefenseTranslationService } from './services/ministry-of-defense-translation.service';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { SeoService } from '../../services/seo.service';
+import { SocialShareButtonComponent } from '../../components/social-share/social-share-button/social-share-button.component';
+import { BaseRouteUrlService } from '../services/base-route-url.service';
 
 @Component({
   standalone: true,
@@ -36,6 +38,7 @@ import { SeoService } from '../../services/seo.service';
     RangeSelectionComponent,
     MinistryOfDefenseStatisticsPresenterComponent,
     ScrollToTopComponent,
+    SocialShareButtonComponent,
   ],
   providers: [
     {
@@ -66,6 +69,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   public currentScrollContainer!: ElementRef;
   public containerReady = false;
   public localRange!: DateRangeWithCount;
+  public baseUrl: string | null = null;
 
   public data$: Observable<MoDDataSliceWithCalculated> = this._range$.pipe(
     takeUntil(this._destroy$),
@@ -79,11 +83,17 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     private _changeDetectorRef: ChangeDetectorRef,
     private _media: MediaMatcher,
     private _seoService: SeoService,
-    private _registerIconsService: RegisterIconsService
+    private _registerIconsService: RegisterIconsService,
+    private _baseRouteUrlService: BaseRouteUrlService
   ) {
     this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
     this._registerIcons();
     this._registerMediaQuery();
+    this._prepareBaseUrl();
+  }
+
+  private _prepareBaseUrl(): void {
+    this.baseUrl = this._baseRouteUrlService.getBaseUrl();
   }
 
   private _registerIcons(): void {

@@ -94,6 +94,48 @@
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7419704019640008953" datatype="html">
+        <source>Share</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8598886608217248074" datatype="html">
+        <source>URL:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2903030540583693411" datatype="html">
+        <source>Link copied to clipboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="googleAnalyticsSnackbarQuestion" datatype="html">
         <source>Hey, I am using Google Analytics to collect data about your visit to know which
           languages to translate the site into next. Therefore I need your consent for using
@@ -1012,7 +1054,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ogTitleMoD" datatype="html">
@@ -1021,7 +1063,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ogDescriptionMoD" datatype="html">
@@ -1030,7 +1072,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_tanks" datatype="html">
@@ -1305,14 +1347,6 @@
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8598886608217248074" datatype="html">
-        <source>URL:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="8407222735578477590" datatype="html">
         <source>Reference images:</source>
         <context-group purpose="location">
@@ -1363,7 +1397,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageTitleComparisonOryx" datatype="html">
@@ -1372,7 +1406,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ogTitleComparisonOryx" datatype="html">
@@ -1381,7 +1415,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ogDescriptionComparisonOryx" datatype="html">
@@ -1390,7 +1424,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6836949342567686088" datatype="html">
@@ -1401,20 +1435,12 @@
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7819314041543176992" datatype="html">
-        <source>Close</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
-          <context context-type="linenumber">58,59</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="8356038489237301171" datatype="html">
         <source>losses according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">4,5</context>
+          <context context-type="linenumber">5,6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7335990613004661544" datatype="html">
@@ -1422,7 +1448,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">8,9</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6199032950321988805" datatype="html">
@@ -1430,7 +1456,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3448462145758383019" datatype="html">
@@ -1606,77 +1632,77 @@
         <source>Russian losses in UA</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.html</context>
-          <context context-type="linenumber">34,35</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7171949989092460632" datatype="html">
         <source>Min. of Defense</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4674136163546082296" datatype="html">
         <source>Ministry of defense of Ukraine data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7349113730459134835" datatype="html">
         <source>Oryx</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9106351225257384129" datatype="html">
         <source>Oryx OSINT data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7841393750423304845" datatype="html">
         <source>Support Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8370893771306210378" datatype="html">
         <source>Support/Donate Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8942351587754185907" datatype="html">
         <source>API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7630523254791692641" datatype="html">
         <source>Application programming interface</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1726363342938046830" datatype="html">
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3768870590847399574" datatype="html">
         <source>How it works / About me</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6480669984551358454" datatype="html">

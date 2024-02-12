@@ -1,16 +1,25 @@
 <div
-  class="flex flex-col items-stretch justify-start h-full"
+  class="flex flex-col items-stretch justify-start h-full overscroll-none"
   [ngClass]="{ 'overflow-y-scroll': isMobile() }"
   #scrollContainerMobile
 >
-  <app-range-selection
-    class="mat-elevation-z4 flex-none z-10 h-20 p-2"
-    (rangeChanged)="setRange($event)"
-  ></app-range-selection>
+  <div
+    class="flex flex-row justify-start items-center mat-elevation-z4 flex-none z-10"
+  >
+    <app-range-selection
+      class="p-2 h-20"
+      (rangeChanged)="setRange($event)"
+    ></app-range-selection>
+    @if (!isMobile()&&baseUrl) {
+    <div class="flex flex-1 flex-row justify-end items-center p-2">
+      <app-social-share-button [url]="baseUrl"></app-social-share-button>
+    </div>
+    }
+  </div>
   @if (data$|async; as data) {
   <app-ministry-of-defense-statistics-presenter
     #scrollContainer
-    class="flex-1"
+    class="flex-1 overscroll-none"
     [ngClass]="{ 'overflow-y-scroll': !isMobile() }"
     [datesRange]="localRange"
     [data]="data"

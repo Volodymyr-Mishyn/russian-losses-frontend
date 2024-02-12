@@ -2,14 +2,23 @@
   class="flex flex-col justify-start items-stretch gap-2"
   [id]="entityType.code"
 >
-  <h2 class="mat-h2">
-    <a
-      [routerLink]="['/statistics/oryx/country-losses', currentCountryName]"
-      [fragment]="entityType.code"
-      class="no-global-a"
-      >{{ entityTypeName }}
-    </a>
-  </h2>
+  <div class="flex flex-row items-center justify-start gap-4">
+    <div class="mt-4">
+      <h2>
+        <a
+          [routerLink]="['/statistics/oryx/country-losses', currentCountryName]"
+          [fragment]="entityType.code"
+          class="no-global-a"
+          >{{ entityTypeName }}
+        </a>
+      </h2>
+    </div>
+    @if (baseUrl) {
+    <app-social-share-button
+      [url]="baseUrl + '#' + entityType.code"
+    ></app-social-share-button>
+    }
+  </div>
   <app-oryx-statistics
     [statistics]="entityType.statistics"
     class="sm:m-2 p-2"

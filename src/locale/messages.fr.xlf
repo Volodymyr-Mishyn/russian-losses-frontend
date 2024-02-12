@@ -111,6 +111,52 @@
           en cours de
           Ukraine</target>
       </trans-unit>
+      <trans-unit id="7419704019640008953" datatype="html">
+        <source>Share</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <target>Partager</target>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share-dialog/social-share-dialog.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+        <target>Fermer</target>
+      </trans-unit>
+      <trans-unit id="8598886608217248074" datatype="html">
+        <source>URL:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <target>URL:</target>
+      </trans-unit>
+      <trans-unit id="2903030540583693411" datatype="html">
+        <source>Link copied to clipboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/components/social-share/social-share.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <target>Lien copié dans le presse-papiers</target>
+      </trans-unit>
       <trans-unit id="googleAnalyticsSnackbarQuestion" datatype="html">
         <source>Hey, I am using Google Analytics to collect data about your visit to know which
           languages to translate the site into next. Therefore I need your consent for using
@@ -743,7 +789,7 @@
             src/app/statistics/ministry-of-defense/_translate/mod.translation.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Réservoir</target>
+        <target>Char</target>
       </trans-unit>
       <trans-unit id="mod.entity.armored_fighting_vehicle" datatype="html">
         <source>Armored fighting vehicle</source>
@@ -1199,7 +1245,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1212,7 +1258,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">54</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1225,7 +1271,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">55</context>
         </context-group>
         <target>Constamment mettre à jour les données du Ministère de la défense de l&apos;Ukraine
           sur
@@ -1239,7 +1285,7 @@
             src/app/statistics/oryx/_translation/oryx-translation.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>réservoirs</target>
+        <target>Chars</target>
       </trans-unit>
       <trans-unit id="oryx.type.oryx_type_armoured_fighting_vehicles" datatype="html">
         <source>Armoured Fighting Vehicles</source>
@@ -1538,15 +1584,6 @@
         </context-group>
         <target>ukrainien</target>
       </trans-unit>
-      <trans-unit id="8598886608217248074" datatype="html">
-        <source>URL:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/components/oryx-entity-info/oryx-entity-info.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-        <target>URL :</target>
-      </trans-unit>
       <trans-unit id="8407222735578477590" datatype="html">
         <source>Reference images:</source>
         <context-group purpose="location">
@@ -1602,7 +1639,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
         <target>Comparaison des pertes de la Russie et de l&apos;Ukraine selon Oryx OSINT</target>
       </trans-unit>
@@ -1612,7 +1649,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <target>Comparaison des pertes russes et ukrainiennes lors de l&apos;invasion russe
           injustifiée
@@ -1625,7 +1662,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <target>Comparaison des pertes russes et ukrainiennes lors de l&apos;invasion russe
           injustifiée
@@ -1638,7 +1675,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-compare/oryx-compare.component.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <target>Comparaison constamment mise à jour des pertes russes et ukrainiennes au cours de la
           période actuelle
@@ -1653,21 +1690,12 @@
         </context-group>
         <target>Compter:</target>
       </trans-unit>
-      <trans-unit id="7819314041543176992" datatype="html">
-        <source>Close</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/oryx/oryx-country-losses/components/oryx-entity-losses-details/oryx-entity-loss-detail-dialog/oryx-entity-loss-detail-dialog.component.html</context>
-          <context context-type="linenumber">58,59</context>
-        </context-group>
-        <target>Fermer</target>
-      </trans-unit>
       <trans-unit id="8356038489237301171" datatype="html">
         <source>losses according to Oryx OSINT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">4,5</context>
+          <context context-type="linenumber">5,6</context>
         </context-group>
         <target>pertes selon Oryx OSINT</target>
       </trans-unit>
@@ -1676,7 +1704,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">8,9</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
         <target>Lien source</target>
       </trans-unit>
@@ -1685,7 +1713,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/oryx/oryx-country-losses/components/oryx-side-losses-presenter/oryx-side-losses-presenter.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <target>Dernière mise au rebut :</target>
       </trans-unit>
@@ -1894,7 +1922,7 @@
         <source>Russian losses in UA</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.html</context>
-          <context context-type="linenumber">34,35</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
         <target>Pertes russes en UA</target>
       </trans-unit>
@@ -1902,7 +1930,7 @@
         <source>Min. of Defense</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <target>Min. de la Défense</target>
       </trans-unit>
@@ -1910,7 +1938,7 @@
         <source>Ministry of defense of Ukraine data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <target>Données du ministère de la Défense de l&apos;Ukraine</target>
       </trans-unit>
@@ -1918,7 +1946,7 @@
         <source>Oryx</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <target>Oryx</target>
       </trans-unit>
@@ -1926,7 +1954,7 @@
         <source>Oryx OSINT data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <target>Données OSINT d&apos;Oryx</target>
       </trans-unit>
@@ -1934,7 +1962,7 @@
         <source>Support Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <target>Soutenir l&apos;Ukraine</target>
       </trans-unit>
@@ -1942,7 +1970,7 @@
         <source>Support/Donate Ukraine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">45</context>
         </context-group>
         <target>Soutenir/Faire un don à l&apos;Ukraine</target>
       </trans-unit>
@@ -1950,7 +1978,7 @@
         <source>API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <target>API</target>
       </trans-unit>
@@ -1958,7 +1986,7 @@
         <source>Application programming interface</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <target>Interface de programmation d&apos;applications</target>
       </trans-unit>
@@ -1966,7 +1994,7 @@
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <target>À propos</target>
       </trans-unit>
@@ -1974,7 +2002,7 @@
         <source>How it works / About me</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/statistics/statistics.component.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <target>Comment ça marche / À propos de moi</target>
       </trans-unit>

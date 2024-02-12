@@ -2,14 +2,23 @@
   class="flex flex-col justify-start items-stretch"
   [id]="typeCode + '_compare'"
 >
-  <h2 class="mat-h2">
-    <a
-      [routerLink]="['/statistics/oryx/compare-losses']"
-      [fragment]="typeCode + '_compare'"
-      class="no-global-a"
-      >{{ typeName }}
-    </a>
-  </h2>
+  <div class="flex flex-row items-center justify-start gap-4">
+    <div class="mt-4">
+      <h2>
+        <a
+          [routerLink]="['/statistics/oryx/compare-losses']"
+          [fragment]="typeCode + '_compare'"
+          class="no-global-a"
+          >{{ typeName }}
+        </a>
+      </h2>
+    </div>
+    @if (baseUrl) {
+    <app-social-share-button
+      [url]="baseUrl + '#' + typeCode + '_compare'"
+    ></app-social-share-button>
+    }
+  </div>
   <div class="flex flex-col justify-start items-stretch gap-4">
     @defer (on viewport) {
     <app-oryx-compare-type-overall-counts

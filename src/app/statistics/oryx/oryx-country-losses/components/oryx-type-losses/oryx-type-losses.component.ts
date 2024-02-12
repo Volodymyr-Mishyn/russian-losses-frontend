@@ -16,6 +16,8 @@ import { OryxSideNames } from '../../../../_models/data/oryx/oryx.types';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
+import { SocialShareButtonComponent } from '../../../../../components/social-share/social-share-button/social-share-button.component';
+import { BaseRouteUrlService } from '../../../../services/base-route-url.service';
 
 @Component({
   selector: 'app-oryx-type-losses',
@@ -30,6 +32,7 @@ import { RouterLink } from '@angular/router';
     OryxEntityLossesComponent,
     PieChartComponent,
     NumberDataChartComponent,
+    SocialShareButtonComponent,
     TranslatePipe,
   ],
   providers: [TranslatePipe],
@@ -44,7 +47,8 @@ export class OryxTypeLossesComponent {
   public entityTypeName!: string;
   public currentCountryName!: string;
 
-  @Input()
+  public baseUrl: string | null = null;
+
   private _entityType!: OryxEntityType;
 
   @Input()
@@ -72,7 +76,16 @@ export class OryxTypeLossesComponent {
     return this._entityType;
   }
 
-  constructor(private _translatePipe: TranslatePipe) {}
+  constructor(
+    private _translatePipe: TranslatePipe,
+    private _baseRouteUrlService: BaseRouteUrlService
+  ) {
+    this._prepareBaseUrl();
+  }
+
+  private _prepareBaseUrl(): void {
+    this.baseUrl = this._baseRouteUrlService.getBaseUrl();
+  }
 
   private _sortData(data: Array<ChartData>): Array<ChartData> {
     return sortOryxData(data, 'name');

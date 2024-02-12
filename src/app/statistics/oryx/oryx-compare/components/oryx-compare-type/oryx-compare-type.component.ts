@@ -6,6 +6,8 @@ import { OryxCompareTypeEntitiesComponent } from '../oryx-compare-type-entities/
 import { TranslatePipe } from '../../../../../pipes/translate.pipe';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterLink } from '@angular/router';
+import { SocialShareButtonComponent } from '../../../../../components/social-share/social-share-button/social-share-button.component';
+import { BaseRouteUrlService } from '../../../../services/base-route-url.service';
 
 @Component({
   selector: 'app-oryx-compare-type',
@@ -17,6 +19,7 @@ import { RouterLink } from '@angular/router';
     OryxCompareTypeOverallCountsComponent,
     OryxCompareTypeEntitiesComponent,
     TranslatePipe,
+    SocialShareButtonComponent,
   ],
   providers: [TranslatePipe],
   templateUrl: './oryx-compare-type.component.html',
@@ -28,6 +31,7 @@ export class OryxCompareTypeComponent {
 
   public typeName: string = '';
   public typeCode!: string;
+  public baseUrl: string | null = null;
 
   @Input()
   public get entityTypeComparison(): OryxEntityTypeComparison {
@@ -48,5 +52,14 @@ export class OryxCompareTypeComponent {
     );
   }
 
-  constructor(private _translatePipe: TranslatePipe) {}
+  constructor(
+    private _translatePipe: TranslatePipe,
+    private _baseRouteUrlService: BaseRouteUrlService
+  ) {
+    this._prepareBaseUrl();
+  }
+
+  private _prepareBaseUrl(): void {
+    this.baseUrl = this._baseRouteUrlService.getBaseUrl();
+  }
 }
