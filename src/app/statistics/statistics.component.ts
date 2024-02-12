@@ -65,17 +65,20 @@ const NAVIGATION: Array<NavigationElement> = [
 function adjustLayoutHeight(): void {
   console.warn('Adjusting content height for mobile devices.');
   let vh: number = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
   const contentWrapper: HTMLElement | null =
     document.querySelector('.content-wrapper');
+  const toolbar: HTMLElement | null = document.querySelector('#main-toolbar');
   if (contentWrapper) {
-    contentWrapper.style.height = `calc(${vh * 100}px - 64px)`;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    contentWrapper.style.height = toolbar
+      ? `calc(${vh * 100}px - 64px)`
+      : `${window.innerHeight}px`;
   }
 }
 
 const adjustLayoutHeightDebounced: () => void = debounce(() => {
   adjustLayoutHeight();
-  setTimeout(adjustLayoutHeight, 150);
+  setTimeout(adjustLayoutHeight, 500);
 }, 250);
 
 @Component({
@@ -126,7 +129,7 @@ export class StatisticsComponent implements OnDestroy {
     });
     if (this._platformService.isRunningOnBrowser()) {
       window.addEventListener('resize', adjustLayoutHeightDebounced);
-      adjustLayoutHeight();
+      adjustLayoutHeightDebounced();
     }
   }
 

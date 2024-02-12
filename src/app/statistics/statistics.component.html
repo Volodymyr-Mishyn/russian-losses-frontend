@@ -29,7 +29,11 @@
     class="flex flex-col justify-start items-stretch sidenav-content"
   >
     @if (isMobile()) {
-    <mat-toolbar color="accent" class="flex flex-none touch-none gap-2">
+    <mat-toolbar
+      color="accent"
+      class="flex flex-none touch-none gap-2"
+      id="main-toolbar"
+    >
       <button mat-icon-button (click)="leftSidenav.toggle()" color="primary">
         <mat-icon>menu</mat-icon>
       </button>
