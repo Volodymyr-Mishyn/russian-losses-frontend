@@ -25,13 +25,20 @@
     </div>
   </mat-sidenav>
 
-  <mat-sidenav-content class="flex flex-col justify-start items-stretch">
+  <mat-sidenav-content
+    class="flex flex-col justify-start items-stretch sidenav-content"
+  >
     @if (isMobile()) {
-    <mat-toolbar color="accent">
+    <mat-toolbar color="accent" class="flex flex-none touch-none gap-2">
       <button mat-icon-button (click)="leftSidenav.toggle()" color="primary">
         <mat-icon>menu</mat-icon>
       </button>
-      <span i18n class="text-xl ml-2 logo-text">Russian losses in UA</span>
+      <div class="flex-1">
+        <span i18n class="text-xl ml-2 logo-text">Russian losses in UA</span>
+      </div>
+      <button mat-icon-button (click)="reloadPage()" color="primary">
+        <mat-icon>refresh</mat-icon>
+      </button>
     </mat-toolbar>
     } @if(isLoading$|async){
     <div
@@ -40,7 +47,7 @@
       <mat-spinner [color]="spinnerColor"></mat-spinner>
     </div>
     }
-    <div class="content-wrapper">
+    <div class="content-wrapper flex-1">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>

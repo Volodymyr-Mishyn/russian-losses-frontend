@@ -162,9 +162,15 @@ html,
 body {
   height: 100%;
 }
+
 body {
+  overscroll-behavior: none;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  overscroll-behavior: none;
 }
 
 .mat-icon.icon-xs {

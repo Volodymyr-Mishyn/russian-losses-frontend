@@ -1,5 +1,5 @@
 <div
-  class="flex flex-col items-stretch justify-start h-full"
+  class="flex flex-col items-stretch justify-start h-full overscroll-none"
   [ngClass]="{ 'overflow-y-scroll': isMobile() }"
   #scrollContainerMobile
 >
@@ -19,7 +19,7 @@
   @if (data$|async; as data) {
   <app-ministry-of-defense-statistics-presenter
     #scrollContainer
-    class="flex-1"
+    class="flex-1 overscroll-none"
     [ngClass]="{ 'overflow-y-scroll': !isMobile() }"
     [datesRange]="localRange"
     [data]="data"

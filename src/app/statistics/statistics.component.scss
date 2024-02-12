@@ -28,12 +28,17 @@ mat-sidenav-content {
   overflow: hidden;
 }
 
+.sidenav-content {
+  height: 100vh !important;
+}
+
 .content-wrapper {
+  overscroll-behavior: none;
   height: 100vh;
 }
 
 @media screen and (max-width: 640px) {
   .content-wrapper {
-    height: calc(100vh - var(--mat-toolbar-standard-height));
+    height: calc(var(--vh, 1vh) * 100 - var(--mat-toolbar-mobile-height));
   }
 }

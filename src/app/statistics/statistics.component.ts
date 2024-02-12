@@ -23,6 +23,8 @@ import { ChangeLanguageComponent } from '../components/change-language/change-la
 import { Observable, Subscription } from 'rxjs';
 import { LoadingIndicationService } from './services/loading-indication.service';
 import { ThemeService } from '../services/theme.service';
+import { PlatformService } from '../services/platform.service';
+import { debounce } from '../_helpers/debounce';
 
 const NAVIGATION: Array<NavigationElement> = [
   {
@@ -60,6 +62,22 @@ const NAVIGATION: Array<NavigationElement> = [
   },
 ];
 
+function adjustLayoutHeight(): void {
+  console.warn('Adjusting content height for mobile devices.');
+  let vh: number = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  const contentWrapper: HTMLElement | null =
+    document.querySelector('.content-wrapper');
+  if (contentWrapper) {
+    contentWrapper.style.height = `calc(${vh * 100}px - 64px)`;
+  }
+}
+
+const adjustLayoutHeightDebounced: () => void = debounce(() => {
+  adjustLayoutHeight();
+  setTimeout(adjustLayoutHeight, 150);
+}, 250);
+
 @Component({
   standalone: true,
   imports: [
@@ -96,7 +114,8 @@ export class StatisticsComponent implements OnDestroy {
     private _media: MediaMatcher,
     private _registerIconsService: RegisterIconsService,
     private _loadingIndicationService: LoadingIndicationService,
-    private _themeService: ThemeService
+    private _themeService: ThemeService,
+    private _platformService: PlatformService
   ) {
     this._registerIconsService.registerIcons(['trident', 'api']);
     this.mobileQuery = this._media.matchMedia('(max-width: 640px)');
@@ -105,11 +124,18 @@ export class StatisticsComponent implements OnDestroy {
     this._themeSubscription = this._themeService.theme$.subscribe((theme) => {
       this.spinnerColor = theme === 'dark' ? 'accent' : 'primary';
     });
+    if (this._platformService.isRunningOnBrowser()) {
+      window.addEventListener('resize', adjustLayoutHeightDebounced);
+      adjustLayoutHeight();
+    }
   }
 
   public ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
     this._themeSubscription.unsubscribe();
+    if (this._platformService.isRunningOnBrowser()) {
+      window.removeEventListener('resize', adjustLayoutHeightDebounced);
+    }
   }
 
   public isMobile(): boolean {
@@ -118,5 +144,9 @@ export class StatisticsComponent implements OnDestroy {
 
   public isLanguageChangeAvailable(): boolean {
     return !isDevMode();
+  }
+
+  public reloadPage(): void {
+    window.location.reload();
   }
 }
