@@ -1228,7 +1228,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <target>Datos e infografía del Ministerio de Defensa de Ucrania sobre las pérdidas rusas
           durante
@@ -1240,7 +1240,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <target>Datos e infografía del Ministerio de Defensa de Ucrania sobre las pérdidas rusas
           durante
@@ -1252,7 +1252,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <target>El Ministerio de Defensa de Ucrania actualiza constantemente los datos sobre las
           pérdidas rusas en

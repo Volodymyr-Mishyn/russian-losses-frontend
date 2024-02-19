@@ -26,6 +26,8 @@ export const selectMoDAverage = createSelector(
   (state) => state.averageData
 );
 
+export const selectMoDDataSize = createSelector(selectMoDState, selectTotal);
+
 export const selectMoDDataInRange = ({ start, end }: DateRange) => {
   return createSelector(selectAllMoDData, (modData) => {
     return modData.filter((dayData) => {

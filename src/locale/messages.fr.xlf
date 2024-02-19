@@ -1245,7 +1245,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1258,7 +1258,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1271,7 +1271,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <target>Constamment mettre à jour les données du Ministère de la défense de l&apos;Ukraine
           sur

@@ -16,7 +16,9 @@
     </div>
     }
   </div>
-  @if (data$|async; as data) {
+  @if (data$|async; as data) { @if(notAllDataPresent){
+  <span class="text-red-500"> scraping on maintenance </span>
+  }
   <app-ministry-of-defense-statistics-presenter
     #scrollContainer
     class="flex-1 overscroll-none"

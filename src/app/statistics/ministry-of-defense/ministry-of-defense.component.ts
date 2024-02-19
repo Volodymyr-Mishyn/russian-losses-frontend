@@ -15,9 +15,13 @@ import {
   Subject,
   switchMap,
   takeUntil,
+  tap,
 } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { selectMoDDataInRangeWithCalculation } from '../_store/selectors/mod.selectors';
+import {
+  selectMoDDataInRangeWithCalculation,
+  selectMoDDataSize,
+} from '../_store/selectors/mod.selectors';
 import { MinistryOfDefenseStatisticsPresenterComponent } from './components/ministry-of-defense-statistics-presenter/ministry-of-defense-statistics-presenter.component';
 import { MoDDataSliceWithCalculated } from '../_models/data/mod/mod-model';
 import { DATE_OF_INVASION_INSTANCE } from '../../_constants/russian-invasion-date';
@@ -78,6 +82,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     )
   );
 
+  public notAllDataPresent = false;
   constructor(
     private _store: Store,
     private _changeDetectorRef: ChangeDetectorRef,
@@ -90,6 +95,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     this._registerIcons();
     this._registerMediaQuery();
     this._prepareBaseUrl();
+    this._checkDataPresence();
   }
 
   private _prepareBaseUrl(): void {
@@ -137,6 +143,21 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
       { name: 'twitter:title', content: this.ogTitle },
       { name: 'twitter:description', content: this.ogDescription },
     ]);
+  }
+
+  private _checkDataPresence(): void {
+    const timeDifference =
+      this._currentDate.getTime() - DATE_OF_INVASION_INSTANCE.getTime();
+    const daysCount = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+    this._store
+      .select(selectMoDDataSize)
+      .pipe(
+        takeUntil(this._destroy$),
+        tap((size) => {
+          this.notAllDataPresent = size + 10 < daysCount;
+        })
+      )
+      .subscribe();
   }
 
   public setRange(range: DateRange | null) {
