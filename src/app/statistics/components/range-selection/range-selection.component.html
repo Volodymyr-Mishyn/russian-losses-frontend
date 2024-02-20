@@ -1,37 +1,59 @@
-<form
-  [formGroup]="rangeForm"
-  class="flex-row flex justify-start items-center gap-4"
->
-  <mat-checkbox formControlName="fullRange" (change)="onCheckboxChange()">
-    <span i18n>Full range</span>
-  </mat-checkbox>
-  <mat-form-field>
-    <mat-label>
-      <span i18n>Enter a date range</span>
-    </mat-label>
-    <mat-date-range-input
-      formGroupName="range"
-      [rangePicker]="picker"
-      [disabled]="rangeForm.controls.fullRange.value === true"
-      [min]="startDate"
-      [max]="endDate"
+<div class="range-selection-container">
+  <form [formGroup]="rangeForm">
+    <mat-form-field>
+      <mat-label>
+        <span i18n>Enter a date range</span>
+      </mat-label>
+      <mat-date-range-input
+        formGroupName="range"
+        [rangePicker]="picker"
+        [min]="startDate"
+        [max]="endDate"
+      >
+        <input
+          matStartDate
+          formControlName="start"
+          placeholder="Start date"
+          i18n-placeholder
+          (dateChange)="onDateRangeChange()"
+        />
+        <input
+          matEndDate
+          formControlName="end"
+          placeholder="End date"
+          i18n-placeholder
+          (dateChange)="onDateRangeChange()"
+        />
+      </mat-date-range-input>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+  </form>
+  <div
+    class="flex flex-row justify-center items-center full-range-button-container"
+    [matTooltip]="fullRangeTooltip"
+    matTooltipPosition="below"
+  >
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="selectFullRange()"
+      class="big-button"
     >
-      <input
-        matStartDate
-        formControlName="start"
-        placeholder="Start date"
-        i18n-placeholder
-        (dateChange)="onDateRangeChange()"
-      />
-      <input
-        matEndDate
-        formControlName="end"
-        placeholder="End date"
-        i18n-placeholder
-        (dateChange)="onDateRangeChange()"
-      />
-    </mat-date-range-input>
-    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-date-range-picker #picker></mat-date-range-picker>
-  </mat-form-field>
-</form>
+      <mat-icon>date_range</mat-icon>
+      <span i18n>Full range</span>
+    </button>
+
+    <button
+      mat-mini-fab
+      color="accent"
+      (click)="selectFullRange()"
+      class="small-button"
+    >
+      <mat-icon>date_range</mat-icon>
+    </button>
+  </div>
+</div>

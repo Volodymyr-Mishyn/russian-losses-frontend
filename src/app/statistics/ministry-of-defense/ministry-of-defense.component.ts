@@ -13,11 +13,16 @@ import {
   BehaviorSubject,
   Observable,
   Subject,
+  distinctUntilChanged,
   switchMap,
   takeUntil,
+  tap,
 } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { selectMoDDataInRangeWithCalculation } from '../_store/selectors/mod.selectors';
+import {
+  selectMoDDataInRangeWithCalculation,
+  selectMoDDataSize,
+} from '../_store/selectors/mod.selectors';
 import { MinistryOfDefenseStatisticsPresenterComponent } from './components/ministry-of-defense-statistics-presenter/ministry-of-defense-statistics-presenter.component';
 import { MoDDataSliceWithCalculated } from '../_models/data/mod/mod-model';
 import { DATE_OF_INVASION_INSTANCE } from '../../_constants/russian-invasion-date';
@@ -72,12 +77,14 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   public baseUrl: string | null = null;
 
   public data$: Observable<MoDDataSliceWithCalculated> = this._range$.pipe(
+    distinctUntilChanged(),
     takeUntil(this._destroy$),
     switchMap((value) =>
       this._store.select(selectMoDDataInRangeWithCalculation(value))
     )
   );
 
+  public notAllDataPresent = false;
   constructor(
     private _store: Store,
     private _changeDetectorRef: ChangeDetectorRef,
@@ -90,6 +97,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     this._registerIcons();
     this._registerMediaQuery();
     this._prepareBaseUrl();
+    this._checkDataPresence();
   }
 
   private _prepareBaseUrl(): void {
@@ -139,10 +147,25 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
     ]);
   }
 
+  private _checkDataPresence(): void {
+    const timeDifference =
+      this._currentDate.getTime() - DATE_OF_INVASION_INSTANCE.getTime();
+    const daysCount = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+    this._store
+      .select(selectMoDDataSize)
+      .pipe(
+        takeUntil(this._destroy$),
+        tap((size) => {
+          this.notAllDataPresent = size + 10 < daysCount;
+        })
+      )
+      .subscribe();
+  }
+
   public setRange(range: DateRange | null) {
     if (range === null) {
-      this._rangeSubject.next(null);
       this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
+      this._rangeSubject.next(null);
     } else {
       const start = new Date(range.start);
       const end = new Date(range.end);

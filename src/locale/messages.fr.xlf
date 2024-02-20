@@ -616,21 +616,12 @@
         </context-group>
         <target>Mensuel</target>
       </trans-unit>
-      <trans-unit id="7979446993035882440" datatype="html">
-        <source>Full range</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">6,7</context>
-        </context-group>
-        <target>Gamme complète</target>
-      </trans-unit>
       <trans-unit id="193735854885505934" datatype="html">
         <source>Enter a date range</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">10,11</context>
+          <context context-type="linenumber">5,6</context>
         </context-group>
         <target>Entrez une plage de dates</target>
       </trans-unit>
@@ -639,7 +630,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
         <target>Date de début</target>
       </trans-unit>
@@ -648,9 +639,27 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <target>Date de fin</target>
+      </trans-unit>
+      <trans-unit id="7979446993035882440" datatype="html">
+        <source>Full range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/components/range-selection/range-selection.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <target>Plage complète</target>
+      </trans-unit>
+      <trans-unit id="statistics.rangeSelection.fullRangeTooltip" datatype="html">
+        <source>Select full range since the start of the invasion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/components/range-selection/range-selection.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <target>Sélectionnez la plage complète depuis le début de l&apos;invasion</target>
       </trans-unit>
       <trans-unit id="5756718847204508154" datatype="html">
         <source> On February 24th, 2022, the world witnessed the stark reality of russian
@@ -1245,7 +1254,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1258,7 +1267,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <target>Données et infographie du ministère de la Défense de l&apos;Ukraine sur les pertes
           russes
@@ -1271,7 +1280,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">60</context>
         </context-group>
         <target>Constamment mettre à jour les données du Ministère de la défense de l&apos;Ukraine
           sur

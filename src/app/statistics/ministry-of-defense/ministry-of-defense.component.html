@@ -7,7 +7,6 @@
     class="flex flex-row justify-start items-center mat-elevation-z4 flex-none z-10"
   >
     <app-range-selection
-      class="p-2 h-20"
       (rangeChanged)="setRange($event)"
     ></app-range-selection>
     @if (!isMobile()&&baseUrl) {
@@ -16,7 +15,9 @@
     </div>
     }
   </div>
-  @if (data$|async; as data) {
+  @if (data$|async; as data) { @if(notAllDataPresent){
+  <span class="text-red-500"> scraping on maintenance </span>
+  }
   <app-ministry-of-defense-statistics-presenter
     #scrollContainer
     class="flex-1 overscroll-none"
