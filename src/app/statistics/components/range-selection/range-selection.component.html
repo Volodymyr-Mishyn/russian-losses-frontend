@@ -1,4 +1,4 @@
-<div class="flex flex-row items-start justify-start gap-4 pt-2 px-4">
+<div class="range-selection-container">
   <form [formGroup]="rangeForm">
     <mat-form-field>
       <mat-label>
@@ -33,13 +33,27 @@
     </mat-form-field>
   </form>
   <div
-    class="flex flex-row justify-center items-center gap-1 pt-2"
+    class="flex flex-row justify-center items-center full-range-button-container"
     [matTooltip]="fullRangeTooltip"
     matTooltipPosition="below"
   >
-    <button mat-raised-button color="accent" (click)="selectFullRange()">
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="selectFullRange()"
+      class="big-button"
+    >
       <mat-icon>date_range</mat-icon>
       <span i18n>Full range</span>
+    </button>
+
+    <button
+      mat-mini-fab
+      color="accent"
+      (click)="selectFullRange()"
+      class="small-button"
+    >
+      <mat-icon>date_range</mat-icon>
     </button>
   </div>
 </div>
