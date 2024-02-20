@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import bootstrap from './src/main.server';
 import { LOCALE_ID } from '@angular/core';
 import compression from 'compression';
+import getSitemap from './src/server/sitemap-processor';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(locale: string): express.Express {
@@ -79,9 +80,15 @@ function run(): void {
     };
     res.status(200).send(health);
   });
-  server.get('/sitemap.xml', (req, res) => {
-    res.type('xml');
-    res.sendFile(dirname(fileURLToPath(import.meta.url)) + '/sitemap.xml');
+  server.get('/sitemap.xml', async (req, res) => {
+    try {
+      const updatedSitemap = await getSitemap(
+        dirname(fileURLToPath(import.meta.url)) + '/sitemap.xml'
+      );
+      res.type('xml').send(updatedSitemap);
+    } catch (error) {
+      res.status(500).send('Internal Server Error');
+    }
   });
   server.get('/robots.txt', (req, res) => {
     res.type('text/plain');
