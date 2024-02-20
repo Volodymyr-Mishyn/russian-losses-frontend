@@ -595,21 +595,12 @@
         </context-group>
         <target>По місяцям</target>
       </trans-unit>
-      <trans-unit id="7979446993035882440" datatype="html">
-        <source>Full range</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">6,7</context>
-        </context-group>
-        <target>Весь діапазон з початку вторгнення</target>
-      </trans-unit>
       <trans-unit id="193735854885505934" datatype="html">
         <source>Enter a date range</source>
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">10,11</context>
+          <context context-type="linenumber">5,6</context>
         </context-group>
         <target>Введіть діапазон дат</target>
       </trans-unit>
@@ -618,7 +609,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
         <target>Дата початку</target>
       </trans-unit>
@@ -627,9 +618,27 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/components/range-selection/range-selection.component.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <target>Дата закінчення</target>
+      </trans-unit>
+      <trans-unit id="7979446993035882440" datatype="html">
+        <source>Full range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/components/range-selection/range-selection.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <target>Повний діапазон</target>
+      </trans-unit>
+      <trans-unit id="statistics.rangeSelection.fullRangeTooltip" datatype="html">
+        <source>Select full range since the start of the invasion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            src/app/statistics/components/range-selection/range-selection.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <target>Повний діапазон з моменту початку вторгнення</target>
       </trans-unit>
       <trans-unit id="5756718847204508154" datatype="html">
         <source> On February 24th, 2022, the world witnessed the stark reality of russian
@@ -1217,7 +1226,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <target>Дані Міноборони України про втрати росії під час вторгнення в Україну</target>
       </trans-unit>
@@ -1227,7 +1236,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <target>Дані Міноборони України про втрати росії під час вторгнення в Україну</target>
       </trans-unit>
@@ -1237,7 +1246,7 @@
         <context-group purpose="location">
           <context context-type="sourcefile">
             src/app/statistics/ministry-of-defense/ministry-of-defense.component.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">60</context>
         </context-group>
         <target>Постійно оновлювані дані Міністерства оборони України про втрати росіян під час
           російського вторгнення в Україну</target>

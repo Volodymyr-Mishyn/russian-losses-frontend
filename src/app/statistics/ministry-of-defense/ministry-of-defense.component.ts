@@ -13,6 +13,7 @@ import {
   BehaviorSubject,
   Observable,
   Subject,
+  distinctUntilChanged,
   switchMap,
   takeUntil,
   tap,
@@ -76,6 +77,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
   public baseUrl: string | null = null;
 
   public data$: Observable<MoDDataSliceWithCalculated> = this._range$.pipe(
+    distinctUntilChanged(),
     takeUntil(this._destroy$),
     switchMap((value) =>
       this._store.select(selectMoDDataInRangeWithCalculation(value))
@@ -162,8 +164,8 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
 
   public setRange(range: DateRange | null) {
     if (range === null) {
-      this._rangeSubject.next(null);
       this._setLocalRange(DATE_OF_INVASION_INSTANCE, this._currentDate);
+      this._rangeSubject.next(null);
     } else {
       const start = new Date(range.start);
       const end = new Date(range.end);
