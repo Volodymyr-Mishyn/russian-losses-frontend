@@ -31,6 +31,10 @@ export class StatisticsFetcherService {
     });
   }
 
+  public getOryxData(side: OryxSide): Observable<OryxSideLosses> {
+    return this._createOryxSideLossesRequest(side);
+  }
+
   public getAllOryxData(): Observable<{ [k in OryxSide]: OryxSideLosses }> {
     const russianLosses$ = this._createOryxSideLossesRequest(
       OryxSideNames.RUSSIA

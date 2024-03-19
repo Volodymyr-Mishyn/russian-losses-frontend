@@ -11,6 +11,12 @@ export const selectOryxDataLoaded = createSelector(
   (state) => state.dataLoaded
 );
 
+export const selectOryxSideLossesLoaded = (side: OryxSideNames) => {
+  return createSelector(selectOryxState, (state) => {
+    return !!state.sideLosses[side];
+  });
+};
+
 export const selectOryxSideLosses = (side: OryxSideNames) => {
   return createSelector(selectOryxState, (state) => {
     return state.sideLosses[side];

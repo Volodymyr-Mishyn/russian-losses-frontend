@@ -1,9 +1,11 @@
 import { createAction, props } from '@ngrx/store';
 import { OryxActionTypes } from './oryx.action-types';
-import { OryxSide } from '../../_models/data/oryx/oryx.types';
+import { OryxSide, OryxSideNames } from '../../_models/data/oryx/oryx.types';
 import { OryxSideLosses } from '../../_models/data/oryx/oryx-model';
 
-export const loadOryxDataAction = createAction(OryxActionTypes.loadOryxData);
+export const loadAllOryxDataAction = createAction(
+  OryxActionTypes.loadAllOryxData
+);
 
 export const loadOryxDataActionSuccess = createAction(
   OryxActionTypes.loadOryxDataSuccess,
@@ -16,4 +18,14 @@ export const loadOryxDataActionSuccess = createAction(
 
 export const loadOryxDataActionFailure = createAction(
   OryxActionTypes.loadOryxDataFailure
+);
+
+export const loadOryxDataForSideAction = createAction(
+  OryxActionTypes.loadOryxDataForSide,
+  props<{ side: OryxSide }>()
+);
+
+export const loadOryxDataForSideSuccess = createAction(
+  OryxActionTypes.loadOryxDataForSideSuccess,
+  props<{ side: OryxSideNames; data: OryxSideLosses }>()
 );

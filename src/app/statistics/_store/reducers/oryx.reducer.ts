@@ -2,9 +2,11 @@ import { createReducer, on } from '@ngrx/store';
 import { OryxSideNames } from '../../_models/data/oryx/oryx.types';
 import { OryxState } from '../_models/oryx.state';
 import {
-  loadOryxDataAction,
+  loadAllOryxDataAction,
   loadOryxDataActionFailure,
   loadOryxDataActionSuccess,
+  loadOryxDataForSideAction,
+  loadOryxDataForSideSuccess,
 } from '../actions/oryx.actions';
 
 export const initialOryxState: OryxState = {
@@ -18,7 +20,7 @@ export const initialOryxState: OryxState = {
 
 export const oryxReducer = createReducer(
   initialOryxState,
-  on(loadOryxDataAction, (state): OryxState => {
+  on(loadAllOryxDataAction, (state): OryxState => {
     return {
       ...state,
       dataLoaded: false,
@@ -35,6 +37,26 @@ export const oryxReducer = createReducer(
       dataLoaded: true,
       loadingInProgress: false,
       sideLosses: data,
+    };
+  }),
+  on(loadOryxDataForSideAction, (state, { side }): OryxState => {
+    return {
+      ...state,
+      loadingInProgress: true,
+      sideLosses: {
+        ...state.sideLosses,
+        [side]: null,
+      },
+    };
+  }),
+  on(loadOryxDataForSideSuccess, (state, { side, data }): OryxState => {
+    return {
+      ...state,
+      loadingInProgress: true,
+      sideLosses: {
+        ...state.sideLosses,
+        [side]: data,
+      },
     };
   }),
   on(loadOryxDataActionFailure, (state) => ({
