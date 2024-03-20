@@ -116,11 +116,6 @@ $mat-dark-theme-warn: mat.define-palette(
 );
 
 $mat-density: 0;
-// @include mat.elevation(
-//   $zValue: 12,
-//   $color: #000,
-//   $opacity: 0.5
-// );
 
 $mat-core-theme: mat.define-light-theme(
   (

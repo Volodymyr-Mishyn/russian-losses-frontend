@@ -9,7 +9,6 @@ import { provideEffects } from '@ngrx/effects';
 import { MoDEffects } from './_store/effects/mod.effects';
 import { oryxStoreFeature } from './_store/features/oryx.feature';
 import { OryxEffects } from './_store/effects/oryx.effects';
-import { oryxResolver } from './resolvers/oryx.resolver';
 import { SupportComponent } from './support/support.component';
 import { ApplicationProgrammingInterfaceComponent } from './application-programming-interface/application-programming-interface.component';
 
@@ -42,9 +41,6 @@ export const STATISTICS_ROUTES: Routes = [
         ],
         loadChildren: () =>
           import('./oryx/oryx.routes').then((m) => m.ORYX_ROUTES),
-        resolve: {
-          dataLoaded: oryxResolver,
-        },
       },
     ],
   },
