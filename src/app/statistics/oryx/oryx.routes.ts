@@ -32,7 +32,6 @@ export const ORYX_ROUTES: Routes = [
           country: OryxSideNames.UKRAINE,
           url: 'https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-ukrainian.html',
         },
-
         resolve: {
           dataLoaded: oryxSideResolver,
         },

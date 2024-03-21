@@ -30,6 +30,11 @@ const SEO_METADATA = {
   },
 };
 
+const URL_SEO_METADATA = {
+  [OryxSideNames.RUSSIA]: 'russia',
+  [OryxSideNames.UKRAINE]: 'Ukraine',
+};
+
 @Component({
   selector: 'app-oryx-country-losses',
   standalone: true,
@@ -77,6 +82,9 @@ export class OryxCountryLossesComponent implements OnDestroy {
         content: SEO_METADATA[country].ogDescription,
       },
     ]);
+    this._seoService.setLinkDataTags(
+      'statistics/oryx/country-losses/' + URL_SEO_METADATA[country]
+    );
   }
 
   public ngOnDestroy(): void {

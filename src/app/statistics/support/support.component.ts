@@ -97,6 +97,7 @@ export class SupportComponent implements OnInit {
       { name: 'twitter:title', content: this.ogTitle },
       { name: 'twitter:description', content: this.ogDescription },
     ]);
+    this._seoService.setLinkDataTags('statistics/support');
   }
 
   public ngOnInit(): void {

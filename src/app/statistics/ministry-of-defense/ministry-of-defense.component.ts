@@ -145,6 +145,7 @@ export class MinistryOfDefenseComponent implements OnInit, OnDestroy {
       { name: 'twitter:title', content: this.ogTitle },
       { name: 'twitter:description', content: this.ogDescription },
     ]);
+    this._seoService.setLinkDataTags('statistics/ministry-of-defense');
   }
 
   private _checkDataPresence(): void {
