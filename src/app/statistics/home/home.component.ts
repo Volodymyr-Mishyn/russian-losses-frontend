@@ -33,6 +33,7 @@ export class HomeComponent implements OnInit {
       { name: 'twitter:title', content: this.ogTitle },
       { name: 'twitter:description', content: this.ogDescription },
     ]);
+    this._seoService.setLinkDataTags('statistics/home');
   }
 
   public ngOnInit(): void {
