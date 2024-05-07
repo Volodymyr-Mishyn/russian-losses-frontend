@@ -757,6 +757,22 @@
         </context-group>
         <target> Perdite russe secondo Oryx Open Source Intelligence</target>
       </trans-unit>
+      <trans-unit id="238554427686683040" datatype="html">
+        <source>Separate app with configurable charting is available </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+        <target>App separata con grafici configurabili è disponibile</target>
+      </trans-unit>
+      <trans-unit id="9078886509655327760" datatype="html">
+        <source> Here </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistics/home/home.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <target> Qui </target>
+      </trans-unit>
       <trans-unit id="pageTitleHome" datatype="html">
         <source>Data and infographic about russian invasion of Ukraine</source>
         <context-group purpose="location">
