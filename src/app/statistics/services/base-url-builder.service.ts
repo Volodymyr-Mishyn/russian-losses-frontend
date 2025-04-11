@@ -9,6 +9,10 @@ export class BaseUrlBuilderService {
   constructor(private _platformService: PlatformService) {}
 
   public getApiBaseUrl(): string {
-    return environment.apiUrl;
+    if (this._platformService.isRunningOnBrowser()) {
+      return environment.apiUrl;
+    } else {
+      return environment.serverApiUrl + environment.apiUrl;
+    }
   }
 }
